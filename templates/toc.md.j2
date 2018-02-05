@@ -1,0 +1,17 @@
+<div class='spellList'>
+
+{% for letter, plants in letters.items() %}
+##### {{ letter }}
+{% for plant in plants %}
+- {{ plant }}
+{% endfor %}
+{% if letter in ['F', 'Q'] %}
+
+</div>
+\page
+<div class='spellList'>
+{% endif %}
+
+{% endfor %}
+</div>
+\page
