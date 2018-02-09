@@ -1,4 +1,6 @@
-{% for plant, value in json_data.items() %}
+{% for page in pages %}
+
+{% for plant, value in page.items() %}
 
 #### {{ plant }}
 *{% for region in value.Regions %}{{ region }}{{ ", " if not loop.last }}{% endfor %}*
@@ -7,8 +9,6 @@ ___
 
 {{ value.Description }}
 
-{% if loop.index is divisibleby 8 %}
+{% endfor %}
 \page
-{% endif %}
-
 {% endfor %}

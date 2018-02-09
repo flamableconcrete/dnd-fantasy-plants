@@ -1,5 +1,6 @@
 import csv
 import json
+import math
 import os
 import sys
 
@@ -467,11 +468,31 @@ def generate_table_of_contents():
 
 def generate_entries():
     plant_info_json = 'plant_info_v3.json'
+
+    header_length = 4  # equivalent # of lines for plant name, location, rarity
+    footer_length = 1  # equivalent # of lines after entry
+    lines_available_per_column = 60
+    desc_line_length = 60
+
     with open(plant_info_json) as json_file:
         data = json.load(json_file)
 
+        pages = {}
+        current_page_height = 0
+        page_num = 1
+        for plant, value in data.items():
+            # plant = name
+            # value = {
+            #   Regions: [x, y, z]
+            #   Rarity: "xyz"
+            #   Description: "foo"
+            # }
+            pages[page_num] = {plant: value}
+            homebrewery_height = header_length + footer_length + math.ceil(len(value['Description']) / desc_line_length)
+            current_page_height += homebrewery_height
+
         context = {
-            'json_data': data
+            'pages': pages
         }
         result = render('templates/plant_entries.md.j2', context)
 
