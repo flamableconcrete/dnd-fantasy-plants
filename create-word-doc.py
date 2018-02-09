@@ -428,23 +428,6 @@ def parse_rarity():
 
 
 def generate_homebrewery_markdown():
-    generate_cover_page()
-    generate_table_of_contents()
-    generate_entries()
-
-
-def generate_cover_page():
-    context = {
-        'title': 'Broderick’s Compendium of Fantasy Plants',
-    }
-    result = render('templates/cover_page.md.j2', context)
-
-    # print(result)
-    with open('generated-cover_page.txt', 'w') as cov_page:
-        cov_page.write(result)
-
-
-def generate_table_of_contents():
     plant_info_json = 'plant_info_v3.json'
     plants_by_letter = {}
     with open(plant_info_json) as json_file:
@@ -456,30 +439,20 @@ def generate_table_of_contents():
             else:
                 plants_by_letter[first_letter] = [plant]
 
-    context = {
-        'letters': plants_by_letter
-    }
-    result = render('templates/toc.md.j2', context)
-
-    # print(result)
-    with open('generated-toc.txt', 'w') as cov_page:
-        cov_page.write(result)
-
-
-def generate_entries():
-    plant_info_json = 'plant_info_v3.json'
-
-    header_length = 4  # equivalent # of lines for plant name, location, rarity
-    footer_length = 1  # equivalent # of lines after entry
+    header_height = 4  # equivalent # of lines for plant name, location, rarity
+    footer_height = 1  # equivalent # of lines after entry
     lines_available_per_column = 60
+    page_height = lines_available_per_column * 2
     desc_line_length = 60
 
     with open(plant_info_json) as json_file:
         data = json.load(json_file)
 
         pages = {}
-        current_page_height = 0
         page_num = 1
+        pages[page_num] = []
+        current_page_height = 0
+
         for plant, value in data.items():
             # plant = name
             # value = {
@@ -487,18 +460,32 @@ def generate_entries():
             #   Rarity: "xyz"
             #   Description: "foo"
             # }
-            pages[page_num] = {plant: value}
-            homebrewery_height = header_length + footer_length + math.ceil(len(value['Description']) / desc_line_length)
+            value['name'] = plant
+            description_height = math.ceil(len(value['Description']) / desc_line_length)
+            homebrewery_height = header_height + description_height + footer_height
+            # print('    * ', plant, 'height:', homebrewery_height)
+            value['homebrewery_height'] = homebrewery_height
+
             current_page_height += homebrewery_height
 
+            if current_page_height > page_height:
+                print('page:', page_num, '   height:', current_page_height)
+                current_page_height = homebrewery_height
+                page_num += 1
+                pages[page_num] = []
+
+            pages[page_num].append(value)
+
         context = {
+            'title': 'Broderick’s Compendium of Fantasy Plants',
+            'letters': plants_by_letter,
             'pages': pages
         }
-        result = render('templates/plant_entries.md.j2', context)
+        result = render('templates/homebrew.md.j2', context)
 
         # print(result)
-        with open('generated-plant_entries.txt', 'w') as cov_page:
-            cov_page.write(result)
+        with open('generated-homebrew.txt', 'w') as hb_page:
+            hb_page.write(result)
 
 
 def render(tpl_path, context):

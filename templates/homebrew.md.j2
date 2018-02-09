@@ -1,0 +1,155 @@
+<style>
+  .phb#p1{ text-align:center; }
+  .phb#p1:after{ display:none; }
+
+.toc a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .toc li span:nth-child(2){	/*Allow dot leaders to fill remaining space but not overlap*/
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .toc li span:nth-child(2):after{
+    font-family		: BookSanity;	/*Remove any header styles from dot leaders*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    content:
+      " ........................................"
+      "........................................."
+      "........................................."; 
+  }
+  
+  .toc li span:first-child{
+    float: right;
+    font-family		: BookSanity;	/*Remove any header styles from page numbers*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    margin-left		: 1px;	/*Leaves a small space between page numbers and dot leaders*/
+  }
+  
+/*Special cases for headings*/    
+  .toc li h3 span:nth-child(2):after{
+  	content: " ";						/*Remove dot leaders on h3*/
+  }
+  
+  .toc li h3 {
+    margin-bottom: 4px !important;		/*Special spacing for h3*/
+    margin-top: 10px !important;
+    line-height: initial !important;	/*For some reason Multi-line h3 line spacing changed*/
+  }
+  
+  .toc li h3 span:first-child{
+  	line-height: 1.8em !important;  	/*Line page numbers up with Multi-line h3 better*/
+  }
+  
+  .toc ul ul {
+  	margin-left: 10px !important;		/*Original lists intented too much*/
+  }
+  
+  .toc>ul>li {
+    margin-bottom: initial !important;	/*margin for list items needs to be removed or 0*/
+  }
+
+</style>
+
+<div style='margin-top:450px;'></div>
+
+# {{ title }}
+
+<div style='margin-top:25px'></div>
+<div class='wide'>
+##### For when you need to druid hard
+
+### Current Source Materials Include:
+**Narcosa** by Neoplastic Press
+
+**Plants & Fungi of the Realms** by B. Simon Smith
+
+**Magical Plants and Where to Find Them** by Jowgen on the Giant in the Playground Forums
+
+**The Herbalist’s Guide** by Shawn Hately, 1997
+
+**Swordfish Islands: A System Neutral Hexcrawl for Table Top RPGs** by Jacob Hurst
+
+**Mercator’s Guide to Herbs** by Mercator
+
+**Herbalism & Alchemy Fan-Made Supplement** by reddit user /u/dalagrath
+
+**<div style='margin-top:10px'></div>**
+
+With a lot of creative license and updating from me.
+
+ursablindness.tumblr.com
+
+reddit.com/user/NeurotoxicNihilist
+
+**<div style='margin-top:10px'></div>**
+
+If you want to support B. Simon Smith, his guide is only $5.95 for the PDF version and has some stuff I didn’t include as well as more lore, backstory, and more rule-based content that may be more appropriate for some hardcore players.
+
+**<div style='margin-top:10px'></div>**
+
+In addition, I really want to thank both Jowgen on the giantitp forums and Shawn Hately because I’ve been super inspired and name dropping the fantasy plants you guys collected in my campaigns for months.
+
+**<div style='margin-top:10px'></div>**
+
+I will be updating this document as I find more sources over coming months, so feel free to keep checking back. I feel like it may be a cool resource for anyone interested in plants or in world-building. So, hopefully you enjoy.
+
+</div>
+
+\page
+
+<div class='spellList'>
+
+{% for letter, plants in letters.items() %}
+##### {{ letter }}
+{% for plant in plants %}
+- {{ plant }}
+{% endfor %}
+{% if letter in ['F', 'Q'] %}
+
+</div>
+<div class='pageNumber auto'></div>
+\page
+<div class='spellList'>
+{% endif %}
+
+{% endfor %}
+</div>
+\page
+
+{% for page, plants in pages.items() %}
+
+{% for plant in plants %}
+
+### {{ plant.name }}
+*{% for region in plant.Regions %}{{ region }}{{ ", " if not loop.last }}{% endfor %}*
+___
+- **Rarity:** {{ plant.Rarity }}
+
+{{ plant.Description }}
+
+{% endfor %}
+<div class='pageNumber auto'></div>
+\page
+{% endfor %}
+
+<div class='wide' style="text-align: center">
+# Appendix A: Plant Location
+</div>
+
+<div class='toc'>
+{% for region, plants in plants_by_region.items() %}
+- ### {{ region }}
+{% for plant in plants %}
+  - [<span>{{ plant.page }}</span><span>{{ plant.name }}</span>](#p{{ plant.page }})
+{% endfor %}
+{% endfor %}
+</div>>
+
