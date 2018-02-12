@@ -1,3 +1,5 @@
+import codecs
+import collections
 import csv
 import json
 import math
@@ -429,17 +431,29 @@ def parse_rarity():
 
 def generate_homebrewery_markdown():
     plant_info_json = 'plant_info_v3.json'
-    plants_by_letter = {}
-    with open(plant_info_json) as json_file:
-        data = json.load(json_file)
-        for plant, entry in data.items():
-            first_letter = plant[0].upper()
-            if first_letter in plants_by_letter:
-                plants_by_letter[first_letter].append(plant)
-            else:
-                plants_by_letter[first_letter] = [plant]
 
-    header_height = 4  # equivalent # of lines for plant name, location, rarity
+    rarity_symbols = {
+        'Very Common': 'VC',
+        'Common': 'C',
+        'Uncommon': 'U',
+        'Rare': 'R',
+        'Very Rare': 'VR',
+        'Legendary': 'L'
+    }
+
+    plants_by_letter = {}
+    plants_by_region = {}
+    plants_by_rarity = collections.OrderedDict({
+        'Very Common': [],
+        'Common': [],
+        'Uncommon': [],
+        'Rare': [],
+        'Very Rare': [],
+        'Legendary': []
+    })
+
+    pages_before_plant_entries = 4
+    header_height = 5  # equivalent # of lines for plant name, location, rarity
     footer_height = 1  # equivalent # of lines after entry
     lines_available_per_column = 60
     page_height = lines_available_per_column * 2
@@ -453,39 +467,160 @@ def generate_homebrewery_markdown():
         pages[page_num] = []
         current_page_height = 0
 
-        for plant, value in data.items():
+        for plant, entry in data.items():
             # plant = name
-            # value = {
+            # entry = {
             #   Regions: [x, y, z]
             #   Rarity: "xyz"
             #   Description: "foo"
+            #   Extra info: ["this", "is", "extra"]
+            #   ### added below ###
+            #   name: "blah"
+            #   page: 34
+            #   first_letter: "B"
+            #   homebrewery_height: 12
             # }
-            value['name'] = plant
-            description_height = math.ceil(len(value['Description']) / desc_line_length)
-            homebrewery_height = header_height + description_height + footer_height
-            # print('    * ', plant, 'height:', homebrewery_height)
-            value['homebrewery_height'] = homebrewery_height
 
+            first_letter = plant[0].upper()
+            description_height = math.ceil(len(entry['Description']) / desc_line_length)
+            homebrewery_height = header_height + description_height + footer_height
+            if plant == 'Alil':
+                homebrewery_height += 40
+            if plant == 'Hangman Tree':
+                homebrewery_height += 40
+            if plant == 'Lizuara':
+                homebrewery_height += 15
+            if plant == 'Marsh Maw':
+                homebrewery_height += 50
             current_page_height += homebrewery_height
 
             if current_page_height > page_height:
-                print('page:', page_num, '   height:', current_page_height)
+                # print('page:', page_num, '   height:', current_page_height)
                 current_page_height = homebrewery_height
                 page_num += 1
                 pages[page_num] = []
 
-            pages[page_num].append(value)
+            entry['name'] = plant
+            entry['page'] = page_num + pages_before_plant_entries
+            entry['first_letter'] = first_letter
+            entry['homebrewery_height'] = homebrewery_height
+            entry['rarity_symbol'] = rarity_symbols[entry['Rarity']]
+
+            # Manually give descriptions line breaks to make content fit on page
+            if plant == 'Darmanzar Stalk':
+                entry['Description'] = entry['Description'].replace('Living characters', '\n\nLiving characters')
+            if plant == 'Hidden Hibiscus':
+                entry['Description'] = entry['Description'].replace('Bloom colors', '\n\nBloom colors')
+
+            # manually deal with the 4 "special" plants
+            if plant == 'Alil':
+                entry['Extra info'] = '''| d10 | Psionic Ability |
+|:----:|:-------------|
+| 1  | Temporary intelligence bonus of 1. |
+| 2  | Precision Mind: you become skilled at reading your foes. With this capability, you can call upon your gift to strike with increased accuracy. You add your Intelligence modifier (minimum 1) to an attack roll, after the roll, but before the announcement of the result. You can use this feature a number of times equal to your Intelligence modifier (minimum of 1). |
+| 3  | Immunity to psychic damage. |
+| 4  | You cannot be charmed or frightened for the duration. |
+| 5  | You may take two actions during each of your turns for the duration. |
+| 6  | You may add 1d6 psychic damage to any attack you make of 5 or less damage. |
+| 7  | You project a field of improbability around yourself, creating a fleeting protective shell, gaining  +4 temporary bonus to AC. |
+| 8  | You may, as a bonus action once per combat, instantly deliver a massive assault on the thought pathways of any one creature, dealing 1d10 points of damage to it. |
+| 9  | You heal another creature\u2019s wounds, transferring some of its damage to yourself. When you manifest this power, you can heal as much as 2d10 points of damage to an ally by taking half of this damage to yourself. |
+| 10 | You may gain proficiency in one extra skill until the long rest or proficiency with one tool or instrument permanently. |
+            '''
+
+            if plant == 'Hangman Tree':
+                entry['Description'] = entry['Description'].replace('The main body', '\n\nThe main body')
+                entry['Extra info'] = '''___
+> ## Hangman Tree
+>*Large tree, unaligned*
+> ___
+> - **Armor Class** 12
+> - **Hit Points** 172(15d12 + 80)
+> - **Speed** 1ft.
+>___
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>|20 (+5)|6 (-2)|20 (+5)|3 (-4)|6 (-2)|4 (-3)|
+>___
+> - **Damage Resistances** bludgeoning, piercing
+> - **Damage Vulnerabilities** fire
+> - **Condition Immunities** blinded, deafened, frightened, exhaustion
+> - **Senses** blindsight 90 ft., passive Perception 8
+> - **Challenge** 8 (3,800 XP)
+> ___
+
+> ### Actions
+> ***Multiattack.*** The hangman tree may make three *constrict* attacks per turn.
+>
+> ***Constrict.*** *Melee Weapon Attack:* +9 to hit, reach 10 ft., one target. *Hit* 11 (1d8 + 5) bludgeoning damage, and a Large or smaller target is grappled (escape DC 16).
+            '''
+
+            if plant == 'Lizuara':
+                extra_info = ''
+                for line in entry['Extra info']:
+                    extra_info = extra_info + '\n\n' + line
+                entry['Extra info'] = extra_info
+
+            if plant == 'Marsh Maw':
+                entry['Extra info'] = '''___
+> ## Marsh Maw
+>*Large plant, unaligned*
+> ___
+> - **Armor Class** 14
+> - **Hit Points** 112 (14d10 + 28)
+> - **Speed** 20 ft.. swim 20 ft.
+>___
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>|16 (+3)|12 (+1)|14 (+2)|4 (-3)|10 (+0)|6 (-2)|
+>___
+> - **Damage Resistances** bludgeoning
+> - **Condition Immunities** blinded, deafened, frightened, prone
+> - **Senses** blindsight 60 ft., passive Perception 10
+> - **Challenge** 4 (1,100 XP)
+> ___
+> ### Actions
+> ***Multiattack.*** The marsh maw can make two *constrict* attacks and a *bite* attack.
+>
+> ***Constrict.*** *Melee Weapon Attack:* +5 to hit, reach 10 ft., one target. *Hit* 11 (2d6 + 3) bludgeoning damage, and a Large or smaller target is grappled (escape DC 14). Until this grapple ends, the target is restrained, and the marsh maw cannot constrict another target.
+>
+> ***Bite.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one Medium or smaller target. Hit: 11 (2d6+3) piercing damage, and a target is blinded, restrained, and unable to breathe. The target must succeed on a DC 14 Cons. Save at the start of each of the marsh maw’s turns or take 11 (2d8+3) bludgeoning damage. If the marsh maw moves, the engulfed target moves with it. The marsh maw is unable to use the bite attack until it releases the held creature.
+                '''
+
+            pages[page_num].append(entry)
+
+            if first_letter in plants_by_letter:
+                plants_by_letter[first_letter].append(entry)
+            else:
+                plants_by_letter[first_letter] = [entry]
+
+            rarity = entry['Rarity']
+            if rarity in plants_by_rarity:
+                plants_by_rarity[rarity].append(entry)
+
+            regions = entry['Regions']
+            for region in regions:
+                if region in plants_by_region:
+                    plants_by_region[region].append(entry)
+                else:
+                    plants_by_region[region] = [entry]
+
+        plants_by_rarity = collections.OrderedDict(sorted(plants_by_rarity.items(), key=lambda t: len(t)))
 
         context = {
             'title': 'Broderick’s Compendium of Fantasy Plants',
-            'letters': plants_by_letter,
+            'plants_by_letter': plants_by_letter,
+            'plants_by_region': plants_by_region,
+            'plants_by_rarity': plants_by_rarity,
             'pages': pages
         }
         result = render('templates/homebrew.md.j2', context)
 
         # print(result)
-        with open('generated-homebrew.txt', 'w') as hb_page:
+        with codecs.open("generated-homebrew.txt", "w", encoding="utf-8") as hb_page:
             hb_page.write(result)
+        # with open('generated-homebrew.txt', 'w') as hb_page:
+        #     hb_page.write(result)
 
 
 def render(tpl_path, context):

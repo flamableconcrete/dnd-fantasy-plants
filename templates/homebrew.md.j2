@@ -2,7 +2,16 @@
   .phb#p1{ text-align:center; }
   .phb#p1:after{ display:none; }
 
-.toc a {
+  a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+    text-decoration: none;
+  }
+
+  .toc {
+    column-count:4;
+  }
+
+  .toc a {
     color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
   }
 
@@ -107,10 +116,10 @@ I will be updating this document as I find more sources over coming months, so f
 
 <div class='spellList'>
 
-{% for letter, plants in letters.items() %}
+{% for letter, plants in plants_by_letter.items() %}
 ##### {{ letter }}
 {% for plant in plants %}
-- {{ plant }}
+- [{{ plant.name }}](#p{{ plant.page }})
 {% endfor %}
 {% if letter in ['F', 'Q'] %}
 
@@ -121,6 +130,7 @@ I will be updating this document as I find more sources over coming months, so f
 {% endif %}
 
 {% endfor %}
+<div class='pageNumber auto'></div>
 </div>
 \page
 
@@ -129,27 +139,83 @@ I will be updating this document as I find more sources over coming months, so f
 {% for plant in plants %}
 
 ### {{ plant.name }}
-*{% for region in plant.Regions %}{{ region }}{{ ", " if not loop.last }}{% endfor %}*
+*{% for region in plant.Regions %}[{{ region }}](#p77){{ ", " if not loop.last }}{% endfor %}*
 ___
 - **Rarity:** {{ plant.Rarity }}
 
 {{ plant.Description }}
 
+{{ plant['Extra info'] }}
 {% endfor %}
 <div class='pageNumber auto'></div>
 \page
 {% endfor %}
 
 <div class='wide' style="text-align: center">
-# Appendix A: Plant Location
+# Appendix A: Plants By Terrain
 </div>
 
-<div class='toc'>
+<div class='toc wide' style='column-count:3'>
 {% for region, plants in plants_by_region.items() %}
 - ### {{ region }}
-{% for plant in plants %}
-  - [<span>{{ plant.page }}</span><span>{{ plant.name }}</span>](#p{{ plant.page }})
+  {% for plant in plants %}
+  - [<span>{{ plant.page }}</span><span>{{ plant.name }} ({{ plant.rarity_symbol }})</span>](#p{{ plant.page }})
+    {% if (plant.name == 'Cornus' and region == 'Underdark') or
+          (plant.name == 'Adgana' and region == 'Plain') or
+          (plant.name == 'Purple Pipeweed' and region == 'Plain') or
+          (plant.name == 'Kylathar' and region == 'Forest') or
+          (plant.name == 'Woodrose' and region == 'Forest') or
+          (plant.name == 'Winclamit' and region == 'Jungle') or
+          (plant.name == 'Basilisk Breath' and region == 'Arctic') or
+          (plant.name == 'Slimmerane' and region == 'Mountain') or
+          (plant.name == 'Verdant Goeleth' and region == 'City')
+    %}
+- ### {{ region }} (continued)
+    {% endif %}
+    {% if (plant.name == 'Flame Petal' and region == 'Plain') or
+          (plant.name == 'Blueleaf' and region == 'Forest') or
+          (plant.name == 'Harrada Leaf' and region == 'Jungle') or
+          (plant.name == 'Devarencia' and region == 'Mountain')
+    %}
+</div>
+<div class='pageNumber auto'></div>
+\page
+<div class='toc wide' style='column-count:3'>
+- ### {{ region }} (continued)
+    {% endif %}
+  {% endfor %}
 {% endfor %}
-{% endfor %}
-</div>>
+</div>
+\page
 
+<div class='wide' style="text-align: center">
+# Appendix B: Plants By Rarity
+</div>
+
+<div class='toc wide' style='column-count:3'>
+{% for rarity, plants in plants_by_rarity.items() %}
+- ### {{ rarity }}
+  {% for plant in plants %}
+  - [<span>{{ plant.page }}</span><span>{{ plant.name }} ({% for region in plant.Regions %}{{ region[:3] }}.{% if not loop.last %}, {% endif %}{% endfor%})</span>](#p{{ plant.page }})
+    {% if (plant.name == 'Golden Crown' and rarity == 'Very Common') or
+          (plant.name == 'Thir' and rarity == 'Very Common') or
+          (plant.name == 'Spotty Dragonfire' and rarity == 'Common') or
+          (plant.name == 'Djin Blossom' and rarity == 'Uncommon') or
+          (plant.name == 'Gylvir' and rarity == 'Rare') or
+          (plant.name == 'Lizuara' and rarity == 'Legendary')
+    %}
+- ### {{ rarity }} (continued)
+    {% endif %}
+    {% if (plant.name == 'Devilweed' and rarity == 'Common') or
+          (plant.name == 'Sezarad' and rarity == 'Uncommon') or
+          (plant.name == 'Thelmallow Flower' and rarity == 'Very Rare')
+    %}
+</div>
+<div class='pageNumber auto'></div>
+\page
+<div class='toc wide' style='column-count:3'>
+- ### {{ rarity }} (continued)
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+</div>
