@@ -442,7 +442,21 @@ def generate_homebrewery_markdown():
     }
 
     plants_by_letter = {}
-    plants_by_region = {}
+    plants_by_region = collections.OrderedDict({
+        'Arctic': [],     # D&D 5E standard
+        'City': [],
+        'Coastal': [],    # D&D 5E standard - Coast
+        'Desert': [],     # D&D 5E standard
+        'Forest': [],     # D&D 5E standard
+        'Jungle': [],
+        'Plain': [],      # D&D 5E standard - Grassland
+        'Mountain': [],   # D&D 5E standard
+        'Ocean': [],
+        'River': [],
+        'Swamp': [],      # D&D 5E standard
+        'Underdark': [],  # D&D 5E standard
+        'Other': []
+    })
     plants_by_rarity = collections.OrderedDict({
         'Very Common': [],
         'Common': [],
@@ -452,7 +466,7 @@ def generate_homebrewery_markdown():
         'Legendary': []
     })
 
-    pages_before_plant_entries = 4
+    pages_before_plant_entries = 6
     header_height = 5  # equivalent # of lines for plant name, location, rarity
     footer_height = 1  # equivalent # of lines after entry
     lines_available_per_column = 60
