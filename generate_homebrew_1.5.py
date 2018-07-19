@@ -6,31 +6,22 @@ import math
 import os
 import sys
 
+from pathlib import Path
 from pprint import pprint
 
 import jinja2
 
 from docx import Document
 
+from Plant import Plant
 
-class Plant(object):
-
-    def __init__(self, name, regions, rarity='', description=''):
-        self.name = name
-        self.regions = regions
-        self.rarity = rarity
-        self.description = description
-
-        foo = '{}.json'.format(self.name).lower().replace(' ', '_')
-        self.filename = ''.join(ch for ch in foo if ch.isalnum() or ch == '.' or ch == '_')
-
-    def __repr__(self):
-        return '{} ({})'.format(self.name, self.regions)
+INPUT_DIR = Path('1.5')
+OUTPUT_DIR = Path('generated/1.5')
 
 
 def deduplicate_csv():
-    csv_file = 'plant_locations_rarities.csv'
-    new_csv = 'plant_locations_rarities_v2.csv'
+    csv_file = INPUT_DIR / 'plant_locations_rarities.csv'
+    new_csv = OUTPUT_DIR / 'plant_locations_rarities_v2.csv'
 
     tmp_list = []
 
@@ -114,8 +105,8 @@ def deduplicate_csv():
 
 
 def convert_csv_to_json():
-    csv_file = 'plant_locations_rarities_v2.csv'
-    json_file = 'plant_info.json'
+    csv_file = OUTPUT_DIR / 'plant_locations_rarities_v2.csv'
+    json_file = OUTPUT_DIR / 'plant_info.json'
 
     with open(csv_file, 'r') as f:
         reader = csv.DictReader(f)
@@ -154,10 +145,10 @@ def convert_csv_to_json():
 
 
 def parse_description():
-    plant_info_json = 'plant_info.json'
-    plant_info_v2_json = 'plant_info_v2.json'
+    plant_info_json = OUTPUT_DIR / 'plant_info.json'
+    plant_info_v2_json = OUTPUT_DIR / 'plant_info_v2.json'
 
-    docx_file = 'plants_v1.5_orig.docx'
+    docx_file = Path('1.5/plants_v1.5_orig.docx')
     doc = Document(docx_file)
 
     # for para in range(0, len(doc.paragraphs)):
@@ -378,10 +369,10 @@ def parse_description():
 
 
 def parse_rarity():
-    plant_info_v2_json = 'plant_info_v2.json'
-    plant_info_v3_json = 'plant_info_v3.json'
+    plant_info_v2_json = OUTPUT_DIR / 'plant_info_v2.json'
+    plant_info_v3_json = OUTPUT_DIR / 'plant_info_v3.json'
 
-    docx_file = 'plants_v1.5_orig.docx'
+    docx_file = Path('1.5/plants_v1.5_orig.docx')
     doc = Document(docx_file)
 
     plants_by_rarity = {
@@ -430,7 +421,8 @@ def parse_rarity():
 
 
 def generate_homebrewery_markdown():
-    plant_info_json = 'plant_info_v3.json'
+    plant_info_json = OUTPUT_DIR / 'plant_info_v3.json'
+    homebrew_file = OUTPUT_DIR / "generated-homebrew.txt"
 
     rarity_symbols = {
         'Very Common': 'VC',
@@ -631,7 +623,7 @@ def generate_homebrewery_markdown():
         result = render('templates/homebrew.md.j2', context)
 
         # print(result)
-        with codecs.open("generated-homebrew.txt", "w", encoding="utf-8") as hb_page:
+        with codecs.open(homebrew_file, "w", encoding="utf-8") as hb_page:
             hb_page.write(result)
         # with open('generated-homebrew.txt', 'w') as hb_page:
         #     hb_page.write(result)
@@ -646,11 +638,12 @@ def render(tpl_path, context):
 
 
 def main():
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     # deduplicate_csv()
     # convert_csv_to_json()
-    # parse_description()
+    parse_description()
     # parse_rarity()
-    generate_homebrewery_markdown()
+    # generate_homebrewery_markdown()
 
 
 if __name__ == "__main__":
