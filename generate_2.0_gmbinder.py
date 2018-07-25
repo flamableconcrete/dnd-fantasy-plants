@@ -343,7 +343,11 @@ def generate_gmbinder_markdown():
         'Other': 'O'
     }
 
-    plants_by_letter = {}
+    plants_by_letter = collections.OrderedDict({
+        'A': [], 'B': [], 'C': [], 'D': [], 'E': [], 'F': [], 'G': [], 'H': [], 'I': [], 'J': [],
+        'K': [], 'L': [], 'M': [], 'N': [], 'O': [], 'P': [], 'Q': [], 'R': [], 'S': [], 'T': [],
+        'U': [], 'V': [], 'W': [], 'X': [], 'Y': [], 'Z': []
+    })
     plants_by_region = collections.OrderedDict({
         'Arctic': [],     # D&D 5E standard
         'City': [],
@@ -360,13 +364,16 @@ def generate_gmbinder_markdown():
         'Other': []
     })
     plants_by_rarity = collections.OrderedDict({
-        'Very Common': [],
-        'Common': [],
-        'Uncommon': [],
-        'Rare': [],
-        'Very Rare': [],
-        'Legendary': []
+        'Very Common': [], 'Common': [], 'Uncommon': [], 'Rare': [], 'Very Rare': [], 'Legendary': [], 'Other': []
     })
+
+    plants_for_table_entries = collections.OrderedDict()
+    for region in plants_by_region.keys():
+        plants_for_table_entries[region] = collections.OrderedDict()
+        for rarity in plants_by_rarity.keys():
+            plants_for_table_entries[region][rarity] = []
+
+    # pprint(plants_for_table_entries)
 
     pages_before_plant_entries = 6
     header_height = 5  # equivalent # of lines for plant name, location, rarity
@@ -504,36 +511,32 @@ def generate_gmbinder_markdown():
                 '''
 
             pages[page_num].append(entry)
-
-            if first_letter in plants_by_letter:
-                plants_by_letter[first_letter].append(entry)
-            else:
-                plants_by_letter[first_letter] = [entry]
+            plants_by_letter[first_letter].append(entry)
 
             rarity = entry['Rarity']
-            if rarity in plants_by_rarity:
-                plants_by_rarity[rarity].append(entry)
+            plants_by_rarity[rarity].append(entry)
 
             regions = entry['Regions']
             for region in regions:
-                if region in plants_by_region:
-                    plants_by_region[region].append(entry)
-                else:
-                    plants_by_region[region] = [entry]
+                plants_by_region[region].append(entry)
+                plants_for_table_entries[region][entry['Rarity']].append(entry)
 
         plants_by_rarity = collections.OrderedDict(sorted(plants_by_rarity.items(), key=lambda t: len(t)))
+
+        # pprint(len(plants_for_table_entries['Arctic']['Common']))
 
         for region, region_entries in plants_by_region.items():
             print('{} ({})'.format(region, len(region_entries)))
             for rarity, entries in plants_by_rarity.items():
-                foo = [x for x in plants_by_rarity[rarity] if region in x['Regions']]
-                print('    {}: {}'.format(rarity, len(foo)))
+                plant_table_entries = [x for x in plants_by_rarity[rarity] if region in x['Regions']]
+                print('    {}: {}'.format(rarity, len(plant_table_entries)))
 
         context = {
             'title': 'Broderick’s Compendium: Fantasy Plants Across the Realms',
             'plants_by_letter': plants_by_letter,
             'plants_by_region': plants_by_region,
             'plants_by_rarity': plants_by_rarity,
+            'plants_for_table_entries': plants_for_table_entries,
             'pages': pages
         }
         result = render(template_file, context)

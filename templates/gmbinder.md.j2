@@ -228,10 +228,11 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 
 \pagebreakNum
 
-{% for region in plants_by_region.keys() %}
+{% for region, rarity_dict in plants_for_table_entries.items() %}
     {% set region_loop = loop %}
     
-{% for rarity, plants in plants_by_rarity.items() %}
+{% for rarity, plants in rarity_dict.items() %}
+{% if plants | length > 0 %}
 ##### Table {{ region_loop.index + 1 }}-{{ loop.index }}: {{ region }} - {{ rarity }}
 | d100 | Plant |
 |:---:|:---:|
@@ -241,6 +242,7 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 {% endif %}
 {% endfor %}
     
+{% endif %}
 {% endfor %}
 {% endfor %}
 
