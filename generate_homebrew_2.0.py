@@ -12,11 +12,13 @@ from pprint import pprint
 import jinja2
 
 from docx import Document
+from icecream import ic
 
 from Plant import Plant
 
 INPUT_DIR = Path('2.0')
 OUTPUT_DIR = Path('generated/2.0')
+TEMPLATE_DIR = Path('templates')
 
 
 def deduplicate_csv():
@@ -318,9 +320,18 @@ def parse_description():
             json.dump(data, outfile, indent=4)
 
 
-def generate_homebrewery_markdown():
+def print_plant_info():
+    plant_info_v2_json = OUTPUT_DIR / 'plant_info_v2.json'
+
+    with open(plant_info_v2_json) as json_file:
+        data = json.load(json_file)
+        pprint(data['Allathorne'])
+
+
+def generate_gmbinder_markdown():
     plant_info_json = OUTPUT_DIR / 'plant_info_v2.json'
-    homebrew_file = OUTPUT_DIR / "generated-homebrew.txt"
+    template_file = TEMPLATE_DIR / 'gmbinder.md.j2'
+    output_file = OUTPUT_DIR / "generated-gmbinder.txt"
 
     rarity_symbols = {
         'Very Common': 'VC',
@@ -512,20 +523,24 @@ def generate_homebrewery_markdown():
 
         plants_by_rarity = collections.OrderedDict(sorted(plants_by_rarity.items(), key=lambda t: len(t)))
 
+        for region, region_entries in plants_by_region.items():
+            print('{} ({})'.format(region, len(region_entries)))
+            for rarity, entries in plants_by_rarity.items():
+                foo = [x for x in plants_by_rarity[rarity] if region in x['Regions']]
+                print('    {}: {}'.format(rarity, len(foo)))
+
         context = {
-            'title': 'Broderick’s Compendium of Fantasy Plants',
+            'title': 'Broderick’s Compendium: Fantasy Plants Across the Realms',
             'plants_by_letter': plants_by_letter,
             'plants_by_region': plants_by_region,
             'plants_by_rarity': plants_by_rarity,
             'pages': pages
         }
-        result = render('templates/homebrew.md.j2', context)
+        result = render(template_file, context)
 
         # print(result)
-        with codecs.open(homebrew_file, "w", encoding="utf-8") as hb_page:
-            hb_page.write(result)
-        # with open('generated-homebrew.txt', 'w') as hb_page:
-        #     hb_page.write(result)
+        with codecs.open(output_file, "w", encoding="utf-8") as page:
+            page.write(result)
 
 
 def render(tpl_path, context):
@@ -538,10 +553,11 @@ def render(tpl_path, context):
 
 def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    deduplicate_csv()
-    convert_csv_to_json()
-    parse_description()
-    # generate_homebrewery_markdown()
+    # deduplicate_csv()
+    # convert_csv_to_json()
+    # parse_description()
+    # print_plant_info()
+    generate_gmbinder_markdown()
 
 
 if __name__ == "__main__":
