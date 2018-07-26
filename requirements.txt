@@ -1,3 +1,4 @@
 icecream
-python-docx
 jinja2
+python-docx
+pytest

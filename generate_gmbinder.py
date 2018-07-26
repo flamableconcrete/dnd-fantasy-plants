@@ -8,6 +8,7 @@ import sys
 
 from pathlib import Path
 from pprint import pprint
+from queue import Queue
 
 import jinja2
 
@@ -85,7 +86,7 @@ def deduplicate_csv():
 
             writer.writeheader()
             for plant in tmp_list:
-                # print('{}: {}'.format(plant.name, plant.regions))
+                # print(f'{plant.name}: {plant.regions}')
                 foo = {'Plant': plant.name,
                        'Arctic': 'X' if 'Arctic' in plant.regions else '',
                        'City/Urban': 'X' if 'City/Urban' in plant.regions else '',
@@ -183,7 +184,7 @@ def process_letter_entries(letter, entries, doc, invalid_names, inconsistencies,
                     extra_info.append(doc.paragraphs[para + line].text)
                 data[name]['Extra info'] = extra_info
 
-        print(name, 'p{}'.format(para), data[name])
+        print(name, f'p{para}', data[name])
 
     return data
 
@@ -371,7 +372,8 @@ def generate_gmbinder_markdown():
     for region in plants_by_region.keys():
         plants_for_table_entries[region] = collections.OrderedDict()
         for rarity in plants_by_rarity.keys():
-            plants_for_table_entries[region][rarity] = []
+            plants_for_table_entries[region][rarity] = collections.OrderedDict({'die size': None,
+                                                                                'plants': []})
 
     # pprint(plants_for_table_entries)
 
@@ -402,6 +404,8 @@ def generate_gmbinder_markdown():
             #   page: 34
             #   first_letter: "B"
             #   homebrewery_height: 12
+            #   rarity_symbol: "VC"
+            #   table_die_entry: [None | 4 | 1-2]
             # }
 
             first_letter = plant[0].upper()
@@ -428,6 +432,7 @@ def generate_gmbinder_markdown():
             entry['first_letter'] = first_letter
             entry['homebrewery_height'] = homebrewery_height
             entry['rarity_symbol'] = rarity_symbols[entry['Rarity']]
+            entry['table_die_entry'] = None
 
             # Manually give descriptions line breaks to make content fit on page
             if plant == 'Darmanzar Stalk':
@@ -512,24 +517,34 @@ def generate_gmbinder_markdown():
 
             pages[page_num].append(entry)
             plants_by_letter[first_letter].append(entry)
-
-            rarity = entry['Rarity']
-            plants_by_rarity[rarity].append(entry)
-
-            regions = entry['Regions']
-            for region in regions:
+            plants_by_rarity[entry['Rarity']].append(entry)
+            for region in entry['Regions']:
                 plants_by_region[region].append(entry)
-                plants_for_table_entries[region][entry['Rarity']].append(entry)
+                plants_for_table_entries[region][entry['Rarity']]['plants'].append(entry)
 
+        plants_by_letter = collections.OrderedDict(sorted(plants_by_letter.items(), key=lambda t: len(t)))
         plants_by_rarity = collections.OrderedDict(sorted(plants_by_rarity.items(), key=lambda t: len(t)))
+        plants_by_region = collections.OrderedDict(sorted(plants_by_region.items(), key=lambda t: len(t)))
 
-        # pprint(len(plants_for_table_entries['Arctic']['Common']))
+        # second pass clean-up for table entries
+        for region, rarity_dict in plants_for_table_entries.items():
+            for rarity, plant_info_dict in rarity_dict.items():
+                num_plants = len(plants_for_table_entries[region][rarity]['plants'])
+                die_size = find_die_size(num_plants)
+                plants_for_table_entries[region][rarity]['die size'] = die_size
 
+                die_entries = get_die_entries(die_size, num_plants)
+
+                for plant in plants_for_table_entries[region][rarity]['plants']:
+                    plant['table_die_entry'] = die_entries.get()
+
+        # just printing some debug stuff here
         for region, region_entries in plants_by_region.items():
-            print('{} ({})'.format(region, len(region_entries)))
+            print(f'{region} ({len(region_entries)})')
             for rarity, entries in plants_by_rarity.items():
                 plant_table_entries = [x for x in plants_by_rarity[rarity] if region in x['Regions']]
-                print('    {}: {}'.format(rarity, len(plant_table_entries)))
+                die_size = plants_for_table_entries[region][rarity]["die size"]
+                print(f'    {rarity}: {len(plant_table_entries)} (d{die_size})')
 
         context = {
             'title': 'Broderick’s Compendium: Fantasy Plants Across the Realms',
@@ -544,6 +559,22 @@ def generate_gmbinder_markdown():
         # print(result)
         with codecs.open(output_file, "w", encoding="utf-8") as page:
             page.write(result)
+
+
+def find_die_size(num_plants):
+    die_sizes = [0, 4, 6, 8, 10, 12, 20, 100]
+    for die_size in die_sizes:
+        if num_plants <= die_size:
+            return die_size
+
+
+def get_die_entries(die_size, num_plants):
+    die_entries = Queue()
+
+    print(range(0, die_size))
+
+
+    return die_entries
 
 
 def render(tpl_path, context):

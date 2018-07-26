@@ -15,6 +15,14 @@
     text-decoration: none;
   }
 
+  .phb table tbody tr td {
+      padding: .15em .1em;
+  }
+
+  .phb table tbody tr:nth-child(odd) {
+    background-color: #efacb8;
+  }
+
   .toc {
     column-count:4;
   }
@@ -198,6 +206,10 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 92-99 | Very Rare |
 | 100   | Very Rare or Legendary |
 
+\columnbreak
+
+<div style='margin-top:40px;'></div>
+
 ##### Scavenging Plants: Medium
 | d100 | Rarity of plant scavenged |
 |:----:|:-------------|
@@ -207,6 +219,8 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 92-96 | Rare |
 | 97-99 | Very Rare |
 | 100   | Very Rare or Legendary |
+
+<div style='margin-top:80px;'></div>
 
 ##### Scavenging Plants: Hard
 | d100 | Rarity of plant scavenged |
@@ -231,10 +245,11 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 {% for region, rarity_dict in plants_for_table_entries.items() %}
     {% set region_loop = loop %}
     
-{% for rarity, plants in rarity_dict.items() %}
+{% for rarity, plant_info_dict in rarity_dict.items() %}
+    {% set plants = plant_info_dict['plants'] %}
 {% if plants | length > 0 %}
 ##### Table {{ region_loop.index + 1 }}-{{ loop.index }}: {{ region }} - {{ rarity }}
-| d100 | Plant |
+| d{{ plant_info_dict['die size'] }} | Plant |
 |:---:|:---:|
 {% for plant in plants %}
 {% if region in plant.Regions %}
