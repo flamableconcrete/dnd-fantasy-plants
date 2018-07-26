@@ -533,10 +533,10 @@ def generate_gmbinder_markdown():
                 die_size = find_die_size(num_plants)
                 plants_for_table_entries[region][rarity]['die size'] = die_size
 
-                die_entries = get_die_entries(die_size, num_plants)
+                die_entries = get_die_entries(num_plants, die_size)
 
-                for plant in plants_for_table_entries[region][rarity]['plants']:
-                    plant['table_die_entry'] = die_entries.get()
+                # for plant in plants_for_table_entries[region][rarity]['plants']:
+                #     plant['table_die_entry'] = die_entries.get()
 
         # just printing some debug stuff here
         for region, region_entries in plants_by_region.items():
@@ -568,13 +568,60 @@ def find_die_size(num_plants):
             return die_size
 
 
-def get_die_entries(die_size, num_plants):
-    die_entries = Queue()
+def get_die_entries(num_plants, die_size):
+    # die_entries = Queue()
 
-    print(range(0, die_size))
+    die_entries = []
+    table_increments = get_table_increments(num_plants, die_size)
 
+    if num_plants == die_size:
+        die_entries = [x + 1 for x in range(num_plants)]
+    elif num_plants < die_size:
+        hyphen_entries = die_size - num_plants
+        if hyphen_entries > num_plants:
+            hyphen_entries = num_plants
+        hyphen_entries_counter = hyphen_entries
+        entries_that_have_hyphens_now = 0
+
+        for x in range(1, num_plants+1):
+
+            start = x + entries_that_have_hyphens_now
+            end = start + table_increments[x - 1]
+
+            if hyphen_entries_counter > 0:
+                start = x + entries_that_have_hyphens_now
+                end = start + table_increments[x-1]
+
+                die_entries.append(f'{start}-{end}')
+
+                hyphen_entries_counter = hyphen_entries_counter - 1
+                entries_that_have_hyphens_now = entries_that_have_hyphens_now + 1
+            else:
+                die_entries.append(x + hyphen_entries)
+
+    else:
+        print(f'num_plants ({num_plants}) needs to be less than die size ({die_size})!')
+        return None
+
+    if 20 < num_plants < 50:
+        pprint(die_entries)
 
     return die_entries
+
+
+def get_table_increments(num_plants, die_size):
+    foo = [0 for _ in range(num_plants)]
+    if num_plants == die_size:
+        return foo
+    target = die_size - num_plants
+    counter = 0
+    for x in foo:
+        foo[counter] = x + math.ceil(target / num_plants)
+        counter += 1
+        target -= 1
+        if target == 0:
+            break
+    return foo
 
 
 def render(tpl_path, context):
