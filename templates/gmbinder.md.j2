@@ -16,7 +16,7 @@
   }
 
   .phb table tbody tr td {
-      padding: .15em .1em;
+      padding: .10em .1em;
   }
 
   .phb table tbody tr:nth-child(odd) {
@@ -196,6 +196,8 @@ Magical plants can be found in many different terrains, but that doesn't mean th
 
 In most cases, 100 will also count as Very Rare, since Legendary plants should only be in one or two places around the world, so make sure the setting is right to get a Legendary plant.
 
+\columnbreak
+
 ##### Scavenging Plants: Easy
 | d100 | Rarity of plant scavenged |
 |:----:|:-------------|
@@ -206,10 +208,6 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 92-99 | Very Rare |
 | 100   | Very Rare or Legendary |
 
-\columnbreak
-
-<div style='margin-top:40px;'></div>
-
 ##### Scavenging Plants: Medium
 | d100 | Rarity of plant scavenged |
 |:----:|:-------------|
@@ -219,8 +217,6 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 92-96 | Rare |
 | 97-99 | Very Rare |
 | 100   | Very Rare or Legendary |
-
-<div style='margin-top:80px;'></div>
 
 ##### Scavenging Plants: Hard
 | d100 | Rarity of plant scavenged |
@@ -242,18 +238,58 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 
 \pagebreakNum
 
+{# ##############################################################
+   # Plant list: tables
+   ############################################################## #}
 {% for region, rarity_dict in plants_for_table_entries.items() %}
     {% set region_loop = loop %}
     
 {% for rarity, plant_info_dict in rarity_dict.items() %}
     {% set plants = plant_info_dict['plants'] %}
+{% if (region == 'Arctic' and rarity == 'Legendary') or
+      (region == 'Desert' and rarity == 'Very Common') or
+      (region == 'Forest' and rarity == 'Very Common') or
+      (region == 'Forest' and rarity == 'Uncommon') or
+      (region == 'Forest' and rarity == 'Legendary') or
+      (region == 'Jungle' and rarity == 'Uncommon') or
+      (region == 'Jungle' and rarity == 'Legendary') or
+      (region == 'Plain' and rarity == 'Uncommon') or
+      (region == 'Mountain' and rarity == 'Common') or
+      (region == 'River' and rarity == 'Very Common') or
+      (region == 'Swamp' and rarity == 'Very Rare')
+%}
+\columnbreak
+
+{% elif (region == 'City' and rarity == 'Very Rare') or
+        (region == 'Desert' and rarity == 'Very Rare') or
+        (region == 'Forest' and rarity == 'Common') or
+        (region == 'Forest' and rarity == 'Rare') or
+        (region == 'Jungle' and rarity == 'Common') or
+        (region == 'Jungle' and rarity == 'Rare') or
+        (region == 'Plain' and rarity == 'Very Common') or
+        (region == 'Plain' and rarity == 'Common') or
+        (region == 'Plain' and rarity == 'Very Rare') or
+        (region == 'Mountain' and rarity == 'Very Rare') or
+        (region == 'River' and rarity == 'Legendary') or
+        (region == 'Underdark' and rarity == 'Rare')
+%}
+\pagebreakNum
+
+{% endif %}
 {% if plants | length > 0 %}
 ##### Table {{ region_loop.index + 1 }}-{{ loop.index }}: {{ region }} - {{ rarity }}
 | d{{ plant_info_dict['die size'] }} | Plant |
 |:---:|:---:|
 {% for plant in plants %}
 {% if region in plant.Regions %}
-| {{ loop.index }} | {{ plant.name }} |
+| {{ plant.table_die_entry }} | {{ plant.name }} |
+{% endif %}
+{% if plant.table_die_entry == 61 %}
+\columnbreak
+
+##### Table 8-1: Plain - Very Common (cont'd)
+| d100 | Plant |
+|:---:|:---:|
 {% endif %}
 {% endfor %}
     
@@ -264,61 +300,66 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 
 \pagebreakNum
 
-<div class='spellList'>
 
-{# ####################
-   # Plant list: alphabetical
-   #################### #}
-{% for letter, plants in plants_by_letter.items() %}
-##### {{ letter }}
-{% for plant in plants %}
-- [{{ plant.name }}](#p{{ plant.page }})
-{% endfor %}
-{% if letter in ['F', 'Q'] %}
-
-</div>
-<div class='pageNumber auto'></div>
-\page
-<div class='spellList'>
-{% endif %}
-
-{% endfor %}
-<div class='pageNumber auto'></div>
-</div>
-\page
-
-{# ####################
+{# ##############################################################
    # Plant list: entries
-   #################### #}
+   ############################################################## #}
 {% for page, plants in pages.items() %}
 
 {% for plant in plants %}
 
 ### {{ plant.name }}
-*{% for region in plant.Regions %}[{{ region }}](#p79){{ ", " if not loop.last }}{% endfor %}*
+*{% for region in plant.Regions %}[{{ region }}](#p106){{ ", " if not loop.last }}{% endfor %}*
 ___
-- **Rarity:** [{{ plant.Rarity }}](#p84)
+- **Rarity:** [{{ plant.Rarity }}](#p111)
 
 {{ plant.Description }}
 
 {{ plant['Extra info'] }}
 {% endfor %}
-<div class='pageNumber auto'></div>
-\page
+
+\pagebreakNum
+
 {% endfor %}
 
-{# ####################
+{# ##############################################################
+   # Plant list: alphabetical
+   ############################################################## #}
+<div class='spellList'>
+
+{% for letter, plants in plants_by_letter.items() %}
+##### {{ letter }}
+{% for plant in plants %}
+- [{{ plant.name }}](#p{{ plant.page }})
+{% endfor %}
+{% if letter in ['E', 'N', 'V'] %}
+
+</div>
+
+\pagebreakNum
+
+<div class='spellList'>
+{% endif %}
+
+{% endfor %}
+</div>
+
+\pagebreakNum
+
+{# ##############################################################
    # Plant list: by terrain
-   #################### #}
+   ############################################################## #}
 <div class='wide' style="text-align: center">
+
 # Appendix A: Plants By Terrain
 </div>
 
 <div class='toc wide' style='column-count:3'>
+
 {% for region, plants in plants_by_region.items() %}
 - ### {{ region }}
   {% for plant in plants %}
-  - [<span>{{ plant.page }}</span><span>{{ plant.name }} ({{ plant.rarity_symbol }})</span>](#p{{ plant.page }})
+  - [<span>{{ plant.page }}</span><span>{{ plant.name }} ({{ plant.rarity_symbol }})</span>](#p{{ plant.page }})  
     {% if (plant.name == 'Marjoram' and region == 'City') or
           (plant.name == 'Belan' and region == 'Desert') or
           (plant.name == 'Kingsfruit' and region == 'Forest') or
@@ -330,6 +371,7 @@ ___
           (plant.name == 'Pondstone Tree' and region == 'Swamp') or
           (plant.name == 'Dragontongue Mushrooms' and region == 'Underdark')
     %}
+
 - ### {{ region }} (continued)
     {% endif %}
     {% if (plant.name == 'Blueleaf' and region == 'Forest') or
@@ -338,26 +380,30 @@ ___
           (plant.name == 'Maruera' and region == 'River')
     %}
 </div>
-<div class='pageNumber auto'></div>
-\page
+
+\pagebreakNum
+
 <div class='toc wide' style='column-count:3'>
+
 - ### {{ region }} (continued)
     {% endif %}
   {% endfor %}
 {% endfor %}
 </div>
-<div class='pageNumber auto'></div>
-\page
 
-{# ####################
+\pagebreakNum
+
+{# ##############################################################
    # Plant list: by rarity
-   #################### #}
+   ############################################################## #}
 <div class='wide' style="text-align: center">
+
 # Appendix B: Plants By Rarity
 </div>
 
 <div class='toc wide' style='column-count:3'>
 {% for rarity, plants in plants_by_rarity.items() %}
+
 - ### {{ rarity }}
   {% for plant in plants %}
   - [<span>{{ plant.page }}</span><span>{{ plant.name }} ({% for region in plant.Regions %}{{ region[:3] }}.{% if not loop.last %}, {% endif %}{% endfor%})</span>](#p{{ plant.page }})
@@ -368,6 +414,7 @@ ___
           (plant.name == 'Gylvir' and rarity == 'Rare') or
           (plant.name == 'Lizuara' and rarity == 'Legendary')
     %}
+
 - ### {{ rarity }} (continued)
     {% endif %}
     {% if (plant.name == 'Devilweed' and rarity == 'Common') or
@@ -375,9 +422,11 @@ ___
           (plant.name == 'Thelmallow Flower' and rarity == 'Very Rare')
     %}
 </div>
-<div class='pageNumber auto'></div>
-\page
+
+\pagebreakNum
+
 <div class='toc wide' style='column-count:3'>
+
 - ### {{ rarity }} (continued)
     {% endif %}
   {% endfor %}

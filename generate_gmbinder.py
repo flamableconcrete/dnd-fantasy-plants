@@ -318,7 +318,7 @@ def parse_description():
                                           stupid_entry, se_start, se_len_extra_info, letter_end)
 
         with open(plant_info_v2_json, 'w') as outfile:
-            json.dump(data, outfile, indent=4)
+            json.dump(data, outfile, indent=4, sort_keys=True)
 
 
 def print_plant_info():
@@ -377,7 +377,7 @@ def generate_gmbinder_markdown():
 
     # pprint(plants_for_table_entries)
 
-    pages_before_plant_entries = 6
+    pages_before_plant_entries = 16
     header_height = 5  # equivalent # of lines for plant name, location, rarity
     footer_height = 1  # equivalent # of lines after entry
     lines_available_per_column = 60
@@ -435,10 +435,10 @@ def generate_gmbinder_markdown():
             entry['table_die_entry'] = None
 
             # Manually give descriptions line breaks to make content fit on page
-            if plant == 'Darmanzar Stalk':
-                entry['Description'] = entry['Description'].replace('Living characters', '\n\nLiving characters')
-            if plant == 'Hidden Hibiscus':
-                entry['Description'] = entry['Description'].replace('Bloom colors', '\n\nBloom colors')
+            # if plant == 'Darmanzar Stalk':
+            #     entry['Description'] = entry['Description'].replace('Living characters', '\n\nLiving characters')
+            # if plant == 'Hidden Hibiscus':
+            #     entry['Description'] = entry['Description'].replace('Bloom colors', '\n\nBloom colors')
 
             # manually deal with the 4 "special" plants
             if plant == 'Alil':
@@ -535,8 +535,11 @@ def generate_gmbinder_markdown():
 
                 die_entries = get_die_entries(num_plants, die_size)
 
-                # for plant in plants_for_table_entries[region][rarity]['plants']:
-                #     plant['table_die_entry'] = die_entries.get()
+                for x in range(num_plants):
+                    plants_for_table_entries[region][rarity]['plants'][x] = plants_for_table_entries[region][rarity]['plants'][x].copy()
+                    plants_for_table_entries[region][rarity]['plants'][x]['table_die_entry'] = die_entries[x]
+                    if plants_for_table_entries[region][rarity]['plants'][x]['name'] == 'Mistletoe':
+                        print(f'Mistletoe: {die_entries[x]}')
 
         # just printing some debug stuff here
         for region, region_entries in plants_by_region.items():
@@ -573,38 +576,25 @@ def get_die_entries(num_plants, die_size):
 
     die_entries = []
     table_increments = get_table_increments(num_plants, die_size)
+    # print(table_increments)
 
     if num_plants == die_size:
         die_entries = [x + 1 for x in range(num_plants)]
     elif num_plants < die_size:
-        hyphen_entries = die_size - num_plants
-        if hyphen_entries > num_plants:
-            hyphen_entries = num_plants
-        hyphen_entries_counter = hyphen_entries
-        entries_that_have_hyphens_now = 0
-
-        for x in range(1, num_plants+1):
-
-            start = x + entries_that_have_hyphens_now
-            end = start + table_increments[x - 1]
-
-            if hyphen_entries_counter > 0:
-                start = x + entries_that_have_hyphens_now
-                end = start + table_increments[x-1]
-
-                die_entries.append(f'{start}-{end}')
-
-                hyphen_entries_counter = hyphen_entries_counter - 1
-                entries_that_have_hyphens_now = entries_that_have_hyphens_now + 1
+        previous_high = 0
+        for x in range(num_plants):
+            inc = table_increments[x]
+            start = previous_high + 1
+            end = start + inc
+            if start == end:
+                die_entries.append(start)
             else:
-                die_entries.append(x + hyphen_entries)
+                die_entries.append(f'{start}-{end}')
+            previous_high = end
 
     else:
-        print(f'num_plants ({num_plants}) needs to be less than die size ({die_size})!')
+        # print(f'num_plants ({num_plants}) needs to be less than die size ({die_size})!')
         return None
-
-    if 20 < num_plants < 50:
-        pprint(die_entries)
 
     return die_entries
 
