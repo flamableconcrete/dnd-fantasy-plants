@@ -8,7 +8,7 @@ import sys
 
 from pathlib import Path
 from pprint import pprint
-from queue import Queue
+from textwrap import dedent
 
 import jinja2
 
@@ -377,7 +377,7 @@ def generate_gmbinder_markdown():
 
     # pprint(plants_for_table_entries)
 
-    pages_before_plant_entries = 16
+    pages_before_plant_entries = 21
     header_height = 5  # equivalent # of lines for plant name, location, rarity
     footer_height = 1  # equivalent # of lines after entry
     lines_available_per_column = 60
@@ -413,12 +413,18 @@ def generate_gmbinder_markdown():
             homebrewery_height = header_height + description_height + footer_height
             if plant == 'Alil':
                 homebrewery_height += 40
+            if plant == 'Cow-Wheat':
+                homebrewery_height += 15
             if plant == 'Hangman Tree':
                 homebrewery_height += 40
             if plant == 'Lizuara':
                 homebrewery_height += 15
             if plant == 'Marsh Maw':
-                homebrewery_height += 50
+                homebrewery_height += 52
+            if plant == 'Midnight Coneflower':
+                homebrewery_height += 30
+            if plant == 'Stygian Pumpkin':
+                homebrewery_height += 15
             current_page_height += homebrewery_height
 
             if current_page_height > page_height:
@@ -444,17 +450,30 @@ def generate_gmbinder_markdown():
             if plant == 'Alil':
                 entry['Extra info'] = '''| d10 | Psionic Ability |
 |:----:|:-------------|
-| 1  | Temporary intelligence bonus of 1. |
+| 1  | Temporary intelligence bonus of +1. |
 | 2  | Precision Mind: you become skilled at reading your foes. With this capability, you can call upon your gift to strike with increased accuracy. You add your Intelligence modifier (minimum 1) to an attack roll, after the roll, but before the announcement of the result. You can use this feature a number of times equal to your Intelligence modifier (minimum of 1). |
 | 3  | Immunity to psychic damage. |
 | 4  | You cannot be charmed or frightened for the duration. |
 | 5  | You may take two actions during each of your turns for the duration. |
 | 6  | You may add 1d6 psychic damage to any attack you make of 5 or less damage. |
-| 7  | You project a field of improbability around yourself, creating a fleeting protective shell, gaining  +4 temporary bonus to AC. |
-| 8  | You may, as a bonus action once per combat, instantly deliver a massive assault on the thought pathways of any one creature, dealing 1d10 points of damage to it. |
-| 9  | You heal another creature\u2019s wounds, transferring some of its damage to yourself. When you manifest this power, you can heal as much as 2d10 points of damage to an ally by taking half of this damage to yourself. |
-| 10 | You may gain proficiency in one extra skill until the long rest or proficiency with one tool or instrument permanently. |
-            '''
+| 7  | You project a field of improbability around yourself, creating a fleeting protective shell, gaining a +4 temporary bonus to AC for 3 rounds. Only usable once in a long-rest period. |
+| 8  | You may, as a bonus action once per combat, instantly deliver a massive assault on the thought pathways of any one creature, dealing 1d10 points of psychic damage to it. |
+| 9  | You heal another creature\u2019s wounds, transferring some of its damage to yourself. When you manifest this power as a full action in combat, you can heal as much as 2d10 points of damage to an ally by taking half of this damage to yourself. |
+| 10 | You may gain proficiency in one extra skill until the long rest or proficiency with one tool or instrument for 1d6 days. |
+'''
+
+            if plant == 'Cow-Wheat':
+                entry['Extra info'] = '''> ##### Drunkenness
+> | Step | Effect |
+> |:----:|:-------------|
+> | 1  | -1 to Intelligence until sober. |
+> | 2  | -1 to Wisdom until sober. |
+> | 3  | -1 to Charisma until sober. |
+> | 4  | -1 to Dexterity until sober. |
+> | 5  | Disadvantage on all skill checks and attacks. |
+> | 6  | Disadvantage on all saves. |
+> | 7  | Blacks out for 1d4 hours. |
+'''
 
             if plant == 'Hangman Tree':
                 entry['Description'] = entry['Description'].replace('The main body', '\n\nThe main body')
@@ -476,14 +495,14 @@ def generate_gmbinder_markdown():
 > - **Senses** blindsight 90 ft., passive Perception 8
 > - **Challenge** 8 (3,800 XP)
 > ___
-
+>
 > ### Actions
 > ***Multiattack.*** The hangman tree may make three *constrict* attacks per turn.
 >
-> ***Constrict.*** *Melee Weapon Attack:* +9 to hit, reach 10 ft., one target. *Hit* 11 (1d8 + 5) bludgeoning damage, and a Large or smaller target is grappled (escape DC 16).
+> ***Constrict.*** *Melee Weapon Attack:* +9 to hit, reach 10 ft., one target. *Hit* 10 (1d8 + 5) bludgeoning damage, and a Large or smaller target is grappled (escape DC 16).
             '''
 
-            if plant == 'Lizuara':
+            if plant in ['Lizuara', 'Stygian Pumpkin']:
                 extra_info = ''
                 for line in entry['Extra info']:
                     extra_info = extra_info + '\n\n' + line
@@ -503,17 +522,23 @@ def generate_gmbinder_markdown():
 >|16 (+3)|12 (+1)|14 (+2)|4 (-3)|10 (+0)|6 (-2)|
 >___
 > - **Damage Resistances** bludgeoning
+> - **Damage Vulnerabilities** fire
 > - **Condition Immunities** blinded, deafened, frightened, prone
-> - **Senses** blindsight 60 ft., passive Perception 10
-> - **Challenge** 4 (1,100 XP)
+> - **Senses** blindsight 60 ft. (blind beyond this radius), passive Perception 10
+> - **Challenge** 6 (2,300 XP)
 > ___
 > ### Actions
 > ***Multiattack.*** The marsh maw can make two *constrict* attacks and a *bite* attack.
 >
 > ***Constrict.*** *Melee Weapon Attack:* +5 to hit, reach 10 ft., one target. *Hit* 11 (2d6 + 3) bludgeoning damage, and a Large or smaller target is grappled (escape DC 14). Until this grapple ends, the target is restrained, and the marsh maw cannot constrict another target.
 >
-> ***Bite.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one Medium or smaller target. Hit: 11 (2d6+3) piercing damage, and a target is blinded, restrained, and unable to breathe. The target must succeed on a DC 14 Cons. Save at the start of each of the marsh maw’s turns or take 11 (2d8+3) bludgeoning damage. If the marsh maw moves, the engulfed target moves with it. The marsh maw is unable to use the bite attack until it releases the held creature.
-                '''
+> ***Bite.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one Medium or smaller target. Hit: 11 (2d6+3) piercing damage, and a target is blinded, restrained, and unable to breathe. The target must succeed on a DC 14 Con. Save at the start of each of the marsh maw’s turns or take 11 (2d8+3) bludgeoning damage. If the marsh maw moves, the engulfed target moves with it. The marsh maw is unable to use the bite attack until it releases the held creature.
+'''
+
+            if plant == 'Midnight Coneflower':
+                entry['Extra info'] = '''If the powder of the Midnight Cone petals is combined with the Midnight Cone’s Nectar, the two can be mixed to create a sweet smelling, sweet tasting syrup that becomes inert when ingested. However, this process creates a powerful, delayed-response contact poison called Goodbye Kiss. Typical application sees the flower’s pure nectar applied to the assassin’s lips as a protective barrier followed by an application of the Goodbye Kiss syrup, and then the assassin giving the target a kiss. A creature subjected to this poison suffers no effect until the stroke of midnight. If the poison has not been neutralized before then, the creature must succeed on a DC 18 Constitution saving throw vs. poison, taking 13d6 poison damage on a failed save, or half as much damage on a successful one.
+
+In addition, the Midnight Cone Flower’s petals can be made into Midnight Tears, an equally potent ingested poison. Many nobles have died peacefully in their sleep while their loved ones lay nearby, falling to the effects of a dose of Midnight Tears administered by a stealthy assassin many hours before. The only side-effect of the poison, that can very easily be missed in investigation, is the presence of the white, pearlescent tears that the poison is named for, seeping from the recipient’s eyes as if they were crying in their sleep. Again, a creature subjected to this poison suffers no effect until the stroke of midnight. If the poison has not been neutralized before then, the creature must succeed on a DC 18 Constitution saving throw vs. poison, taking 13d6 poison damage on a failed save, or half as much damage on a successful one.'''
 
             pages[page_num].append(entry)
             plants_by_letter[first_letter].append(entry)
