@@ -312,9 +312,9 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 {% for plant in plants %}
 
 ### {{ plant.name }}
-*{% for region in plant.Regions %}[{{ region }}](#p106){{ ", " if not loop.last }}{% endfor %}*
+*{% for region in plant.Regions %}[{{ region }}](#p{{ index_pages[region] }}){{ ", " if not loop.last }}{% endfor %}*
 ___
-- **Rarity:** [{{ plant.Rarity }}](#p111)
+- **Rarity:** [{{ plant.Rarity }}](#p{{ index_pages[plant.Rarity] }})
 
 {{ plant.Description }}
 

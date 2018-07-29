@@ -590,13 +590,36 @@ In addition, the Midnight Cone Flower’s petals can be made into Midnight Tears
                 die_size = plants_for_table_entries[region][rarity]["die size"]
                 print(f'    {rarity}: {len(plant_table_entries)} (d{die_size})')
 
+        index_pages = {
+            'Arctic': '107',
+            'City': '107',
+            'Coastal': '107',
+            'Desert': '107',
+            'Forest': '107',
+            'Jungle': '108',
+            'Plain': '109',
+            'Mountain': '110',
+            'Ocean': '111',
+            'River': '111',
+            'Swamp': '111',
+            'Underdark': '111',
+            'Other': '112',
+            'Very Common': '113',
+            'Common': '113',
+            'Uncommon': '114',
+            'Rare': '115',
+            'Very Rare': '115',
+            'Legendary': '116'
+        }
+
         context = {
             'title': 'Broderick’s Compendium: Fantasy Plants Across the Realms',
             'plants_by_letter': plants_by_letter,
             'plants_by_region': plants_by_region,
             'plants_by_rarity': plants_by_rarity,
             'plants_for_table_entries': plants_for_table_entries,
-            'pages': pages
+            'pages': pages,
+            'index_pages': index_pages
         }
 
         output_file = OUTPUT_DIR / "generated-gmbinder.txt"
@@ -615,10 +638,6 @@ In addition, the Midnight Cone Flower’s petals can be made into Midnight Tears
             result = render(template, context)
             with codecs.open(generated_file, "w", encoding="utf-8") as page:
                 page.write(result)
-
-        result = render(template_file, context)
-        with codecs.open(output_file, "w", encoding="utf-8") as page:
-            page.write(result)
 
 
 def find_die_size(num_plants):
