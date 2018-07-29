@@ -441,12 +441,28 @@ def generate_gmbinder_markdown():
             entry['table_die_entry'] = None
 
             # Manually give descriptions line breaks to make content fit on page
-            # if plant == 'Darmanzar Stalk':
-            #     entry['Description'] = entry['Description'].replace('Living characters', '\n\nLiving characters')
-            # if plant == 'Hidden Hibiscus':
-            #     entry['Description'] = entry['Description'].replace('Bloom colors', '\n\nBloom colors')
+            phrase = None
+            if plant == 'Bodhi Tree':
+                phrase = 'All the while'
+            elif plant == 'Darkanda Bush':
+                phrase = 'When ground up'
+            elif plant == 'Elder Tree':
+                phrase = 'Building a door'
+            elif plant == 'Maraga Flowers':
+                phrase = 'If the target creature'
+            elif plant == 'Nettle':
+                phrase = 'Aside from its'
+            elif plant == 'Saddilia':
+                phrase = 'The effect lasts'
+            elif plant == 'Silver Tassel Toadstool':
+                phrase = 'The poison is introduced'
+            elif plant == 'Windwhip Tree':
+                phrase = 'When the wind'
 
-            # manually deal with the 4 "special" plants
+            if phrase:
+                entry['Description'] = entry['Description'].replace(phrase, f'\n\n{phrase}')
+
+            # manually deal with the 6 "special" plants
             if plant == 'Alil':
                 entry['Extra info'] = '''| d10 | Psionic Ability |
 |:----:|:-------------|
@@ -582,9 +598,25 @@ In addition, the Midnight Cone Flower’s petals can be made into Midnight Tears
             'plants_for_table_entries': plants_for_table_entries,
             'pages': pages
         }
-        result = render(template_file, context)
 
-        # print(result)
+        output_file = OUTPUT_DIR / "generated-gmbinder.txt"
+
+        templates = {
+            TEMPLATE_DIR / 'gmbinder.md.j2': OUTPUT_DIR / "generated-gmbinder.txt",
+            TEMPLATE_DIR / 'gmbinder-front-matter.md.j2': OUTPUT_DIR / "generated-gmbinder-front-matter.txt",
+            TEMPLATE_DIR / 'gmbinder-tables.md.j2': OUTPUT_DIR / "generated-gmbinder-tables.txt",
+            TEMPLATE_DIR / 'gmbinder-entries.md.j2': OUTPUT_DIR / "generated-gmbinder-entries.txt",
+            TEMPLATE_DIR / 'gmbinder-appendix-a-terrain.md.j2': OUTPUT_DIR / "generated-gmbinder-appendix-a-terrain.txt",
+            TEMPLATE_DIR / 'gmbinder-appendix-b-rarity.md.j2': OUTPUT_DIR / "generated-gmbinder-appendix-b-rarity.txt",
+            TEMPLATE_DIR / 'gmbinder-index.md.j2': OUTPUT_DIR / "generated-gmbinder-index.txt",
+        }
+
+        for template, generated_file in templates.items():
+            result = render(template, context)
+            with codecs.open(generated_file, "w", encoding="utf-8") as page:
+                page.write(result)
+
+        result = render(template_file, context)
         with codecs.open(output_file, "w", encoding="utf-8") as page:
             page.write(result)
 
@@ -639,8 +671,8 @@ def get_table_increments(num_plants, die_size):
     return foo
 
 
-def render(tpl_path, context):
-    path, filename = os.path.split(tpl_path)
+def render(template, context):
+    path, filename = os.path.split(template)
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(path or './'))
     env.trim_blocks = True
     env.lstrip_blocks = True

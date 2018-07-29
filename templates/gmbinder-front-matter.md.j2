@@ -1,0 +1,237 @@
+<style>
+  /*Remove footer*/
+  .phb:after {
+    content: "";
+  }
+
+  a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .spellList a,
+  .phb p em a,
+  .phb ul li a
+  {
+    text-decoration: none;
+  }
+
+  .phb table tbody tr td {
+      padding: .10em .1em;
+  }
+
+  .phb table tbody tr:nth-child(odd) {
+    background-color: #efacb8;
+  }
+
+  .toc {
+    column-count:4;
+  }
+
+  .toc a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .toc li span:nth-child(2){	/*Allow dot leaders to fill remaining space but not overlap*/
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .toc li span:nth-child(2):after{
+    font-family		: BookSanity;	/*Remove any header styles from dot leaders*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    content:
+      " ........................................"
+      "........................................."
+      ".........................................";
+  }
+
+  .toc li span:first-child{
+    float: right;
+    font-family		: BookSanity;	/*Remove any header styles from page numbers*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    margin-left		: 1px;	/*Leaves a small space between page numbers and dot leaders*/
+  }
+
+/*Special cases for headings*/
+  .toc li h3 span:nth-child(2):after{
+  	content: " ";						/*Remove dot leaders on h3*/
+  }
+
+  .toc li h3 {
+    margin-bottom: 4px !important;		/*Special spacing for h3*/
+    margin-top: 10px !important;
+    line-height: initial !important;	/*For some reason Multi-line h3 line spacing changed*/
+  }
+
+  .toc li h3 span:first-child{
+  	line-height: 1.8em !important;  	/*Line page numbers up with Multi-line h3 better*/
+  }
+
+  .toc ul ul {
+  	margin-left: 10px !important;		/*Original lists intented too much*/
+  }
+
+  .toc>ul>li {
+    margin-bottom: initial !important;	/*margin for list items needs to be removed or 0*/
+  }
+
+</style>
+
+<img
+  src='https://img00.deviantart.net/9b00/i/2011/267/2/2/forest_by_superkusokao-d4asqef.png'
+  style='position:absolute;top:0px;left:0px;width:100%'/>
+
+<img
+  src='https://www.gmbinder.com/images/YRAeIcj.png'
+  style='position:absolute;left:320px;top:10px;width:20%'/>
+
+<img
+  src='https://raw.githubusercontent.com/flamableconcrete/dnd-fantasy-plants/master/img/cover-page-title-2.png'
+  style='position:absolute;top:60px;left:10px;width:816px'/>
+
+<img
+  src='https://www.gmbinder.com/images/SGYtcP2.png'
+  style='position:absolute;top:220px;left:85px;width:80%'/>
+
+<img
+  src='https://www.gmbinder.com/images/UNR8ilF.png'
+  style='position:absolute;bottom:180px;left:0px;width:50%'/>
+
+<img
+  src='https://www.gmbinder.com/images/qp4gdn0.png'
+  style='position:absolute;bottom:30px;left:80px;width:700px'/>
+
+\pagebreakNum
+
+<div class="wide" style="text-align: center">
+
+# Broderick's Compendium
+# Fantasy Plants Across the Realms
+
+</div>
+
+## Credits
+
+**Created by [/u/neurotoxicnihilist](https://www.reddit.com/user/neurotoxicnihilist)**
+**Edited by [/u/flamableconcrete](https://www.reddit.com/user/flamableconcrete)**
+**Current Version:** 2.0
+**Cover image:** Forest by [superkusokao](https://superkusokao.deviantart.com/)
+
+##### Artwork
+
+pg. 3: Forest Glade by [nele-diel](https://nele-diel.deviantart.com/)
+
+## Source Materials
+
+**[Narcosa](https://www.drivethrurpg.com/product/137248/Narcosa)** by Neoplastic Press  
+**[Plants & Fungi of the Realms](https://www.wargamevault.com/product/177331/Plants-and-Fungi-of-the-Realms)** by B. Simon Smith  
+**[Magical Plants and Where to Find Them](https://www.giantitp.com/forums/showthread.php?479663-Magical-Plants-and-Where-to-Find-them)** by Jowgen on the Giant in the Playground Forums  
+**[The Herbalist’s Guide](https://www.republicofnewhome.org/lair/games/herb5/herb5illo1.html#contents)** by Shawn Hately, 1997  
+**[Swordfish Islands: A System Neutral Hexcrawl for Table Top RPGs](https://www.swordfishislands.com/search/label/plants)** by Jacob Hurst  
+**[Mercator’s Guide to Herbs](https://www.adnddownloads.com/en/resource/mercators-guide-to-herbs)** by Mercator  
+**[Herbalism & Alchemy Fan-Made Supplement](https://www.reddit.com/r/dndnext/comments/3w1log/5e_herbalism_alchemy_v12_updates_fanmade)** by reddit user /u/dalagrath  
+**[A Collection of Poisons](https://www.drivethrurpg.com/product/138122/A-Collection-of-Poisons)** by Assassin Games  
+**[Poisons for 5th Edition](https://www.dmsguild.com/product/204711/Poisons-for-5th-Edition)** by Matthew Eckart  
+**[Herbalism in Middle-Earth for D&D 5](https://www.zerohitpoints.com/Middle-Earth-for-DnD-5/Herbalism)** by Zer0 Hit Points  
+**[Coins and Scrolls: OSR Plants, Forests, Gardens, and Dryads](https://coinsandscrolls.blogspot.ca/2017/05/osr-plants-forests-gardens-and-dryads.html)** by Skerples  
+**[Plant Folklore: Myths, Magic, and Superstition](https://gardenerspath.com/plants/plant-folklore)** by Sheila Muckle  
+**[Plant Myths and Legends](https://bhort.bh.cornell.edu/conservatory/cpage3.html)** by Rebecca Rose Leitten  
+**[Sacred Plants in Folklore, Religions, Myths and Magick](https://www.anniesremedy.com/folklore.php)** from Annie’s Remedy  
+**[Mythology & Folklore](https://treesforlife.org.uk/forest/mythology-folklore)** by Trees for Life  
+**[Plant Meanings, Symbolism, Folklore and History](https://www.powerflowers.com/blog/plant_meanings_symbolism_folklore_and_history_ii)** by Power Flowers  
+
+<div style='margin-top:30px'></div>
+
+With a lot of creative license and updating from me.  
+[ursablindness.tumblr.com](https://ursablindness.tumblr.com)  
+/u/NeurotoxicNihilist  
+[paypal.me/MasonBroderick](https://paypal.me/MasonBroderick)  
+
+**<div style='margin-top:35px'></div>**
+
+> If you can, please support B. Simon Smith, his guide is only $5.95 for the PDF version and has some stuff I didn’t include as well as more lore, backstory, and a kick-ass alchemy system for playing with legitimate preparation of the herbs in question. It’s pretty cheap and he put a lot of work in.
+
+\columnbreak
+
+## Acknowledgements
+
+**/u/tzimon** or B. Simon Smith for being so cool about my use of his plants for this guide  
+**/u/HaegrTheMountain** for his progress on the interactive website for online access to these plants that he’s been working on.  
+**/u/mrDorgat** for his [suggestion](https://www.reddit.com/r/DnD/comments/7rb6rj/i_have_put_countless_hours_into_a_roughly_175/dsw91bl/?context=3) about plants rooted more in folklore of our own world and for trying to incorporate regular plants that might just be folklore based.  
+**/u/Soren015**, **/u/Orbitalmechanix**, **/u/SamuraiHealer**, and **/u/ySomic** for creating several different quick-access Excel/Sheets Randomization tools for this guide. ([ySomic's](https://docs.google.com/spreadsheets/d/1hrH0caYIqPXFN4dwe-lsRifVCvyr71gVdY6ROTQQ2QA/edit#gid=267321854) and [Soren015's](https://docs.google.com/spreadsheets/d/1I5PsXSSyjfx8NKVYhPKZNXd_YmFpTb47de19m8uNBgc/edit#gid=430676484)).  
+**/u/vastowen** for his [contribution](https://www.reddit.com/r/DnD/comments/7rb6rj/i_have_put_countless_hours_into_a_roughly_175/dswnxmv/) to the randomization tools  
+**/u/Sevrenloreat** for [recommending](https://www.reddit.com/r/DnD/comments/7rb6rj/i_have_put_countless_hours_into_a_roughly_175/duidra2/?context=3) the [Coins and Scrolls blog](https://coinsandscrolls.blogspot.com/2017/05/osr-plants-forests-gardens-and-dryads.html)  
+**/u/flamableconcrete** for coding an easy access homebrew-style guide to make things look fancy  
+**/u/CapnBeard** for working on a homebrew-style cover and design that looks hella sweet.  
+**/u/SilverBriar** for creating the first [color-coordinated excel doc for rarities](https://docs.google.com/spreadsheets/d/17ejtNgg13HCNMxI6eYBaGYDXAaYPBrnnhEvf8-AT1YU/edit?usp=sharing) that I tweaked for my own guide  
+**/u/SouthpawSoldier** for his huge contribution/suggestion of some other source materials for me to look at including Herbalism & Alchemy Fan-Made Supplement, A Collection of Poisons, and Poisons for Fifth Edition  
+**/u/mgraunk** for his reorganization/rehash of the guide  
+**/u/D1G1T4LM0NK3Y** for his homebrew alchemy/discovery system he created specifically for this guide  
+**/u/NecroWabbit** for offering to illustrate the work. Not sure how far they’ve gotten, but super awesome idea either way  
+**/u/QuillianCreole** and **/u/MmmVomit** for [suggestions](https://www.reddit.com/r/DnD/comments/7rb6rj/i_have_put_countless_hours_into_a_roughly_175/dsvz5d5) about [how to balance things](https://www.reddit.com/r/DnD/comments/7rb6rj/i_have_put_countless_hours_into_a_roughly_175/dsvqlp7) and make sure they’re updated  
+The two mysterious redditors who gifted me gold? I was not expecting that at all, but I very much appreciate it.  
+And literally everyone that left positive comments and encouraging words on the previous posts. This has been such a fulfilling process because of everyone on here who has been so nice and welcoming to this idea! Thank you all!  
+
+**<div class='descriptive'>**
+##### Editor's Note
+Okay, editor might be a strong word, but I just wanted to pipe in and say that I took the Microsoft Word document provided by /u/neurotoxicnihlist, parsed it with Python, spit it out in JSON, and converted it to Markdown. You can see all this effort at the following links. Enjoy!  
+**Code:** [Github](https://github.com/flamableconcrete/dnd-fantasy-plants)  
+**Source:** [Homebrewery](https://homebrewery.naturalcrit.com/share/Hym27DBLM)  
+**Template Assets:** [Imgur](https://www.gmbinder.com/images/a/0qUvZ)  
+
+</div>
+
+\pagebreakNum
+
+<div style='margin-top:900px'></div>
+
+# Scavenging Rules
+Magical plants can be found in many different terrains, but that doesn't mean that adventurers automatically can identify what is around them. The DM would select a table below based on the abundance (or lack thereof) of plants in the adventurer's environment. A player who wishes to scavenge for plants may make a nature check. 10-14 is mildly successful, 15-19 is successful, 20+ is very successful. This would mean that for a mild success, roll on the table with disadvantage, for a success, roll on the table to see what kind of plant you get, and for very successful roll with advantage.
+
+In most cases, 100 will also count as Very Rare, since Legendary plants should only be in one or two places around the world, so make sure the setting is right to get a Legendary plant.
+
+\columnbreak
+
+##### Table 1-1: Scavenging Plants - Easy
+| d100 | Rarity of plant scavenged |
+|:----:|:-------------|
+| 1-29  | Very Common |
+| 30-57 | Common |
+| 58-79 | Uncommon |
+| 80-91 | Rare |
+| 92-99 | Very Rare |
+| 100   | Very Rare or Legendary |
+
+##### Table 1-2: Scavenging Plants - Medium
+| d100 | Rarity of plant scavenged |
+|:----:|:-------------|
+| 1-53  | Very Common |
+| 54-79 | Common |
+| 80-91 | Uncommon |
+| 92-96 | Rare |
+| 97-99 | Very Rare |
+| 100   | Very Rare or Legendary |
+
+##### Table 1-3: Scavenging Plants - Hard
+| d100 | Rarity of plant scavenged |
+|:----:|:-------------|
+| 1-55  | Very Common |
+| 56-81 | Common |
+| 82-93 | Uncommon |
+| 94-98 | Rare |
+| 99    | Very Rare |
+| 100   | Very Rare or Legendary |
+
+<img
+  src='https://orig00.deviantart.net/aa83/f/2014/010/4/2/forest_glade_by_nele_diel-d71mcxd.jpg'
+  style='position:absolute;top:0px;left:0px;width:816px' />
+
+<img
+  src='https://www.gmbinder.com/images/qGRSC1J.png'
+  style='position:absolute;top:0px;left:0px;width:916px' />
