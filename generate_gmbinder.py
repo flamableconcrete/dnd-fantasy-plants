@@ -375,8 +375,6 @@ def generate_gmbinder_markdown():
             plants_for_table_entries[region][rarity] = collections.OrderedDict({'die size': None,
                                                                                 'plants': []})
 
-    # pprint(plants_for_table_entries)
-
     pages_before_plant_entries = 21
     header_height = 5  # equivalent # of lines for plant name, location, rarity
     footer_height = 1  # equivalent # of lines after entry
@@ -579,16 +577,14 @@ In addition, the Midnight Cone Flower’s petals can be made into Midnight Tears
                 for x in range(num_plants):
                     plants_for_table_entries[region][rarity]['plants'][x] = plants_for_table_entries[region][rarity]['plants'][x].copy()
                     plants_for_table_entries[region][rarity]['plants'][x]['table_die_entry'] = die_entries[x]
-                    if plants_for_table_entries[region][rarity]['plants'][x]['name'] == 'Mistletoe':
-                        print(f'Mistletoe: {die_entries[x]}')
 
         # just printing some debug stuff here
-        for region, region_entries in plants_by_region.items():
-            print(f'{region} ({len(region_entries)})')
-            for rarity, entries in plants_by_rarity.items():
-                plant_table_entries = [x for x in plants_by_rarity[rarity] if region in x['Regions']]
-                die_size = plants_for_table_entries[region][rarity]["die size"]
-                print(f'    {rarity}: {len(plant_table_entries)} (d{die_size})')
+        # for region, region_entries in plants_by_region.items():
+        #     print(f'{region} ({len(region_entries)})')
+        #     for rarity, entries in plants_by_rarity.items():
+        #         plant_table_entries = [x for x in plants_by_rarity[rarity] if region in x['Regions']]
+        #         die_size = plants_for_table_entries[region][rarity]["die size"]
+        #         print(f'    {rarity}: {len(plant_table_entries)} (d{die_size})')
 
         index_pages = {
             'Arctic': '107',
@@ -622,22 +618,36 @@ In addition, the Midnight Cone Flower’s petals can be made into Midnight Tears
             'index_pages': index_pages
         }
 
-        output_file = OUTPUT_DIR / "generated-gmbinder.txt"
+        template = TEMPLATE_DIR / 'gmbinder.md.j2'
+        generated_file = OUTPUT_DIR / "generated-gmbinder.txt"
 
-        templates = {
-            TEMPLATE_DIR / 'gmbinder.md.j2': OUTPUT_DIR / "generated-gmbinder.txt",
-            TEMPLATE_DIR / 'gmbinder-front-matter.md.j2': OUTPUT_DIR / "generated-gmbinder-front-matter.txt",
-            TEMPLATE_DIR / 'gmbinder-tables.md.j2': OUTPUT_DIR / "generated-gmbinder-tables.txt",
-            TEMPLATE_DIR / 'gmbinder-entries.md.j2': OUTPUT_DIR / "generated-gmbinder-entries.txt",
-            TEMPLATE_DIR / 'gmbinder-appendix-a-terrain.md.j2': OUTPUT_DIR / "generated-gmbinder-appendix-a-terrain.txt",
-            TEMPLATE_DIR / 'gmbinder-appendix-b-rarity.md.j2': OUTPUT_DIR / "generated-gmbinder-appendix-b-rarity.txt",
-            TEMPLATE_DIR / 'gmbinder-index.md.j2': OUTPUT_DIR / "generated-gmbinder-index.txt",
-        }
+        pages_dir = OUTPUT_DIR / 'pages'
+        pages_dir.mkdir(parents=True, exist_ok=True)
 
-        for template, generated_file in templates.items():
-            result = render(template, context)
-            with codecs.open(generated_file, "w", encoding="utf-8") as page:
-                page.write(result)
+        result = render(template, context)
+        pages = result.split('\\pagebreakNum')
+        pages_per_file = 10
+        page_counter = 1
+
+        with codecs.open(TEMPLATE_DIR / 'gmbinder-css.md.j2', "r", encoding="utf-8") as css_file:
+            css_data = css_file.read()
+
+            for page in chunker(pages, pages_per_file):
+                end_page = page_counter + pages_per_file
+                page_file = OUTPUT_DIR / 'pages' / f'pages-{page_counter}-{end_page}.txt'
+                with codecs.open(page_file, "w", encoding="utf-8") as _file:
+                    _file.write(css_data)
+                    for page_string in page:
+                        _file.writelines('\\pagebreakNum')
+                        _file.write(page_string)
+                page_counter += pages_per_file
+
+        with codecs.open(generated_file, "w", encoding="utf-8") as _file:
+            _file.write(result)
+
+
+def chunker(seq, size):
+    return (seq[pos:pos + size] for pos in range(0, len(seq), size))
 
 
 def find_die_size(num_plants):
