@@ -1,0 +1,896 @@
+<style>
+  /*Remove footer*/
+  .phb:after {
+    content: "";
+  }
+
+  a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .spellList a,
+  .phb p em a,
+  .phb ul li a
+  {
+    text-decoration: none;
+  }
+
+  .phb table tbody tr td {
+      padding: .10em .1em;
+  }
+
+  .phb table tbody tr:nth-child(odd) {
+    background-color: #efacb8;
+  }
+
+  .toc {
+    column-count:4;
+  }
+
+  .toc a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .toc li span:nth-child(2){	/*Allow dot leaders to fill remaining space but not overlap*/
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .toc li span:nth-child(2):after{
+    font-family		: BookSanity;	/*Remove any header styles from dot leaders*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    content:
+      " ........................................"
+      "........................................."
+      ".........................................";
+  }
+
+  .toc li span:first-child{
+    float: right;
+    font-family		: BookSanity;	/*Remove any header styles from page numbers*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    margin-left		: 1px;	/*Leaves a small space between page numbers and dot leaders*/
+  }
+
+/*Special cases for headings*/
+  .toc li h3 span:nth-child(2):after{
+  	content: " ";						/*Remove dot leaders on h3*/
+  }
+
+  .toc li h3 {
+    margin-bottom: 4px !important;		/*Special spacing for h3*/
+    margin-top: 10px !important;
+    line-height: initial !important;	/*For some reason Multi-line h3 line spacing changed*/
+  }
+
+  .toc li h3 span:first-child{
+  	line-height: 1.8em !important;  	/*Line page numbers up with Multi-line h3 better*/
+  }
+
+  .toc ul ul {
+  	margin-left: 10px !important;		/*Original lists intented too much*/
+  }
+
+  .toc>ul>li {
+    margin-bottom: initial !important;	/*margin for list items needs to be removed or 0*/
+  }
+
+</style>
+
+
+
+
+### Crab-Apple
+*[City](#p107), [Forest](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A small, shrub-like tree that sprouts pink flowers in spring and summer, turning to small fruits resembling dwarf apples in the late summer and early fall. The fruits of Crab Apple can be pulped and used as a poultice for minor wounds and inflammations, and the bark can be used as a numbing agent if applied with alcohol. In addition, the leaves have some anti-bacterial properties when used in solution. Aside from its common uses, Crab-Apple is one of the plants mentioned in the Nine Herbs Charm, which is supposedly capable of curing any poison or disease.
+
+
+
+### Creeping Mangrove
+*[Swamp](#p111)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Growing along the edge of the swamps, their gnarled roots reach down into the brackish water, and their spindly branches reach into the sky. The branches are covered with large amounts of small oval shaped leaves. During warmer seasons the trees bud small hard fruits that drop off to float along the slight currents of a swamp. This species of mangroves has flourished in areas where others have perished, simply for their ability to slowly pull up roots and move to areas with more moisture or better alkalinity. The species is also relatively destructive, as the mangroves also have been known to uproot small trees and brush, or simply walk over them, smashing them down. Wood from these trees burns easily, even when sopping wet.
+
+
+
+### Crimson Ladies
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+This creeping vine is found on the sides of ruins and growing along the branches of trees. The vine itself is an odd shade of purple, and has wide green leaves. In the summer, the vine sprouts red flowers that resemble a woman wearing a large dress. The flowers that blossom on the vine can be steeped in hot water to make a poisonous tea called Crimson Tears. When Crimson Tears is ingested, the drinker must make a DC 15 Constitution saving throw or be blinded for 1d4+2 hours. During this time blood weeps from their eyes, and instead of seeing the world, they see horrific visions of things to come. After recovering from the visions, the character gains Advantage on a single skill roll utilized within the next day, as the visions gave them a brief glimpse of the outcome.
+
+
+
+
+\columnbreak
+
+### Crisp Chondrus
+*[Coastal](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A hardy, red algae that commonly washes up on sandy coasts and stays fresh for several hours. After consuming the algae, the creature regains 2d4 hit points and must make a DC 12 Cons. Save vs. poison. On a failed save, the creature is charmed by the first creature that speaks to the creature in a language in which they are proficient.
+
+
+
+### Cubeb
+*[Forest](#p107), [Swamp](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+A climbing, vine plant with broad leaves and spikes of several small, white flowers. Cubeb is commonly believed to be repulsive to demons, especially and virulently to incubi and succubi. Whether the plant actually works for this purpose is unknown, but recipes for incense designed to ward off the demons are commonly exchanged among the superstitious.
+
+
+
+### Culkas
+*[Coastal](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A broad-stemmed leafy plant sprouting small bunches of ovular leaves on 2 sides of the many stems. These stems can be cut to produce a milky-clear sap. Each application of Culkas sap will cure one square foot of sunburn.
+
+
+
+### Culumalda
+*[Forest](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+A short, gnarled tree growing to typically around 10 feet tall, Culumalda has golden-red foliage year-round and a smooth, shiny grey bark. When stripped from the trunk, this bark can be wetted and applied liberally to the skin and clothes, transferring the secnt of freshly turned earth. For 2 hours other creatures have disadvantage on attempts to detect the recipient by scent.
+
+
+
+### Dagmather
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+The spine of this plant must be brewed for one week in fresh water at the end of which time it may be drunk. If the preparation is successful, it will automatically heal any damage to a person’s cartilage that is capable of healing naturally.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Dahkra
+*[River](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+A reedy hollow grass that smells like sweet hay and corn, found growing near rivers in mild climates. Dahkra must be added to water and boiled over a flame for a few minutes. The resulting somewhat slimy mixture can be fed to beasts and will put them to sleep for 3d4 hours.
+
+
+
+### Dainaberry
+*[Forest](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+The Dainabush is a creeping, thorny vine, much like a bramble. Vines are about 5 mm thick, with 2 mm long thorns and are reddish brown, darkening to black, with leaves dark green in colour. The vines flower in early summer, with light blue, bell shaped flowers. In autumn, it carries dark blue or purple berries, which are fleshy, almost crunchy rather than juicy. The berries are slightly sweet and quite tasty, but have a strong effect on mammals: those who eat them fall asleep. The berries have this effect on mammals only (with half effects on half-mammals like half-elves and the like), but a single berry is enough to bring down any man sized or smaller mammal, and given enough berries, even the greatest mammal will fall asleep. There is no saving throw, although the sleep caused is quite normal, and a sleeping creature can simply be awakened. Although the berries can simply be eaten to cause the effect, it is also possible to dry them carefully and grind them into powder. This powder is weaker (DC 14 cons. save vs poison to avoid) but will keep for a much longer time. The powder can be added to any food or drink, but has a very sweet taste.
+
+
+
+### Damiana
+*[Jungle](#p108)*
+___
+- **Rarity:** [Common](#p113)
+
+A small shrub plant with small yellow flowers that grows predominantly in warmer climates. The flowers are commonly used in current times as a sexual stimulant, supposedly increasing arousal and sensation, but in the past, the flowers were brewed and fermented into a sickly-sweet beverage used in rituals designed to allow priests and participants to see “visitors” to the material plane. This recipe was lost to time, but if discovered, will grant the recipient truesight for 4 hours.
+
+
+
+### Darkanda Bush
+*[Mountain](#p110)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+This small bush grows in desolate places, often in rocky soil high upon a cliff face. The branches are covered in small thorns and are gnarled and spindly, while the leaves are ragged and dark green. The bush produces small red flowers and bitter orange berries. 
+
+When ground up and distilled, the leaves can be used to create an interesting alchemical acid called Dragon Sand that can be used as a poison or to corrode organic items. The substance appears to be a fine green powder, and has two peculiar properties. The first is that it acts like an acid to any organic substance. If it comes into contact with flesh or plant matter it slowly dissolves, dealing 3 (1d4+1) acid damage per round for 2 minutes per ounce contacting the organic substance, and leaving an acrid smell in the air. The second property is that it can be burned for an extended period. If set on fire it burns with leaping green flames, and when applied to wood, the log takes twice as long to burn as an equal amount of normal wood while producing much bigger, hotter flames.
+
+
+
+### Darkberry
+*[Forest](#p107), [Jungle](#p108), [Underdark](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+Short bushes with spindly branches and fluffy green leaves, the plant is known for the unusual berries that only a few of the bushes produce. The small purple berries contain essence from the Plane of Shadow, and the bushes are said to only grow where the Shadow Weave is strongest. When a Darkberry is split or crushed, it releases shadowstuff, creating a circle of magical darkness with a 5ft-radius. This darkness lasts for 1d6 rounds. 
+
+
+
+### Darkhorn
+*[Underdark](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Small tapered mushrooms that grow straight upward in large patches, the mushroom is quite rigid thanks to its extra-chitinous shell, and the black exterior makes it difficult to see in the winding caverns of the Underdark. The mushrooms have a slight musky aroma resembling that of dead leaves. Several races seed Blackthorn mushrooms at the bottom of pits, turning them into a lethal surprise for anyone falling down upon them. Add 1d4 piercing damage to any falling damage incurred when a character falls down a hole that has Blackhorn growing at the bottom.
+
+
+
+### Darkroot
+*[River](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+Large black twisted root that grows up to 10 ft; found by waterfalls and similar damp areas. It tastes vile, so chewing/swallowing it induces vomiting. It can be made into Titan Gum, a strong and fast-setting glue that bonds in one round and requires a DC 20 Strength check to remove and works quite painfully on bonding anything with hair.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Darkshine
+*[Swamp](#p111), [Underdark](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Crystallizing glossy-black fungus that grows sharp 6-ft long shards. Areas with Darkshine in it function as caltrops that deal 1d10 damage, and damaged creature cannot be magically healed for 1 minute. A patch has 20 hit points and takes half damage from piercing and slashing weapons, but it takes 1 point of damage each hour it is exposed to any light-source stronger than a candle.
+
+
+
+### Darkwood
+*[Arctic](#p107), [Underdark](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Wood items made from this tree's magical wood are half-weight and masterwork, with shields having +3 AC. Crafting using Darkwood requires training from a master craftsman.
+
+
+
+### Darmanzar Stalk
+*[Forest](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Growing as a singular stalk with pairs of leaves sprouting every few inches, the Darmanzar is covered in small thorns. Touching the plant without gloves causes small cuts which grow swollen and irritated, and remain that way for several hours. The top of the plant sprouts a large bushy bud which is a light gold color. The bud emits a curious sugary fragrance which seems to irritate and deter undead and attract the living. Living characters must make DC 8 Wisdom throw to avoid suffering 1d4 piercing damage and some very itchy swelling. Undead that wish to approach closer than 30 feet from the bud must make a DC 10 Wisdom saving throw.
+
+
+
+### Darnell
+*[Forest](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+These tiny yellow flowers will, if eaten, cause dimness of the sight for 1d12 hours. This dimness means that in full light the character will see as if on a moonlit night. This herb does not affect those with truesight, but Darkvision range is reduced by half.
+
+
+
+### Darsurion
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+The leaves of Darsurion when applied to a wound will heal 1 hit point of damage if used within 3 rounds. The effect is not cumulative.
+
+
+
+
+\columnbreak
+
+### Dathlil
+*[Desert](#p107), [Mountain](#p110), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A small white flower that grows close to the ground, and can be found across much of Faerun. The flower is often picked in spring and used for decoration among more rural folk. The petals are often used to combat poison (make another saving throw against the poison if already under its affects).
+
+
+
+### Deadly Nightshade
+*[Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+This plant can grow up to five feet tall. It has soft green spreading leaves, and purple flowers and berries. The berries must be left to stand in water for a week and the distillation drunk. On a failed save (DC 16 Cons. Save vs poison) deadly nightshade will put someone to sleep for 4d8 hours. They cannot be woken. A roll of 1 will kill them, a roll of 20 will render them partially insane.
+
+
+
+### Deadroot
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A black, woody shrub that grows in deep-forest environments, far from civilization. The branches of the shrub can be broken off and chewed to make the character invisible to undead of CR 4 or lower for 1d4 hours.
+
+
+
+### Death's Collard
+*[Underdark](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A leafy ground-cover plant that resembles simple collard greens but in shades of charcoal grey and blood red. Death’s Collard can be shredded and steeped in sacramental wine and garlic. Although the combination sounds frightening in itself, and actually acts as a minor poison to the living, the resulting mixture is savory in taste with an aftertaste of copper. The resulting mixture, called Bloodwine, is particularly harmful to vampires and other undead. Such creatures have disadvantage on their saving throws to resist the poison's effects. Bloodwine can also be consumed by a living creature, and it remains in the system of that creature for up to 12 hours. Any undead that attempt to consume the creature or drink its blood is affected by the Bloodwine as if they had ingested it themselves. An undead creature subjected to this poison must succeed on a Constitution saving throw, taking 3d6 radiant damage on a failed save, or half as much damage on a successful one.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Decorous Nun-Cloak
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A small flowering shrub found in many plains environments across the realm, the flowers sprout through Spring, Summer, and Fall months, and resemble nuns’ hoods, even maintaining the black and white coloration. Some believe the shrubs were raised using magic in a conservative sect of Clerics or the ultra-religious as the flowering shrub grows up to a foot in every direction instantaneously whenever anyone within a 5’ reach of the shrub curses. This feature makes it a popular houseplant of those trying to refrain from profanity, as pruning the shrub proves to be a monotonous and time-consuming task.
+
+
+
+### Deep Imaskari Waterplant
+*[Underdark](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+These magical plants are found in every deep imaskari household or the households of those who don’t normally reside in the underdark. 2-inch diameter balls of water surrounded by a gel-like membrane grow from them every day and can be carried like oranges, until they are pierced and drank from.
+
+
+
+### Degiik
+*[Jungle](#p108)*
+___
+- **Rarity:** [Legendary](#p116)
+
+Degiik leaves must be given to someone at the point of death (in the process of making death saving throws). The consumption of Degiik will count as two successes in the death save process.
+
+
+
+### Delrean
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Common](#p113)
+
+The bark of Delrean should be boiled into a paste and then smeared on the skin. It will then repel any insect from coming near the recipient (disadvantage on rolls for initiative from Insectoids), but the foul stench will reduce their Charisma by 1d2. It is effective for 5d6 hours.
+
+
+
+### Densewood
+*[Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Hard and sturdy tree native to tropical locales that, with a nature check of 20+, can be used to improve wooden weapons (ie quarterstaves and the like) to up the tier of dice that the weapon uses for damage.
+
+
+
+
+\columnbreak
+
+### Deva's Tears
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A light blue flower that grows on a long rigid stalk covered in small leaves, the plant is often found in small clearings in wooded areas. From the flowers a thick sparkling sap is secreted once the plant reaches sexual maturity. Bees are often attracted to the sap, which contains miniscule seeds. Many people seek out the sap of the plant, as it provides some minor restorative aid (Heals for 1d4+1 hit points if consumed within 3 rounds of injury). A person may gain the benefit of drinking Tears a single time per day, and any additional ingestion requires the drinker to make a Constitution save or fall unconscious for 2d4+1 hours. This save is a DC 5, and increases by 1 each time the drinker has imbibed Deva Tears over the course of a day. Up to 20 (roll 1d20 to determine) servings of tears can be extracted from one mature plant before it dries up.
+
+
+
+### Devarencia
+*[Jungle](#p108), [Mountain](#p110)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Growing singularly and rarely on tropical mountaintops, Devarencia is an exceedingly fragile and picky plant in terms of water, humidity, temperature, and sunlight, meaning that many plants do not see maturity. This plant can be mixed into any potion and will prevent different potions from interacting. You can mix up to four potions into one vial. The potions all have their normal effect and no penalties are given.
+
+
+
+### Devil's Bloodflower
+*[Swamp](#p111), [Underdark](#p111)*
+___
+- **Rarity:** [Legendary](#p116)
+
+Only a few recorded instances of this red and yellow flower exist. This large and bold red leaf can be going back in history to the dawn of humankind. It was once a popular decoration around homes and gardens, but has become one of the rarest plants in the world. When the petals are consumed, they grant all boons of a Potion of Vitality (removes any exhaustion you are suffering, cures any disease or poison affecting you, and for the next 24 hours, you regain the maximum number of hit points for any hit die you expend). In addition, healing magic and potions heal you for +5 additional hit points for the same period of 24 hours.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Devil's Crown
+*[Mountain](#p110)*
+___
+- **Rarity:** [Rare](#p115)
+
+Resembling a cluster of sharp spines that curve upward, the insidious looking plant grows in rocky, inhospitable climates that have very little other life. The roots of such plants dig downward through cracks in stone, and some say that the roots of some of the older plants reach down into Hell itself. Lore about the plant states that it was once native to the infernal planes, but a few hardy seeds were transplanted into some long-forgotten wasteland on Toril, and from there the plant has spread. The plant is quite resilient and tough, with the spines holding moisture in the form of a thick red sap that causes nausea and vomiting if ingested. It is rumored that coating a blade with the sap makes wounds especially painful for celestial creatures (If applied to weapons, +3 damage against celestials. Additionally, any celestials that take this damage must make a DC 13 Cons. Save or be Poisoned for 1d4 minutes).
+
+
+
+### Devilweed
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+Tobacco-like smoked drug, -1 to Intelligence checks and +2 to Strength checks for the next 1d6 hours.
+
+
+
+### Dittany
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This herb grows six or eight inches high with square stalks and sort round leaves. The leaves must be dried for two weeks and then be boiled in ale or wine. It is then applied as a lotion. Dittany can be used to draw splinter and bone fragments from a wound. It is also an effective antiseptic for cleaning wounds and acts as a binding agent. (+3 hit points if applied within 2 rounds of an injury)
+
+
+
+### Djin Blossom
+*[Desert](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Fern native to the harsh conditions of the desert and commonly found in alchemy and herbalist shops. Wearing one of its petals grants a +2 bonus on saves against inhaled poisons and gas-based effects, and a DC 20 nature check allows one to make it into a perfume that grants a +2 bonus on all charisma-based skill checks for 24 hours.
+
+
+
+
+\columnbreak
+
+### Dog Rose
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Very Common](#p113)
+
+The dog rose grows to about ten-feet in height and has very sharp thorns. In spring and early Summer it has pale pink flowers which turn into vivid orange seed pods at the end of summer. These pods must be dried and then eaten at the rate of one per three days to avoid scurvy in environments where this disease is common (ie, on long ocean voyages.) Certain ancient and medieval cultures believed that placing a dog rose in a coffin would prevent the body within from rising as undead.
+
+
+
+### Draaf
+*[Coastal](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+The leaves of Draaf can be eaten in order to restore 1d4 hit points, as long as they are eaten within 10 minutes of the damage being inflicted.
+
+
+
+### Dragon's Breath
+*[Arctic](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Common](#p113)
+
+A stout stalk nearly bare from leaves except near the base, the plant is covered in fine red hairs that are painful to the touch, as each hair contains a minute amount of poison. The Red Wizards have managed to cultivate small amounts of the plant, but predominantly their supply is harvested from the Hill of Lost Souls. Commonly used as a tea for victims of frostbite and hypothermia. The hairs can be collected individually to ferment and increase the poison’s effectiveness. Those unfortunate enough to come into contact with the poison must succeed at a Constitution saving throw, DC 13, or suffer 10 (3d6) poison damage and be poisoned for 2d6 minutes. If the target succeeds at the saving throw, they only suffer half damage.
+
+
+
+### Dragons-Eye Oak
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Oak native to forests habituated by wood nyphms, whose acorns, when in the possession of a spellcaster, has a 10% chance of increasing the damage of evocation spells by one dice tier (d4 to d6, d6 to d8, etc.).
+
+
+
+### Dragonspine
+*[Desert](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A vast-spreading succulent that produces small red flowers every 6 months. These flowers can be dried and ground into a fine powder which, when applied to weapons, will immolate a target upon a successful hit for 1d6 rounds, dealing 1d6 fire damage per round.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Dragontears
+*[Desert](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+This rare, small, translucent succulent grows primarily in the low desert. When crushed, it exudes a sweet, milky white substance with numbing properties. Properly prepared, dragontears promotes rapid healing and prevents scarring from wounds (heals for 3d8 hit points and prevents scarring upon a successful external application). Drinking dragontears can be fatal, as its numbing properties can cause choking or heart failure when used incorrectly.
+
+
+
+### Dragontongue Mushrooms
+*[Underdark](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+The stout stalk of the mushroom is a pale yellow, which transitions to a dark brown at the top before it splits into six black protrusions that appear to be spines, but are soft to the touch. While the mushroom itself isn’t overly poisonous, it can cause hallucinations if brewed into a tea. Members of many cults across the realm delve into the Underdark in order to pick the mushroom, so that they may partake of the hallucinogenic properties. Many of the cultists that hallucinate claim to hear a gravelly dead voice telling them where to find the bones of old dragons or how to summon powerful and evil deities and demons.
+
+
+
+### Dragonwort
+*[River](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+This plant has a gnarled, erect and cylindrical stem. It has wavy leaves, dark green on top, bluish green underneath. It has pink flowers that cluster in a spike at the top of the stem. The root of this herb should be boiled over a low heat for three days, and the infusion drunk by people with the plague in order cure some symptoms or the plague as a whole (60% chance to cure completely). The value of this herb increases greatly in times of plague.
+
+
+
+### Dramas
+*[Jungle](#p108), [Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+Found on a creeping vine with spiky leaves tinged in red, these legumes produce a small, dry nut that resembles an almond. When this nut is consumed, it will allow the recipient to feign a state of death for an hour.
+
+
+
+
+\columnbreak
+
+### Dratiddel
+*[Ocean](#p111)*
+___
+- **Rarity:** [Legendary](#p116)
+
+Technically a symbiotic relationship between a type of coral and a type of algae, Dratiddel is an incredibly rare organism found on in the bottom of deep-ocean trenches around volcanic spouts. When harvested, the plant is only viable for a period of 12 hours, even if kept in salt water, and completely disintegrates after this time period. Dratiddel can be used to make a powerful potion called Liquid Mortality when shredded and combined with holy oil. Upon a successful application via injury or ingestion, an undead creature subjected to this poison must make a DC 22 Constitution saving throw vs poison. On a failed save, their Strength score is permanently reduced by 10. If this effect reduces an undead creature's Strength to 0, they are utterly destroyed, and cannot be resurrected or reanimated by any means other than a wish spell. The creature's Strength score can be restored by a greater restoration spell or similar magic.
+
+
+
+### Dripping Tree
+*[Jungle](#p108), [Swamp](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+The Dripping Tree has dark brown bark, large leathery leaves, and grows as tall as 30'. Its branches only grow from the very top of the trunk and spread out almost horizontally, much like the cap of a mushroom, to shade an area 10' to 20' in diameter. The roots of a Dripping Tree spread and twist through the ground almost as far as the branches above. Numerous cream-colored spheres, 10" in diameter, that cling to the branches are the source of the tree's name. Special nodules on the roots of this tree detect movement, warmth and pressure causing the globes directly above the triggered area to fall. The globes are filled with a viscous, sticky mucus and burst on contact, causing creatures hit with them to stick to the Dripping Tree's root clusters (DC 18 Dexterity or Strength Save to avoid grapple). When pressure is constantly applied to an area of roots, the branches above it begin to slowly drip a sticky, acidic, digestive mucus onto the area below (1d6 acid damage per hour). This mucus melts through flesh and bones like butter. Smaller creatures, such as lemurs and tabibari can be dissolved in as little as a day, while larger creatures and humanoids may take up to 72 hours to be broken down into nutrients.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Dungeon Fungus
+*[Underdark](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+Dungeon Fungus is a bio-luminescent giant mushroom. The largest specimens stand taller than a man, with caps broad enough for three to lay comfortably upon it. It only ever grows in locations that are frequented by oozes, and have bodies to feed upon. Ingestion of the fungus will cause the recipient to make a DC 14 Cons. Save vs poison or be violently ill for 3d10 rounds (no actions but 1/4 movement speed, -4 penalty to AC). Burning the fungus will produce an intoxicating effect on all those who breathe the fumes. Anyone under the effects of the fungus' smoke will be much more likely to regard others as a friend (+2 to rolls to persuade while under the fumes’ influence), unless they do something particularly harsh. After 1d4 hours the drug will cause anyone under its influence to fall into a deep sleep.
+
+
+
+### Duskwood
+*[Forest](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+Black-barked tree that grows 60-ft tall in tightly spaced groves, featuring small branches and smoky grey wood that's strong as iron but half the weight. Items crafted from duskwood require master-level craftwork. 
+
+
+
+### Dwarf Hops
+*[City](#p107), [Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Similar to regular hops used in the production of ale, Dwarf Hops are much hardier in terms of cold and grow slightly shorter while producing the same number of hops throughout the Spring, Summer, and Fall. If harvested and preserved correctly, the hops can be worth quite a bit to someone who’s trained in making Dwarven Ale.
+
+
+
+### Dwarf Mallow
+*[Mountain](#p110), [Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+This small plant has a single primary stem from which other, shorter stems ending either with leaves or with small pick flowers. These flowers when crushed and mixed with honey and salt into a poultice will relieve the pain of bee stings on a successful application. In addition, the crushed flower may be mixed with oil and smothered onto the body in which case, no bees will approach for 1d10+2 hours. At the DMs discretion, this effect may extend to other small insects.
+
+
+
+
+\columnbreak
+
+### Dwarven Oak
+*[Forest](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Rare](#p115)
+
+Stunted, gnarled tree found on the slopes of temperate mountains that looks like a sitting Dwarf from a distance. Its bark can be made into a brown, milky fluid that can be added to poisons up to 1 hour before the poison is used to increase the poison's DC by 2.
+
+
+
+### Ebur
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+The flowers of Ebur must be eaten each day. If the treatment is successful, the rate of healing for a sprain will be doubled for that day. In addition, successful application will increase movement speed by 5 for the day.
+
+
+
+### Ecru
+*[Coastal](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+Small, red-leaved drooping palm trees that grow no more than 5-feet tall. The trees produce a small, red, crystalline growths, as a result of build-up of the Ecru’s internal resins, called Ecru Crystal. This crystal can then be dissolved in a strong acid and consumed to induce a state of blissful relaxation for 1d10 minutes. In addition, during this time, there is a 25% chance that a spellcaster who consumes Ecru Crystal will receive a boost of 1d4-1 points to either Wisdom, Charisma, or Intelligence for a period of 24 hours. In addition, during this 24-hour period, the consumer’s Dexterity is halved.
+
+
+
+### Edelwood
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A strange looking, dark barked tree that seems to grow face-like patterns in its bark. When bark is peeled off or twigs broken, the Edelwood drips a black oil that is as flammable as typical lamp oil and smells of sulfur. According to legend, the Edelwood is a mystical tree that acts as home to the lost souls of those who succumb to the woods, whether through weakness of mind or weakness of body, and the oil from the Edelwood is used as fuel in the black lantern of The Dark Beast.
+
+
+
+### Edram
+*[River](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Edram is a moss which when eaten will the consumer to heal at one and a half times their normal rate (amount normall healed + half the value of expended hit dice used during a short rest).
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Eglantine
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A variety of wild-growing rose that sprouts near to the ground and blooms bright red flowers. The petals of these flowers can be eaten raw or dried for use in teas. Consumption of the bloom results in a +1 bonus to initiative and a -1 penalty for all Intelligence checks for 30 minutes.
+
+
+
+### Elandir
+*[Mountain](#p110), [Underdark](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A pale white stalk plant that grows under rocky overhangs or deep within caves. The plant has a remarkably short lifecycle, sprouting, growing to maturity, and wilting within only one week following the Winter solstice. When broken open, the plant will ooze a black ichor that when injected directly into the bloodstream brings back characters from unconsciousness, catatonic and even comatose conditions. There is a 1% chance for each day over a week, that the recipient will slip back into their original state and that this plant will not work on them again.
+
+
+
+### Elausa
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A short, purple weed that grows in small patches of spiky grass among patches of wildflowers or in farm fields as an invasive. When consumed raw or in a tea, causes the character to lose its voice for 2d10 minutes, but in return, any symptoms of disease that normally affect the throat are cured.
+
+
+
+### Eldaas
+*[Arctic](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This tall, blue-flowered plant with spike-shaped leaves is the base for medicines against nausea, usually taken in the form of a bitter-smelling and -tasting herbal tea. Eldaas is used to counteract the nausea associated with hangovers, motion sickness, morning sickness, and more common illnesses. (Adds + 2 to Constitution saves against poisons, smells, or other things that would cause nausea. Lasts 1d6 hours.)
+
+
+
+### Elder Tree
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+According to old wives’ tales and superstition, elder trees are commonly used as the homes of evil witches and on occasion, even a lich. 
+
+Building a door from elder supposedly invites bad spirits into your home, and building a crib for the wood will allow for evil spirits to interact with the child. Although much of this superstition has been moved past, it’s still very uncommon to see a door or crib made from this material.
+
+
+
+### Eldritch Whorlwood
+*[Jungle](#p108)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Tree with a twisted and gnarled grain pattern and shape, and wands made from the wood retain this property. The wood is commonly used for short-term wands and staves, as magical items made from Eldritch Whorlwood are instilled with 4 charges of the spell Darkness. 1d4 charges can be recovered at dawn of every new day. IF all charges are expended, the wand/staff straigtens out and reduces the magical ability of casting with this item.
+
+
+
+### Elecampane
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This plant has a thick root, with leaves that are white on the bottom and green on top, as well as showy yellow flowers. The root may be eaten in which case it will cause the recipient to vomit. This effect, while useful in removing ingested poisons from the system, will leave the recipient weak (-1d4 to Constitution for 2d6 hours). For this reason, it may be used as a mildly debilitating poison. If used as a poison, the recipient must succeed on a DC 18 Cons. Save vs. poison.
+
+
+
+### Elm
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Elm is a wide-spreading tree growing to about 30-feet tall with narrow, rounded leaves and a thick, light brown bark. Long used as a home-remedy for sore throats and aches, stripping the bark and soaking in boiling water, as if making tea, will make an infusion that, when consumed, heals for 1d4 hit points. The herb has no effect when used again until the creature completes a short rest.
+
+
+
+### Elora
+*[Underdark](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+A tiny black slime mold that slowly migrates through cave systems searching out additional moisture. When Elora is dried up and ground, it can be sprinkled over the ground and illuminates all footsteps that have traced over this area in the past 24 hours with a black glow.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Elven Willow
+*[Forest](#p107), [River](#p111)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Small tree (up to 5 ft tall) with a golden-sheened bark that produces golden buds in the spring. Grows on riverbanks in temperate areas. Its sap can be made into a tincture called Elf Hazel, which fades scars if applied over the course of a week.
+
+
+
+### Elvish Galingale
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Elvish Galingale grows to about four feet in height. It has a triangular stem on which grows a tuft of grass like flowers. The roots are boiled and left to stand for a week and the resulting decoction is then drunk. This herb increases the flow of blood. This is very useful when a person is cold. However, if a person is bleeding, either internally or externally, or is wounded with a bleed effect, it will double the speed of bloodloss, effectively doubling bleed damage. Its effect lasts 1d6+1 hours.
+
+
+
+### Ember Root
+*[Coastal](#p107), [Forest](#p107), [Jungle](#p108), [Mountain](#p110), [River](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+A shriveled, coconut-looking plant native to the elemental plane of fire that grows on solid stone in areas of extremely sunny or hot conditions in the overworld. The flesh is poisonous, but the core contains drinkable liquid that never grows hotter than 70 degrees and one ounce of which equates to one day's worth of water. A typical ember-root contains 1d4 ounces of liquid.
+
+
+
+### Entangle Weed
+*[Ocean](#p111), [River](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+A transparent seaweed that, when submerged in water, becomes almost fully invisible (DC 20 spot check to notice from within 10 ft) native to large bodies of salt water that forms patches of about 400 ft in diameter. Entering a square with it forces a DC 20 Dexterity save against becoming entangled (DC 15 Strength save to escape on a failed Dex. save, +1 to DC per failed attempt as the target gets more entangled). Each failed attempt to escape deal 1d6 nonlethal damage (as referenced on pg. 198 of the PHB). Taking 20 points of this fatiguing damage causes one level of exhaustion. The seaweed instantly wilts when out of water.
+
+
+
+
+\columnbreak
+
+### Entriste
+*[Desert](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A small-leafed ivy that hugs the ground. Entriste's leaves absorb liquid and, when crushed, may be used to draw poison from a wound. (1 leaf absorbs a quarter-pint of liquid. Causes 1d4 damage but draws 100% of poison from a wound if applied within 5 rounds of poisoning, ending the poison effect. Does not work on inhaled poisons.)
+
+
+
+### Ephedra
+*[Desert](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Rare](#p115)
+
+This small succulent sedum produces small offshoots which hold between 8 and 16 small leaves. These leaves can then be dried and ground into a powder to mix with a poultice or potion to increase the tier of a healing die by 1, turning a d6 into a d8, etc. This effect can be used during short rests or with healing magic as a poultice, or can be used by adding to a health potion
+
+
+
+### Fairy Bells
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A leafy green plant that springs up in clusters, the majority of the plant is rather uninteresting, save for the violet flowers that seem to bloom almost year-round. When the wind blows through the flowers, their seeds rattle around inside and create a curious ringing sound, much like tiny bells. Many rural children enjoy picking them and weaving the flowers into their garments, which then jingle as they run and twirl. There is also a legend that the sound of the flowers ward off evil spirits, a legend that is partially true. Any fiend must make a DC 15 Wisdom save vs. fear in order to approach within 10 feet of the fairy bells or anyone wearing them.
+
+
+
+### False Unicorn Root
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A woody-stemmed flower with a large, white, cone-shaped flower that blooms from the top of the stalk. Very rare due to its slow growth and limited growing conditions, False Unicorn Horn has a rich history rooted in folklore. Supposedly, the root used to possess not only extremely beneficial healing properties, but extraordinary magic. This so angered some greater demons, that they sent an army of lesser demons to uproot and eat as many of the roots as they could, and this rage was so powerful that to this day the roots have not been able to fully grow back. The remaining tuberous stub is still imbued with good medicine and every spring it is able to put forth the tall spike of magic-imbued white flowers as a reminder that the power of good can always avert the forces of evil. (Consumption of this root will heal the recipient for 2d6+2 hit points, and make the individual invisible to demons and infernals for 1d4 hours.)
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Falsifal
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A wide-leafed plant with large pink flowers and thick roots containing a slimy gel. When the root is pulped, mixed with water and used as a poultice, it is effective against fresh burns, aiding rapid healing. The root-gel can also be thinned and drunk as a thick tea to counter the effects of blood loss. (Regains 1d8 hit points of fire damage if administered within 4 rounds of taking fire damage. If used to counter blood-loss, target can add 1d4 to the health regained from a short rest.)
+
+
+
+### Faranir
+*[Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+This strange looking, crescent-shaped nut grows from 30-ft tall leafy trees in tropical climates from long, thin filaments of near-invisible silk. While the silk is sought after for use as fine embroidery thread, the nut can be boiled and reduced to a sticky, white paste. When applied to any item, this paste protects the item from acid, corrosion, and rust for 3d4 days.
+
+
+
+### Febfendu
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+The roots of this plant must be brewed over a low fire for one week, and the resulting distillation drunk. If used successfully, hearing will be restored to the recipient, even if the ears and internal parts have been fully destroyed. Effects only last for 2d6 days.
+
+
+
+### Felmather
+*[Coastal](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+The leaves of this plant should be placed under the tongue of a person in a coma. Roll 1d20 upon a successful application, the person will awake in as many hours. If a roll of 20 is made, the persons mind will be permanently destroyed and wracked with insanity (Indefinite Madness Table DMG pg.260).
+
+
+
+### Felsul
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+A deciduous tree with a flaky brown reddish bark, the trunk and limbs often grow to be gnarled and twisted. After peeling away the bark, the trees have a soft wood, which is harvested fresh to decrease nausea, and to numb the mouth. Orc shaman often harvest the wood to feed to expectant mothers. The small yellow, purple, and red flowers which bloom in the spring are crushed to make a heady, spicy perfume that many people claim is an aphrodisiac. The perfume grants a +1 bonus on Charisma (Persuasion) skill checks against men. A sack of the flowers can fetch anywhere from 5 to 30 gold pieces. 
+
+
+
+### Fennel
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Fennel has thick stems, and bright green, lacy leaves and routinely grows to about five feet in height. (There is a rare form which has a bronze stem. In terms of its use, it is identical to the common fennel). In summer it has golden, yellow flowers. These flowers turn to seed in early Autumn. The seed heads must be harvested and left until the seeds separate from them. The seeds may then be mixed with boiling water to make a tea. This tea has the effect of relieving hunger in the recipient for 2d8 hours, However, it does not in any way act as a substitute for food, and any damage or exhaustion due to starvation will still occur. Any negative effects of exhaustion already being felt will evaporate for 1d8 hours. Aside from its common uses, Fennel is one of the plants mentioned in the Nine Herbs Charm, which is supposedly capable of curing any poison or disease.
+
+
+
+### Fennel Silk
+*[Arctic](#p107), [Underdark](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+A tall, long-stalked plant resembling fennel that can be stripped to its fibers; these fibers can then be stewed and boiled for several hours. Adding the resultant broth to any potion will stabilize body heat to resist cold weather or wet conditions for one hour.
+
+
+
+### Fetherfew
+*[Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+This herb grows to about 18 inches in height. It has many small white flowers. The flowers must be dried and then boiled in white wine and the resulting mixture must be drunk. This herb will remove the effects of vertigo from a person for up to twelve hours. It does this by stabilizing the persons inner ear. As a side-effect of stabilizing the inner ear, the herb also calms the fear centers of the brain, allowing for the recipient to overcome extreme fear for 2d6 hours (+3 to Wisdom Saves vs. fear).
+
+
+

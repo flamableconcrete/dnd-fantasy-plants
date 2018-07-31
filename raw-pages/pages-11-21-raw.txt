@@ -1,0 +1,924 @@
+<style>
+  /*Remove footer*/
+  .phb:after {
+    content: "";
+  }
+
+  a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .spellList a,
+  .phb p em a,
+  .phb ul li a
+  {
+    text-decoration: none;
+  }
+
+  .phb table tbody tr td {
+      padding: .10em .1em;
+  }
+
+  .phb table tbody tr:nth-child(odd) {
+    background-color: #efacb8;
+  }
+
+  .toc {
+    column-count:4;
+  }
+
+  .toc a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .toc li span:nth-child(2){	/*Allow dot leaders to fill remaining space but not overlap*/
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .toc li span:nth-child(2):after{
+    font-family		: BookSanity;	/*Remove any header styles from dot leaders*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    content:
+      " ........................................"
+      "........................................."
+      ".........................................";
+  }
+
+  .toc li span:first-child{
+    float: right;
+    font-family		: BookSanity;	/*Remove any header styles from page numbers*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    margin-left		: 1px;	/*Leaves a small space between page numbers and dot leaders*/
+  }
+
+/*Special cases for headings*/
+  .toc li h3 span:nth-child(2):after{
+  	content: " ";						/*Remove dot leaders on h3*/
+  }
+
+  .toc li h3 {
+    margin-bottom: 4px !important;		/*Special spacing for h3*/
+    margin-top: 10px !important;
+    line-height: initial !important;	/*For some reason Multi-line h3 line spacing changed*/
+  }
+
+  .toc li h3 span:first-child{
+  	line-height: 1.8em !important;  	/*Line page numbers up with Multi-line h3 better*/
+  }
+
+  .toc ul ul {
+  	margin-left: 10px !important;		/*Original lists intented too much*/
+  }
+
+  .toc>ul>li {
+    margin-bottom: initial !important;	/*margin for list items needs to be removed or 0*/
+  }
+
+</style>
+
+
+    
+<div class="wide" style="text-align: center">
+
+# Jungle
+
+</div>
+
+##### Table 7-1: Jungle - Very Common
+| d20 | Plant |
+|:---:|:---:|
+| 1-2 | [Acai Berries](#p22) |
+| 3-4 | [Callin](#p37) |
+| 5 | [Cassil](#p37) |
+| 6 | [Dog Rose](#p45) |
+| 7 | [Floure-du-luce](#p52) |
+| 8 | [Galda](#p54) |
+| 9 | [Jalap](#p63) |
+| 10 | [Karat](#p64) |
+| 11 | [Kinuka Tree](#p65) |
+| 12 | [Land Caltrops](#p66) |
+| 13 | [Leopard's Bane](#p67) |
+| 14 | [Pallast](#p78) |
+| 15 | [Rainbowpetal](#p82) |
+| 16 | [Ratavasa Flowers](#p82) |
+| 17 | [Ribwort Plantain](#p83) |
+| 18 | [Shadbush](#p87) |
+| 19 | [Tamarind](#p95) |
+| 20 | [Wittlewort](#p104) |
+    
+##### Table 7-2: Jungle - Common
+| d100 | Plant |
+|:---:|:---:|
+| 1-4 | [Acacia Tree](#p22) |
+| 5-8 | [Alether](#p23) |
+| 9-12 | [Ashvein](#p28) |
+| 13-16 | [Ashwaganda Root](#p28) |
+| 17-20 | [Bloodgrass](#p33) |
+| 21-24 | [Bloodkeep](#p33) |
+| 25-28 | [Bronzewood](#p35) |
+| 29-32 | [Caffar](#p36) |
+| 33-36 | [Calamus](#p36) |
+| 37-40 | [Chervil](#p38) |
+| 41-43 | [Damiana](#p42) |
+| 44-46 | [Delrean](#p44) |
+| 47-49 | [Ember Root](#p49) |
+| 50-52 | [Fiend's Ivy](#p51) |
+| 53-55 | [Harpy Nest](#p59) |
+| 56-58 | [Healing Apple Tree](#p60) |
+| 59-61 | [Ipt](#p62) |
+| 62-64 | [Jaffray](#p63) |
+| 65-67 | [Jelly Moss](#p63) |
+| 68-70 | [Krakaem Pods](#p66) |
+| 71-73 | [Masthin](#p73) |
+| 74-76 | [Prickly Tea](#p80) |
+| 77-79 | [Sparish Nut](#p90) |
+| 80-82 | [Sparkleberry](#p90) |
+| 83-85 | [Spotty Dragonfire](#p91) |
+| 86-88 | [Umanhunan](#p99) |
+| 89-91 | [Vipervine](#p101) |
+| 92-94 | [Visma](#p101) |
+| 95-97 | [Witchweed](#p104) |
+| 98-100 | [Yarpick](#p105) |
+    
+\columnbreak
+
+##### Table 7-3: Jungle - Uncommon
+| d100 | Plant |
+|:---:|:---:|
+| 1-4 | [Arcasa](#p26) |
+| 5-8 | [Butterspice Weed](#p36) |
+| 9-12 | [Calacaza Bush](#p36) |
+| 13-16 | [Choking Cinder Fungus](#p38) |
+| 17-20 | [Deadly Nightshade](#p43) |
+| 21-24 | [Densewood](#p44) |
+| 25-28 | [Dragons-Eye Oak](#p45) |
+| 29-32 | [Fleshshiver](#p52) |
+| 33-36 | [Gallowbrush](#p54) |
+| 37-40 | [Golden Lungwort](#p55) |
+| 41-44 | [Gotu Kola](#p56) |
+| 45-48 | [Hiljirat Pepper](#p61) |
+| 49-52 | [Jabberweed](#p62) |
+| 53-56 | [Luurden](#p70) |
+| 57-60 | [Poison Apple](#p80) |
+| 61-64 | [Pondstone Tree](#p80) |
+| 65-68 | [Rattlestalks](#p82) |
+| 69-72 | [Ripplewood](#p83) |
+| 73-76 | [Ruby Blushrose](#p84) |
+| 77-80 | [Soarwood](#p90) |
+| 81-84 | [Swampwalker](#p94) |
+| 85-88 | [Tamariske](#p95) |
+| 89-91 | [Thanalayla](#p97) |
+| 92-94 | [Tyrant's Mercy](#p99) |
+| 95-97 | [Witchweave Palm](#p103) |
+| 98-100 | [Xitluchi](#p105) |
+    
+
+\pagebreakNum
+
+
+##### Table 7-4: Jungle - Rare
+| d100 | Plant |
+|:---:|:---:|
+| 1-4 | [Bloodroot](#p33) |
+| 5-8 | [Bodhi Tree](#p34) |
+| 9-12 | [Borneas](#p35) |
+| 13-16 | [Cotsbalm](#p40) |
+| 17-20 | [Crimson Ladies](#p41) |
+| 21-24 | [Darkberry](#p42) |
+| 25-28 | [Dramas](#p46) |
+| 29-32 | [Dripping Tree](#p46) |
+| 33-36 | [Faranir](#p50) |
+| 37-40 | [Felsul](#p50) |
+| 41-43 | [Glaredak](#p54) |
+| 44-46 | [Glowvine](#p54) |
+| 47-49 | [Hangman Tree](#p58) |
+| 50-52 | [Jinab](#p63) |
+| 53-55 | [Kilmakur](#p65) |
+| 56-58 | [Mandrake](#p71) |
+| 59-61 | [Maraga Flowers](#p71) |
+| 62-64 | [Melander](#p73) |
+| 65-67 | [Mordayn](#p74) |
+| 68-70 | [Ortona](#p78) |
+| 71-73 | [Poznan's Chain](#p80) |
+| 74-76 | [Pygmy King Flower](#p81) |
+| 77-79 | [Reath](#p82) |
+| 80-82 | [Slimmerane](#p89) |
+| 83-85 | [Spiderbush](#p91) |
+| 86-88 | [Taggit](#p94) |
+| 89-91 | [Tickleweed](#p98) |
+| 92-94 | [Twilight Green](#p99) |
+| 95-97 | [Woodrose](#p104) |
+| 98-100 | [Wormwood](#p104) |
+    
+##### Table 7-5: Jungle - Very Rare
+| d20 | Plant |
+|:---:|:---:|
+| 1-2 | [Ash Willow](#p27) |
+| 3-4 | [Cosmos Glond](#p40) |
+| 5-6 | [Deadroot](#p43) |
+| 7 | [Devarencia](#p44) |
+| 8 | [Eldritch Whorlwood](#p48) |
+| 9 | [Gardenflax](#p54) |
+| 10 | [Harrada Leaf](#p59) |
+| 11 | [Hidden Hibiscus](#p60) |
+| 12 | [Olvar](#p78) |
+| 13 | [Saddilia](#p85) |
+| 14 | [Sasami Tree](#p86) |
+| 15 | [Serren Wood](#p87) |
+| 16 | [Suth](#p94) |
+| 17 | [Swordstalks](#p94) |
+| 18 | [Vaundyr Vine](#p100) |
+| 19 | [Wildwood](#p103) |
+| 20 | [Wispstalks](#p103) |
+    
+\columnbreak
+
+##### Table 7-6: Jungle - Legendary
+| d10 | Plant |
+|:---:|:---:|
+| 1 | [Athelas](#p28) |
+| 2 | [Bocraugh](#p34) |
+| 3 | [Degiik](#p44) (Exceedingly Rare)|
+| 4 | [Fire Flower](#p51) (Exceedingly Rare)|
+| 5 | [Furyax](#p53) |
+| 6 | [Gulthias Tree](#p57) (Exceedingly Rare)|
+| 7 | [Rose of Forgetfulness](#p84) |
+| 8 | [Silver Hibiscus](#p88) |
+| 9 | [Winclamit](#p103) |
+| 10 | [Yazur](#p105) |
+    
+
+
+\pagebreakNum
+
+
+    
+<div class="wide" style="text-align: center">
+
+# Plain
+
+</div>
+
+##### Table 8-1: Plain - Very Common
+| d100 | Plant |
+|:---:|:---:|
+| 1-2 | [Adder's Tongue](#p22) |
+| 3-4 | [Agrimony](#p23) |
+| 5-6 | [Angel's Stammerwort](#p25) |
+| 7-8 | [Anise](#p26) |
+| 9-10 | [Arnuminas](#p27) |
+| 11-12 | [Barberry](#p30) |
+| 13-14 | [Basil](#p30) |
+| 15-16 | [Bee Balm](#p30) |
+| 17-18 | [Birthnot](#p31) |
+| 19-20 | [Bittergar Bush](#p32) |
+| 21-22 | [Blackberry](#p32) |
+| 23-24 | [Borage](#p34) |
+| 25-26 | [Burdock](#p35) |
+| 27-28 | [Cassil](#p37) |
+| 29-30 | [Ceran](#p38) |
+| 31-32 | [Chamomile](#p38) |
+| 33-34 | [Coltsfoot](#p39) |
+| 35-36 | [Comfrey](#p39) |
+| 37-38 | [Common Coneflower](#p39) |
+| 39-40 | [Cow-Wheat](#p40) |
+| 41-42 | [Dagmather](#p41) |
+| 43 | [Darsurion](#p43) |
+| 44 | [Dathlil](#p43) |
+| 45 | [Dittany](#p45) |
+| 46 | [Dwarf Hops](#p47) |
+| 47 | [Eglantine](#p48) |
+| 48 | [Elecampane](#p48) |
+| 49 | [Elvish Galingale](#p49) |
+| 50 | [Fairy Bells](#p49) |
+| 51 | [Fennel](#p50) |
+| 52 | [Fieldcress](#p51) |
+| 53 | [Flame Clove](#p52) |
+| 54 | [Flame Petal](#p52) |
+| 55 | [Foxglove](#p53) |
+| 56 | [Goat's Rue](#p55) |
+| 57 | [Goblin Rogue](#p55) |
+| 58 | [Gyumin Beans](#p57) |
+| 59 | [Healwell](#p60) |
+| 60 | [Heather](#p60) |
+| 61 | [Horehound](#p61) |
+\columnbreak
+
+##### Table 8-1: Plain - Very Common (cont'd)
+| d100 | Plant |
+|:---:|:---:|
+| 62 | [Horseweed](#p61) |
+| 63 | [Iazutl](#p61) |
+| 64 | [Juniper](#p63) |
+| 65 | [Juxi Root](#p63) |
+| 66 | [Lavender Ragweed](#p67) |
+| 67 | [Lizard Eaters](#p68) |
+| 68 | [Makebate](#p70) |
+| 69 | [Marigold](#p71) |
+| 70 | [Marjoram](#p71) |
+| 71 | [Milkworte](#p73) |
+| 72 | [Napweed](#p76) |
+| 73 | [Nararoot](#p76) |
+| 74 | [Nettle](#p76) |
+| 75 | [Nossa](#p77) |
+| 76 | [Orach](#p78) |
+| 77 | [Periwinkle](#p79) |
+| 78 | [Petiveria](#p79) |
+| 79 | [Prince's Feather](#p80) |
+| 80 | [Psyllium](#p81) |
+| 81 | [Queen's Ambrosia](#p81) |
+| 82 | [Rue](#p84) |
+| 83 | [Saracen's Compound](#p86) |
+| 84 | [Snakespike](#p89) |
+| 85 | [Stirge Traps](#p92) |
+| 86 | [Strawberry](#p92) |
+| 87 | [Sunberry Bush](#p93) |
+| 88 | [Tangled Waybread](#p95) |
+| 89 | [Tansy](#p95) |
+| 90 | [Terbas](#p96) |
+| 91 | [Thimbleweed](#p97) |
+| 92 | [Throw-Waxe](#p97) |
+| 93 | [Thyme](#p97) |
+| 94 | [Ur](#p99) |
+| 95 | [Valerian](#p100) |
+| 96 | [Whitecandle](#p102) |
+| 97 | [Willow-Herb](#p103) |
+| 98 | [Yagdav Bush](#p105) |
+| 99 | [Yarrow](#p105) |
+| 100 | [Young Lad's Love](#p106) |
+    
+
+\pagebreakNum
+
+
+##### Table 8-2: Plain - Common
+| d100 | Plant |
+|:---:|:---:|
+| 1-2 | [Acacia Tree](#p22) |
+| 3-4 | [Adgana](#p22) |
+| 5-6 | [Alchemilla](#p23) |
+| 7-8 | [Alkanet](#p24) |
+| 9-10 | [Arlan](#p26) |
+| 11-12 | [Astir](#p28) |
+| 13-14 | [Balm](#p29) |
+| 15-16 | [Bison-Gourd](#p31) |
+| 17-18 | [Black Rose](#p32) |
+| 19-20 | [Bloodgrass](#p33) |
+| 21-22 | [Bursthelas](#p35) |
+| 23-24 | [Cow Parsnip](#p40) |
+| 25-26 | [Decorous Nun-Cloak](#p44) |
+| 27-28 | [Deva's Tears](#p44) |
+| 29-30 | [Devilweed](#p45) |
+| 31-32 | [Ebur](#p47) |
+| 33-34 | [Elausa](#p48) |
+| 35-36 | [Falsifal](#p50) |
+| 37-38 | [Fleshwort](#p52) |
+| 39-40 | [Fumellar](#p53) |
+| 41-42 | [Ginyak Weed](#p54) |
+| 43-44 | [Grim Flowers](#p56) |
+| 45-46 | [Hate Gartlet](#p59) |
+| 47-48 | [Jaffray](#p63) |
+| 49-50 | [Jelly Moss](#p63) |
+| 51-52 | [Kaitlin's Weed](#p64) |
+| 53-54 | [Laishaberries](#p66) |
+| 55-56 | [Masterwort](#p73) |
+| 57-58 | [Megillos](#p73) |
+| 59-60 | [Myrthis](#p75) |
+| 61-62 | [Palma Eldath](#p79) |
+| 63-64 | [Pattran](#p79) |
+| 65-66 | [Peony](#p79) |
+| 67-68 | [Pomow](#p80) |
+| 69-70 | [Rampalt](#p82) |
+| 71-72 | [Rasira](#p82) |
+| 73-74 | [Rewk](#p83) |
+| 75-76 | [Saffron](#p85) |
+| 77-78 | [Sanicle](#p86) |
+| 79-80 | [Sleeping Ivy](#p89) |
+| 81-82 | [Sparkleberry](#p90) |
+| 83-84 | [Spiderwort](#p91) |
+| 85-86 | [Spotty Dragonfire](#p91) |
+| 87-88 | [Stygian Pumpkin](#p93) |
+| 89-90 | [Sunflower of Pelor](#p93) |
+| 91-92 | [Troll Poppy](#p98) |
+| 93-94 | [Tyrant's Sword](#p99) |
+| 95 | [Viper's Bugloss](#p100) |
+| 96 | [Werasa](#p102) |
+| 97 | [Windwhip Tree](#p103) |
+| 98 | [Witchweed](#p104) |
+| 99 | [Wood Sorrel](#p104) |
+| 100 | [Yavethalion](#p105) |
+    
+\columnbreak
+
+##### Table 8-3: Plain - Uncommon
+| d100 | Plant |
+|:---:|:---:|
+| 1-4 | [Amrans](#p25) |
+| 5-8 | [Arkas Grass](#p26) |
+| 9-12 | [Astragalus Root](#p28) |
+| 13-16 | [Atigax](#p28) |
+| 17-20 | [Barisc](#p30) |
+| 21-24 | [Cachuga Pepper](#p36) |
+| 25-28 | [Callofex](#p37) |
+| 29-32 | [Constrictor Vine](#p39) |
+| 33-36 | [Dwarf Mallow](#p47) |
+| 37-40 | [Fetherfew](#p50) |
+| 41-44 | [Firmanon](#p51) |
+| 45-48 | [Haella](#p57) |
+| 49-52 | [Hawkweed](#p60) |
+| 53-56 | [Henbane](#p60) |
+| 57-60 | [Hiljirat Pepper](#p61) |
+| 61-64 | [Link-Suriss](#p68) |
+| 65-67 | [Mallow](#p70) |
+| 68-70 | [Meadow Giant](#p73) |
+| 71-73 | [Navew](#p76) |
+| 74-76 | [Purple Pipeweed](#p81) |
+| 77-79 | [Razorvine](#p82) |
+| 80-82 | [Redroot](#p83) |
+| 83-85 | [Ruby Blushrose](#p84) |
+| 86-88 | [Sezarad](#p87) |
+| 89-91 | [Sleepweed](#p89) |
+| 92-94 | [Slumberweed](#p89) |
+| 95-97 | [Snapping Grass](#p90) |
+| 98-100 | [Vinuk](#p100) |
+    
+##### Table 8-4: Plain - Rare
+| d100 | Plant |
+|:---:|:---:|
+| 1-4 | [Alfengrape](#p23) |
+| 5-8 | [Amalion](#p25) |
+| 9-12 | [Athas](#p28) |
+| 13-16 | [Borneas](#p35) |
+| 17-20 | [Dramas](#p46) |
+| 21-24 | [Ecru](#p47) |
+| 25-28 | [Garadar](#p54) |
+| 29-32 | [Halfling Thistle](#p57) |
+| 33-36 | [Hands of Laretha](#p58) |
+| 37-40 | [Kae'la](#p64) |
+| 41-44 | [Kiss of Discord](#p65) |
+| 45-48 | [Lichbriar](#p67) |
+| 49-52 | [Maraga Flowers](#p71) |
+| 53-56 | [Mule Pollen](#p75) |
+| 57-60 | [Old Man's Friend](#p77) |
+| 61-64 | [Orevine](#p78) |
+| 65-68 | [Redgold's Feather](#p83) |
+| 69-72 | [Scholar's Dream](#p86) |
+| 73-76 | [Silverleaf](#p88) |
+| 77-80 | [Slimmerane](#p89) |
+| 81-84 | [Vodare](#p101) |
+| 85-88 | [Wild Fireclover](#p103) |
+| 89-92 | [Wolfsbane](#p104) |
+| 93-96 | [Woodrose](#p104) |
+| 97-100 | [Yaran](#p105) |
+    
+
+\pagebreakNum
+
+
+##### Table 8-5: Plain - Very Rare
+| d12 | Plant |
+|:---:|:---:|
+| 1 | [False Unicorn Root](#p49) |
+| 2 | [Gardenflax](#p54) |
+| 3 | [Giant Grass](#p54) |
+| 4 | [Hyperia](#p61) |
+| 5 | [Latimer Orchid](#p67) |
+| 6 | [Mallus](#p70) |
+| 7 | [Mokodo Bush](#p74) |
+| 8 | [Stonewort](#p92) |
+| 9 | [Suth](#p94) |
+| 10 | [Tai-Gi](#p95) |
+| 11 | [Thistledown](#p97) |
+| 12 | [Verdant Goeleth](#p100) |
+    
+##### Table 8-6: Plain - Legendary
+| d4 | Plant |
+|:---:|:---:|
+| 1 | [Marisia](#p71) |
+| 2 | [Mugwort](#p75) |
+| 3 | [Rose of Forgetfulness](#p84) |
+| 4 | [Sadaq's Bedwort](#p85) |
+    
+
+
+\pagebreakNum
+
+
+    
+<div class="wide" style="text-align: center">
+
+# Mountain
+
+</div>
+
+##### Table 9-1: Mountain - Very Common
+| d20 | Plant |
+|:---:|:---:|
+| 1-2 | [Angelica](#p25) |
+| 3-4 | [Arnica](#p27) |
+| 5-6 | [Base Mullein](#p30) |
+| 7-8 | [Basil](#p30) |
+| 9-10 | [Blackberry](#p32) |
+| 11-12 | [Ceran](#p38) |
+| 13 | [Dathlil](#p43) |
+| 14 | [Golden Coin Cactus](#p55) |
+| 15 | [Mother's Worry](#p75) |
+| 16 | [Strawberry](#p92) |
+| 17 | [Takara Bulb](#p95) |
+| 18 | [Thurl](#p97) |
+| 19 | [Umozokai Flower](#p99) |
+| 20 | [Wolfweed](#p104) |
+    
+##### Table 9-2: Mountain - Common
+| d20 | Plant |
+|:---:|:---:|
+| 1-2 | [Alligator Teeth](#p24) |
+| 3 | [Arctic Creeper](#p26) |
+| 4 | [Black Rose](#p32) |
+| 5 | [Bloodkeep](#p33) |
+| 6 | [Bloodspine](#p33) |
+| 7 | [Bloodstaunch](#p33) |
+| 8 | [Calithil](#p37) |
+| 9 | [Dragon's Breath](#p45) |
+| 10 | [Ember Root](#p49) |
+| 11 | [Footleaf](#p53) |
+| 12 | [Goblinberry Bush](#p55) |
+| 13 | [Laumspur](#p67) |
+| 14 | [Lesser Centaury](#p67) |
+| 15 | [Mother's Mercy](#p74) |
+| 16 | [Mountain Garlic](#p75) |
+| 17 | [Mountain Setwall](#p75) |
+| 18 | [Spring Adonis](#p92) |
+| 19 | [Thornapple](#p97) |
+| 20 | [Yavethalion](#p105) |
+    
+##### Table 9-3: Mountain - Uncommon
+| d20 | Plant |
+|:---:|:---:|
+| 1-2 | [Ardulan](#p26) |
+| 3-4 | [Barisc](#p30) |
+| 5-6 | [Bishop's Weed](#p31) |
+| 7-8 | [Brandac](#p35) |
+| 9-10 | [Darkanda Bush](#p42) |
+| 11-12 | [Dragonspine](#p45) |
+| 13-14 | [Dwarf Mallow](#p47) |
+| 15 | [Entriste](#p49) |
+| 16 | [Fumitore](#p53) |
+| 17 | [Mordock Bramble](#p74) |
+| 18 | [Redstar Flowers](#p83) |
+| 19 | [Sarasar](#p86) |
+| 20 | [Shepherd's Purse](#p88) |
+    
+\columnbreak
+
+##### Table 9-4: Mountain - Rare
+| d12 | Plant |
+|:---:|:---:|
+| 1 | [Devil's Crown](#p45) |
+| 2 | [Dwarven Oak](#p47) |
+| 3 | [Ephedra](#p49) |
+| 4 | [Flintmoss](#p52) |
+| 5 | [Green-Air Bramble](#p56) |
+| 6 | [Halfling Thistle](#p57) |
+| 7 | [Orevine](#p78) |
+| 8 | [Poznan's Chain](#p80) |
+| 9 | [Redgold's Feather](#p83) |
+| 10 | [Seregon](#p87) |
+| 11 | [Silverleaf](#p88) |
+| 12 | [Slimmerane](#p89) |
+    
+##### Table 9-5: Mountain - Very Rare
+| d10 | Plant |
+|:---:|:---:|
+| 1-2 | [Basilisk Breath](#p30) |
+| 3 | [Devarencia](#p44) |
+| 4 | [Elandir](#p48) |
+| 5 | [Helmthorne](#p60) |
+| 6 | [Kathkusa](#p64) |
+| 7 | [Mimetry Sprigs](#p73) |
+| 8 | [Silverthorn](#p88) |
+| 9 | [Sky Lotus](#p89) |
+| 10 | [Zulsendra](#p106) |
+    
+##### Table 9-6: Mountain - Legendary
+| d12 | Plant |
+|:---:|:---:|
+| 1-2 | [Bocraugh](#p34) |
+| 3 | [Fire Flower](#p51) (Exceedingly Rare)|
+| 4 | [Furyax](#p53) |
+| 5 | [Gefnul](#p54) |
+| 6 | [Guardseye](#p57) |
+| 7 | [Midnight Coneflower](#p73) |
+| 8 | [Oede](#p77) |
+| 9 | [Oliosse](#p77) (Exceedingly Rare)|
+| 10 | [Serapia's Turbith](#p86) (Exceedingly Rare)|
+| 11 | [Spellbane](#p91) (Exceedingly Rare)|
+| 12 | [Tahtoalethi](#p94) (Exceedingly Rare)|
+    
+
+
+\pagebreakNum
+
+
+    
+<div class="wide" style="text-align: center">
+
+# Ocean
+
+</div>
+
+##### Table 10-2: Ocean - Common
+| d4 | Plant |
+|:---:|:---:|
+| 1-4 | [Tangara Kelp](#p95) |
+    
+##### Table 10-3: Ocean - Uncommon
+| d4 | Plant |
+|:---:|:---:|
+| 1-4 | [Sand Vine](#p85) |
+    
+\columnbreak
+
+##### Table 10-4: Ocean - Rare
+| d4 | Plant |
+|:---:|:---:|
+| 1-2 | [Adamant Algae](#p22) |
+| 3 | [Entangle Weed](#p49) |
+| 4 | [Gylvir](#p57) |
+    
+##### Table 10-6: Ocean - Legendary
+| d4 | Plant |
+|:---:|:---:|
+| 1-4 | [Dratiddel](#p46) |
+    
+
+
+\pagebreakNum
+
+
+    
+<div class="wide" style="text-align: center">
+
+# River
+
+</div>
+
+##### Table 11-1: River - Very Common
+| d12 | Plant |
+|:---:|:---:|
+| 1 | [Arfandas](#p26) |
+| 2 | [Arpusar](#p27) |
+| 3 | [Attanar](#p29) |
+| 4 | [Belramba](#p31) |
+| 5 | [Cat's Tail](#p37) |
+| 6 | [Elven Willow](#p49) |
+| 7 | [Harfy](#p59) |
+| 8 | [Horehound](#p61) |
+| 9 | [Lungwort](#p70) |
+| 10 | [Marshmallow](#p72) |
+| 11 | [Nettle](#p76) |
+| 12 | [Watercress](#p101) |
+    
+##### Table 11-2: River - Common
+| d8 | Plant |
+|:---:|:---:|
+| 1-2 | [Calamus](#p36) |
+| 3 | [Colewort](#p39) |
+| 4 | [Dahkra](#p42) |
+| 5 | [Dragonwort](#p46) |
+| 6 | [Ember Root](#p49) |
+| 7 | [Lashar](#p66) |
+| 8 | [Palma Eldath](#p79) |
+    
+##### Table 11-3: River - Uncommon
+| d4 | Plant |
+|:---:|:---:|
+| 1 | [Air Plant](#p23) |
+| 2 | [Edram](#p47) |
+| 3 | [Fjor'da](#p52) |
+| 4 | [Lakeleaf](#p66) |
+    
+\columnbreak
+
+##### Table 11-4: River - Rare
+| d10 | Plant |
+|:---:|:---:|
+| 1 | [Darkroot](#p42) |
+| 2 | [Entangle Weed](#p49) |
+| 3 | [Flintmoss](#p52) |
+| 4 | [Maruera](#p72) |
+| 5 | [Melander](#p73) |
+| 6 | [Orevine](#p78) |
+| 7 | [Panaeolo](#p79) |
+| 8 | [Pennyroyal](#p79) |
+| 9 | [Sweet Trefoile](#p94) |
+| 10 | [Tereeka Root](#p96) |
+    
+##### Table 11-5: River - Very Rare
+| d4 | Plant |
+|:---:|:---:|
+| 1 | [Nahre Lotus](#p76) |
+| 2 | [Olus Veritis](#p77) |
+| 3 | [Sweet Arcane](#p94) |
+| 4 | [Yuzine](#p106) |
+    
+##### Table 11-6: River - Legendary
+| d4 | Plant |
+|:---:|:---:|
+| 1-2 | [Lizuara](#p69) |
+| 3-4 | [Sadaq's Bedwort](#p85) |
+    
+
+
+\pagebreakNum
+
+
+    
+<div class="wide" style="text-align: center">
+
+# Swamp
+
+</div>
+
+##### Table 12-1: Swamp - Very Common
+| d8 | Plant |
+|:---:|:---:|
+| 1 | [Creeping Mangrove](#p41) |
+| 2 | [Kinuka Tree](#p65) |
+| 3 | [Lockweed](#p69) |
+| 4 | [Marshmallow](#p72) |
+| 5 | [Musk Muddle](#p75) |
+| 6 | [Pallast](#p78) |
+| 7 | [Stirge Traps](#p92) |
+| 8 | [Willow-Herb](#p103) |
+    
+##### Table 12-2: Swamp - Common
+| d6 | Plant |
+|:---:|:---:|
+| 1 | [Blackcorn](#p32) |
+| 2 | [Cubeb](#p41) |
+| 3 | [Goblin-Trap](#p55) |
+| 4 | [Krakaem Pods](#p66) |
+| 5 | [Torment Toadstool](#p98) |
+| 6 | [Vipervine](#p101) |
+    
+##### Table 12-3: Swamp - Uncommon
+| d20 | Plant |
+|:---:|:---:|
+| 1-2 | [Bloodpurge](#p33) |
+| 3-4 | [Boomshroom](#p34) |
+| 5-6 | [Choke Mold](#p38) |
+| 7-8 | [Choking Cinder Fungus](#p38) |
+| 9 | [Corpsebomb](#p40) |
+| 10 | [Darkshine](#p43) |
+| 11 | [Fjor'da](#p52) |
+| 12 | [Guklulla](#p57) |
+| 13 | [Hathlil](#p59) |
+| 14 | [Marsh Maw](#p72) |
+| 15 | [Ordul](#p78) |
+| 16 | [Pondstone Tree](#p80) |
+| 17 | [Rattlestalks](#p82) |
+| 18 | [Redflower](#p82) |
+| 19 | [Scarlet Heart Mushrooms](#p86) |
+| 20 | [Swampwalker](#p94) |
+    
+\columnbreak
+
+##### Table 12-4: Swamp - Rare
+| d8 | Plant |
+|:---:|:---:|
+| 1-2 | [Aadarna](#p22) |
+| 3 | [Bull-Rush](#p35) |
+| 4 | [Dripping Tree](#p46) |
+| 5 | [Knitbone](#p65) |
+| 6 | [Pygmy King Flower](#p81) |
+| 7 | [Shaggy Ink Mushrooms](#p87) |
+| 8 | [Violet Slime](#p100) |
+    
+##### Table 12-5: Swamp - Very Rare
+| d8 | Plant |
+|:---:|:---:|
+| 1-2 | [Chromus Slime](#p38) |
+| 3 | [Spirit Moss](#p91) |
+| 4 | [Sweet Arcane](#p94) |
+| 5 | [Tekkil](#p96) |
+| 6 | [Thelmallow Flower](#p97) |
+| 7 | [Vaundyr Vine](#p100) |
+| 8 | [Yuzine](#p106) |
+    
+##### Table 12-6: Swamp - Legendary
+| d4 | Plant |
+|:---:|:---:|
+| 1-2 | [Athelas](#p28) |
+| 3-4 | [Devil's Bloodflower](#p44) |
+    
+
+
+\pagebreakNum
+
+
+    
+<div class="wide" style="text-align: center">
+
+# Underdark
+
+</div>
+
+##### Table 13-1: Underdark - Very Common
+| d4 | Plant |
+|:---:|:---:|
+| 1-2 | [Bluecap](#p34) |
+| 3 | [Cave Moss](#p37) |
+| 4 | [Wizard Hats](#p104) |
+    
+##### Table 13-2: Underdark - Common
+| d20 | Plant |
+|:---:|:---:|
+| 1-2 | [Blackroot](#p32) |
+| 3-4 | [Brawler's Blackcorn](#p35) |
+| 5-6 | [Deep Imaskari Waterplant](#p44) |
+| 7-8 | [Fennel Silk](#p50) |
+| 9-10 | [Fire Lichen](#p51) |
+| 11-12 | [Fleshwort](#p52) |
+| 13-14 | [Grammax Creeper](#p56) |
+| 15 | [Jelly Moss](#p63) |
+| 16 | [Light of Mystra](#p68) |
+| 17 | [Nightmare Root](#p76) |
+| 18 | [Sunflower of Pelor](#p93) |
+| 19 | [Trathua](#p98) |
+| 20 | [Zurkhwood](#p106) |
+    
+##### Table 13-3: Underdark - Uncommon
+| d20 | Plant |
+|:---:|:---:|
+| 1-2 | [Abyssal Blackgrass](#p22) |
+| 3-4 | [Amanita](#p25) |
+| 5 | [Barrelstalk](#p30) |
+| 6 | [Cave Star](#p37) |
+| 7 | [Choke Mold](#p38) |
+| 8 | [Corpsebomb](#p40) |
+| 9 | [Darkhorn](#p42) |
+| 10 | [Darkshine](#p43) |
+| 11 | [Death's Collard](#p43) |
+| 12 | [Dragontongue Mushrooms](#p46) |
+| 13 | [Gravefist](#p56) |
+| 14 | [Ironvine](#p62) |
+| 15 | [Korogg](#p65) |
+| 16 | [Luhix](#p69) |
+| 17 | [Mothflowers](#p75) |
+| 18 | [Quicksilver Lichen](#p81) |
+| 19 | [Ripplewood](#p83) |
+| 20 | [Torchstalk](#p98) |
+    
+\columnbreak
+
+##### Table 13-4: Underdark - Rare
+| d20 | Plant |
+|:---:|:---:|
+| 1-2 | [Blackvein Flower](#p32) |
+| 3-4 | [Bone Fungus](#p34) |
+| 5-6 | [Calcena Mushroom](#p36) |
+| 7-8 | [Cornus](#p39) |
+| 9 | [Darkberry](#p42) |
+| 10 | [Dungeon Fungus](#p47) |
+| 11 | [Elora](#p48) |
+| 12 | [Glowvine](#p54) |
+| 13 | [Lumina Cap](#p70) |
+| 14 | [Moonstern](#p74) |
+| 15 | [Nightcall](#p76) |
+| 16 | [Orevine](#p78) |
+| 17 | [Shadowrose](#p87) |
+| 18 | [Shaggy Ink Mushrooms](#p87) |
+| 19 | [Stoneshroom](#p92) |
+| 20 | [Zur](#p106) |
+    
+##### Table 13-5: Underdark - Very Rare
+| d12 | Plant |
+|:---:|:---:|
+| 1-2 | [Cephalophage](#p37) |
+| 3 | [Chromus Slime](#p38) |
+| 4 | [Cosmos Glond](#p40) |
+| 5 | [Darkwood](#p43) |
+| 6 | [Elandir](#p48) |
+| 7 | [Maiden's Hair](#p70) |
+| 8 | [Rare-Blue](#p82) |
+| 9 | [Serpent Sweat](#p87) |
+| 10 | [Silver Tassel Toadstool](#p88) |
+| 11 | [Sussur](#p93) |
+| 12 | [Wispstalks](#p103) |
+    
+##### Table 13-6: Underdark - Legendary
+| d4 | Plant |
+|:---:|:---:|
+| 1-2 | [Devil's Bloodflower](#p44) |
+| 3 | [Fordamna](#p53) (Exceedingly Rare)|
+| 4 | [Silver Hibiscus](#p88) |
+    
+

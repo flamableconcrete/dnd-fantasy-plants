@@ -1,0 +1,859 @@
+<style>
+  /*Remove footer*/
+  .phb:after {
+    content: "";
+  }
+
+  a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .spellList a,
+  .phb p em a,
+  .phb ul li a
+  {
+    text-decoration: none;
+  }
+
+  .phb table tbody tr td {
+      padding: .10em .1em;
+  }
+
+  .phb table tbody tr:nth-child(odd) {
+    background-color: #efacb8;
+  }
+
+  .toc {
+    column-count:4;
+  }
+
+  .toc a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .toc li span:nth-child(2){	/*Allow dot leaders to fill remaining space but not overlap*/
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .toc li span:nth-child(2):after{
+    font-family		: BookSanity;	/*Remove any header styles from dot leaders*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    content:
+      " ........................................"
+      "........................................."
+      ".........................................";
+  }
+
+  .toc li span:first-child{
+    float: right;
+    font-family		: BookSanity;	/*Remove any header styles from page numbers*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    margin-left		: 1px;	/*Leaves a small space between page numbers and dot leaders*/
+  }
+
+/*Special cases for headings*/
+  .toc li h3 span:nth-child(2):after{
+  	content: " ";						/*Remove dot leaders on h3*/
+  }
+
+  .toc li h3 {
+    margin-bottom: 4px !important;		/*Special spacing for h3*/
+    margin-top: 10px !important;
+    line-height: initial !important;	/*For some reason Multi-line h3 line spacing changed*/
+  }
+
+  .toc li h3 span:first-child{
+  	line-height: 1.8em !important;  	/*Line page numbers up with Multi-line h3 better*/
+  }
+
+  .toc ul ul {
+  	margin-left: 10px !important;		/*Original lists intented too much*/
+  }
+
+  .toc>ul>li {
+    margin-bottom: initial !important;	/*margin for list items needs to be removed or 0*/
+  }
+
+</style>
+
+
+
+
+### Mandrake
+*[Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+The root of this herb sends the recipient to sleep. The sleep will last 15 hours, during which time the person cannot be woken except by a Protection from Poison spell or potion. The root is said to bear a resemblance to the naked male form, hence its name. The plant has several dark green leaves which are about 1-foot long. The purple flowers of the plant are bell shaped. The root of the plant must be boiled on the night of a full moon and left to sit for an entire month before use. According to ancient legend, the sun god, Re­Horakhty, sent one of his chosen heroes to earth to punish mankind. The hero’s slaughter was so intense, that Re took pity on man, and forced the hero to drink the blood of his victims mixed with Mandrake root. He fell asleep and when he awoke was unable to remember why he had come to earth, and so the slaughter was ended.
+
+
+
+### Mar'kerlan
+*[Forest](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+This woody herb’s bark can be stripped and chewed as a gum. For 1d4 hours, eyesight is incredibly enhanced, doubling ranged attack range and granting a +2 bonus to attack rolls for ranged attacks.
+
+
+
+### Maracan
+*[Desert](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Resembling a dead wood shrub, Maraca subsists off of magical energy found within the earth and therefore does not grow leaves, and the slightest amount of water will drown it. Branches of maraca can be snapped off, dried, and grated under the light of a full moon into a fine powder that faintly glows. When a dose of the dust is thrown on a target, it will negate the saving throws for the next spell on him. An attack roll must be made against unwilling targets that know that the caster is up to something. This powder is also known as magedust and can fetch pretty hefty prices at market.
+
+
+
+### Maraga Flowers
+*[Jungle](#p108), [Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+Growing as a small bush with broad, heart shaped leaves, the plant also grows vibrant red-and-violet flowers. The bush also emits an enticing scent that almost overpowers the smell of the plant’s decaying prey. The insides of the flowers are lined with a number of sharp thorns, and each flower is capable of spraying a paralytic poison at potential prey (DC 15 Cons. Save if within 5 feet of the plant or suffer 3d6 poison damage. 
+
+If the target creature fails the saving throw by 5 or more, they are Paralyzed for 1d4 hours). Once the prey falls to the ground, the bush is capable of slowly moving due to having shallow roots, and entangling the paralyzed creature. The root system slowly crushes the prey, and the bush feeds upon the nutrients as the body decays.
+
+
+
+### Marigold
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Marigold can grow to a height of two feet and has rows of flat orange and yellow petals around a central disc. These flowers must be dried and then mixed with olive or other vegetable oil to produce a soothing balm which will soothe and clean small wounds, in order to prevent infection. As a side effect, the marigold has a slightly musky scent that attracts beasts, and granting a +2 to Animal Handling checks as well as +2 to rolls for initiative from beasts for 1d8 hours.
+
+
+
+### Marisia
+*[Plain](#p109)*
+___
+- **Rarity:** [Legendary](#p116)
+
+A small, gnarled tree found in temperate plain environments with bright pink leaves, the leaves are commonly ground into a drug well-known amongst spellcasters called Memory Dust. Taken as a snuff, the dust gives a magic-user the ability to memorize and cast a single spell of the level above his normal maximum (for example, a 1st level magic-user could memorize and gain a slot for a single 2nd level spell) until the next long rest. The dust is highly addictive. After every session in which a magic-user has made use of the dust, he must make a Wis. check on 1d20. If the roll results in a number higher than his Wis. score, the character will do everything he can to use the dust again in the next session, paying sometimes exorbitant prices. A roll of 20 indicates that the character's tolerance for the dust has increased, and from now on he must consume twice the quantity to achieve the same effect.
+
+
+
+### Marjoram
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This herb removes the color from the skin of a person who has had yellow jaundice. The herb has angular stems which grow to a height of 1 to 2 feet, which are reddish in color and are covered in small hairs. It has ovate shaped leaves which surround the stem and grow smaller and smaller towards the top of the plant. It is topped by pale pink flowers. The herb prevents the spread of some disease as well.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Marsh Maw
+*[Swamp](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Lurking beneath the stagnant water of swamps across the realm waits a plant made of veiny tendrils looking to fill a spine-filled maw. When unsuspecting prey wanders nearby, the tendrils snake around flailing limbs, dragging it into the maw. The plant slowly submerges back beneath the surface, crushing the prey caught within its grasp. The Marsh Maw is a danger that dwells within shallow swamps, using the brackish water as camouflage. The plant has a deep root system that goes deep, holding the monstrosity in place. The Maw often lurks at the edges of the swamp, near where herd animals come to drink. More than a few unlucky shepherds have lost members of their flock to the danger that lurks just beneath the surface.
+
+___
+> ## Marsh Maw
+>*Large plant, unaligned*
+> ___
+> - **Armor Class** 14
+> - **Hit Points** 112 (14d10 + 28)
+> - **Speed** 20 ft.. swim 20 ft.
+>___
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>|16 (+3)|12 (+1)|14 (+2)|4 (-3)|10 (+0)|6 (-2)|
+>___
+> - **Damage Resistances** bludgeoning
+> - **Damage Vulnerabilities** fire
+> - **Condition Immunities** blinded, deafened, frightened, prone
+> - **Senses** blindsight 60 ft. (blind beyond this radius), passive Perception 10
+> - **Challenge** 6 (2,300 XP)
+> ___
+> ### Actions
+> ***Multiattack.*** The marsh maw can make two *constrict* attacks and a *bite* attack.
+>
+> ***Constrict.*** *Melee Weapon Attack:* +5 to hit, reach 10 ft., one target. *Hit* 11 (2d6 + 3) bludgeoning damage, and a Large or smaller target is grappled (escape DC 14). Until this grapple ends, the target is restrained, and the marsh maw cannot constrict another target.
+>
+> ***Bite.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one Medium or smaller target. Hit: 11 (2d6+3) piercing damage, and a target is blinded, restrained, and unable to breathe. The target must succeed on a DC 14 Con. Save at the start of each of the marsh maw’s turns or take 11 (2d8+3) bludgeoning damage. If the marsh maw moves, the engulfed target moves with it. The marsh maw is unable to use the bite attack until it releases the held creature.
+
+
+
+\columnbreak
+
+### Marshmallow
+*[River](#p111), [Swamp](#p111)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This plant has a green fleshy stem and broad egg-shaped leaves, both of which are covered with downy hairs. It has five-petalled, pale pink flowers which sit at the base of the leaves. The root must be boiled, and the resultant distillation applied to burns. If used successfully the herb will double the rate of healing for the burn, granting one half hit point for every point of fire damage being treated.
+
+
+
+### Maruera
+*[Forest](#p107), [River](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+In appearance this small tree looks much like any other excpt in minature. It can be identified by its vivid green leaves. These leaves when chewed produce large amounts of oxygen from the carbon dioxide already in the persons breath. One leaf may be chewed for up to ten minutes, before its properties are exhausted. The leaves are often boiled down to an essential oil, and the resultant infusion added to starchy natural substances to produce a gum. A piece of this gum will allow the recipient to survive without oxygen for 2d4 x 10 minutes, provided they are conscious and able to chew. The herbs main use is in allowing the recipient to survive in oxygen poor or free environments such as underground. When a tree is found it will normally have 5d10 leaves. Taking too many leaves can harm the tree. The tree has a chance of dying equal to the percentage of the leaves taken. For example, if 30% of the leaves are taken the tree has a 30% chance of dying, if 50% are taken it has a 50% chance of dying. The leaves are also said to have a calming effect when chewed (DM’s discretion).
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Masterwort
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+Masterwort grows to be about three feet tall and bears several overlapping layers of white flowers. It has winged dark green leaves like those of a maple tree. The leaves must be boiled and left to stand for at least twenty days before use. This herb is used as a protection from plague, giving a +2 bonus to any constitution saves against disease.
+
+
+
+### Masthin
+*[Jungle](#p108)*
+___
+- **Rarity:** [Common](#p113)
+
+Plant native to Q'barra jungle that produces natural intoxicants when young that attract wild animals. If its shoots are used as a component for any enchantment spell targeting animals or magical beasts, they have a 40% chance of doubling spell duration.
+
+
+
+### Meadow Giant
+*[Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Tenacious, large green-stemmed weed that can spring up over-night in temperate grasslands, plains and farmlands. It easily threatens crops, and its powdered stem can be made into an anti-coagulant called White Sanguine, which when added to an injury poison, causes the victim to bleed for 1 point of damage each round for one minute if it fails a DC 15 Constitution save against the poison. Magical healing or a DC 15 Medicine check stops the bleeding.
+
+
+
+### Megillos
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+The leaves of this dandelion-esque herb increases a character’s eyesight for 1 minute. They can see twice as far, and when in missile combat, all ranges are treated as if 5 feet less.
+
+
+
+### Melander
+*[Jungle](#p108), [River](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+Melander is a moss that must be brewed in clear water. The resultant distillation must then be drunk. Tasting slightly of ale, it will then add +1 to all Constitution saving throws vs disease for a period of 1d10 days.
+
+
+
+
+\columnbreak
+
+### Midnight Coneflower
+*[Mountain](#p110)*
+___
+- **Rarity:** [Legendary](#p116)
+
+An incredibly rare flower found on mountainous peaks that only blooms on a blue moon, sprouting from the ground into a shiny, white plate-sized flower, and retracting back into the ground before dawn. The petals of this flower can be ground into a fine white powder used in the creation of two separate, but equally deadly poisons.
+
+If the powder of the Midnight Cone petals is combined with the Midnight Cone’s Nectar, the two can be mixed to create a sweet smelling, sweet tasting syrup that becomes inert when ingested. However, this process creates a powerful, delayed-response contact poison called Goodbye Kiss. Typical application sees the flower’s pure nectar applied to the assassin’s lips as a protective barrier followed by an application of the Goodbye Kiss syrup, and then the assassin giving the target a kiss. A creature subjected to this poison suffers no effect until the stroke of midnight. If the poison has not been neutralized before then, the creature must succeed on a DC 18 Constitution saving throw vs. poison, taking 13d6 poison damage on a failed save, or half as much damage on a successful one.
+
+In addition, the Midnight Cone Flower’s petals can be made into Midnight Tears, an equally potent ingested poison. Many nobles have died peacefully in their sleep while their loved ones lay nearby, falling to the effects of a dose of Midnight Tears administered by a stealthy assassin many hours before. The only side-effect of the poison, that can very easily be missed in investigation, is the presence of the white, pearlescent tears that the poison is named for, seeping from the recipient’s eyes as if they were crying in their sleep. Again, a creature subjected to this poison suffers no effect until the stroke of midnight. If the poison has not been neutralized before then, the creature must succeed on a DC 18 Constitution saving throw vs. poison, taking 13d6 poison damage on a failed save, or half as much damage on a successful one.
+
+### Milkworte
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This herb protects from (for 1d4 days) and treats minor plagues (cures in 1d4 days).
+
+
+
+### Mimetry Sprigs
+*[Mountain](#p110)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A small, green shoot family of plants whose fibers have the ability to take on the hue of whatever is around it. The fibers are the basis for camouflaging armor, but crafting the shoots into this fiber and the fiber into armor requires master-level craftwork.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Mirenna
+*[Forest](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+The berries of Mirenna will heal 1d4-1 hit points when eaten. A typical bush will yield 3d10 berries.
+
+
+
+### Mistletoe
+*[Arctic](#p107), [Forest](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Mistletoe is a parasitic evergreen shrub that grows mostly in copses of other evergreens. Mistletoe has long been a sacred herb to druids, and branches of mistletoe have been hung from the ceilings to ward off evil spirits for centuries. The origin of kissing under the mistletoe comes from an age-old story of the deities, that Eldath, the goddess of peace was nearly slain with an arrow made of a mistletoe branch. When she was revived from the brink of death, the mistletoe was then turned over to the domain of Sune, the goddess of love and she vowed that whenever anyone passed under a branch of mistletoe they would kiss to illustrate that mistletoe had become a symbol of love and not of hate.
+
+
+
+### Mokodo Bush
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+This full body bush grows a plentiful amount of waxy green leaves, that turn pink in the fall. During warmer months the bush sprouts flowers of yellow and orange, which turn into sweet little berries. The leaves and berries of the bush can be harvested and rendered down to create a waxy resin that is often used to seal the hulls of seagoing boats, replacing pitch. The practice is far from common, as the process to create the resin is far more expensive than using the traditional methods. Some seamstresses also coat their threads in the resin, which allows for the creation of finer garments. These garments represent armored fine clothing, the appearance of fine clothes with the protection of light armor (AC 11+Dexterity Mod).
+
+
+
+### Moonstern
+*[Underdark](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+A glowing silver mushroom that can be found in caves at least 500 feet below surface-level. The mushroom can be ground and combined with pure alcohol to create a magically enchanted secret ink. Two doses are needed for a full vial of ink. This ink is only readable in unobstructed moonlight. During day time, the ink reads as magically shifting, incomrephensible silver runes.
+
+
+
+
+\columnbreak
+
+### Mordayn
+*[Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+Inhaled steam drug made from this rare herb found in deep jungle environments. Initial hallucinations for 1d20 + 10 minutes that render the recipient Frightened but also give +10 temporary hit points. After this amount of time, a DC 14 Constitution Save must be made. On a failed save, the recipient becomes addicted, and the addict loses -1 to Wisdom and Constitution as long as they’re addicted.
+
+
+
+### Mordock Bramble
+*[Mountain](#p110)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A brown, rapidly growing bramble that rapidly encroaches on small areas, smothering other plants. The roots of the bramble are woody and taste slightly like sassafras. After ingesting the roots raw or in an infusion, the creature takes 10 (2d10) necrotic damage and gains resistance to poison damage for the same number of minutes.
+
+
+
+### Mother's Mercy
+*[Mountain](#p110)*
+___
+- **Rarity:** [Common](#p113)
+
+Mother’s Mercy very closely resembles the plant Mother’s Worry except for the presence of the small, white blooms that are present on Mother’s Mercy during the late spring and early summer. A tall, woody-stemmed plant that when broken releases copious amounts of a thin, milky fluid. When the sap of Mother’s Mercy is refined to a slightly thicker milky fluid, it becomes a peaceful but powerful poison. After ingestion, a creature subjected to this poison must succeed on a DC 14 Constitution saving throw, becoming poisoned on a failed save, and must repeat the saving throw at the start of each of its turns. While poisoned in this way, the creature's Constitution score decreases by 2. On each successive failed save, the creature's Constitution score is further reduced by 1. If a creature's Constitution score if reduced to 0 in this way, it dies. After two consecutive successful saves, the poisoning ends and the creature's Constitution score is restored.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Mother's Worry
+*[Mountain](#p110)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Mother’s Worry very closely resembles the plant Mother’s Mercy except for the presence of the small, white blooms that are present on Mother’s Mercy during the late spring and early summer. A tall, woody-stemmed plant that when broken releases copious amounts of a thin, milky fluid. By harvesting this liquid and evaporating away the excess water, Mother’s Worry can be turned into a mild poison that causes the rapid onset of unconsciousness via constriction of the airways. Upon ingestion, the recipient must make a DC 12 Cons. Save vs poison. On a failed save, the target takes 1d4 poison damage and falls unconscious for 1d6 hours. On a successful save, the target instead takes only one half of the poison damage with no secondary effect.
+
+
+
+### Mothflowers
+*[Underdark](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A strange plant that grows in the Underdark, the stalk of the plant is a shade of grey similar to ashes. The few leaves that sprout from the stalk are a lighter shade of grey with dark veins running through them. Every few hours the flowers of the plant open, and appear very similar to white moths. When the flowers are open, the plant emits a strange smell which causes goblinoids to retch. Any goblinoid (including Kobolds, Goblins, Bugbears, and Hobgoblins) approaching within 20 feet of the plant must make a DC 12 Constitution saving throw or become nauseous. Flowers that have been picked do not confer the same effect.
+
+
+
+### Mountain Garlic
+*[Coastal](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Common](#p113)
+
+A strain of garlic that only grows on coastal mountainsides, said to repel evil spirits. The garlic, when worn around the neck, wards off undead and aberrations for 1d8 hours. -3 to rolls for initiative from these types of creature during that time.
+
+
+
+### Mountain Setwall
+*[Mountain](#p110)*
+___
+- **Rarity:** [Common](#p113)
+
+Handling or ingesting this herb causes hair to grow on a character’s eyelids and palms, which, although not causing any incredibly detrimental effects, looks and feels awful.
+
+
+
+
+\columnbreak
+
+### Mugwort
+*[Plain](#p109)*
+___
+- **Rarity:** [Legendary](#p116)
+
+Mugwort can grow to be taller than a man. It has a stiff and angular stem, reddish brown in color. It has deeply incised smooth leaves which are dark green on top and silvery white underneath. It has small, yellow-green or yellow-red flowers arranged in long spikes at the top of the stem. The effects of this herb last for two hours; the leaves are harvested and then smoked. During this time the character is granted +20 temporary hit points, and can function normally even while at exhaustion of up to level 5. If used more than one time, the user must make a DC 25 Constitution Save or become addicted. While addicted, the consumer loses 5 hit points per hour and has disadvantage on all checks and saves. Aside from its common uses, Mugwort is the rarest of the plants mentioned in the Nine Herbs Charm, which is supposedly capable of curing any poison or disease.
+
+
+
+### Mule Pollen
+*[Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+A daisy-type yellow flower. Inhaling the pollen grants +2 Str and imposes a -2 penalty to Int and Wis for 1d4 x 10 minutes. DC 12 Wisdom Save to avoid addiction, wherein addiction causes constant fatigue of exhaustion level 4 while not under the influence of the pollen. Protection from Poison cures addiction.
+
+
+
+### Musk Muddle
+*[Swamp](#p111)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Stinky, brown, dead-looking plant with wide leaves found in swamps and marshes. Can be made into Burn Salve, which when applied within 2 rounds after taking fire damage, heals 1d6 points of the damage done by fire.
+
+
+
+### Myrthis
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+Myrthis berries grow on short, roughly 2-foot bushes resembling blueberry bushes that produce berries that also resemble blueberries. The only visual difference between the two is a slight color variation (the fading from blue to black on the bottom of the berry). Consumption of Myrthis Berries causes disorientation and loss of depth perception, -2 to melee and -4 to ranged attack rolls.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Nahre Lotus
+*[River](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A waterlily native to large bodies of fresh water. Harvesting the plant and putting it in a vial creates a splash weapon against enemies, working as a minor form of the spell Tsunami (wall of water up to 10 feet long, 10 feet high, and 3 feet thick. On a failed save, damage is 2d10 Bludgeoning damage).
+
+
+
+### Napweed
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This plant has a single main stem with small fern like leaves, and small pink flowers growing from it. These flowers must be dried, powdered, and mixed into wine and then drunk to counter the effect of damage poisons. A successful application means that only half normal damage is taken from the poison if consumed before poisoning. In addition to this use, the flower is often counted as a symbol of faith between lovers and is used to decorate and garnish foods at weddings. According to Greek mythology, this plant was used by the centaur who, when wounded by Hercules with an arrow poisoned with the Hydra's blood, treated himself with it.
+
+
+
+### Nararoot
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A tuber found throughout Faerun, the green and purple leaves of the plant grow close to the ground, and a single thin stalk sprouts upward to reveal a flower with two wide petals. The root is often cut into shavings and either eaten directly, or brewed into a tea. Although terribly bitter, it primarily serves as a form of birth control, as ingesting it renders a person infertile for several weeks.
+
+
+
+### Navew
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+The seeds of Navew dropped in a drink or on to food before it is eaten acts as counteragent to ingested poisons. It prevents the death of a person poisoned in that meal, though they may still be very ill.
+
+
+
+### Nettle
+*[Plain](#p109), [River](#p111)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A common ground-cover plant that grows in wide open places and occasionally marshy environments. Apart from wanting to avoid the plants due to their stinging hairs, the leaves of nettle plants can be used in teas and ointments treating conditions ranging from constipation to skin disease to excess bleeding. 
+
+Aside from its common uses, Nettle is one of the plants mentioned in the Nine Herbs Charm, which is supposedly capable of curing any poison or disease.
+
+
+
+### Nightcall
+*[Underdark](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+A blue-grey herb smelling faintly of nutmeg that heightens the user's senses. Over-dosage or prolonged usage causes photosensitivity, distraction and nervousness; on the other hand, prolonged usage can also make the effects permanent. Nightcall gradually dyes the long-term user's hair, teeth, nails, horns, or scales midnight blue. (The minimum dose of 1 tsp gives the eater +100' sight range, +10% hearing, and +1 to Wisdom and Dexterity scores for up to 1d8 hours. Up to 4 doses will stack, but after the second dose, the user will make a DC 14 Wisdom Save. This DC increases by one after every dosage. If failed, the user becomes addicted and loses -100’ sight range (down to 3’), -10% hearing, and -1 to Wisdom and Dexterity scores while not under Nightcal’’s effects.)
+
+
+
+### Nightmare Root
+*[Underdark](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+Nightmare Root is a woody, tuberous plant that grows in deep Underdark locations, sprouting up from even lower places in the abyss. The root can be ground into a fine paste that, although tasteless and without odor, adds the texture of very fine sand to a dish it is added to. Those that consume nightmare root often find themselves plagued by haunting dreams upon falling asleep. A creature subjected to this poison must make a DC 19 Constitution saving throw vs poison. On a failed save, the creature's sleep is haunted with a combination of their greatest fears and everything they've ever done wrong. After these fears are presented, the strong willed and wise can overcome the surface horror of these dreams and attempt a DC 20 Wisdom Save vs fear. If this save is failed, the affected creature cannot benefit from long rests, and therefore gains a point of exhaustion at the beginning of the next day. The poison leaves the creature's system 24 hours after ingestion.
+
+
+
+### Nordra
+*[Desert](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+An aloe-like cactus that, when cut, releases a sticky yellow sap that smells like urine. This sap can then be applied to wounds, healing for 1 hit point and stopping up further bleeding.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Northlinch
+*[City](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A commonly cultivated strain of pipeweed known for its inferior quality and harsh flavor. It has no beneficial effects, and too much use of the weed over the years has been linked to a younger death.
+
+
+
+### Nossa
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Nossa is a plain looking wild-flower resembling a perfectly white tiger lily, with various shades of white representing the plants natural pigmentation. While Nossa itself is not uncommon, the process to make it useable for its primary purposes is incredibly long, tedious, and expensive. Requiring preparation by a talented spellcaster, Nossa can be turned into an incredibly expensive poison, called Zealot’s Blade, by combining the ground petals of the flower with liquid gold and exposing the resulting mixture to the light from the spell Sunburst once a day for a week. A creature subjected to this poison must make a DC 25 Constitution saving throw, taking 15d12 radiant/poison damage on a failed save, or half as much damage on a successful one. This damage ignores resistances and immunities. To purchase, Zealot’s Blade typically goes for upwards of 10,000 gold pieces for a single vial containing only a very small amount of the poison which can then be applied to a weapon only once.
+
+
+
+### Novanor
+*[Desert](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Commonly found in many desert areas, Novanor is the fruit of a cactus of the same name, growing in small orange pustules along the cactus’s underside. These fruits can be eaten as emergency water reserves in the middle of the desert, but also serve a darker, more dangerous purpose. Harvesting the fruit, drying them in the sun, and then soaking the dried fruit in the blood of a Lamia (those poor, misunderstood creatures) will create a sticky, scarlet paste called Blood Fire. After injury with a weapon coated with Blood Fire, the blood begins to rapidly oxygenate, essentially burning the target from the inside out, and sometimes leaving little more than a charred skeleton behind. The victim must make a DC 12 Cons. Save vs poison. On a failed save, the target will take 1d6+1 fire damage per round for the next 10 minutes or until cured. On a successful save, the target only takes 1d6+1 additional fire damage on the first hit.
+
+
+
+### Obaddis Leaf
+*[Arctic](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+Rare holly variety that can retain some magic if used as Druidic focus. As a component for spells that target plants, it doubles both area and duration.
+
+
+
+### Oede
+*[Mountain](#p110)*
+___
+- **Rarity:** [Legendary](#p116)
+
+One of the most valuable and prized of all plants, this bush has leaves that are almost golden in color. These leaves can be dried, but if they are not will last only two weeks. This means the drying process must be begun within an hour of the leaves being picked. These leaves can, according to legend, cure any disease. Whether or not the leaves have this power is up to the individual DM.
+
+
+
+### Old Man's Friend
+*[Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+Sticky, leafy herb that grows to 2 inches in large (up to 10 by 10 ft) beds that acts like catnip for dogs. Can be made into a thick grey substance called gash glue, which can stabilize a dying creature without making a medicine check. When used it this way, it also has the side effect of granting +1 on Animal Handling checks for the recipient.
+
+
+
+### Oliosse
+*[Mountain](#p110)*
+___
+- **Rarity:** [Legendary](#p116)
+
+This exceedingly rare herb will restore an Elf to life if given within seven days of death. This effect also works on Half-Elves up to 3 days.
+
+
+
+### Olus Veritis
+*[River](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Olus Veritis is pale green in color and grows right on the edge of rivers. The leaves are rough in texture, and have tiny thorns all along their edges. A leaf should be baked in an oven for one hour and then dragged across the skin of the recipient, cutting their flesh very slightly. The recipient, must make a DC 17 Constitution save vs poison or be compelled to answer all questions, absolutely truthfully for the next 1d6 x 10 minutes. Up to three uses of the herb can be given in a 24 hour period. If any more than 3 are given, the recipient will die within 3 hours of the final dose, or instantly if 6 doses are administered.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Olvar
+*[Jungle](#p108)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+The flower of the Olvar bush must be given to a person in the process of making death saves. On a successful nature check, Olvar will then keep them alive and stabilized for 2d10 days or until healed even if the death saves are failed.
+
+
+
+### Orach
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Orach grows to about 3 or 4 feet in height. It has a whitish stalk, pale green leaves and greenish-white flowers. The seeds must be gathered, bruised and left to stand in pure alcohol for six weeks. The mixture must then be drunk, one spoonful a day for a week. This tincture will cause extreme intoxication but also cure almost any disease. It leaves a yellow color in the skin.
+
+
+
+### Ordul
+*[Swamp](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Ordul is a floating water flower, deep blue with purple tinges on the outer edge of the petals. The flowers can be harvested and are highly sought after for their anti-toxic effects. Upon ingestion, delays all effects of any type of poison for 24 hours, including damage (any administered damage is healed until the plant wears off) and the Poisoned effect. Must be administered within 1 round of poisoning.
+
+
+
+### Orevine
+*[Mountain](#p110), [Plain](#p109), [River](#p111), [Underdark](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+A vine-grape looking plant native to lowlands between mountains and rivers that draws metal from the surrounding soil into bulbous, grape-shaped sacks. Depending on what type of metal it is keyed to, the plant can be harvested alive and sold for 2000 gp & 10000 gp, producing between 300 gp & 2000 gp worth of the metal per month. 
+
+
+
+### Orticusp
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Extremely rare flower with a root that looks like a pale white fist, found in temperate forests with trees of at least 150 years of age. Fey within 20 yards can smell its earthy aroma and find it easily. If the root is pulped it can be made into Night Venom, which when added to a poison, adds an additional saving throw (at the poisons' normal DC) to the initial save against the poison. Failure causes the creature to fall asleep until the secondary effect of the poison kicks in.
+
+
+
+
+\columnbreak
+
+### Ortona
+*[Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+Ortona Trees can grow to 40 feet and produces large amounts of a pale, white fruit, which are commonly turned into a chunky, white paste smelling of walnuts. Applying this thick, white paste to a weapon will allow it to cleave through any non-magical metal. The paste is consumed after a single use. (1d8 fruit can be harvested from a single tree.)
+
+
+
+### Oruighen
+*[Desert](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A rare cactus native to soils rich in alkaline salts that can be made into an inhaled powder drug granting +1 to rolls for Performance, DC 14 Constitution save that, if failed, causes blindness for 2d4 minutes and extreme nostril and nose pain that causes a -2 penalty to attacks, skill checks, and saves for 2d4 hours. Highly addictive, DC 14 Constitution save after second use that increases by 1 after each use; if failed, the user becomes addicted, and suffers all negative penalties even while not under the drug’s control.
+
+
+
+### Osira
+*[Forest](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+Osira is a tiny, parasitic cactus found growing on surface roots of oak trees. Can be juiced or mashed to yield a slightly sweet syrup. Mixing this syrup with any alcoholic beverage neutralizes the alcohol in the beverage.
+
+
+
+### Pallast
+*[Forest](#p107), [Jungle](#p108), [Swamp](#p111)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Pallast is a willow-tree relative that grows up to about 30 feet tall in many temperate and tropical environments. When ground together with marshmallow root and imbibed, Pallast cures minor aches and pains, especially headaches and pain from abscessed teeth, sore muscles, and so forth. Pallast by itself can be turned into a very bitter pale powder, and is usually served in a heavily sweetened tea. (Relieves minor pains but does not restore lost hit points.)
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Palma Eldath
+*[Plain](#p109), [River](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+This herb keeps a person warm for one night or one day, and prevents them suffering from exposure. This can mean the difference between life and death.
+
+
+
+### Panaeolo
+*[River](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+Magical herb whose leaves tastes like leather and function as an ingested drug with no initial effect. Secondary effect after 1d4 hours is to increase all arcane spell save DCs by 2 for 1d4 hours and 1d8 psychic damage. A second dose within an hour of the first improves the effect to a +3 to save DCs and deals 2d8 psychic damage. Further doses only cause more and increasing psychic damage.
+
+
+
+### Pattran
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+The root of a small, shrub-like plant with dark green, shiny leaves and thorns, Pattran is used to relax the muscles and encourage sleep. In mild dosages, Pattran causes a general feeling of relaxation, eases sore, strained or sprained muscles, and similar aches. In larger doses, Pattran causes sleepiness. Pattran tastes like a combination of mint and rich soil. (For sleep dosages, user may voluntarily choose to sleep well or, if resisting, make a DC 12 Constitution Save. Effects last 2d4 hours; if asleep, the user will sleep and awaken normally.)
+
+
+
+### Pennyroyal
+*[Forest](#p107), [River](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+Pennyroyal is a low creeping herb with a squarish stem and small dark green leaves which grow in pairs. The flowers grow in round clusters which are mauve in hue. The leaves should be plucked and thrown into a person’s bath water while still fresh. They may then have an aphrodisiac effect on anyone the recipient attempts to influence in the next 1d4 days (+1 to persuasion checks made within that period). In addition, if dried, the leaves may be sprinkled among books, and will then act as an insect repellent. These make the leaves highly prized among mages and sages who will normally pay between 12 and 15 gp for small amounts of the dried leaves.
+
+
+
+
+\columnbreak
+
+### Peony
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+This plant with its delicate pink flowers may be boiled into a powerful healing draught, capable of stopping all bleeding, internal and external, immediately and healing for 1d8 hit points. However, a roll of 1 on the nature check by the herbalist, will kill the recipient in 1d4 minutes, as they suffer a massive heart attack. The herb can also be deliberately used as a poison by using five times the normal dosage.
+
+
+
+### Periwinkle
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+The plant is a creeping vine with dark, green shiny leaves and pale blue flowers. The flowers must be crushed into a powder and administered orally. If used successfully the herb will stop all bleeding, both internal and external in one turn (+6 hit points recovered if administered within one turn of taking damage).
+
+
+
+### Petiveria
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This plant has a single stem with dark green, shiny leaves growing from it. It is topped by very thin, yellow flowers. The petals of these flowers should be mixed into a poultice, where they will, on a successful application, act to bring down swelling and the discoloration from bruising over the course of a one-day period. Commonly used across the realm as a cold compress for black-eyes.
+
+
+
+### Phandar
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A knobby deciduous tree with mottled bark, the branches often grow away from the prevailing wind, often giving a copse of the trees the appearance of being almost blown over by strong winds. The branches support a surprising amount of small triangular leaves, and are the natural home for a species of moth that resemble the leaves. The strength of the wood lends itself to be an excellent choice for tool handles, bows, and small boats. The multicolored grains are regularly in fashion for jewelry making in such places as Waterdeep and Suzail. However, because of excessive logging over several centuries, the tree can only be found in isolated copses, often far from centers of civilization.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Pixie Table
+*[Forest](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+Rare 1-foot tall and 1-foot diameter mushroom with a dark lavender cap that can be found in any woodland but is most common in temperate forests housing Fey. If boiled with cloth, the resulting fabric is dyed Lavender. It is the main ingredient for a red liquid called Memorybind, which allows a prepared caster to prepare an extra 1st level spell in exchange for reducing all save DCs by 2 until the next long rest.
+
+
+
+### Poison Apple
+*[Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A magically bred medium-sized apple tree that bears red fruits that taste good but function as a strong sleeping poison (DC 18 Constitution Save or the recipient falls into a deep magical sleep for 2d6 days). The sleep can be cured by a Protection from Poison spell.
+
+
+
+### Pomow
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A magically created dark-purple spheroid fruit-plant that grows to 1-2 feet across, serves as a hardy crop viable in a range of climates. Meat, root and seeds are edible and high in protein, core of the plant is filled with juice, the fibers are similar to cotton, and the rind can be used as a sharpening strap for fine blades. A new fruit starts growing as soon as the old one is plucked, taking 2 weeks to grow to maturity.
+
+
+
+### Pondstone Tree
+*[Jungle](#p108), [Swamp](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A towering willow relative that grows in tropical and near-tropical swamps, pondstone wood is often used for its flexibility while freshly cut to construct simple boats and canoes. In addition, the reduction of the wood over a low flame will cause a collection of sap on the ends of the wood. This sap can then be collected, further distilled, and consumed as a tincture that induces mild hallucinogenic effects, including the capability to see one’s own body from a third person point of view. It is argued among enthusiasts about whether you truly do see yourself in third person or whether the hallucinations are just a reconstruction of your surroundings using artificially heightened senses. There are no known negative side effects to pondstone sap consumption, and the recreational use of pondstone sap is referred to as Sap Goggling.
+
+
+
+
+\columnbreak
+
+### Powdered Desert Milk
+*[Desert](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Distilled liquid drug that stains lips blue, first dose causes -1 penalty to Wisdom and then bolsters pain immunity, grants a sense of euphoria and a -2 penalty to Initiative for 1d4 hours. Overdose if second dose taken during duration causing Petrified for 2d4 hours.
+
+
+
+### Poznan's Chain
+*[Jungle](#p108), [Mountain](#p110)*
+___
+- **Rarity:** [Rare](#p115)
+
+Poznan's Chain is a soft-wooded clinging vine armed with white, pearlescent spines, 2" to 3" in length that alternate the entire length of the vine with leathery leaves. These vines are typically only found growing on sheer cliff faces or the most opulent ruined buildings. While a single chain will usually run for 20' to 50' and spread to cover an area of about 200 square feet, some vines are purported to reach 100' or more and cover thousands of square feet with their leaves and thorns. The thorns of Poznan's Chain secrete a virulent poison that causes internal organs to violently rupture and hemorrhage (DC 18 Cons. Save. On a failed save take 6d8 poison damage and the poisoned effect for 6 hours, and on a successful save take half as much damage with no secondary effect.), leading to a bloody death in as little as 20 to 30 seconds. Curiously, if this poison is collected and taken more than 5' from the vine it immediately becomes water. Some claim that Poznan's Chain can produce large, silvery, metallic, star-shaped blooms, but these reports have never been verified.
+
+
+
+### Prickly Tea
+*[Jungle](#p108)*
+___
+- **Rarity:** [Common](#p113)
+
+Thorny bush about 3-ft in height with grey-green leaves. Can be made into a mild stimulant tea with similar effects to that of coffee, or with herbalism training, a substance called Sen-sess, which tastes terrible but grants a +1 bonus to Perception checks for 1 hour.
+
+
+
+### Prince's Feather
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This herb has red-green leaves and long pink flowers. The flowers must be ground into powder and eaten by the recipient. If successful, the herb will halve the rate of internal bleeding within 1 turn, decreasing the damage taken in the next turn by half.
+
+
+

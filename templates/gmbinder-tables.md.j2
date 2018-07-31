@@ -44,7 +44,7 @@
 |:---:|:---:|
 {% for plant in plants %}
 {% if region in plant.Regions %}
-| {{ plant.table_die_entry }} | [{{ plant.name }}](#p{{ plant.page }}) |
+| {{ plant.table_die_entry }} | [{{ plant.name }}](#p{{ plant.page }}) {% if plant.Notes %}({{ plant.Notes }}){% endif %}|
 {% endif %}
 {% if plant.table_die_entry == 61 %}
 \columnbreak

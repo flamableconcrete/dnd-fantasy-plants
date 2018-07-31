@@ -1,0 +1,839 @@
+<style>
+  /*Remove footer*/
+  .phb:after {
+    content: "";
+  }
+
+  a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .spellList a,
+  .phb p em a,
+  .phb ul li a
+  {
+    text-decoration: none;
+  }
+
+  .phb table tbody tr td {
+      padding: .10em .1em;
+  }
+
+  .phb table tbody tr:nth-child(odd) {
+    background-color: #efacb8;
+  }
+
+  .toc {
+    column-count:4;
+  }
+
+  .toc a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .toc li span:nth-child(2){	/*Allow dot leaders to fill remaining space but not overlap*/
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .toc li span:nth-child(2):after{
+    font-family		: BookSanity;	/*Remove any header styles from dot leaders*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    content:
+      " ........................................"
+      "........................................."
+      ".........................................";
+  }
+
+  .toc li span:first-child{
+    float: right;
+    font-family		: BookSanity;	/*Remove any header styles from page numbers*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    margin-left		: 1px;	/*Leaves a small space between page numbers and dot leaders*/
+  }
+
+/*Special cases for headings*/
+  .toc li h3 span:nth-child(2):after{
+  	content: " ";						/*Remove dot leaders on h3*/
+  }
+
+  .toc li h3 {
+    margin-bottom: 4px !important;		/*Special spacing for h3*/
+    margin-top: 10px !important;
+    line-height: initial !important;	/*For some reason Multi-line h3 line spacing changed*/
+  }
+
+  .toc li h3 span:first-child{
+  	line-height: 1.8em !important;  	/*Line page numbers up with Multi-line h3 better*/
+  }
+
+  .toc ul ul {
+  	margin-left: 10px !important;		/*Original lists intented too much*/
+  }
+
+  .toc>ul>li {
+    margin-bottom: initial !important;	/*margin for list items needs to be removed or 0*/
+  }
+
+</style>
+
+
+
+
+### Belramba
+*[River](#p111)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Belramba is a grey-light blue lichen commonly found growing on river rocks. It must be brewed in water, and then within 3 days. If used successfully, all nerve damage capable of healing naturally will be healed, at three times the normal rate.
+
+
+
+### Betrayer's Inception
+*[Other](#p112)*
+___
+- **Rarity:** [Other](#p112)
+
+Smelling slightly of evergreen needles and camphor before its application, this poison is a thin liquid that is prepared via complicated alchemical procedures and unknown plant-based ingredients as the recipe itself was declared illegal and destroyed in most known sources several centuries ago. The poison can be applied to any surface, adhering to it until it comes into contact with organic matter, which it quickly seeps into. It is clear, nearly invisible, and odorless, but can be easily identified by agitating the liquid in any way, which causes it to flash violently with varying hues of light. Due to its use in bringing down many nobles in past generations, it has been banned in nearly every established civilization. Being caught with it on your person is akin to an instant death sentence and one can only learn of its nature by asking the right person. Ask the wrong person, and you may find yourself put to death. A creature subjected to this poison must succeed on a DC 22 Constitution saving throw or be poisoned. The poisoned creature feels no immediate effect and is unaware of their condition. After a week, the creature gains an effect listed on the short-term madness table (DMG pg. 259). When the short-term effect ends, they gain an effect from the long-term madness table (DMG pg. 260). When the original long-term effect ends, they gain a new long-term effect as well as an indefinite effect (DMG pg. 260). After each long-term effect ends, they gain a new long-term and indefinite madness effect until they die or are cured. This effect can only be cured by a greater restoration spell cast at 7th level or higher.
+
+
+
+### Bija Tree
+*[Arctic](#p107), [Forest](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+A leafy evergreen tree, the trunks grow about as round as a man can reach, and their boughs are often fashioned into brooms by common people. The seeds hold another use, and are often ground into a fine powder called Green Sleeping Dust. The dust is primarily used by mercenaries in service to the royal family of Pentillia and as a sleeping drug in higher society. When this powder is inhaled, it forces a target to make a DC 19 Constitution saving throw or fall unconscious for 2d6 minutes. If the drug is willingly consumed, the target does not have to make this throw and instead just falls unconscious.
+
+
+
+
+\columnbreak
+
+### Bilberry
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Bilberries are small black berries that grow on leafy forest plants resembling blueberry bushes. They must be mixed with pure alcohol and left to stand for fifteen days, at the end of which time they must be drunk. A successful application will give a human the truesight ability for 2d6 days, but a failed application may lead to the death of the person who drinks it, as if they had drunk a potent poison (DC 17 Cons. Save vs poison, or take 6d6 poison damage after 1d4 minutes).
+
+
+
+### Birthnot
+*[Arctic](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Birthnot is a dark-leaved, flowerless vine. The dried leaves can be used to create a contraceptive tea effective on most humans, demihumans and humanoids, male or female. Must be ingested between 1 hour - 30 minutes before properties invoked. (70% effective; causes mild impotence in males 15% of the time.)
+
+
+
+### Bishop's Weed
+*[Arctic](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Bishop's weed is a small plant with pale blue flowers, and small pale-green leaves. This herb will protect people from plague (+5 to Constitution Saves against disease). It is drunk in wine, and is effective for one week. In plague years, its price increases rapidly.
+
+
+
+### Bison-Gourd
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A vine that grows along the ground, the plant has irregular shaped leaves, and during warmer months the plant produces large yellow flowers shaped like trumpets. The flowers later turn into yellow and orange fruit with a slightly salty taste. The plant’s seeds can also be harvested to extract the oil that works well as an insect repellant. The odor from the oil is almost imperceptible to people, but is effective at repelling bothersome insects. (-2 to Rolls to hit  for Insectoids)
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Bittergar Bush
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A small thistle-like shrub that grows in most low-lying areas in Faerun, the leaves are the source of an herb called drace. While raw drace is horribly bitter, once cooked it provides a delightful seasoning which enhances the flavor of other food.
+
+
+
+### Bittermourn
+*[Arctic](#p107)*
+___
+- **Rarity:** [Legendary](#p116)
+
+A rare, colorless lichen that grows on rocks beneath year-round ice. When crushed and strained, it creates a clear gel at freezing temperatures that melts into liquid when warmer. Imbibing a pint slows the aging process and grants a lifespan of twice normal length. If imbibed by someone during near-death or immediately after death, will place the person into a deep magical coma and/or reduce the cost of a resurrection spell, up to the DM’s discretion.
+
+
+
+### Black Rose
+*[Forest](#p107), [Mountain](#p110), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+This rare rose is easily identified by its black, velvety flower and long white thorns. The thorns are hollow and absorb liquids at a rate of a pint every 5 minutes. The liquid is stored in the plant's fibrous roots. The black rose's roots are often used to draw poison from wounds or, placed under the tongue, to absorb alcohol and prevent intoxication. Sometimes victims are tied down and pierced with the thorns to cause prolonged and painful exsanguination.
+
+
+
+### Blackberry
+*[Forest](#p107), [Mountain](#p110), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+The leaves of these small black berries should be crushed and applied to small wounds, where they can stop minor bleeding very quickly (if applied within one round).
+
+
+
+
+\columnbreak
+
+### Blackcorn
+*[Swamp](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+Resembling actual corn, but in far miniature, the plants generally grow on the edges of swamps and other humid areas. Unlike corn, it is overly difficult to cultivate and farm, which attributes to the rarity of the plant. Upon ripening, small ears of violet and coal colored corn stand upon the tips of the plant stalks. Eating the kernels provides a bitter taste to those willing to try it. However, the vegetable is prized not for eating, but for making a sweet alcohol called Blackcorn Whiskey that has a strong flavor of plums. Due to the heavy alcohol content, it is often mixed with fruit juices. A more potent version of the brew is often distilled by dwarves, but such a process takes considerably longer, and is worth up to 75 gold per bottle.
+
+
+
+### Blackroot
+*[Underdark](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+A thin vine that has small dark leaves, the vine predominantly grows underground near lakes and pools. The vine generally grows in places where a small bit of light occurs, sometimes thriving off of the glow provided by phosphorescent moss. Blackroot's roots can be applied to fresh wounds in order to promote quick healing (applied immediately, gives 1d4 back to character at once) while the leaves can be crushed into the powder known as blackroot poison. Those injured by a blade coated in the poison must succeed at a DC 13 Constitution saving throw or suffer 16 (4d6) poison damage and be poisoned for 1 hour. Additionally, if the target fails the saving throw by 5 or more, they are Paralyzed for 1d6 minutes.
+
+
+
+### Blackvein Flower
+*[Underdark](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+A dark red or burgundy flower with black-veined dark-green leaves that commonly grows in small bunches from decaying organic matter, commonly growing from corpses of animals and people. Black Vein Flowers can be turned into the aptly named Black Vein Poison which, after ingestion or injury exposure, will begin to poison the recipient, turning the victim’s blood to a toxic black ichor as it works its way through the system. The target must make a DC 12 Cons. Save vs poison. On a failed save, the target will take 2d8 Necrotic damage, and be poisoned for 1d6 hours. During the duration of poisoning, the target will also have a temporary -2 penalty to Constitution. On a successful save, the target will only take half the necrotic damage and not be poisoned.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Bloodbracken
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A predatory plant that spends 95% of its life underground. The seeds sprout and spread underground, sending out parasitic roots and drawing in nutrients. A few thin tendrils with unremarkable green leaves reach the surface. The seedpod, growing to the size of a large melon over the course of a two-year period, strains and creaks just below the surface. If a creature of sufficient weight steps on the soil above it, it will burst, releasing a cone of red branches that sprays upwards like a land mine, impaling and shredding the target for 10d8 slashing damage. One moment, nothing. The next, a 6' tall red twiggy bush growing through the body of your friend. As the body rots, it provides nutrients for the Bloodbracken to grow and produce seeds. It's entirely safe in this short-lasting mature stage, living to reproduce and wilting after only a few months. If a mature Bloodbracken is found in the wild, the base can be searched to yield bones of unlucky explorers and occasional whatever loot they had on them.
+
+
+
+### Bloodgrass
+*[Forest](#p107), [Jungle](#p108), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A wide-bladed grass that grows in small bunches with a red-tinted central vein running the length of the blade. Bloodgrass can be ground into a green and red paste that can be added and mixed into most potions and drinks to become adequate food equivalent to a day’s rations. Cannot be altered by other ingredients.
+
+
+
+### Bloodkeep
+*[Jungle](#p108), [Mountain](#p110)*
+___
+- **Rarity:** [Common](#p113)
+
+Tall stalks with jagged leaves and purple-red flowers, bloodkeep's fresh leaves can be bound to a wound to stop bleeding at once and quicken coagulation (apply within 2 rounds of injury to stop bleeding; character regains 20% - rounded down - of lost hit points at once).
+
+
+
+### Bloodpurge
+*[Swamp](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Floating on the surface of marshes, the plant consists of a cluster of broad, waxy leaves, and a single root that trails down into the water. The leaves are a bright green with red capillaries. During the warmer months a bright red flower sprouts from the top. Drying the plant causes it to turn into a flaky powder, which is often used in a distilled tincture to neutralize minor poisons. A single dose of Bloodpurge powder costs about 15 gold pieces, making the plant quite valuable.
+
+
+
+
+\columnbreak
+
+### Bloodroot
+*[Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+A short plant that grows deep in the jungle, the stalks are covered with long pointed leaves. The plant also blossoms red flowers that appear to be similar to roses. Unearthing the plant reveals a massive crimson root that has a faint coppery scent. Many people seek out the plant for the root, which is said to ensure robust fortitude in those that consume it. Upon consuming the bloodroot, a living person must make a DC 15 Constitution saving throw or be Paralyzed for 1 minute. Immediately afterward the creature gains a +2 bonus to their Constitution saving throws for 1d4 hours. Although the initial rush of blood throughout the body causes people to become momentarily stunned, it is often still complimented for the other effects, which some say causes increased virility. What few know is that the root is also sought after by vampires, as it causes increased effects to their undead physiology. Many such creatures take steps to covertly acquire the plant. A vampire consuming the bloodroot immediately gains Advantage on Charisma based skill checks for the next 1d4 hours, and the herb causes them to immediately Rage (as per the Barbarian class feature) if they smell blood.
+
+
+
+### Bloodspine
+*[Desert](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Common](#p113)
+
+A succulent plant growing in rocky soil, a cluster of thick leaves reach upward toward the sky, their edges covered in sharp thorns and the tips bearing a single crimson spine. Interestingly, the plant secretes a slight poison from these spines which may cause paralysis in small animals or the infirm. Those with hardier constitutions seek out the poison, as it provides a slight euphoric effect in addition to the paralysis. The poison requires only a DC 5 Constitution save, or the injured will suffer complete paralysis for 1d4 hours. Those that succeed at the saving throw notice a slight euphoric effect for the same amount of time.
+
+
+
+### Bloodstaunch
+*[Desert](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Common](#p113)
+
+A small, leafy herb that is often found in gullies and ravines in arid regions and foothills. The herb has bright green leaves, and smells faintly like honey crossed with fresh rainfall. Grinding up the plant creates a powder that can be used on open wounds to quickly cause bleeding to slow or stop. Applying the herb to a bleeding wound grants the recipient recovery of 1 hit point and makes the recipient immune to bleed damage for 1d4 hours.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Bluecap
+*[Underdark](#p111)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Common underdark crop mushroom, dark blue with pale grey spots and a pale grey stalk. The fugus itself is inedible, but spores can be made into flour. Grows with or without natural light.
+
+
+
+### Blueleaf
+*[Arctic](#p107), [Forest](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Known for the gleaming blue color of the leaves, the tree often grows in thick copses throughout the north. The thin trunks of the trees are remarkably durable, despite high winds and heavy snowfall, and one use of the tree is the wood, which is often used by the Volodni craftsmen to create weapons and armor. Magically treating the wood, which is called “bluewood”, causes it to become as hard as steel, although only weighing half as much (crafting with bluewood requires special training from a masterwork craftsperson). High priced entertainers often burn small pieces of the wood, which creates leaping blue flames. The leaves and sap are often ground in the creation of a vivid blue dye that is used to dye clothes in the North, and often in the creation of inks for tattoos. One pirate fleet that has plagued the Sword Coast in recent years is notorious for their crews bearing frightening looking blue tattoos covering their faces.
+
+
+
+### Bocraugh
+*[Jungle](#p108), [Mountain](#p110)*
+___
+- **Rarity:** [Legendary](#p116)
+
+Bocraugh is a colossal truffle-like fungus that can be distilled down to a sticky black paste (one large truffle to produce 1 fl. Oz. of paste) causing any type of seed to grow to full maturity within 1d4 minutes. This applies to trees, herbs, plant creatures, and even plants that take hundreds of years to bloom.
+
+
+
+### Bodhi Tree
+*[City](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+According to legend, the bodhi tree was once the spiritual home of a persistent monk seeking enlightenment. The monk sat under this tree and meditated for close to seven years, surviving only on the tree’s collected water droplets and on the tree’s bounty of figs. After learning of this monk’s quest for enlightenment, a corrupt king wanted in on this understanding of everything and wanted it only for himself, and ordered the tree destroyed. The roots were hacked at with swords and glaives and major limbs felled with large axes. 
+
+All the while, the monk sat beneath the tree and still meditated. When the king’s servants had finished their destruction, the monk retrieved a bottle of sacramental wine from his bag and fed it to the tree’s damaged roots, vowing that if the tree should die, so would he. Upon the completion of this vow, the tree’s roots absorbed the wine and began to repair themselves at an incredibly rate, and the tree grew larger and lusher than it had been before. The location of the original tree has been lost to the ages, but cuttings of the tree have been transplanted to many of the major monasteries of the realm as a symbol of divine power and belief.
+
+
+
+### Bone Fungus
+*[Underdark](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+Bulbous ivory-colored fungus that releases a 10 ft cloud of spores, in the presence of motion, that work as an inhaled poison (DC Constitution 15, 1d8-1 poison damage). If damage is taken, bone density is reduced, resulting in extra damage from bludgeoning in the form of an extra space for criticals against you (19 or 20 counts as a crit). The fungi are immune to acid and thunder, destroyed by cold or radiant damage, fire and electricity also destroy but release spores. Recovery from the reduced bone density is only capable in the consumption of magically created potions and through Lesser Restoration spells.
+
+
+
+### Boomshroom
+*[Swamp](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Typically found in swamps and marshes growing in patches with a radius of up to 300 ft. A successful Sleight of Hand check allows you to pick one, but it renders them inert. If unsuccessfully picked, explodes as if from an Arcane Explosion spell. Always regrow in the same spot 10 days after triggering or any other attempt to purge them.
+
+
+
+### Borage
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This plant has hollow, hairy cylindrical stalks which grow to a height of 1 to 2 feet. It has drooping flowers, red or blue in color, which are shaped as a five-pointed star at the top of the stem. The dried herb should be boiled in water and the infusion drunk. It is used to cure minor fevers such as those caused by chills, and flu. It will relieve the fever in 1d4 hours.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Borneas
+*[Forest](#p107), [Jungle](#p108), [Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+A leafy, ground-cover plant found in forests all over the realm. Slightly resembles sage or salvia. When lit, the smoke will aid in sustaining meditation and trances for religious ceremonies, granting a +3 to religion checks made by Clerics or Paladins for 1d8 minutes after inhalation of the smoke.
+
+
+
+### Brandac
+*[Mountain](#p110)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A bright orange mushroom that grows only on mountains that were once or still are volcanically active. The mushroom can be dried and crushed into a highly volatile dust. The dust will ignite if it comes into contact with any other substance then glass, crystal or ceramic materials. It will ignite any flammable materials in a 2-meter radius and does 3d6 points of damage at the center and 2d6 damage in the rest. Small amounts can be used to start campfires and light torches
+
+
+
+### Brawler's Blackcorn
+*[Underdark](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+Resembling Blackcorn in miniature, Brawler’s Blackcorn is a hardy plant that grows without light in dark cave environs. The kernels of this corn can be dried and ground and mixed into hard liquors, typically a bourbon (Brawler’s Bourbon). Brawler’s Bourbon is typically used by cheating gamblers to give themselves an unfair advantage. Ingesting the bourbon makes the user immune to its secondary properties, and so cheating brawlers may take a swig of the bourbon and spill some on their hands. The poison works as a contact toxin that will then weaken the opponent of a bare-knuckle brawl. The target must make a DC 14 Cons. Save vs poison or be poisoned for 1 minute. If the saving throw is failed by 5 or more, the creature is then also knocked unconscious for the same amount of time. The target can be woken if they take damage or are shaken awake by another person. On a successful save, the target is then immune to the poison’s effects for 12 hours.
+
+
+
+### Brelidar
+*[Arctic](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+This flower, when eaten, alters the way a person judges distance for a period of one hour. While under the influence of the flower, a person can add a bonus of +2 to ranged combat attacks, while subtracting -2 from melee attacks.
+
+
+
+
+\columnbreak
+
+### Brethil
+*[Forest](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+Brethil Trees are a narrow evergreen that grow to heights of around 40 feet. With fan-shaped fronds of needles, the tree has a rough, deep-brown bark that can be scraped off in small sections with a knife. With proper preparation, the bark can be steeped in boiling water to create a dark brown, murky infusion. When a creature drinks the infusion, at the beginning of their next turn the charmed and frightened conditions are removed from them if applicable.
+
+
+
+### Bronzewood
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Common](#p113)
+
+Hard wood native to extremely old-growth forests that is as durable as steel/iron but 10% lighter, although it can't be used for chain weapons. Advantage on stealth checks in a woodlands environment while wearing bronzewood armor. Crafting of armor requires training from at least a moderate level craftsman.
+
+
+
+### Bull-Rush
+*[Swamp](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+Bull-rushes are tall straight stemmed plants with many small flowers at the top of the stalk. These flowers must be ground into an ointment which is applied to a person’s eyes or tongue. This herb will put someone to sleep for 3d12 hours on a successful medicine check. A roll of 1 on the check will instead put the person into a coma.
+
+
+
+### Burdock
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This plant grows to about 3 feet tall. It has huge leaves with a whitish underside, and purple flowers. Its root must be boiled in water and then the root eaten and the water drunk as a cure for venereal disease. The person will be cured within a week.
+
+
+
+### Bursthelas
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+Bursthelas must be brewed for one week in fine red wine before it can be used. It must then be drunk within one month or spoil. A successful draft will heal any surface level scars or deformities in a period of 6 hours.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Butterspice Weed
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A short leafy plant, the top sprouts large yellow flowers upon reaching maturity. The plant is quite hardy and can grow in a surprising wide variety of places. The most renown quality of the plant is that the leaves can be harvested and cured, becoming crumbly, brown flakes, which can be smoked. It is quite well known among halflings, which often grow it in small patches along with other crops. Those that smoke the weed claim that it has a smooth spicy flavor. Upon smoking spice weed, a wave of euphoria slowly washes over the smoker, lasting for 2d6+10 minutes. During that time, the smoker suffers a -2 penalty to Dexterity saving throws. Halflings are affected for double the duration.
+
+
+
+
+### Cachuga Pepper
+*[Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Cachuga Peppers can only be found on growing in or around plains that are home to hot springs or geysers. Cachuga peppers are vaguely pyramidal shaped woody bushes with profuse foliage that bear clusters of small, fragrant yellow blooms which eventually give way to fiery peppers of a marbled red-orange. The bushes bloom continually in the tropical climes of the Swordfish Islands causing Cachuga bushes to produce large numbers of these firey peppers. The peppers themselves are 2-4 inches long and hang from the bushes by thick, green, vein-like structures. Cachuga Peppers are exceptionally spicy and flavorful, and the skin of these peppers is leathery and can be mashed into a paste, then shaped and dried into chips or a flavorful yet non-spicy paper-like wrapping, pairing nicely with raw fish. The peppers dry well, retaining their fire and flavor for exceptional periods of time, and their seeds can be ground into a powder that causes *severe* eye and skin irritation (DC 16 Cons. Save or blindness for 3d10 minutes).
+
+
+
+### Caffar
+*[Jungle](#p108)*
+___
+- **Rarity:** [Common](#p113)
+
+A small, brown nut that grows from short, green, leafy understory plants in tropical forests, typically ground into powder and brewed into a dark, sweet-smelling beverage, traditionally with a goat's milk base. The drink is renowned by shaman and psionics for its boon to their all-seeing abilities. (+1 to all wisdom checks until the next long rest. If more than three cups are imbibed, causes a -2 to rolls to hit as the imbiber is too jumpy and caffeinated to focus.)
+
+
+
+
+\columnbreak
+
+### Calacaza Bush
+*[Desert](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A fragrant bush that grows in the dense jungle and sparse desert, the veined leaves and branches are a pale green, and the plant appears to strive to reach upward toward the canopy above. At the end of each branch are clusters of small white flowers or berries, depending on the time of year. The small white berries that the plant produces are actually quite poisonous (Those that ingest the berries must make a DC 17 Constitution saving throw vs poison or suffer 32 (8d6) poison damage and be poisoned for 1d6 hours. If the target succeeds the saving throw, they only suffer half damage with no poisoning). Local tribes avoid the berries unless they are using them to coat their arrowheads and blowgun darts (Adds +2 poison damage to successful attacks made using a blowgun).
+
+
+
+### Calamus
+*[Coastal](#p107), [Jungle](#p108), [River](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+This reed grows in small grassy clumps. It can grow from about 2 to 6 feet in height and has very small yellow green flowers that jut out from the stem. The leaves are long, thin and light green in color and smell faintly sweet. The root is white with a red brown peel. The root must be peeled and boiled in fresh water within a day of being picked, and should then be drunk by the recipient. Provided no permanent physical damage has been done to the person’s hearing organs, the herb may restore some small measure of hearing to a totally deaf person, perhaps 10% of normal hearing, and granting +1 to perception checks involving sound in people who have full use of their ears. In addition, the herb has been reported to have aphrodisiac qualities (DM’s discretion) and was used by certain tribes of ancient peoples to make their dogs more fierce (DM’s discretion).
+
+
+
+### Calcena Mushroom
+*[Underdark](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+Anyone who breathes in the spores of one of these small, pink mushrooms incurs a -3 penalty on all Wisdom saves vs illusions for 2d12 hours. The mushroom may be brewed into a potion by brewing tea and leaving the mushroom to stand in the tea for 2 weeks. The resultant concoction when drunk is a powerful hallucinogen. Anyone under the influence of it will see whatever the DM wants them to see. This effect lasts for 1d4 hours in which the player enters a trance and responds lazily to interaction with other characters or NPC’s.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Calithil
+*[Mountain](#p110)*
+___
+- **Rarity:** [Common](#p113)
+
+A twisted and tough vine that grows in rocky crags high in the mountains, the waxy leaves of the plant are small and grow in clumps. Small white flowers grow on the vines, which turn into light blue berries which are quite tart. Dwarves send their children out to pick the berries, so that they may be harvested into a specialty wine and jams. Those drinking the wine often have an unfounded and untrue feeling of invincibility, while those consuming the jam often feel satiated and satisfied with their meal.
+
+
+
+### Callin
+*[Jungle](#p108)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A dark nut that grows on the Callin tree in tropical jungles. When the husk is dried, ground and ingested, it thins the blood and strengthens internal organs, helping to prevent heart attacks, and has the side effect of reducing anxiety and panic.
+
+
+
+### Callofex
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+ A somewhat stubborn vine plant that grows in open fields and along forest paths with a knack for regrowth. Every attempt to hack at the plant with any form of bladed instrument causes an increase in the vine’s length and girth. Traditionally the plant grows very slowly, only gaining an inch or so in length and thickness annually, but with enough hacking and slashing, the vine can prove to be an incredible pest to farmers and travllers.
+
+
+
+### Caravara
+*[Desert](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+A button sized, arid-environment fungi that produces spores that resemble black sand. If inhaled or ingested purposefully in large doses, these spores will allow the recipient to take an additional action in the place of a bonus action once per combat for 1d8 hours.
+
+
+
+### Cassil
+*[Forest](#p107), [Jungle](#p108), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Mustard-like shrub, whose seeds can be made into a powder that suppresses male fertility for 3d4 days (1 hour to take effect). DC 15 Medicine or Nature check can detect its effects, while a DC 20 Medicine check can reverse them.
+
+
+
+
+\columnbreak
+
+### Cat's Tail
+*[Coastal](#p107), [River](#p111)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Cat's Tail is a small plant with long, thin, spear-shaped leaves rising from its base, and a single long, thin, soft flower at the top of the stalk. This herb, when made into a salve, will heal all damage to a person's feet if applied during a short rest.
+
+
+
+### Cave Moss
+*[Underdark](#p111)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A dark-dependent moss, wilting in lighting brighter than Dim, that is grazed upon by giant vermin and cave creatures and commonly cultivated by underdark dwellers as a food source for pets and livestock.
+
+
+
+### Cave Star
+*[Underdark](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Glowing yellow lichen found on chill cave roofs that can't stand warm places. When combined with phosphorus powder and a strong acid, Cave Star can be made into Lantern Stars, which are fist-sized balls of glass or vials that give light as a torch for 8 hours at a time.
+
+
+
+### Cephalophage
+*[Underdark](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A pale, fleshy fungus with a tough, rubbery consistency that is commonly found growing near carnivorous plants. The fungus grows upon corpses, absorbing the cadaver's life memories and personality; up to 10 different minds have been found absorbed by one cephalophage mushroom. Eating cephalophage will transfer those memories and personality quirks to the eater. (Effects last 1d4 hours and while they last the eater can access all of the dead person's mind. After the effects wear off, the eater may still succumb on occasion to "flashbacks" or personality instability; when under intense stress or in a situation liable to cause such flashbacks, the user must make a roll of under their intelligence modifier or be overcome with memories of another person’s life.) This plant is condemned by some religions as unholy, believed to prevent a soul/spirit from attaining the afterlife and possibly in creating undead.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Ceran
+*[Arctic](#p107), [Mountain](#p110), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A short, hardy, tea-like shrub that grows in the cold climates of the Dalelands and Northern mountains. Drinking this herbal brew will result in a warm tingling feeling inside; all the effects of being in extreme cold conditions will be negated for 2d4 hours.
+
+
+
+### Chamomile
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This plant can grow up to 2 feet tall, and has a branched stem. It has few leaves, and these are finely divided. The flower heads have yellow centres which are domed in shape with a hollow cavity at their very center. The petals of this plant bend backwards towards the stem. The flowers from a single plant must be immersed in boiling water and the resultant drink consumed. This drink is very bitter and is normally mixed with honey, but this is not fully necessary. The drink will last for approximately 2 months after manufacture, while the leaves can be dried, and will then keep for up to three years. A successful use of this herb will have a calming effect on the consumer, commonly used as a minor sleep aid.
+
+
+
+### Chervil
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Common](#p113)
+
+Chervil, a ground-cover plant similar to parsley, can be turned into a tincture that is used to dissolve blood clots, which can help to prevent complications caused by injury. The clots are dissolved within 1d4 turns. Since they dissolve clots, improper use of this herb leads to +1 bleeding damage for the next 1d8 hours in every successful attack against the consumer.
+
+
+
+### Choke Mold
+*[Swamp](#p111), [Underdark](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Bright yellow mold native to caves and swamps, commonly found in patches that devour air, creating localized vacuums (can cause air-tight space to collapse inwards). Creatures within 5 ft of a patch begin to suffocate as breatheable air is pulled away from them, and within 10 feet of these patches, flames begin to sputter and go out.
+
+
+
+
+\columnbreak
+
+### Choking Cinder Fungus
+*[Jungle](#p108), [Swamp](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Growing on rotting wood in moist climates, this black fungus is generally avoided by those gathering firewood. While the fungus is highly flammable, it emits poisonous fumes that burn the lungs. Once ignited, the cloud of fumes lingers in a 10-ft-radius centered on the burning fungus, and disperses in one minute in a calm wind (or a few seconds in a stiff breeze). Those within the cloud must make a DC 11 Constitution saving throw vs. poison or suffer 4 (1d6) poison damage and be poisoned. Each round those that are within the cloud must make the saving throw or suffer the damage.
+
+
+
+### Chromus Slime
+*[Coastal](#p107), [Swamp](#p111), [Underdark](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A yellow-orange slime mold found growing in dark, humid places, near a supply of constant water. The slime mold is capable of filtering out the salt in salt water and can therefore live in fresh water or by the ocean. When combined with high-grade alcohol and added to a potion, Chromus Slime has the ability to reverse the effects of the potion and create the opposite effects to what the potion or poison would typically do.
+
+
+
+### Cinquefort
+*[Forest](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+This small plant creeps along the ground on long slender stringlike stalks, slowly consuming small bits of detritus and water along its way. It has five or seven-part leaves, and small yellow flowers. The stalks must be boiled in white wine or vinegar and then drunk. The resulting potion will then act as an aphrodisiac, and increases the recipients Charisma by 1 for 1d4 hours.
+
+
+
+### Cline Cactus
+*[Desert](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A small, round cactus with very few large needles. The round body of the cactus holds a large amount of a viscous green liquid. This liquid acts as a stealthy poison, on a failed DC 16 Cons. Save against poison, the goo does 1d4+1 poison damage per round unbeknownst to the poison’s target, or half as much on a successful save. After 5 rounds, the target begins to feel a burning internal pain centered on the kidneys and liver and damage is calculated.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Coldwood
+*[Arctic](#p107), [Forest](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+A Fey-created variety of Hickory that reaches maturity in 2 decades and has properties identical to steel, except Fey and Druids can easily work with the wood without it affecting their magic. Items made from Coldwood require masterwork, making the raw material quite valuable.
+
+
+
+### Colewort
+*[River](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+Colewort is a small plant with a single large glossy leaf, and small white flowers with four petals commonly found floating on the surface of slow moving water with a long stringy stem anchoring the plant to the bottom of the river or pond. Anyone who chews on the flowers before drinking will remain sober for the entire evening. Its effects protect only against alcohol, and not against any other drug or toxin.
+
+
+
+### Coltsfoot
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+The plant has a single golden yellow flower borne at the top of a six-inch-tall stem with long, pinkish woolly scales. These flowers are crushed and mixed with honey, and applied as a poultice to infected wounds in an effort to draw out the infection. It does not cure any damage.
+
+
+
+### Comfrey
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Comfrey grows to a height of up to 3 feet. It has stiff, angular and hollow stalks which are covered with rough hairs. It has pink, mauve, white, or cream flowers. Its thick black root is the portion used in herbalism and should be boiled and mashed into a poultice which is then wrapped around a broken limb, increasing the speed of healing by fifty percent. It can also be added to a bath by women in order to give the impression that they are virgins on their wedding nights.
+
+
+
+### Common Coneflower
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A small flower (roughly 18” or less) that blooms in the late sping or early summer and resembles a small, pink, sunflower. The coneflower is known for its ability to attract butterflies and honeybees, and if possessed/worn, will cause insect swarms to attack the person who is wearing the flower more frequently.
+
+
+
+
+\columnbreak
+
+### Constrictor Vine
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Instead of growing upward to seek light, the Constrictor Vine spreads out across the ground as a thick mat of small, glossy leaves. The plant blooms occasionally with unremarkable clusters of small green flowers that give way to oblong yellow berries favored by birds and small animals. While the leaf mat of the Constrictor Vine rarely reaches more than 10' in diameter its root system can stretch as far as 50'. The fibrous roots of a Constrictor Vine resemble wet human hair, are incredibly strong, and retain much of this strength even after being harvested and dried. As the roots grow, they wrap themselves around rocks, root systems, and anything else in their path. When the roots reach ~30' to ~50' they begin to slowly, yet inexorably constrict back towards the core of the plant. This constriction has been known to topple whole trees and move many ton boulders. Since the process is so slow, it poses no real danger to living creatures.
+
+
+
+### Cornus
+*[Underdark](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+Cornus is an alien looking, bulbous fungus that grows into silver balls the size of small melons. These bulbs are full of a silvery, almost metallic liquid that, when injected into the body, will kill any and all hazardous parasites within the body with no negative side-effects aside from slightly more silvery-colored irises for the next week
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Corpsebomb
+*[Swamp](#p111), [Underdark](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+The fungus begins life as a tiny spore that floats along until inhaled by a creature, and lodges itself in the moist tissue of the lungs. The spore then begins to grow, causing irritation, pain, and finally death once the fungus has reached a sizable mass. Once the host creature has perished, the fungus increases growth rapidly until it pushes a hollow tendril forth from the flesh. At the exposed end of the tendril the fungus begins growing a thin membrane, which is inflated by the gasses produced by the rotting body. When the membrane ruptures and disperses the spores, every breathing creature within a 40-foot radius sphere must make a DC 10 Constitution saving throw or inhale spores. If they fail, each hour afterward, the creature must make a Constitution saving throw with a -1 cumulative penalty to the roll. Each hour the creature suffers a cumulative 1d6 piercing damage (2d6 on the second failure, 3d6 on the third, etc.) as the fungus spreads throughout the internal organs. A single success stops the process and renders the fungus inert. If the fungus catches fire the spore sack soon explodes, and everyone within a 20-foot radius sphere suffers 3d6 fire damage on a failed Dexterity saving throw, DC 15, or half as much on a successful save. All spores are incinerated in this process.
+
+
+
+### Cosmos Glond
+*[Jungle](#p108), [Underdark](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+This hard-to-find four-leafed plant spends most of its life cycle underground, reaching only above the surface to complete the mature stage of its life before dying shortly after. The leaves are a dark blue with small white specks, resembling the night sky, complete with constellations and astral bodies as they would be on the date the plant reaches above the surface. When used in ceremonies by clerics and paladins, the leaves grant a greater success of communicating and reaching a god or goddess, +4 on religion checks or greater success with using spells similar to Commune.
+
+
+
+### Cotsbalm
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+Fleshy-leafed plant with small yellow flowers that grows 1 ft tall. It is hardy and found in temperate and sub-tropical regions. Its syrupy sap can be applied to an poisoning victim to grant a +8 bonus on the secondary Constitution save against a poison if the poison allows for one.
+
+
+
+
+\columnbreak
+
+### Covadish
+*[Arctic](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Plant originally native to Aerenal, and later transplanted to the cold, harsh arctic climate, whose leaves, when consumed by spellcasters, grant boons to any spells cast in the school of necromancy (these boons up to DM’s discretion) until the next short rest.
+
+
+
+### Cow Parsnip
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+Cow parsnip has small leaves covered with tiny hairs. These hairs must be shaved from the leaves with a sharp knife and can then be made into a salve. Cow parsnip salve, when applied to the forehead of an afflicted person, will cure madness for a short period (1d4 hours). Repeated application over a two-week period may (DM’s discretion) cure insanity altogether.
+
+
+
+### Cow-Wheat
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Cow wheat is a small straight stemmed yellow-green plant. Its pale-yellow flowers produce a white powder when crushed, between two hands. If this powder is placed into food or drink it will cause a person to act as if very drunk. Each dose of this herb successfully administered will increase the level of drunkenness by one step. 
+
+> ##### Drunkenness
+> | Step | Effect |
+> |:----:|:-------------|
+> | 1  | -1 to Intelligence until sober. |
+> | 2  | -1 to Wisdom until sober. |
+> | 3  | -1 to Charisma until sober. |
+> | 4  | -1 to Dexterity until sober. |
+> | 5  | Disadvantage on all skill checks and attacks. |
+> | 6  | Disadvantage on all saves. |
+> | 7  | Blacks out for 1d4 hours. |
+
+

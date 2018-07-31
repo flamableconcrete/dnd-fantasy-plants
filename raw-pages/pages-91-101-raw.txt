@@ -1,0 +1,793 @@
+<style>
+  /*Remove footer*/
+  .phb:after {
+    content: "";
+  }
+
+  a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .spellList a,
+  .phb p em a,
+  .phb ul li a
+  {
+    text-decoration: none;
+  }
+
+  .phb table tbody tr td {
+      padding: .10em .1em;
+  }
+
+  .phb table tbody tr:nth-child(odd) {
+    background-color: #efacb8;
+  }
+
+  .toc {
+    column-count:4;
+  }
+
+  .toc a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .toc li span:nth-child(2){	/*Allow dot leaders to fill remaining space but not overlap*/
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .toc li span:nth-child(2):after{
+    font-family		: BookSanity;	/*Remove any header styles from dot leaders*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    content:
+      " ........................................"
+      "........................................."
+      ".........................................";
+  }
+
+  .toc li span:first-child{
+    float: right;
+    font-family		: BookSanity;	/*Remove any header styles from page numbers*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    margin-left		: 1px;	/*Leaves a small space between page numbers and dot leaders*/
+  }
+
+/*Special cases for headings*/
+  .toc li h3 span:nth-child(2):after{
+  	content: " ";						/*Remove dot leaders on h3*/
+  }
+
+  .toc li h3 {
+    margin-bottom: 4px !important;		/*Special spacing for h3*/
+    margin-top: 10px !important;
+    line-height: initial !important;	/*For some reason Multi-line h3 line spacing changed*/
+  }
+
+  .toc li h3 span:first-child{
+  	line-height: 1.8em !important;  	/*Line page numbers up with Multi-line h3 better*/
+  }
+
+  .toc ul ul {
+  	margin-left: 10px !important;		/*Original lists intented too much*/
+  }
+
+  .toc>ul>li {
+    margin-bottom: initial !important;	/*margin for list items needs to be removed or 0*/
+  }
+
+</style>
+
+
+
+
+### Spellbane
+*[Mountain](#p110)*
+___
+- **Rarity:** [Legendary](#p116)
+
+A small but tenacious plant that grows in shadowed areas, clinging to rocks. The wide ragged leaves of the plant are filled with vibrant blue veins, and at night in the spring it produces small delicate blue flowers which crumble with the slightest touch. Surprisingly, the plant has an interesting effect upon magic users and magical creatures. Those that ingest parts of the plant lose the ability to cast spells and gain an increased resistance to magic for 3d4 days.
+
+
+
+### Spelleater Ivy
+*[Forest](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+An undergrowth plant resembling ivy with a silvery sheen to its leaves, sometimes mistaken for poison ivy. Any spells cast within 20' are absorbed by the ivy. It immediately grows a new 10'x10' section per level of the spell slot used. Direct and unprotected contact with the plant supposedly imbues or causes innate magical ability to surface in non-magic-users and magic users alike, granting a temporary wizard cantrip to the recipient. Eating or smoking the leaves causes astonishing visions and requires a DC 18 Wisdom Save vs Insanity. If collected and dried in large amounts, talented craftspeople can craft anti-magic armor. While helpful, the armor is also incredibly volatile, exploding after absorbing 1d4 spells, releasing all spells and burning the wearer for d8 equal to the amount of spells the armor has captured.
+
+
+
+### Spiderbush
+*[Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+Spiderbush is a small shrub, rarely growing larger than 2' in diameter, with waxy, light green leaves and an exposed woody root system. Tiny blue and white flowers develop on the tips of its branches, blooming year-round. If a Spiderbush does not receive sunlight for a 24-hour period it will use its root system to waddle or shuffle across the ground in search of light. Having stubby, makeshift legs when combined with frequently uneven jungle ground, Spiderbushes tend to lose their balance and tumble through the jungle. Due to their ambulatory nature and need for direct sunlight, Spiderbushes naturally cluster together in clearings or along the tree line near the shore of an island. Periods of extended rainfall have been known to trigger sizable migrations of hundreds, even thousands of Spiderbushes shuffling and tumbling through the jungle in search of the sun.
+
+
+
+
+\columnbreak
+
+### Spiderwort
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+This herb will cure poison from any spider bite if applied within 2 rounds. The successful application will negate the poisoned effect and heal the amount of poison damage dealt. This plant may be found anywhere in temperate regions where there is chalky soil.
+
+
+
+### Spirit Moss
+*[Swamp](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A pale white moss that often grows on dead trees in marshy environments. Those familiar with the moss know to avoid it, as it attacks the living. Those that approach within 10 feet cause the moss to violently thrash about, forcing those within the area to make Dexterity saving throws, DC 13, or be grappled by the moss. Escaping the grasp of the moss requires a Strength saving throw, DC 11. The moss then implants spores that burrow into the skin of the trapped creature, inflicting 1d6+1 damage per round. After the creature is implanted, they suffer Disadvantage to all attribute and skill checks, as a terrible malaise washes over them. Once the creature dies, the body sprouts a new mass of spirit moss. The implanted spores can be destroyed by the application of heat to the affected area on the round after implantation, or with a Lesser Restoration or similar magic after that point.
+
+
+
+### Spotty Dragonfire
+*[Forest](#p107), [Jungle](#p108), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+Wildflower with red, yellow, and orange petals that grows to 1-ft high and stretches 6 inches in diameter. The flower only blooms at night. It can be found in tropical to temperate regions and grows in single plants, except near red dragon lairs, where it glows plentifully. It can be made into Dragongrew, which grants a +1 bonus to all Constitution saves for 1 hour.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Spring Adonis
+*[Forest](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Common](#p113)
+
+This plant has small green leaves, and wide round yellow flowers. These flowers may be dried, and then eaten. They will then reduce the chance of a heart attack by half each day they are eaten. They may (at the DM’s discretion) also help to strengthen the heart of a person, who through age, injury, or other cause, has a weak heart. Eaten ten or more of these flowers at a time will temporarily raise the Constitution and Strength scores of a person by 1 for 2d12 hours, while reducing their Dexterity by 2 for the same period. In addition to this reduction, the recipient also has a chance of suffering a fatal heart attack 3d12 hours after taking such a massive dose (DC 14 Constitution Save). Certain tribes of barbarians in the mountain regions where this herb is found use the herb in order to help them go berserk in battle. These tribes, due to constant dosing from birth have only a small chance of suffering the heart attack (DC 8 Cons. Save). 
+
+
+
+### Stirge Traps
+*[Plain](#p109), [Swamp](#p111)*
+___
+- **Rarity:** [Very Common](#p113)
+
+These short plants grow several wide leaves covered in fine hairs, and a single large bell-shaped flower. The flower exudes a sticky sap that is deep red in hue, nearly the color of fresh blood, and also has a coppery aroma. The smell and coloration of the sap is intended to attract predators that prey on blood, such as stirge and giant mosquitos. While smaller insects are trapped by the sticky sap, the leaves are also covered in fine hairs, and when they are touched they curl up, trapping larger prey. Some farmers plant the flowers around the edges of their livestock pens, to keep stirge predation to a minimum, and in more urban areas pots of the sap are left out to trap mosquitos and other airborne pests. The plants are too small to effect people in the same manner.
+
+
+
+### Stoneshroom
+*[Underdark](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+Chalky, rock-looking fungus native to the Underdark that is both edible (1 stoneshroom =1 meal) and produces highly oxygenated spores that function as a form of breathable air. Also, for 24 hours after eating a stoneshroom, a creature can hold its breath twice as long as normal. Stoneshroom subsists on minerals in the rock and remains edible for 1 day after picking. With the proper nature check, smaller stoneshroom can be inserted into the nostrils to sustain breathing underwater or through poisonous gas.
+
+
+
+
+\columnbreak
+
+### Stonestream
+*[Arctic](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Given the name by gnomes, Stonestream is a small lichen that produces a clear syrupy liquid that then drizzles down the sides of rocks that the lichen lives on. Collecting this syrup and heating into a tea for consumption will turn the user into stone for 2d4 hours. During this time, any poison or toxins, and most diseases, will be purged from the system into the stone surroundings. While turned to stone, the user takes one hit point of damage per hour, and any damage taken as a stone remains after the recipient has turned back from stone.
+
+
+
+### Stonewort
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A leafy plant with small pink flowers that grows in bunches in open fields. The plant is rather unremarkable, except for its tenacity and resilience. Farmers will often complain that it chokes out other crops, unless it is pulled up by the root and no remnants of the plant remains, and livestock often refuse to eat it. The true worth of the plant is when it is ground into a powder and turned into a paste. Spreading it on exposed flesh causes the skin to become hardened and stiff, resilient enough to resist slashes and stabs. Grants a +1 bonus to Armor Class for 2d6 minutes. However, more than a single application per day of the paste inflicts a -1 penalty on Dexterity based skill checks and saving throws when applied, as the skin begins to stiffen and become numb.
+
+
+
+### Strawberry
+*[City](#p107), [Forest](#p107), [Mountain](#p110), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+These small red berries grow on very small ground plants with pale green, rounded leaves. Five berries should be bound into a bandage, which should then be applied to a leper’s sores. If the application is successful, that sore will deteriorate no further. They’re also just really tasty.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Stygian Pumpkin
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A sulfur-scented, dead-looking variety of pumpkin that can grow in any temperate region and is cultivated by goblins as food. It grows rapidly over large areas, rendering the soil poisonous to other plants. It can be made into Devil's Soap, which is a stinking black paste that grants resistance to fire damage for 1 hour. Can also be combined with Lizuara to create an ointment called Neverdeath that, when applied to the forehead of a recently dead creature, will bring the character back from the dead up to 7 days from its death. If the resurrection ritual is completed improperly, the character becomes an undead. After successful application of the ointment, the character being treated must make 3 death saving throws unbeknownst to the rest of the party:
+
+
+
+3 successes or 2 successes and 1 failure will return to character to full health, fully living.
+
+2 failures and 1 success will return the character to conscious undeath, returning the player as a revenant.
+
+3 failures will return the character as a full undead, with the helpful intervention of an evil deity of death, returning the character as a Death Knight with no control over their actions. The Death Knight will attempt to fight, but can also be turned back to the ally as a revenant state if the ointment is applied once more and the Death Knight fails a DC 16 Cons. Save.
+
+### Suaeysit
+*[Forest](#p107)*
+___
+- **Rarity:** [Legendary](#p116)
+
+A dark black mushroom with greyish markings along the undersides, this fungus grows in shadowed forests in cool to cold climes. Suaeysit mushrooms can be eaten directly or dried and ground into tinctures or otherwise prepared. The mushrooms give the imbiber a rush of energy, clearing the mind and raising the spirits. However, they are highly addictive, and care must be taken when preparing and prescribing dosages. Often used to counteract shock in emergency situations. (Temporarily adds +1 to all stats – no top limit to natural statistics, but it does not add to magically enhanced statistics – and saving throws, and relieves effects of fatigue. This effect lasts for 1d4 hours, after which the user operates at -1 to all statistics and saving throws, and feels even more fatigued for 2d6 hours. The negative effects of "coming down" can, of course, be counteracted by taking more the drug, with resultant addictive effects of gut-wrenching pain and 5 poison damage per day.)
+
+
+
+
+\columnbreak
+
+### Sunberry Bush
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A large bush with light green oval leaves, the branches are studded with small thorns. During the spring months the bush is covered with small golden flowers. The golden berries of the bush grow with small protrusions, giving them the appearance of a small flaming sun. While the freshly cut berries are sour, leaving them to sit in the sun for a day or two after being picked turns them remarkably sweet. The berries are often picked for Sunberry Wine. This wine is remarkably popular with Rangers, increasing the effective range of their weapons by 10 feet and granting them immunity to environmental cold, as well as flushed cheeks.
+
+
+
+### Sunflower of Pelor
+*[Plain](#p109), [Underdark](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+Large sunflower commonly found where undead were destroyed by a cleric’s Destroy Undead. If petals are treated with various oils and solvents, the petals can be consumed to bolstering spells relating to the creation of light, doubling spell effect area.
+
+
+
+### Surane
+*[Coastal](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A tall, hardy reed capable of growing up to 10’ tall, found mostly along salty and brackish water in colder climates. When mixed with oil and left to sit for a period of three days, the resulting mixture can be applied to the neck and will allow the character to breather underwater (and only underwater) for 2d4 hours.
+
+
+
+### Sussur
+*[Underdark](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A rare, magical and magic-dependent tree with long gnarled branches and banyan-like aerial roots found in the largest Underdark caverns. Grows to 60 ft in height, has very few leaves, and absorbs magic, creating massive (1d20 x 100 ft.) anti-magic fields.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Suth
+*[Forest](#p107), [Jungle](#p108), [Plain](#p109)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A tree with dark grey bark, and branches which sprout almost horizontally from the trunk for some distance before abruptly changing angles. The branches of multiple trees growing close together often grow together, becoming a tangled mass, and sometimes creating natural walls. The olive-green leaves are long and fluffy, but sport a spike at the end which often makes attempting to push through the interlaced branches a painful task. The wood of the tree is renowned for being hard and durable, making the process of cutting them down very difficult. Thus, in some areas where lumbering has cleared away large swaths of trees, there are large copses of tangled Suth trees left untouched. When the trees have been cut down, however, it was found that they work wonderfully as shield-wood, especially since soaking it in water before battle keeps it from catching fire.
+
+
+
+### Swampwalker
+*[Jungle](#p108), [Swamp](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A curious plant that has caused more than a few strange tales from the rural villagers, the Swampwalker seems to stand out of the water, supported by a mass of tendrils, and sprouting a clump of pink flowers that attract various insects. Each tendril is the thickness of a finger, and due to slow currents in the swamp, the tendrils often clump together or break off entirely, causing the plant to look like a looming figure standing on the surface of the brackish water. One legend has it that the plants come alive during the darkest of nights. They stalk nearby villages hoping to catch the unwary and drag them back to watery graves. Whether this is true or not is completely unknown.
+
+
+
+### Sweet Arcane
+*[River](#p111), [Swamp](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A short river grass found alongside rivers and other bodies of water in humid, tropical environments. When this grass is ground into a cud with honey, the resulting decoction is a syrupy sweet treat that will allow spellcasters to memorize and prepare one extra spell per day. The level of the spell is determined by the number of grass used (12 stalks per level), and can only be of a level for which the caster has slots. Last 1d4 days.
+
+
+
+### Sweet Trefoile
+*[River](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+This feathery, slightly invasive waterplant will halve falling damage for 1d6 minutes after consumption.
+
+
+
+
+\columnbreak
+
+### Swordstalks
+*[Desert](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A succulent plant with a cluster of three broad and thick leaves that grow from the ground, and sprouting a single small blue flower on the tips of each leaf each spring. The swordstalk often grows in tropical places, and often in the sandy soil near beaches and deserts. The broad and heavy leaves of the plant are often severed and dried, and the result is a fairly resilient weapon with a jagged edge on either side, capable of cutting through flesh almost as easily as a steel sword. The resulting weapon functions as either a short sword or a longsword, perfect for the discerning druid. However, on any critical fail on a roll to hit with the swordstalk, that the weapon is broken and rendered useless.
+
+
+
+### Taggit
+*[Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+A family of rare plants, closely guarded where they grow in any number, with oily, deep-green leaves in the shape of stars growing from a central woody-stemmed bush. These oily leaves can be steeped in hot water to extract an oil, that when applied via contact in large quantities, acts as a paralytic that was previously used for surgery until its use as a poison for the torture and assassination of a powerful king several decades ago. A creature subjected to this poison must succeed on a DC 13 Constitution saving throw vs. poison or become poisoned for 24 hours. The poisoned creature is paralyzed and unconscious. The creature wakes up if it takes damage but remains paralyzed except for the movement of their eyes.
+
+
+
+### Tahtoalethi
+*[Mountain](#p110)*
+___
+- **Rarity:** [Legendary](#p116)
+
+Mystical plant that produces a singular light blue fruit, capable of granting a wish, every 100 years on the night of the winter solstice. Seed sells for 25000 gp, devilishly hard to cultivate. Once picked, fruits never spoil.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Tai-Gi
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+The ground and powdered root of this small, almost-flat plant will, if eaten, increase the efficiency of all a person’s five senses by 5 times for a period of 2d6 hours. They will be able to see five times as far, and things five times as small, track by scent alone, hear the smallest sounds, and even taste many poisons on their tongues, granting double advantage on perception rolls for any sense. A side effect is that they are also five times as susceptible to pain. (For each hit point of damage, the person must roll under their constitution minus damage taken. For example, if someone with a Constitution of 15 was hit for 6 points of damage, they would have to roll under 9 on a d20. If the person ever takes more damage than their Constitution score while under the influence of this herb, they have an 80% chance of instant death, just from the pain.)
+
+
+
+### Takara Bulb
+*[Forest](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A large bulbous mass that grows a half-dozen shoots, each ending in a single, large leaf. The bulb is dark brown or even red in coloration, while the leaves are a light green with red veins. During the spring a single large red flower forms at the center of the bulb. The bulb can be harvested and eaten raw, although it often tastes better after having been cooked. Many small mountain villages cultivate the bulb, as the plant grows well in rocky soil. (Heals for 1d4-1 hit points if eaten raw or 1d6+1 hit points if cooked).
+
+
+
+### Tamarind
+*[Jungle](#p108)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This low-hanging tree fruit will quench the thirst. However, it does not replace the water in their system. A person can still die of thirst, they just won't feel thirsty. Because of this fact, its use can actually be quite dangerous.
+
+
+
+### Tamariske
+*[Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+This herb will cleanse the body through the wounds, removing all disease in the form of black ooze that will drip from open wounds. If no wounds are open at the time, the ichor will instead ooze from the tear ducts, giving the Tamariske its nickname. It does not cure lost hit points.
+
+
+
+
+\columnbreak
+
+### Tangara Kelp
+*[Ocean](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+Growing out of the seabed, this dark-green rope-like kelp grows in shallow sea waters near coastlines and reefs and is both a blessing and a bane to sailors. The kelp often tangles oars, fishing nets, crab traps, and rudders. However, more than a few sailors stuck in the doldrums near a desolate island have survived off of little more than the purified water contained within the kelp’s stalks and barrel-like fruit, as well as the schools of fish that dwell among the fronds.
+
+
+
+### Tangled Waybread
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A soft, flowing, amber grain on a flexible stalk that grows in large patches in the middle of open fields. The grain often blows violently even in a low breeze, and will tangle up in itself, creating giant mats of grain that then slowly dies due to cramping and underwatering. The grain can be ground and turned into a meal that, in turn, can be mixed with water and baked to create a simple but filling flatbread.
+
+
+
+### Tansy
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Tansy grows in small patches of 1 to 3-foot stalked plants with yellow button flowers. Commonly grown in cities outside of homes and personal properties, Tansy has traditionally been used to keep away flies and pests. According to legends of old, Tansy comes from the word “athanasia” which means “immortality,” and the use of this word for the flower relates to a tale of monks reading about local flora and a story about a hero of yore, Brandalier the Brave, in which the ruler of Brandalier’s kingdom states “Take him hence, and when he has tasted immortality let him return to us,” referring to this flower, or something similar.
+
+
+
+### Taran'ka
+*[Desert](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+A small desert plant that mostly grows underground in the form of a tuber. A singular leaf sticks out from the sand and typically resembles a dead plant. However, if the tuber is harvested and cut into pieces, a single coin sized piece will cure any non-magical disease in 1d8 hours.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Tateesha
+*[Desert](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+The Tateesha bush is a low-lying shrub with long thin leaves and small brown nuts. These nuts may be chewed to provide a short-lived feeling of euphoria, and are mildly addictive. They have the side effect of staining the teeth, making it easy to find a tateesha addict. The flowers, called silks, bloom only in spring, and if gathered and dried for one week form a powerful narcotic which may be smoked. For 2d10 minutes after smoking, the persons’ insight skill is increased by +2, but for 1d4 hours after this, a state of distortion ensues, and the recipient’s Intelligence and Wisdom drop by -2 from their normal levels. Prolonged use causes the user to collapse into an almost dreamlike trance. The drug is highly addictive, and after only two uses, the user must make a DC 16 Cons. Save or become addicted, with a +1 to the save DC after each dose from here on out. Addicts lapse into the dreamlike trance stated above until their next exposure to the drug or until cured of addiction.
+
+
+
+### Tekkil
+*[Swamp](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A succulent swamp plant with fat red leaves, which when chewed, function as an analgesic drug. Initially no effect, but after a few minutes, the user becomes almost entirely fearless, gaining +5 to Wisdom and Intelligence Saves against fear, and becoming immune to the Frightened effect for the next 1d20+10 minutes. Drug also grants a -5 penalty to all Dexerity saves for the next 1d4 hours. Overdose occurs with a second dose during the original duration and causes halved movement speed for 2d4 hours as well as the negative Dexterity side-effect.
+
+
+
+### Tempin
+*[Forest](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A bushy climbing vine with tubular yellow flowers, the leaves and flowers of tempin can be boiled and made into a poultice that will draw out poisons from bites and stings and allow the wound to heal cleanly and without complications. (When poultice is applied within 1 round of taking poison damage, the recipient may make an extra Cons. Save vs poison to avoid the Poisoned effect. Also grants +1 hit points to recovery hit dice expended during every short rest for the first 2 days after poultice is applied.)
+
+
+
+
+\columnbreak
+
+### Tephrosia
+*[Forest](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Tephrosia consists of a small woody stem, with fern like leaves along its length, and the plant is topped by several small flowers (or in summer, seedpods). Either the flowers or the seeds may be boiled in water and then drunk to calm the recipient. This is very useful when a person is delirious, or otherwise insane. It also has a mild pain-relieving effect and may be given to the slightly wounded. The seedpods are more effective than the flowers and may also be dried. This herb is mildly addictive and should be used with care (DC 11 Cons. Save, addiction causes mild insomnia, turning long rests into short rests).
+
+
+
+### Terbas
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+The leaf of this plant must be applied to the site of nerve damage or consumed to fix brain damage. If successful, the rate of healing for such damage will be doubled on each day of use.
+
+
+
+### Tereeka Root
+*[Coastal](#p107), [River](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+Slimy white tuber with a bitter taste, native to shaded, sandy ground in temperate climates. After chewing it for one minute a creature is granted +10 temporary hit points and then only regains health while resting as if under the care of a healer for the next 12 hours.
+
+
+
+### Thalsen Weed
+*[Arctic](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A tough yellowish stalk that grows stiff triangle shaped leaves, the weed is despised throughout the Dalelands to Cor Myr. Some believe the weed to have been magically created, as it grows from seed to mature adult in a matter of days, often seeming to appear instantaneously. Once the weed reaches maturity, it produces a small cluster of white flowers. The petals of the flowers are coated with a dusty powder that causes a slight rash if it comes into contact with the skin. These petals are sometimes picked to create Itching Powder (When coming into contact with bare flesh, the victim must make a Constitution saving throw, DC 13, or begin itching for the next 2d4 hours, or until the powder is washed off.). The rapidly growing weed is said to overcome crops nearly overnight, choking out carefully planted fields, and destroying months of work. Most livestock also refuse to eat the weed, with the exception of goats. Thus, many farmers that live in areas where Thalsen Weed thrives also keep a small number of goats that they let wander in the outer edges of their lands.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Thanalayla
+*[Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A long stalk covered in small thorns and ending in a thick bulb, the plant hangs down from the branches of other trees. Thanalalya is a predatory plant, the stalks have their roots embedded in branches of trees, yet they cause no harm to their host tree. The plant instead secretes a sicky resin that smells musky and attracts insects and small birds. Smaller insects are trapped in the resin, while the stalk curls around birds that would be capable of breaking free of the resin, gripping and impaling them with the thorns. The resin slowly dissolves the prey, providing nutrients to the Thanalalya. The Thanalayla, according to wives’ tales, also wards off lesser fey and this may be the case because pixies can also get caught in its sticky resin.
+
+
+
+### Thelmallow Flower
+*[Swamp](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A floating plant that inhabits marshes and swamps, the plant produces wide, waxy leaves that arc minutely out of the water, which are often the haven for mosquitos. The plant also buds large pale flowers with ragged petals that attract swamp flies. Grinding up the flower creates a paste which, when combined with paste made from Vaundyr Vine, is used to create Spellslayer wine. Although the wine is quite refreshing, tasty, and light, it also reduces the magical ability of spellcasters, causing a permanent decrease to the amount of spell slots available at a given level (at the DM’s discretion).
+
+
+
+### Thimbleweed
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A spiky, medium-length grass that grows in patches in areas of direct sunlight. As summer turns into fall, the tips of the grass begin to swell and turn into white, thimble shaped flowers. These flowers are a common cure for fevers and involved in a remedy that allows for a delay in the onset of illness or its symptoms.
+
+
+
+### Thir
+*[Arctic](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A grey-white lichen that grows off-shoots that resemble a short, spiky grass. The grass can be used in a compress or bandage to heal up to 4 points of damage if applied within 5 rounds of taking damage.
+
+
+
+
+\columnbreak
+
+### Thistledown
+*[Arctic](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A very tall strain of thistle, growing often to 8 feet tall or more, can be harvested for the fibers within the central stalk. These fibers can be turned into a silken fabric by elves that can be worked into armor to make it easier to move in, increasing AC by 1 and increasing movement speed by 5 feet. Crafting with thistledown requires master leveling training from an elven craftsperson or a nature check of 25+.
+
+
+
+### Thornapple
+*[Mountain](#p110)*
+___
+- **Rarity:** [Common](#p113)
+
+This is a small ground hugging plant. Its seeds are about a quarter of an inch in diameter, and are covered in small thorns. A single seed is very effective as a minor pain reliever. It will ease small pains, such as headaches or minor muscular pains for 3d4 hours. The pain relief is almost instantaneous.
+
+
+
+### Throw-Waxe
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This herb will heal any scars in as little as a month if applied on a weekly basis.
+
+
+
+### Thurl
+*[Desert](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Very Common](#p113)
+
+The clove of Thurl must be brewed for one whole day. When the mixture is drunk it will restore 1 hit point and grant the user 5 hit points worth of resistance toward fire and cold damage.
+
+
+
+### Thyme
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Thyme can grow up to a foot in height. A small, ornamental evergreen, Thyme has tiny dark green leaves. In spring it has many sweet scented mauve flowers. The smell is so strong that the herb is often smelt before it is seen. These flowers must be dried and then mixed with fresh, clear water to produce an antiseptic lotion. This lotion can then be applied to infected wounds. Aside from its common uses, Thyme is one of the plants mentioned in the Nine Herbs Charm, which is supposedly capable of curing any poison or disease.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Tickleweed
+*[Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+Although Tickleweed grows as a thick, grass-like carpet of cylindrical dark green leaf-blades, 3"-4" in length, resembling typical grass, its actions set it apart. Unlike normal grasses, Tickleweed prefers to grow on nearly vertical surfaces and will even thrive in dark places, assuming there is ample moisture. The cylindrical leaf-blades are highly sensitive to even the subtlest shifts in ambient temperature, so they move and shift continually. Tickleweed stretches towards increases in temperature and away from decreases. Each leaf moves independently causing the plants to appear to ripple and shiver with waves. Even the simple act of walking past a patch of Tickleweed will trigger a flurry of movement. Tickleweed bloom very rarely with circular flowers of red or white with a central black "eye". The flowers are prized by alchemists as they amplify concoctions related to detection, reaction, and rapid or fluid movement (up to DM’s discretion).
+
+
+
+### Torchstalk
+*[Forest](#p107), [Underdark](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Non-magical mushroom that can serve as a torch. Takes 1d4-1 minutes to ignite, but burns for 24 hours shedding bright illumination in 10 ft radius. Has a sub-species that explodes into choking spores after 30 seconds of burning, requiring anyone within 20 ft to make a DC 15 Constitution save to negate 1d10 poison damage. DC 18 Nature allows differentiation between the two types.
+
+
+
+### Torment Toadstool
+*[Swamp](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+Large blue mushrooms found in swamps all over Faerun, most people are careful not to step on the toadstools. Some villagers purposefully propagate and harvest the mushrooms in order to make a particularly earthy tasting ale. Those that step on the toadstool cause it to rupture and release a cloud of spores within a 5-ft radius. Those that inhale the spores must make a DC 11 Constitution saving throw or become incapacitated while vomiting for the next minute.
+
+
+
+### Trathua
+*[Underdark](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+A thick black vine that grows along the floors of caves and caverns and subsists on the nutrients leftover from the meals of Giant Spiders. Cutting open a Trathua Vine and drinking the liquid inside will make the character impervious to poison damage and negative poisoned effects from spiders for 2d6 hours. However, the liquid inside the vines clings to the mouth like cobwebs.
+
+
+
+
+\columnbreak
+
+### Troll Poppy
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A bright blue poppy flower commonly used to bribe trolls for safe passage through a monster-filled area. Trolls go wild for these flowers and will eat them as soon as they lay eyes on them. Usually found in large patches in open fields, 2d8 flowers can be harvested per 5 foot by 5 foot area. In addition to their use with trolls, the petals of troll poppies can be dried, crumbled, and smoked. When smoked, user will not be able to rest or sleep for the next 6d4 hours. During this time, the user can never lose consciousness unless dead, not from exhaustion, magical sleep, or poisons. After this period has passed, the user falls unconscious for 1d4 hours.
+
+
+
+### Trueroot
+*[Forest](#p107)*
+___
+- **Rarity:** [Legendary](#p116)
+
+A legendary sapling that is said to have been accidentally created during a series of experiments involving the repeated grafting of various magically enhanced roots onto treants, from which seeds were planted to create saplings that were then grafted with each other and so on. The trueroot saplings are said to have pulled magical energy from an unknown place, and this magical energy could be channeled into other plants to accelerate their growth to be 10 times faster, or be channeled by spellcasters to give perfect health and “almost limitless spellcasting”. The trueroot died after small cuttings were taken to propagate it and there have been no known successes in recreating it.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Twilight Birch
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+The bark of this tree is a pale white, and quite smooth. The leaves of the tree are small, waxy and dark, and spend the day curled tightly, only to open at night. During colder months the tree sprouts small purple flowers that blossom at night. Legend says that the trees first erupted from the ground during a fight between an avatar of Shar, and an avatar of Selune. During the fight the avatar of Shar was wounded, and where her drops of her blood fell upon several saplings, they were forever changed. It has been noted that the trees were once found more commonly in places where the Shadow Weave was most prominent. The wood is soft and flexible when first cut, but hardens over the course of several days, allowing craftsmen to work easily on freshly cut wood to easily create ornate pieces. Once hardened, the wood retains the shape it was crafted into. The wood is often used to create furniture such as elaborately carved chairs, tables, and desks. Additionally, the wood is used to crat intricately detailed scepters, wands, and staves, and a wooden weapon made of Twilight Birch is said to do extra damage to celestials (+3 force damage to successful against celestials). In addition, when a magical item is crafted using Twilight Birch, and used to cast a Death or Trickery Domain spell (even if used by non-Clerics), it allows the spell to be cast one level higher without using a higher-level spell slot. This ability can be used once per long rest, and only at night.
+
+
+
+### Twilight Green
+*[Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+Distant belladonna relative, DC 16 Cons. Save to negate 2d8 poison damage if ingested. If used by a spellcaster during a spell that causes life drain, it increases damage by 1 point per spell level.
+
+
+
+### Tyrant's Mercy
+*[Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A small, white fungus consisting of only mycelium with no reproductive bodies, Tyrant’s Mercy is a slow-moving fungus that grows mainly on decaying woody matter. When harvested and mashed with a small amount of mercury, the resulting paste is sticky and white with a slightly pearlescent sheen. A contact poison, the paste is often applied to locations that the victim’s flesh would commonly be in contact with, such as sword handles, the insides of crowns and hates, or even on the lids of toilets, repeated exposure may cause the target to slowly lose their mind. Upon each contact, the target must make a DC 10 Cons. Save against poison. Upon 3 consecutive failures, the target then rolls on the Short-Term Madness table (DMG pg. 259). After this initial mild insanity, and more contact with the poison, another 3 consecutive failures will cause a Long-Term Madness effect (DMG pg. 260), and another 3 consecutive failures after that will cause an Indefinite Madness (DMG pg. 260).
+
+
+
+### Tyrant's Sword
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+Coarse grass with broad sharp leaves with silver edges that grows to 2-ft in height. Sporadically found in tundra and temperate plains, it grows slowly and doesn't compete well against other grasses. It can be made into Frost Lotion, Medicine Check of 12+, to heal 2d4 points of cold damage.
+
+
+
+### Umanhunan
+*[Jungle](#p108)*
+___
+- **Rarity:** [Common](#p113)
+
+A tall tree that grows branches high off of the ground, the bushy leaves are dark green on the underside, and a very pale shade on top. The bark of the tree is rough and mottled between dark red and light brown. Locals often burn boughs of the tree in sacrifice to the goddess Ka’ino, in hopes of bringing rainfall. Breathing in the fumes of burning Umanhunan leaves causes mild hallucinations and euphoria.
+
+
+
+### Umozokai Flower
+*[Coastal](#p107), [Desert](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This hardy plant grows on the seaward side of many cliffs, looking out over the ocean. The vine clings to the rocks, and the broad fluffy leaves gather moisture from the wind. During the warmer months, the plant lowers, producing long, sharp yellow petals tinged with crimson on the edges. Tea made from the flower petals is highly sought after, as it includes a wide variety of medicinal uses. Some nobles believe that drinking a single cup of Umozokai Tea a day ensures longevity.
+
+
+
+### Ur
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+The leafy, verdant Ur can be used as a substitute for one day’s food. It cannot be used for more than three days or a character will begin to suffer -2 to all statistics. When any statistic is less than 3 the character become comatose, when any statistic reaches 0 they die. A character will regain 1 statistic point per day with food and medical care, but will remain incapacitated until all statistics reach normal levels.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Valerian
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Valerian grows to a height of about 3 feet, and has one hollow and furry stem. It has large, pale green, serrated leaves along the length of this stalk which slits into flowers stems with small pink flowers at its top. The root is the useful part of this plant and should be grated into boiling water and the resulting infusion drunk in order to ease the spasms of somebody who is subject to fits or seizures. A successful application will stop all fits for 1d12 hours. The scent of the bruised or cut root also can be used to attract rats. According to some versions of the legend, the Pied Piper of Fendaire-by-the-Sea used this herb to lead the rats from the town.
+
+
+
+### Varenia
+*[Forest](#p107)*
+___
+- **Rarity:** [Legendary](#p116)
+
+A tall, woody-stemmed flower that grows during spring and summer months. The blooms are almost a foot across and a bright crimson red. The inside is filled with a large quantity of nectar, making the flower very popular among a large variety of birds. During the fall, as the plant starts to die in cooler temperatures, the nectar begins to spoil and take in bits and pieces of disintegrating plant matter which turns the nectar into a thicker, foul-smelling salve that can be applied to regenerate a lost limb or body part. The regeneration cycle takes 3 full days. There is a 10% chance the limb will be mutated in some manner
+
+
+
+### Vaundyr Vine
+*[Jungle](#p108), [Swamp](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A thorny, thin vine that grows in wetter areas such as swamps and jungles. The waxy leaves are ground to create Alarvaun, a component for Spellslayer wine along with Thelmallow Flower. Although the wine is quite refreshing, tasty, and light, it also reduces the magical ability of spellcasters, causing a permanent decrease to the amount of spell slots available at a given level (at the DM’s discretion).
+
+
+
+### Verdant Goeleth
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A large, pink vine fruit about the size of a small watermelon. Commonly pressed and fermented to create a dwarvish wine called Woebegetter Wine. This wine has the strange side-effect of allowing the drinker to hear the thoughts of anyone in a 5-mile radius of themselves that has been drinking Woebegetter Wine in the past 6 hours. This can be really useful if you're trying to coordinate a silent attack, and it can be dreadful if the people you're attacking are also drinking Woebegetter Wine, but keeping their thoughts mute so that you don't know that they know what you're doing. The effects last for 1d20 minutes per cup.
+
+
+
+### Vinuk
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+If this herb is wafted under the nose of an unconscious person, it will immediately awaken the person. It will only wake up a person who is unconscious due to alcohol or fainting etc., not that caused by physical damage. And just because the person is conscious does not mean that they are coherent.
+
+
+
+### Violet Slime
+*[Swamp](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+Lurking on the surface of stagnant pools of water deep in the marshes, this slime is deadly to those that are caught unaware. Noticing the shimmer of violet indicating the slime lingering on the surface requires a DC 15 Wisdom (Perception) skill check. While entering the pool the slime remains inert, but once the victim emerges from the pool, the slime clings to them. The slime becomes highly corrosive when removed from the pool and inflicts 2d6 acid damage per round until it is washed off with water or exposed to bright light or fire. The corrosion only damages organic material, thus ignoring metal armor.
+
+
+
+### Viper's Bugloss
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+Viper’s Bugloss is a blue flowered stalk plant that is found growing invasively in open fields and on farmland. The flowers can be distilled, and a minor poison can be drawn from the petals, capable of doing 1d6 poison damage after consumption, but the leaves of the plant can also be used to treat skin conditions and to cause an increase in levels of arousal. Aside from its common uses, Viper’s Bugloss is one of the plants mentioned in the Nine Herbs Charm, which is supposedly capable of curing any poison or disease.
+
+
+

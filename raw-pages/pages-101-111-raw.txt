@@ -1,0 +1,1325 @@
+<style>
+  /*Remove footer*/
+  .phb:after {
+    content: "";
+  }
+
+  a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .spellList a,
+  .phb p em a,
+  .phb ul li a
+  {
+    text-decoration: none;
+  }
+
+  .phb table tbody tr td {
+      padding: .10em .1em;
+  }
+
+  .phb table tbody tr:nth-child(odd) {
+    background-color: #efacb8;
+  }
+
+  .toc {
+    column-count:4;
+  }
+
+  .toc a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .toc li span:nth-child(2){	/*Allow dot leaders to fill remaining space but not overlap*/
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .toc li span:nth-child(2):after{
+    font-family		: BookSanity;	/*Remove any header styles from dot leaders*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    content:
+      " ........................................"
+      "........................................."
+      ".........................................";
+  }
+
+  .toc li span:first-child{
+    float: right;
+    font-family		: BookSanity;	/*Remove any header styles from page numbers*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    margin-left		: 1px;	/*Leaves a small space between page numbers and dot leaders*/
+  }
+
+/*Special cases for headings*/
+  .toc li h3 span:nth-child(2):after{
+  	content: " ";						/*Remove dot leaders on h3*/
+  }
+
+  .toc li h3 {
+    margin-bottom: 4px !important;		/*Special spacing for h3*/
+    margin-top: 10px !important;
+    line-height: initial !important;	/*For some reason Multi-line h3 line spacing changed*/
+  }
+
+  .toc li h3 span:first-child{
+  	line-height: 1.8em !important;  	/*Line page numbers up with Multi-line h3 better*/
+  }
+
+  .toc ul ul {
+  	margin-left: 10px !important;		/*Original lists intented too much*/
+  }
+
+  .toc>ul>li {
+    margin-bottom: initial !important;	/*margin for list items needs to be removed or 0*/
+  }
+
+</style>
+
+
+
+
+### Vipervine
+*[Jungle](#p108), [Swamp](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+A hanging, invasive vine that grows through the upper canopies of swamps and tropical jungles that sprout thing, curly leaves, slightly resembling a hanging snake. Commonly used as a smoked herb, Viper Weed is slightly poisonous and causes auditory hallucinations if too much is smoked, and will also cause a person to get sick, in an almost identical illness to food poisoning. Some have said that the hallucinations tell secrets about the company you keep, but scientific minds have thrown that away as untrue.
+
+
+
+### Visma
+*[Jungle](#p108)*
+___
+- **Rarity:** [Common](#p113)
+
+Tropical bush with dark broad leaves, which when made into a paste can soothe burns, i.e. heal 1d4 points of damage sustained from fire or burns. It also grants a +2 bonus on the next save of any stat made against fire.
+
+
+
+### Vodare
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+Powder drug made from a tiny purple flower that grows on graves of Rallaster worshippers, Initial +2 bonus to Intimidate and Cons. Saves against fear for 1d4 hours. Secondary effect of -4 penalty to Persuasion and Deception for 2d4 hours. Overdose if additional dose within 4 hours of the first ingestion DC 15 Constitution Save or Petrified.
+
+
+
+### Vortax
+*[Other](#p112)*
+___
+- **Rarity:** [Other](#p112)
+
+A secret guarded closely by ancient sects of druids around the realm, vortax is a green powder made from a plant of the same name. This powder must be held in the hand of a druid and burned, causing 3d8 fire damage to the druid, making druids that constantly use vortax easy to pick out. After the vortax is burned away, the druid’s hands will start to glow a faint green. The druid can, as an action, conjure up a powerful thunderstorm within a mile radius area, and command any target to be struck by 5d20 lightning damage with no saving throws. This effect lasts for 1d4 minutes.
+
+
+
+
+\columnbreak
+
+### Waredan
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A surprisingly hardy dwarf tree that grows about 5’ or slightly less. The hard, waxy leaves of this tree can be combined sugar water in a boiling process to yield a concoction that, when injected into the bloodstream of a lycanthrope, will cause the lycanthrope to be unable to change form for 12 hours, even in the presence of magic that would cause this change instantaneously, like the spell Moonbeam.
+
+
+
+### Watercress
+*[River](#p111)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A very small, leafy green that is commonly eaten in salads or as an added green in many meals. Eating this green in combination with a day’s rations will replenish one hit die if consumed separately from a long rest. Aside from its common uses, Watercress is one of the plants mentioned in the Nine Herbs Charm, which is supposedly capable of curing any poison or disease.
+
+
+
+### Waterorb
+*[Coastal](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+Bulbous aquatic fungus that grows in boulder-like patches in some seaside areas and tidal pools. Can be used a source of fresh drinking water near the ocean.
+
+
+
+### Waxtree
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Waxtrees have large, fuzzy, almost white leaves that grow in bunches at the ends of twisted, dark brown, woody branches that are 1-3 inches thick. While most commonly growing to a height of 2-3 feet, some Wax Trees have been known to grow as large as 8 feet tall. A shallow and spreading root system robs nearby plants of food and moisture causing these trees to be found with few neighbors, even in areas of otherwise dense vegetation. The branches, if broken, ooze a translucent purple, viscous fluid that smells vaguely of citrus. The wax burns cleanly and evenly making it a good alternative to beeswax, and alchemists often seek it out as a foundation for magical glues and thickeners. Exceptionally skilled alchemists are able to use this wax to create a putty that can *permanently* change the shape and structure of facial features. The would-be master of disguise should be cautious however as minor, even accidental, tweaks to this formula will create a putty that causes organic matter (like faces) to dissolve and melt away in a matter of seconds.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Waxworm
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A strange and small plant that is often found growing on rotting logs and animal droppings, the plant lacks much of a root system. The leaves are small and curled around the flowering part of the plant. Once the plant reaches maturity, the leaves fall away to reveal tightly curled pale flowers that appear to be large maggots to the untrained eye. Birds often eat the flowers, thus spreading the seeds far and wide. Grinding the flowers into paste and boiling them produces a waxy substance which woodworkers can use to seal their work from moisture. Painters also seek out the substance, as it causes the colors to resist fading over the years.
+
+
+
+### Weeping Tree
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A species of deciduous tree that closely resembles oak, the weeping trees are often left alone while other nearby trees are cut down to use as timber, as strong superstitions surround the tree. One tale speaks of a nature demigoddess long since forgotten being banished to inhabit the trees after losing a fierce battle for dominance of the nature domain with Kalancha. Another speaks of a powerful druid sacrificing herself to save the forest, and her ghost living on within the branches of the weeping trees. During autumn the trees begin losing their leaves and begin dropping their seeds, which is what creates the sound the trees are known for. Each seed has a small petal, which is shaped in such a way that when it falls it creates a sound similar to a person softly crying. As the trees often grow in clusters and they drop several thousand seeds each, over the course of a few weeks in autumn it sounds as if the trees are constantly weeping.
+
+
+
+### Weirwood
+*[Forest](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Rare oak-like tree with leaves that are a silver-sheen brown on top and velvet black on the underside, often protected by Dryads and Treants. Can grow huge and many-branched, will not burn from non-magical fire, and imparts a warm clear tone to musical instruments made from it. It can replace oak or holly in any spell, and living Weirwood has quadruple fire resistance (no means to preserve this quality after harvesting is known). Weirwood within the illumination radius of a magical light source emits light as a candle for 1d4+1 rounds after leaving the area.
+
+
+
+
+\columnbreak
+
+### Werasa
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A short, leafy bush that produces small lilac flowers on the spring solstice. 2d8 flowers can be harvested from a single bush, and the petals of these flowers can be crushed and sprinkled over food to preserve the food for 1 week. There will be a faint trace of generic flower-like notes in the taste.
+
+
+
+### Whistling Cactus
+*[Desert](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Growing on the edges of the desert are these pale green cacti with long yellow spines. The cactus grows as a single cylindrical body, and when moisture is abundant the cactus will sprout several purple flowers near the top. After the flowers wither and fall off, they leave deep holes in the surface of the cactus. When the desert winds pass over these holes, they resonate at an unusual frequency that creates an eerie sound that can be heard for over a mile. Many nomadic tribes will avoid areas near the cactus, believing the plants to hold the souls of the damned that howl for eternity.
+
+
+
+### White Byrony
+*[Forest](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+This climbing vine has greenish-white star shaped flowers, each bearing five petals, and has green berries which turn red when ripe. It has a root, something like a huge turnip, and this root should be ground up and boiled in water and drunk as a cure for pneumonia. In addition, the berries are commonly collected to make Byrony Jam, a staple of breakfasts in the norther climes. 
+
+
+
+### Whitecandle
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A tall, flowered plant with silvery-green leaves. When the flowers are mixed with water or wine and applied directly to a wound, they act as a painkiller. (Grants 1d4 temporary hit points to an injured target immediately, but these points are lost as the effect wears off in 2 hours. Further applications before the previous one has worn off are ineffective.)
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Wild Fireclover
+*[Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+Brilliant orange-red summer-flower found in temperate plains and farmland. Crushed petals give of a lovely smell for 1 week. The stem can be made into a substance called Mindfire, which when added to an ingested poison, imposes a -2 penalty to Cons. Saves to those who fail a save against the poison, and forces casters to make concentration checks (DC 15 + spell level) to cast spells.
+
+
+
+### Wildwood
+*[Jungle](#p108)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A flexible wood that can be worked into armor (counts as masterwork, +1 AC, Dex +1, negates stealth disadvantage on heavy armor styles). Wildwood heals a point of damage over 24 hours if exposed to sunlight for at least 1 hour, or, heals 5 points if also left to soak in water for 8 hours. Cost is double that of ordinary masterwork equivalent, but crating time is unaffected, and crafting requires craft (woodworking).
+
+
+
+### Willow-Herb
+*[Plain](#p109), [Swamp](#p111)*
+___
+- **Rarity:** [Very Common](#p113)
+
+The plant grows to about three feet in height. It has long hairy leaves and large purplish-pink flowers. The smoke of this herb will keep away snakes and other minor vermin. One dose burns for about five minutes.
+
+
+
+### Winclamit
+*[Jungle](#p108)*
+___
+- **Rarity:** [Legendary](#p116)
+
+Each Winclamit tree bears but one fruit per year, resembling an apple the size of a watermelon at the precipice of the tree. When this fruit is eaten it will restore 1d100 hit points to the recipient. The fruit can be stored for up to 2 months in a dry sealed container.
+
+
+
+### Windwhip Tree
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+Growing in small clumps in vast open plains, the tree grows straight up until it splits into thousands of willowy branches. Each of these branches are thin and whip-like, and are covered in small clumps of light green leaves and small red thorns. The bark of the tree is dark brown with lighter brown spots around the base of the tree. 
+
+When the wind blows across the plains, the flexible branches and trunk bend far over. 
+
+When the wind suddenly abates, the trunk abruptly snaps back into place, and the flexible branches make a popping noise not unlike the crack of a whip. This also causes the tree to fling their seeds far and wide. While the springiness of the wood makes it unacceptable to use for most construction, it has been quite popular in the construction of ballistae.
+
+
+
+### Wispstalks
+*[Forest](#p107), [Jungle](#p108), [Underdark](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+This incredibly rare fungus has become something of a fable among herbalists. It is reported to have a large, translucent-blue bulbous cap growing atop a thin stem, and to normally form in small clusters deep within damp cave environments and forests. When consumed, the recipient first takes 1d6 poison damage and must make a DC 15. Cons. Save to keep it down. On a successful save, the recipient will gain the secondary effect of the wispstalk, becoming transparents but not invisible for 1d8 minutes; on a failed save, nothing happens except for the recipient coughing up what part of the fungus they tried to get down.
+
+
+
+### Witchweave Palm
+*[Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A single Witchweave Palm Tree is comprised of three to five trunks, 10" to 12" in diameter, that grow in tight clusters and can reach 25' to 50' in height. The fronds of a mature Witchweave are approximately 3' long before splitting into 7 to 10 pale green leaves with drooping, fibrous tips that grow for another 2' to 3'. It is the numerous white fibers, resembling hair, appearing in the splits of the leaf tips that give the Witchweave its name. These leaves are prized by the Lizardfolk natives of the Swordfish Islands who harvest, dry and process them into rope and rough cloth. The Witchweave blooms with small yellow flowers that give way to oblong, reddish fruit about the size of a human thumb. If the fruits are dried, wrapped in fresh green Witchweave leaves and burned, a thick, deep blue smoke with a sweet, musky odor is produced. This smoke acts as a potent anesthetic to exposed flesh, and the Lizardfolk are known to fill tents and lodges with it for both medical and spiritual reasons. It is rumored that some of the Lizardfolk's powerful shaman are able to refine the fruit of the Witchweave even further to create potent healing salves and unguents, but if true, these secrets are highly guarded.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Witchweed
+*[Jungle](#p108), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A plant whose leaves and stalks can be refined into a paste, which is then rolled into a smoke-stick of sorts that creates 10 ft cube of light smoke (no concealment) that forces casters to make a concentration check as if casting defensively or lose focus on the spell due to bouts of uncontrollable sneezing. The smoke is effective for 30 seconds.
+
+
+
+### Wittlewort
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Herb with green gossamer-like fronds which, due to its rapid growth cycle, is found only in the spring in temperate, subtropical or tropical areas. Deters slugs and other pests. If powdered, it can be made into Wittlewort brew, which grants those under Charm effects another saving throw (if the effect allowed one).
+
+
+
+### Wizard Hats
+*[Underdark](#p111)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A small conical mushroom that grows in the Underdark. The stem of the mushroom is pale white, and the cap is generally light orange to dark ochre in color, and sometimes covered in spots. Drow often collect the mushroom, as even though it is bitter while it is still fresh, cooking the fungus over an open flame causes it to shrink and take on a surprisingly meaty flavor. Some underkdark-dwelling chefs send out foraging parties to harvest the mushroom so that it can be prepared for feasts.
+
+
+
+### Wolfsbane
+*[Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+This small (15-cm) plant has black green leaves, sawed deeply several times, and three flower stalks with tiny white flowers and brown seed pods. The flowers can be crushed into dust and carried in the pocket to have the effect of granting a +2 on a Constitution saving throw vs poison to avoid lycanthropy. The protection lasts for 2d4 x 10 minutes and makes tracking from lycanthropes harder. In addition, the seeds can be consumed (DC 20 Cons. Save) to fully avoid the repercussions of lycanthropy.
+
+
+
+### Wolfweed
+*[Mountain](#p110)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Similar in appearance to Wolfsbane, this plant can be made into a substance called Journeyman Serum, which provides a +2 bonus on constitution checks to avoid damage from a forces march
+
+
+
+
+\columnbreak
+
+### Wood Sorrel
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+This is a small plant with leaves in three parts, like a shamrock. The flowers are bell shaped and are white with a dash of blue. The leaves must be crushed and dried for two weeks before use. This herb keeps people cool. It is obviously invaluable in desert regions. It doubles the person’s ability to endure heat effects, but does not counteract dehydration, etc.
+
+
+
+### Woodrose
+*[Forest](#p107), [Jungle](#p108), [Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+If steeped in wine and the resulting wine mixture drunk, this herb causes people to become very merry. Anyone who wishes to resist its effect can do so, if they make a DC 19 Cons. Save vs poison.
+
+
+
+### Wormwood
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+The effects of this herb last for two hours. During this time the character is granted +10 temporary hit points and can function beyond the point of exhaustion. Wormwood normally grows to about four feet in height. It has a stiff and angular stem, reddish brown in color. It has deeply incised smooth leaves which are silvery white with a slight tinge of green. It has small, yellow-green flowers arranged in long spikes at the top of the stem. The herb is also a rather effective insect repellent and is often left with clothing to keep fleas away. It also makes a very effective antiseptic when mixed with Rue (Intelligence check to remove all infection from a wound within 5d6 hours, healing an additional 2d6 during the next short rest to whoever the antiseptic is applied to). In addition to its above effects wormwood is also a prime ingredient in a very dangerous, very addictive drink called Absinthe which is milky green in color.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Xitluchi
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A twisted bramble of branches, growing small clusters of stiff pale leaves, and covered in sharp thorns, the bush grows deep within jungles and forests. The roots of the bush are often exposed to the air, and are a favored nesting place for snakes and small vermin. Legend has it that the demi-god Finder Wyvernspurn was once walking through the forest, draped in a fine robe made of gold stitched fabric sewn with threads of silver. Passing along, the robe was caught by a particular bush, tearing the robe and causing it to spill some of Finder’s creativity into the wind. Becoming angered by the action, Wyvernspurn cursed the bush, causing it to transform into a twisted mockery of what it once was, and to be covered in thorns. Consumption of the leaves in a pale tea leads to vivid and guiding dreams for 1d4 days afterward.
+
+
+
+### Yagdav Bush
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A rather robust bush covered with waxy stiff leaves, the Yagdav is prominent in the north, and sometimes used as topiary decoration. During the warmer months the bush grows small yellow flowers. The flower petals are often dried and ground to make a tea that promotes fertility to couples that are having difficulty conceiving. The female is instructed to drink the tea every morning upon first awakening.
+
+
+
+### Yaran
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+The pollen of this flower must be inhaled. A successful roll means that a person’s sense of smell and of taste are doubled for one hour (advantage on perception checks for this period of time). The herb must still be growing or have been cut in the last 10 minutes.
+
+
+
+### Yarpick
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Common](#p113)
+
+A type of tree that grows small fruit whose seeds are nourishing both whole and as ground meal. The fruit are protected by long, thin, razor-sharp thorns approximately 3 inches long. These thorns have use as sewing needles, blow-darts, and as miniscule daggers perfect for doll hands.
+
+
+
+
+\columnbreak
+
+### Yarrow
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+The small white flowers of this herb, which cluster at the top of its one to two feet tall straight stem, should be crushed and applied to wounds. If successfully used it will stop minor bleeding, and reduce major bleeding to the minor level. A second application can then be used to stop the minor bleeding. According to legend Achilles used yarrow to treat wounded Greek troops during the Trojan War. The successful application of Yarrow grants an additional +4 to hit points regained during a short rest.
+
+
+
+### Yavethalion
+*[Mountain](#p110), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A small, groundcover shrub that sprouts tiny yellow flowers in spring which then turn to tiny yellow berries during summer months. 2d20 berries can be harvested from one plant. When the fruit is eaten, it will restore 1d4-1 hit points to the recipient. Yavethalion keeps for only two weeks.
+
+
+
+### Yazur
+*[Jungle](#p108)*
+___
+- **Rarity:** [Legendary](#p116)
+
+Resembling a wild grape in tropical climates, yazur is a small purple berry that can be eaten outright, by anyone but a spellcaster, and tastes like sour apples. If a spellcaster eats yazur berries, the caster will lose a highest-level spell slot until the next long rest. Yazur can also be mashed into a paste with sugar. Applying this paste to any magic object will drain any magic abilities from it, and reverting the object to a normal, non-magical item in the process. If the paste is then eaten after absorbing this magic, it will heal the character to full hit points. In addition, the yazur plant can also be used against spellcasters in a tactical attack. When a spellcaster is directly injected with juice from the berries, all spells that the caster has memorized and prepared for the day will be obliterated from their memory.
+
+
+
+### Yew Tree
+*[Forest](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A tall, evergreen tree found in old growth forests, Yew have long been held sacred by druids as a symbol of death and rebirth, as dropping limbs of older trees will sometimes yield new sprouts. In addition, the yew has come to represent especially death since a poison can be prepared from yew needles and berries if soaked in oil under a full moon (3d6 poison damage to the recipient with no save). 
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Ylam Tree
+*[Desert](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Found in many deserts, the Ylam Tree is a short, stout evergreen that survives on very little amounts of water and maintains its internal moisture using a thick red sap. Imbibing a sufficient quantity of this so-called 'Ylam Blood' or ‘Blood of Glory’ induces a frenzy of aggressive emotions which are especially strong in the heat of battle, leading to a berserk rage. Combatants under the influence of the blood of glory gain a +1 to hit and +2 to damage, but suffer a -3 penalty to armor class, due to the reckless abandon induced by the fluid for 2d6 hours after consumption.
+
+
+
+### Young Lad's Love
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Young Lad's Love is a 3 to 5-foot-tall shrub with many branches that resemble small trees. It has small yellow-white flowers, and green feathery leaves, which smell of lemon. These leaves turn a rich orange-brown in late autumn. The flowers should be crushed and placed into a poultice to be used. A successful application will cure one small area of frostbite, such as a foot or hand, in 2d4 hours.
+
+
+
+### Yuzine
+*[River](#p111), [Swamp](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A rare mushroom that only grows while fully submerged in freshwater, Yuzine is occasionally sought after and harvested by high ranking clergy of Omir and Olim, the Gods of Life and Death respectively. When powdered and combined with holy oil by a trained professional, Yuzine becomes Metabolite, a sort of tranquilizer for the undead. An undead creature subjected to this poison must make a DC 25 Constitution saving throw. Lasting for 30 seconds on a failed save, an affected target's speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn. If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted. A creature affected by this poison makes another Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it. On a failed save, the poison's saving throw DC for the next save attempt decreases by 10.
+
+
+
+
+\columnbreak
+
+### Zalanthar
+*[Forest](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+Also called blackwood or darkwood in the North, the bark of the tree ranges from the color of pitch to a dark ash. The tree itself is actually comprised of an extensive root system, from which a number of trunks sprout to the heavens. While the trunk and branches are extremely dark, the leaves of the tree are pale grey and white, often giving the branches an appearance of glowing in the moonlight. The trees are often harvested for their precious darkwood, which has the sturdiness of other hard woods, but is favored because it only weighs half as much. Darkwood weapons and shields are often very light and worked only by the most skilled of craftsmen (shields made of darkwood grant +2 AC and +1 to stealth checks made while holding the shield), both properties that cause such goods to be quite expensive. Wizards of the South favor darkwood when constructing rods, wands, and staves. Since Zalanthar requires masterwork, it requires training or high knowledge of nature in order to effectively craft with.
+
+
+
+### Zulsendra
+*[Arctic](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+When this pale green and grey mushroom is eaten, it doubles a person’s rate of movement, and rate of attack (2 actions per round) for three rounds, as well as also imposing advantage on rolls to hit. At the end of that time the person must make a DC 18 Cons. Save versus poison or collapse in exhaustion for 1d6 turns.
+
+
+
+### Zur
+*[Underdark](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+This lean and stalky, pale yellow fungus must be brewed for six hours in water harvested from an underground stream. A successful nature roll for the beverage’s preparation means that a person’s senses of smell and of hearing are doubled for one hour. (Advantage on perception rolls based on smell or hearing.)
+
+
+
+### Zurkhwood
+*[Underdark](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+Giant 30-40 ft high mushroom. Has large spores that can be eaten as bread if baked properly, and its hardy stalks serve as an Underdark substitute for wood.
+
+
+
+
+\pagebreakNum
+
+
+
+<div class='wide' style="text-align: center">
+
+# Appendix A: Plants By Terrain
+</div>
+
+<div class='toc wide' style='column-count:3'>
+
+
+- ### Arctic
+  - [<span>24</span><span>Allathorne (C)</span>](#p24)  
+  - [<span>26</span><span>Arctic Creeper (C)</span>](#p26)  
+  - [<span>26</span><span>Ardulan (U)</span>](#p26)  
+  - [<span>29</span><span>Avataer (VR)</span>](#p29)  
+  - [<span>30</span><span>Basilisk Breath (VR)</span>](#p30)  
+  - [<span>30</span><span>Bee Balm (VC)</span>](#p30)  
+  - [<span>31</span><span>Bija Tree (R)</span>](#p31)  
+  - [<span>31</span><span>Birthnot (VC)</span>](#p31)  
+  - [<span>31</span><span>Bishop's Weed (U)</span>](#p31)  
+  - [<span>32</span><span>Bittermourn (L)</span>](#p32)  
+  - [<span>34</span><span>Blueleaf (VC)</span>](#p34)  
+  - [<span>35</span><span>Brelidar (U)</span>](#p35)  
+  - [<span>38</span><span>Ceran (VC)</span>](#p38)  
+  - [<span>39</span><span>Coldwood (C)</span>](#p39)  
+  - [<span>40</span><span>Covadish (VR)</span>](#p40)  
+  - [<span>43</span><span>Darkwood (VR)</span>](#p43)  
+  - [<span>45</span><span>Dragon's Breath (C)</span>](#p45)  
+  - [<span>48</span><span>Eldaas (VC)</span>](#p48)  
+  - [<span>50</span><span>Fennel Silk (C)</span>](#p50)  
+  - [<span>53</span><span>Footleaf (C)</span>](#p53)  
+  - [<span>54</span><span>Gefnul (L)</span>](#p54)  
+  - [<span>55</span><span>Goldencup (R)</span>](#p55)  
+  - [<span>56</span><span>Grendar (VC)</span>](#p56)  
+  - [<span>57</span><span>Halcyon Crocus (L)</span>](#p57)  
+  - [<span>58</span><span>Hare's Ear (VC)</span>](#p58)  
+  - [<span>61</span><span>Hoggle Beans (VC)</span>](#p61)  
+  - [<span>62</span><span>Ice Lotus (R)</span>](#p62)  
+  - [<span>62</span><span>Iceflower (U)</span>](#p62)  
+  - [<span>63</span><span>Jojopojo (U)</span>](#p63)  
+  - [<span>64</span><span>Kanishta (U)</span>](#p64)  
+  - [<span>64</span><span>Kathkusa (VR)</span>](#p64)  
+  - [<span>65</span><span>Klagul (L)</span>](#p65)  
+  - [<span>74</span><span>Mistletoe (VC)</span>](#p74)  
+  - [<span>77</span><span>Obaddis Leaf (R)</span>](#p77)  
+  - [<span>81</span><span>Quivar (R)</span>](#p81)  
+  - [<span>84</span><span>Rouddan (R)</span>](#p84)  
+  - [<span>85</span><span>Salamander Orchids (R)</span>](#p85)  
+  - [<span>86</span><span>Scented Mayweed (C)</span>](#p86)  
+  - [<span>90</span><span>Snowflake Lichen (U)</span>](#p90)  
+  - [<span>90</span><span>Snowwood (U)</span>](#p90)  
+  - [<span>92</span><span>Stonestream (VR)</span>](#p92)  
+  - [<span>96</span><span>Thalsen Weed (VC)</span>](#p96)  
+  - [<span>97</span><span>Thir (VC)</span>](#p97)  
+  - [<span>97</span><span>Thistledown (VR)</span>](#p97)  
+  - [<span>106</span><span>Zulsendra (VR)</span>](#p106)  
+
+- ### City
+  - [<span>23</span><span>Alchemilla (C)</span>](#p23)  
+  - [<span>25</span><span>Aloe (VC)</span>](#p25)  
+  - [<span>30</span><span>Basil (VC)</span>](#p30)  
+  - [<span>34</span><span>Bodhi Tree (R)</span>](#p34)  
+  - [<span>41</span><span>Crab-Apple (VC)</span>](#p41)  
+  - [<span>47</span><span>Dwarf Hops (VC)</span>](#p47)  
+  - [<span>53</span><span>Foxglove (VC)</span>](#p53)  
+  - [<span>54</span><span>Gardenflax (VR)</span>](#p54)  
+  - [<span>54</span><span>Ginyak Weed (C)</span>](#p54)  
+  - [<span>56</span><span>Grim Flowers (C)</span>](#p56)  
+  - [<span>57</span><span>Haella (U)</span>](#p57)  
+
+- ### City (continued)
+  - [<span>59</span><span>Harlequin's Harp (VC)</span>](#p59)  
+  - [<span>60</span><span>Healwell (VC)</span>](#p60)  
+  - [<span>63</span><span>Juniper (VC)</span>](#p63)  
+  - [<span>68</span><span>Linden Tree (VC)</span>](#p68)  
+  - [<span>68</span><span>Lizard Eaters (VC)</span>](#p68)  
+  - [<span>69</span><span>Longinal Leaf (C)</span>](#p69)  
+  - [<span>70</span><span>Lumina Cap (R)</span>](#p70)  
+  - [<span>71</span><span>Marjoram (VC)</span>](#p71)  
+  - [<span>73</span><span>Megillos (C)</span>](#p73)  
+  - [<span>74</span><span>Mokodo Bush (VR)</span>](#p74)  
+  - [<span>76</span><span>Navew (U)</span>](#p76)  
+  - [<span>77</span><span>Northlinch (VC)</span>](#p77)  
+  - [<span>79</span><span>Peony (C)</span>](#p79)  
+  - [<span>79</span><span>Periwinkle (VC)</span>](#p79)  
+  - [<span>81</span><span>Psyllium (VC)</span>](#p81)  
+  - [<span>81</span><span>Purple Pipeweed (U)</span>](#p81)  
+  - [<span>83</span><span>Redroot (U)</span>](#p83)  
+  - [<span>85</span><span>Salamander Orchids (R)</span>](#p85)  
+  - [<span>86</span><span>Sasami Tree (VR)</span>](#p86)  
+  - [<span>86</span><span>Scholar's Dream (R)</span>](#p86)  
+  - [<span>92</span><span>Strawberry (VC)</span>](#p92)  
+  - [<span>95</span><span>Tansy (VC)</span>](#p95)  
+  - [<span>97</span><span>Thyme (VC)</span>](#p97)  
+  - [<span>100</span><span>Verdant Goeleth (VR)</span>](#p100)  
+  - [<span>101</span><span>Vodare (R)</span>](#p101)  
+  - [<span>102</span><span>Werasa (C)</span>](#p102)  
+
+- ### Coastal
+  - [<span>25</span><span>Aloe (VC)</span>](#p25)  
+  - [<span>26</span><span>Anserke (C)</span>](#p26)  
+  - [<span>26</span><span>Archangelica (C)</span>](#p26)  
+  - [<span>29</span><span>Atramen (C)</span>](#p29)  
+  - [<span>36</span><span>Calamus (C)</span>](#p36)  
+  - [<span>37</span><span>Cat's Tail (VC)</span>](#p37)  
+  - [<span>38</span><span>Chromus Slime (VR)</span>](#p38)  
+  - [<span>41</span><span>Crisp Chondrus (U)</span>](#p41)  
+  - [<span>41</span><span>Culkas (VC)</span>](#p41)  
+  - [<span>45</span><span>Draaf (VC)</span>](#p45)  
+  - [<span>47</span><span>Ecru (R)</span>](#p47)  
+  - [<span>49</span><span>Ember Root (C)</span>](#p49)  
+  - [<span>50</span><span>Felmather (R)</span>](#p50)  
+  - [<span>51</span><span>Firethorn (R)</span>](#p51)  
+  - [<span>54</span><span>Gariig (L)</span>](#p54)  
+  - [<span>59</span><span>Harfy (VC)</span>](#p59)  
+  - [<span>59</span><span>Harlequin's Harp (VC)</span>](#p59)  
+  - [<span>61</span><span>Hydrathistle (U)</span>](#p61)  
+  - [<span>64</span><span>Karat (VC)</span>](#p64)  
+  - [<span>66</span><span>Lakeleaf (U)</span>](#p66)  
+  - [<span>69</span><span>Locust Needle (VC)</span>](#p69)  
+  - [<span>75</span><span>Mountain Garlic (C)</span>](#p75)  
+  - [<span>81</span><span>Quickweed (C)</span>](#p81)  
+  - [<span>85</span><span>Sabito (U)</span>](#p85)  
+  - [<span>85</span><span>Sand Vine (U)</span>](#p85)  
+  - [<span>87</span><span>Sessali (U)</span>](#p87)  
+  - [<span>89</span><span>Sleeping Ivy (C)</span>](#p89)  
+  - [<span>93</span><span>Surane (U)</span>](#p93)  
+  - [<span>96</span><span>Tereeka Root (R)</span>](#p96)  
+  - [<span>99</span><span>Umozokai Flower (VC)</span>](#p99)  
+  - [<span>101</span><span>Waterorb (C)</span>](#p101)  
+
+- ### Desert
+  - [<span>23</span><span>Alfirin (VR)</span>](#p23)  
+  - [<span>24</span><span>Alil (VR)</span>](#p24)  
+  - [<span>25</span><span>Aloe (VC)</span>](#p25)  
+  - [<span>25</span><span>Angel's Cactus (U)</span>](#p25)  
+  - [<span>26</span><span>Arkasu (C)</span>](#p26)  
+  - [<span>27</span><span>Arrowroot (R)</span>](#p27)  
+  - [<span>29</span><span>Balon's Plant (R)</span>](#p29)  
+  - [<span>30</span><span>Barrelstalk (U)</span>](#p30)  
+  - [<span>30</span><span>Bastit (C)</span>](#p30)  
+  - [<span>30</span><span>Belan (VC)</span>](#p30)  
+  - [<span>33</span><span>Bloodspine (C)</span>](#p33)  
+  - [<span>33</span><span>Bloodstaunch (C)</span>](#p33)  
+  - [<span>36</span><span>Calacaza Bush (U)</span>](#p36)  
+  - [<span>37</span><span>Caravara (R)</span>](#p37)  
+  - [<span>38</span><span>Cline Cactus (U)</span>](#p38)  
+  - [<span>43</span><span>Dathlil (VC)</span>](#p43)  
+  - [<span>45</span><span>Djin Blossom (U)</span>](#p45)  
+  - [<span>45</span><span>Dragonspine (U)</span>](#p45)  
+  - [<span>46</span><span>Dragontears (VR)</span>](#p46)  
+  - [<span>49</span><span>Entriste (U)</span>](#p49)  
+  - [<span>49</span><span>Ephedra (R)</span>](#p49)  
+  - [<span>54</span><span>Gariig (L)</span>](#p54)  
+  - [<span>55</span><span>Golden Coin Cactus (VC)</span>](#p55)  
+  - [<span>55</span><span>Golden Desert Tree (R)</span>](#p55)  
+  - [<span>58</span><span>Hara'dan (U)</span>](#p58)  
+  - [<span>58</span><span>Hara'den (U)</span>](#p58)  
+  - [<span>62</span><span>Inari (VC)</span>](#p62)  
+  - [<span>64</span><span>Juzam (VR)</span>](#p64)  
+  - [<span>64</span><span>Karcatta Brambles (U)</span>](#p64)  
+  - [<span>64</span><span>Kelventari (VR)</span>](#p64)  
+  - [<span>68</span><span>Lissuin (R)</span>](#p68)  
+  - [<span>71</span><span>Maracan (VR)</span>](#p71)  
+  - [<span>76</span><span>Nordra (VC)</span>](#p76)  
+  - [<span>77</span><span>Novanor (U)</span>](#p77)  
+  - [<span>78</span><span>Oruighen (U)</span>](#p78)  
+  - [<span>80</span><span>Powdered Desert Milk (U)</span>](#p80)  
+  - [<span>83</span><span>Rose Campion (VR)</span>](#p83)  
+  - [<span>86</span><span>Sandberry Bush (VC)</span>](#p86)  
+  - [<span>89</span><span>Sinquoi (VR)</span>](#p89)  
+  - [<span>94</span><span>Swordstalks (VR)</span>](#p94)  
+  - [<span>95</span><span>Taran'ka (C)</span>](#p95)  
+  - [<span>96</span><span>Tateesha (R)</span>](#p96)  
+  - [<span>97</span><span>Thurl (VC)</span>](#p97)  
+  - [<span>99</span><span>Umozokai Flower (VC)</span>](#p99)  
+  - [<span>102</span><span>Whistling Cactus (U)</span>](#p102)  
+  - [<span>106</span><span>Ylam Tree (VR)</span>](#p106)  
+
+- ### Forest
+  - [<span>23</span><span>Aeglos (U)</span>](#p23)  
+  - [<span>23</span><span>Aldaka (U)</span>](#p23)  
+  - [<span>23</span><span>Alether (C)</span>](#p23)  
+  - [<span>24</span><span>All-Heale (VC)</span>](#p24)  
+  - [<span>25</span><span>Alor (VC)</span>](#p25)  
+  - [<span>25</span><span>Angakara Tree (VR)</span>](#p25)  
+  - [<span>25</span><span>Angel's Stammerwort (VC)</span>](#p25)  
+  - [<span>26</span><span>Arcasa (U)</span>](#p26)  
+  - [<span>26</span><span>Ardulan (U)</span>](#p26)  
+  - [<span>27</span><span>Asarabacca (U)</span>](#p27)  
+  - [<span>27</span><span>Ash (C)</span>](#p27)  
+
+</div>
+
+
+\pagebreakNum
+
+
+<div class='toc wide' style='column-count:3'>
+
+- ### Forest (continued)
+  - [<span>27</span><span>Ashline (U)</span>](#p27)  
+  - [<span>28</span><span>Ashvein (C)</span>](#p28)  
+  - [<span>28</span><span>Aspen Tree (C)</span>](#p28)  
+  - [<span>28</span><span>Astir (C)</span>](#p28)  
+  - [<span>28</span><span>Astragalus Root (U)</span>](#p28)  
+  - [<span>29</span><span>Autumn Skullcap (R)</span>](#p29)  
+  - [<span>29</span><span>Azure Leaves (R)</span>](#p29)  
+  - [<span>30</span><span>Barberry (VC)</span>](#p30)  
+  - [<span>30</span><span>Barisc (U)</span>](#p30)  
+  - [<span>30</span><span>Basil (VC)</span>](#p30)  
+  - [<span>31</span><span>Bija Tree (R)</span>](#p31)  
+  - [<span>31</span><span>Bilberry (VR)</span>](#p31)  
+  - [<span>31</span><span>Bison-Gourd (C)</span>](#p31)  
+  - [<span>32</span><span>Black Rose (C)</span>](#p32)  
+  - [<span>32</span><span>Blackberry (VC)</span>](#p32)  
+  - [<span>33</span><span>Bloodbracken (VR)</span>](#p33)  
+  - [<span>33</span><span>Bloodgrass (C)</span>](#p33)  
+  - [<span>34</span><span>Blueleaf (VC)</span>](#p34)  
+  - [<span>35</span><span>Borneas (R)</span>](#p35)  
+  - [<span>35</span><span>Brethil (C)</span>](#p35)  
+  - [<span>35</span><span>Bronzewood (C)</span>](#p35)  
+  - [<span>36</span><span>Butterspice Weed (U)</span>](#p36)  
+  - [<span>37</span><span>Callofex (U)</span>](#p37)  
+  - [<span>37</span><span>Cassil (VC)</span>](#p37)  
+  - [<span>38</span><span>Chervil (C)</span>](#p38)  
+  - [<span>38</span><span>Cinquefort (U)</span>](#p38)  
+  - [<span>39</span><span>Coldwood (C)</span>](#p39)  
+  - [<span>39</span><span>Constrictor Vine (U)</span>](#p39)  
+  - [<span>40</span><span>Cotsbalm (R)</span>](#p40)  
+  - [<span>40</span><span>Cow-Wheat (VC)</span>](#p40)  
+  - [<span>41</span><span>Crab-Apple (VC)</span>](#p41)  
+  - [<span>41</span><span>Crimson Ladies (R)</span>](#p41)  
+  - [<span>41</span><span>Cubeb (C)</span>](#p41)  
+  - [<span>41</span><span>Culumalda (C)</span>](#p41)  
+  - [<span>42</span><span>Dainaberry (C)</span>](#p42)  
+  - [<span>42</span><span>Darkberry (R)</span>](#p42)  
+  - [<span>43</span><span>Darmanzar Stalk (U)</span>](#p43)  
+  - [<span>43</span><span>Darnell (C)</span>](#p43)  
+  - [<span>43</span><span>Deadroot (VR)</span>](#p43)  
+  - [<span>44</span><span>Delrean (C)</span>](#p44)  
+  - [<span>44</span><span>Deva's Tears (C)</span>](#p44)  
+  - [<span>45</span><span>Dittany (VC)</span>](#p45)  
+  - [<span>45</span><span>Dog Rose (VC)</span>](#p45)  
+  - [<span>45</span><span>Dragons-Eye Oak (U)</span>](#p45)  
+  - [<span>47</span><span>Duskwood (C)</span>](#p47)  
+  - [<span>47</span><span>Dwarf Hops (VC)</span>](#p47)  
+  - [<span>47</span><span>Dwarven Oak (R)</span>](#p47)  
+  - [<span>47</span><span>Edelwood (VR)</span>](#p47)  
+  - [<span>48</span><span>Elder Tree (VC)</span>](#p48)  
+  - [<span>48</span><span>Elm (VC)</span>](#p48)  
+  - [<span>49</span><span>Elven Willow (VC)</span>](#p49)  
+  - [<span>49</span><span>Elvish Galingale (VC)</span>](#p49)  
+  - [<span>49</span><span>Ember Root (C)</span>](#p49)  
+  - [<span>50</span><span>Falsifal (C)</span>](#p50)  
+  - [<span>50</span><span>Febfendu (VR)</span>](#p50)  
+  - [<span>50</span><span>Felsul (R)</span>](#p50)  
+  - [<span>51</span><span>Fey Cherry (VR)</span>](#p51)  
+  - [<span>53</span><span>Foxglove (VC)</span>](#p53)  
+  - [<span>53</span><span>Fuiyáru (R)</span>](#p53)  
+  - [<span>53</span><span>Fumitore (U)</span>](#p53)  
+  - [<span>54</span><span>Gallowbrush (U)</span>](#p54)  
+
+- ### Forest (continued)
+  - [<span>54</span><span>Gardenflax (VR)</span>](#p54)  
+  - [<span>55</span><span>Goat's Rue (VC)</span>](#p55)  
+  - [<span>55</span><span>Goblin Rogue (VC)</span>](#p55)  
+  - [<span>55</span><span>Golden Crown (VC)</span>](#p55)  
+  - [<span>55</span><span>Golden Lungwort (U)</span>](#p55)  
+  - [<span>56</span><span>Goldenweb (U)</span>](#p56)  
+  - [<span>57</span><span>Gulthias Tree (L)</span>](#p57)  
+  - [<span>57</span><span>Halfling Thistle (R)</span>](#p57)  
+  - [<span>58</span><span>Hands of Laretha (R)</span>](#p58)  
+  - [<span>58</span><span>Hangman Tree (R)</span>](#p58)  
+  - [<span>59</span><span>Harpy Nest (C)</span>](#p59)  
+  - [<span>59</span><span>Hart's Crown (R)</span>](#p59)  
+  - [<span>59</span><span>Hate Gartlet (C)</span>](#p59)  
+  - [<span>60</span><span>Hawkweed (U)</span>](#p60)  
+  - [<span>60</span><span>Healing Apple Tree (C)</span>](#p60)  
+  - [<span>60</span><span>Hidden Hibiscus (VR)</span>](#p60)  
+  - [<span>61</span><span>Hiexel (C)</span>](#p61)  
+  - [<span>61</span><span>Hiljirat Pepper (U)</span>](#p61)  
+  - [<span>61</span><span>Hyperia (VR)</span>](#p61)  
+  - [<span>62</span><span>Iraster (VR)</span>](#p62)  
+  - [<span>62</span><span>Ironhard (R)</span>](#p62)  
+  - [<span>63</span><span>Jaffray (C)</span>](#p63)  
+  - [<span>63</span><span>Juniper (VC)</span>](#p63)  
+  - [<span>64</span><span>Kae'la (R)</span>](#p64)  
+  - [<span>64</span><span>Kieros (R)</span>](#p64)  
+  - [<span>65</span><span>Kilmakur (R)</span>](#p65)  
+  - [<span>65</span><span>King's Pear (C)</span>](#p65)  
+  - [<span>65</span><span>Kingsfruit (VR)</span>](#p65)  
+  - [<span>66</span><span>Kylathar (L)</span>](#p66)  
+  - [<span>66</span><span>Laishaberries (C)</span>](#p66)  
+  - [<span>66</span><span>Larnurma (VC)</span>](#p66)  
+  - [<span>67</span><span>Laspar (VC)</span>](#p67)  
+  - [<span>67</span><span>Leopard's Bane (VC)</span>](#p67)  
+  - [<span>68</span><span>Linden Tree (VC)</span>](#p68)  
+  - [<span>68</span><span>Lish (U)</span>](#p68)  
+  - [<span>68</span><span>Livewood (VR)</span>](#p68)  
+  - [<span>69</span><span>Locust Needle (VC)</span>](#p69)  
+  - [<span>69</span><span>Lordinberry (VR)</span>](#p69)  
+  - [<span>69</span><span>Luhix (U)</span>](#p69)  
+  - [<span>70</span><span>Maiden's Hair (VR)</span>](#p70)  
+  - [<span>70</span><span>Maitake Mushroom (VC)</span>](#p70)  
+  - [<span>71</span><span>Mar'kerlan (R)</span>](#p71)  
+  - [<span>71</span><span>Marigold (VC)</span>](#p71)  
+  - [<span>72</span><span>Maruera (R)</span>](#p72)  
+  - [<span>74</span><span>Mirenna (R)</span>](#p74)  
+  - [<span>74</span><span>Mistletoe (VC)</span>](#p74)  
+  - [<span>75</span><span>Myrthis (C)</span>](#p75)  
+  - [<span>78</span><span>Orticusp (VR)</span>](#p78)  
+  - [<span>78</span><span>Osira (C)</span>](#p78)  
+  - [<span>78</span><span>Pallast (VC)</span>](#p78)  
+  - [<span>79</span><span>Pennyroyal (R)</span>](#p79)  
+  - [<span>79</span><span>Phandar (VR)</span>](#p79)  
+  - [<span>80</span><span>Pixie Table (R)</span>](#p80)  
+  - [<span>81</span><span>Quare (VC)</span>](#p81)  
+  - [<span>82</span><span>Rampalt (C)</span>](#p82)  
+  - [<span>83</span><span>Ripplebark (C)</span>](#p83)  
+  - [<span>84</span><span>Rose of Forgetfulness (L)</span>](#p84)  
+  - [<span>84</span><span>Rosecork (C)</span>](#p84)  
+  - [<span>84</span><span>Rowan Tree (C)</span>](#p84)  
+  - [<span>84</span><span>Ruby Apple (VR)</span>](#p84)  
+  - [<span>84</span><span>Ruby Blushrose (U)</span>](#p84)  
+
+- ### Forest (continued)
+  - [<span>85</span><span>Sable Fir (C)</span>](#p85)  
+  - [<span>86</span><span>Sanicle (C)</span>](#p86)  
+  - [<span>86</span><span>Scarlet Heart Mushrooms (U)</span>](#p86)  
+  - [<span>87</span><span>Shadbush (VC)</span>](#p87)  
+  - [<span>87</span><span>Shadowtop (VC)</span>](#p87)  
+  - [<span>88</span><span>Silverwood (U)</span>](#p88)  
+  - [<span>90</span><span>Sparkleberry (C)</span>](#p90)  
+  - [<span>90</span><span>Spectreflower (R)</span>](#p90)  
+  - [<span>91</span><span>Spelleater Ivy (R)</span>](#p91)  
+  - [<span>91</span><span>Spiderwort (C)</span>](#p91)  
+  - [<span>91</span><span>Spotty Dragonfire (C)</span>](#p91)  
+  - [<span>92</span><span>Spring Adonis (C)</span>](#p92)  
+  - [<span>92</span><span>Strawberry (VC)</span>](#p92)  
+  - [<span>93</span><span>Stygian Pumpkin (C)</span>](#p93)  
+  - [<span>93</span><span>Suaeysit (L)</span>](#p93)  
+  - [<span>94</span><span>Suth (VR)</span>](#p94)  
+  - [<span>95</span><span>Takara Bulb (VC)</span>](#p95)  
+  - [<span>96</span><span>Tempin (U)</span>](#p96)  
+  - [<span>96</span><span>Tephrosia (U)</span>](#p96)  
+  - [<span>97</span><span>Thimbleweed (VC)</span>](#p97)  
+  - [<span>98</span><span>Torchstalk (U)</span>](#p98)  
+  - [<span>98</span><span>Troll Poppy (C)</span>](#p98)  
+  - [<span>98</span><span>Trueroot (L)</span>](#p98)  
+  - [<span>99</span><span>Twilight Birch (VR)</span>](#p99)  
+  - [<span>100</span><span>Varenia (L)</span>](#p100)  
+  - [<span>100</span><span>Vinuk (U)</span>](#p100)  
+  - [<span>101</span><span>Waredan (VR)</span>](#p101)  
+  - [<span>101</span><span>Waxtree (VR)</span>](#p101)  
+  - [<span>102</span><span>Waxworm (VC)</span>](#p102)  
+  - [<span>102</span><span>Weeping Tree (VC)</span>](#p102)  
+  - [<span>102</span><span>Weirwood (U)</span>](#p102)  
+  - [<span>102</span><span>White Byrony (C)</span>](#p102)  
+  - [<span>103</span><span>Wispstalks (VR)</span>](#p103)  
+  - [<span>104</span><span>Wittlewort (VC)</span>](#p104)  
+  - [<span>104</span><span>Wood Sorrel (C)</span>](#p104)  
+  - [<span>104</span><span>Woodrose (R)</span>](#p104)  
+  - [<span>104</span><span>Wormwood (R)</span>](#p104)  
+  - [<span>105</span><span>Xitluchi (U)</span>](#p105)  
+  - [<span>105</span><span>Yagdav Bush (VC)</span>](#p105)  
+  - [<span>105</span><span>Yaran (R)</span>](#p105)  
+  - [<span>105</span><span>Yarpick (C)</span>](#p105)  
+  - [<span>105</span><span>Yew Tree (U)</span>](#p105)  
+  - [<span>106</span><span>Young Lad's Love (VC)</span>](#p106)  
+  - [<span>106</span><span>Zalanthar (R)</span>](#p106)  
+
+- ### Jungle
+  - [<span>22</span><span>Acacia Tree (C)</span>](#p22)  
+  - [<span>22</span><span>Acai Berries (VC)</span>](#p22)  
+  - [<span>23</span><span>Alether (C)</span>](#p23)  
+  - [<span>26</span><span>Arcasa (U)</span>](#p26)  
+  - [<span>27</span><span>Ash Willow (VR)</span>](#p27)  
+  - [<span>28</span><span>Ashvein (C)</span>](#p28)  
+  - [<span>28</span><span>Ashwaganda Root (C)</span>](#p28)  
+  - [<span>28</span><span>Athelas (L)</span>](#p28)  
+  - [<span>33</span><span>Bloodgrass (C)</span>](#p33)  
+  - [<span>33</span><span>Bloodkeep (C)</span>](#p33)  
+  - [<span>33</span><span>Bloodroot (R)</span>](#p33)  
+  - [<span>34</span><span>Bocraugh (L)</span>](#p34)  
+  - [<span>34</span><span>Bodhi Tree (R)</span>](#p34)  
+  - [<span>35</span><span>Borneas (R)</span>](#p35)  
+
+</div>
+
+
+\pagebreakNum
+
+
+<div class='toc wide' style='column-count:3'>
+
+- ### Jungle (continued)
+  - [<span>35</span><span>Bronzewood (C)</span>](#p35)  
+  - [<span>36</span><span>Butterspice Weed (U)</span>](#p36)  
+  - [<span>36</span><span>Caffar (C)</span>](#p36)  
+  - [<span>36</span><span>Calacaza Bush (U)</span>](#p36)  
+  - [<span>36</span><span>Calamus (C)</span>](#p36)  
+  - [<span>37</span><span>Callin (VC)</span>](#p37)  
+  - [<span>37</span><span>Cassil (VC)</span>](#p37)  
+  - [<span>38</span><span>Chervil (C)</span>](#p38)  
+  - [<span>38</span><span>Choking Cinder Fungus (U)</span>](#p38)  
+  - [<span>40</span><span>Cosmos Glond (VR)</span>](#p40)  
+  - [<span>40</span><span>Cotsbalm (R)</span>](#p40)  
+  - [<span>41</span><span>Crimson Ladies (R)</span>](#p41)  
+  - [<span>42</span><span>Damiana (C)</span>](#p42)  
+  - [<span>42</span><span>Darkberry (R)</span>](#p42)  
+  - [<span>43</span><span>Deadly Nightshade (U)</span>](#p43)  
+  - [<span>43</span><span>Deadroot (VR)</span>](#p43)  
+  - [<span>44</span><span>Degiik (L)</span>](#p44)  
+  - [<span>44</span><span>Delrean (C)</span>](#p44)  
+  - [<span>44</span><span>Densewood (U)</span>](#p44)  
+  - [<span>44</span><span>Devarencia (VR)</span>](#p44)  
+  - [<span>45</span><span>Dog Rose (VC)</span>](#p45)  
+  - [<span>45</span><span>Dragons-Eye Oak (U)</span>](#p45)  
+  - [<span>46</span><span>Dramas (R)</span>](#p46)  
+  - [<span>46</span><span>Dripping Tree (R)</span>](#p46)  
+  - [<span>48</span><span>Eldritch Whorlwood (VR)</span>](#p48)  
+  - [<span>49</span><span>Ember Root (C)</span>](#p49)  
+  - [<span>50</span><span>Faranir (R)</span>](#p50)  
+  - [<span>50</span><span>Felsul (R)</span>](#p50)  
+  - [<span>51</span><span>Fiend's Ivy (C)</span>](#p51)  
+  - [<span>51</span><span>Fire Flower (L)</span>](#p51)  
+  - [<span>52</span><span>Fleshshiver (U)</span>](#p52)  
+  - [<span>52</span><span>Floure-du-luce (VC)</span>](#p52)  
+  - [<span>53</span><span>Furyax (L)</span>](#p53)  
+  - [<span>54</span><span>Galda (VC)</span>](#p54)  
+  - [<span>54</span><span>Gallowbrush (U)</span>](#p54)  
+  - [<span>54</span><span>Gardenflax (VR)</span>](#p54)  
+  - [<span>54</span><span>Glaredak (R)</span>](#p54)  
+  - [<span>54</span><span>Glowvine (R)</span>](#p54)  
+  - [<span>55</span><span>Golden Lungwort (U)</span>](#p55)  
+  - [<span>56</span><span>Gotu Kola (U)</span>](#p56)  
+  - [<span>57</span><span>Gulthias Tree (L)</span>](#p57)  
+  - [<span>58</span><span>Hangman Tree (R)</span>](#p58)  
+  - [<span>59</span><span>Harpy Nest (C)</span>](#p59)  
+  - [<span>59</span><span>Harrada Leaf (VR)</span>](#p59)  
+  - [<span>60</span><span>Healing Apple Tree (C)</span>](#p60)  
+  - [<span>60</span><span>Hidden Hibiscus (VR)</span>](#p60)  
+  - [<span>61</span><span>Hiljirat Pepper (U)</span>](#p61)  
+  - [<span>62</span><span>Ipt (C)</span>](#p62)  
+  - [<span>62</span><span>Jabberweed (U)</span>](#p62)  
+  - [<span>63</span><span>Jaffray (C)</span>](#p63)  
+  - [<span>63</span><span>Jalap (VC)</span>](#p63)  
+  - [<span>63</span><span>Jelly Moss (C)</span>](#p63)  
+  - [<span>63</span><span>Jinab (R)</span>](#p63)  
+  - [<span>64</span><span>Karat (VC)</span>](#p64)  
+  - [<span>65</span><span>Kilmakur (R)</span>](#p65)  
+  - [<span>65</span><span>Kinuka Tree (VC)</span>](#p65)  
+  - [<span>66</span><span>Krakaem Pods (C)</span>](#p66)  
+  - [<span>66</span><span>Land Caltrops (VC)</span>](#p66)  
+
+- ### Jungle (continued)
+  - [<span>67</span><span>Leopard's Bane (VC)</span>](#p67)  
+  - [<span>70</span><span>Luurden (U)</span>](#p70)  
+  - [<span>71</span><span>Mandrake (R)</span>](#p71)  
+  - [<span>71</span><span>Maraga Flowers (R)</span>](#p71)  
+  - [<span>73</span><span>Masthin (C)</span>](#p73)  
+  - [<span>73</span><span>Melander (R)</span>](#p73)  
+  - [<span>74</span><span>Mordayn (R)</span>](#p74)  
+  - [<span>78</span><span>Olvar (VR)</span>](#p78)  
+  - [<span>78</span><span>Ortona (R)</span>](#p78)  
+  - [<span>78</span><span>Pallast (VC)</span>](#p78)  
+  - [<span>80</span><span>Poison Apple (U)</span>](#p80)  
+  - [<span>80</span><span>Pondstone Tree (U)</span>](#p80)  
+  - [<span>80</span><span>Poznan's Chain (R)</span>](#p80)  
+  - [<span>80</span><span>Prickly Tea (C)</span>](#p80)  
+  - [<span>81</span><span>Pygmy King Flower (R)</span>](#p81)  
+  - [<span>82</span><span>Rainbowpetal (VC)</span>](#p82)  
+  - [<span>82</span><span>Ratavasa Flowers (VC)</span>](#p82)  
+  - [<span>82</span><span>Rattlestalks (U)</span>](#p82)  
+  - [<span>82</span><span>Reath (R)</span>](#p82)  
+  - [<span>83</span><span>Ribwort Plantain (VC)</span>](#p83)  
+  - [<span>83</span><span>Ripplewood (U)</span>](#p83)  
+  - [<span>84</span><span>Rose of Forgetfulness (L)</span>](#p84)  
+  - [<span>84</span><span>Ruby Blushrose (U)</span>](#p84)  
+  - [<span>85</span><span>Saddilia (VR)</span>](#p85)  
+  - [<span>86</span><span>Sasami Tree (VR)</span>](#p86)  
+  - [<span>87</span><span>Serren Wood (VR)</span>](#p87)  
+  - [<span>87</span><span>Shadbush (VC)</span>](#p87)  
+  - [<span>88</span><span>Silver Hibiscus (L)</span>](#p88)  
+  - [<span>89</span><span>Slimmerane (R)</span>](#p89)  
+  - [<span>90</span><span>Soarwood (U)</span>](#p90)  
+  - [<span>90</span><span>Sparish Nut (C)</span>](#p90)  
+  - [<span>90</span><span>Sparkleberry (C)</span>](#p90)  
+  - [<span>91</span><span>Spiderbush (R)</span>](#p91)  
+  - [<span>91</span><span>Spotty Dragonfire (C)</span>](#p91)  
+  - [<span>94</span><span>Suth (VR)</span>](#p94)  
+  - [<span>94</span><span>Swampwalker (U)</span>](#p94)  
+  - [<span>94</span><span>Swordstalks (VR)</span>](#p94)  
+  - [<span>94</span><span>Taggit (R)</span>](#p94)  
+  - [<span>95</span><span>Tamarind (VC)</span>](#p95)  
+  - [<span>95</span><span>Tamariske (U)</span>](#p95)  
+  - [<span>97</span><span>Thanalayla (U)</span>](#p97)  
+  - [<span>98</span><span>Tickleweed (R)</span>](#p98)  
+  - [<span>99</span><span>Twilight Green (R)</span>](#p99)  
+  - [<span>99</span><span>Tyrant's Mercy (U)</span>](#p99)  
+  - [<span>99</span><span>Umanhunan (C)</span>](#p99)  
+  - [<span>100</span><span>Vaundyr Vine (VR)</span>](#p100)  
+  - [<span>101</span><span>Vipervine (C)</span>](#p101)  
+  - [<span>101</span><span>Visma (C)</span>](#p101)  
+  - [<span>103</span><span>Wildwood (VR)</span>](#p103)  
+  - [<span>103</span><span>Winclamit (L)</span>](#p103)  
+  - [<span>103</span><span>Wispstalks (VR)</span>](#p103)  
+  - [<span>103</span><span>Witchweave Palm (U)</span>](#p103)  
+  - [<span>104</span><span>Witchweed (C)</span>](#p104)  
+  - [<span>104</span><span>Wittlewort (VC)</span>](#p104)  
+  - [<span>104</span><span>Woodrose (R)</span>](#p104)  
+  - [<span>104</span><span>Wormwood (R)</span>](#p104)  
+  - [<span>105</span><span>Xitluchi (U)</span>](#p105)  
+  - [<span>105</span><span>Yarpick (C)</span>](#p105)  
+  - [<span>105</span><span>Yazur (L)</span>](#p105)  
+
+- ### Plain
+  - [<span>22</span><span>Acacia Tree (C)</span>](#p22)  
+  - [<span>22</span><span>Adder's Tongue (VC)</span>](#p22)  
+  - [<span>22</span><span>Adgana (C)</span>](#p22)  
+  - [<span>23</span><span>Agrimony (VC)</span>](#p23)  
+  - [<span>23</span><span>Alchemilla (C)</span>](#p23)  
+  - [<span>23</span><span>Alfengrape (R)</span>](#p23)  
+  - [<span>24</span><span>Alkanet (C)</span>](#p24)  
+  - [<span>25</span><span>Amalion (R)</span>](#p25)  
+  - [<span>25</span><span>Amrans (U)</span>](#p25)  
+  - [<span>25</span><span>Angel's Stammerwort (VC)</span>](#p25)  
+  - [<span>26</span><span>Anise (VC)</span>](#p26)  
+  - [<span>26</span><span>Arkas Grass (U)</span>](#p26)  
+  - [<span>26</span><span>Arlan (C)</span>](#p26)  
+  - [<span>27</span><span>Arnuminas (VC)</span>](#p27)  
+  - [<span>28</span><span>Astir (C)</span>](#p28)  
+  - [<span>28</span><span>Astragalus Root (U)</span>](#p28)  
+  - [<span>28</span><span>Athas (R)</span>](#p28)  
+  - [<span>28</span><span>Atigax (U)</span>](#p28)  
+  - [<span>29</span><span>Balm (C)</span>](#p29)  
+  - [<span>30</span><span>Barberry (VC)</span>](#p30)  
+  - [<span>30</span><span>Barisc (U)</span>](#p30)  
+  - [<span>30</span><span>Basil (VC)</span>](#p30)  
+  - [<span>30</span><span>Bee Balm (VC)</span>](#p30)  
+  - [<span>31</span><span>Birthnot (VC)</span>](#p31)  
+  - [<span>31</span><span>Bison-Gourd (C)</span>](#p31)  
+  - [<span>32</span><span>Bittergar Bush (VC)</span>](#p32)  
+  - [<span>32</span><span>Black Rose (C)</span>](#p32)  
+  - [<span>32</span><span>Blackberry (VC)</span>](#p32)  
+  - [<span>33</span><span>Bloodgrass (C)</span>](#p33)  
+  - [<span>34</span><span>Borage (VC)</span>](#p34)  
+  - [<span>35</span><span>Borneas (R)</span>](#p35)  
+  - [<span>35</span><span>Burdock (VC)</span>](#p35)  
+  - [<span>35</span><span>Bursthelas (C)</span>](#p35)  
+  - [<span>36</span><span>Cachuga Pepper (U)</span>](#p36)  
+  - [<span>37</span><span>Callofex (U)</span>](#p37)  
+  - [<span>37</span><span>Cassil (VC)</span>](#p37)  
+  - [<span>38</span><span>Ceran (VC)</span>](#p38)  
+  - [<span>38</span><span>Chamomile (VC)</span>](#p38)  
+  - [<span>39</span><span>Coltsfoot (VC)</span>](#p39)  
+  - [<span>39</span><span>Comfrey (VC)</span>](#p39)  
+  - [<span>39</span><span>Common Coneflower (VC)</span>](#p39)  
+  - [<span>39</span><span>Constrictor Vine (U)</span>](#p39)  
+  - [<span>40</span><span>Cow Parsnip (C)</span>](#p40)  
+  - [<span>40</span><span>Cow-Wheat (VC)</span>](#p40)  
+  - [<span>41</span><span>Dagmather (VC)</span>](#p41)  
+  - [<span>43</span><span>Darsurion (VC)</span>](#p43)  
+  - [<span>43</span><span>Dathlil (VC)</span>](#p43)  
+  - [<span>44</span><span>Decorous Nun-Cloak (C)</span>](#p44)  
+  - [<span>44</span><span>Deva's Tears (C)</span>](#p44)  
+  - [<span>45</span><span>Devilweed (C)</span>](#p45)  
+  - [<span>45</span><span>Dittany (VC)</span>](#p45)  
+  - [<span>46</span><span>Dramas (R)</span>](#p46)  
+  - [<span>47</span><span>Dwarf Hops (VC)</span>](#p47)  
+  - [<span>47</span><span>Dwarf Mallow (U)</span>](#p47)  
+  - [<span>47</span><span>Ebur (C)</span>](#p47)  
+  - [<span>47</span><span>Ecru (R)</span>](#p47)  
+  - [<span>48</span><span>Eglantine (VC)</span>](#p48)  
+  - [<span>48</span><span>Elausa (C)</span>](#p48)  
+  - [<span>48</span><span>Elecampane (VC)</span>](#p48)  
+
+</div>
+
+
+\pagebreakNum
+
+
+<div class='toc wide' style='column-count:3'>
+
+- ### Plain (continued)
+  - [<span>49</span><span>Elvish Galingale (VC)</span>](#p49)  
+  - [<span>49</span><span>Fairy Bells (VC)</span>](#p49)  
+  - [<span>49</span><span>False Unicorn Root (VR)</span>](#p49)  
+  - [<span>50</span><span>Falsifal (C)</span>](#p50)  
+  - [<span>50</span><span>Fennel (VC)</span>](#p50)  
+  - [<span>50</span><span>Fetherfew (U)</span>](#p50)  
+  - [<span>51</span><span>Fieldcress (VC)</span>](#p51)  
+  - [<span>51</span><span>Firmanon (U)</span>](#p51)  
+  - [<span>52</span><span>Flame Clove (VC)</span>](#p52)  
+  - [<span>52</span><span>Flame Petal (VC)</span>](#p52)  
+  - [<span>52</span><span>Fleshwort (C)</span>](#p52)  
+  - [<span>53</span><span>Foxglove (VC)</span>](#p53)  
+  - [<span>53</span><span>Fumellar (C)</span>](#p53)  
+  - [<span>54</span><span>Garadar (R)</span>](#p54)  
+  - [<span>54</span><span>Gardenflax (VR)</span>](#p54)  
+  - [<span>54</span><span>Giant Grass (VR)</span>](#p54)  
+  - [<span>54</span><span>Ginyak Weed (C)</span>](#p54)  
+  - [<span>55</span><span>Goat's Rue (VC)</span>](#p55)  
+  - [<span>55</span><span>Goblin Rogue (VC)</span>](#p55)  
+  - [<span>56</span><span>Grim Flowers (C)</span>](#p56)  
+  - [<span>57</span><span>Gyumin Beans (VC)</span>](#p57)  
+  - [<span>57</span><span>Haella (U)</span>](#p57)  
+  - [<span>57</span><span>Halfling Thistle (R)</span>](#p57)  
+  - [<span>58</span><span>Hands of Laretha (R)</span>](#p58)  
+  - [<span>59</span><span>Hate Gartlet (C)</span>](#p59)  
+  - [<span>60</span><span>Hawkweed (U)</span>](#p60)  
+  - [<span>60</span><span>Healwell (VC)</span>](#p60)  
+  - [<span>60</span><span>Heather (VC)</span>](#p60)  
+  - [<span>60</span><span>Henbane (U)</span>](#p60)  
+  - [<span>61</span><span>Hiljirat Pepper (U)</span>](#p61)  
+  - [<span>61</span><span>Horehound (VC)</span>](#p61)  
+  - [<span>61</span><span>Horseweed (VC)</span>](#p61)  
+  - [<span>61</span><span>Hyperia (VR)</span>](#p61)  
+  - [<span>61</span><span>Iazutl (VC)</span>](#p61)  
+  - [<span>63</span><span>Jaffray (C)</span>](#p63)  
+  - [<span>63</span><span>Jelly Moss (C)</span>](#p63)  
+  - [<span>63</span><span>Juniper (VC)</span>](#p63)  
+  - [<span>63</span><span>Juxi Root (VC)</span>](#p63)  
+  - [<span>64</span><span>Kae'la (R)</span>](#p64)  
+  - [<span>64</span><span>Kaitlin's Weed (C)</span>](#p64)  
+  - [<span>65</span><span>Kiss of Discord (R)</span>](#p65)  
+  - [<span>66</span><span>Laishaberries (C)</span>](#p66)  
+  - [<span>67</span><span>Latimer Orchid (VR)</span>](#p67)  
+  - [<span>67</span><span>Lavender Ragweed (VC)</span>](#p67)  
+  - [<span>67</span><span>Lichbriar (R)</span>](#p67)  
+  - [<span>68</span><span>Link-Suriss (U)</span>](#p68)  
+  - [<span>68</span><span>Lizard Eaters (VC)</span>](#p68)  
+  - [<span>70</span><span>Makebate (VC)</span>](#p70)  
+  - [<span>70</span><span>Mallow (U)</span>](#p70)  
+  - [<span>70</span><span>Mallus (VR)</span>](#p70)  
+  - [<span>71</span><span>Maraga Flowers (R)</span>](#p71)  
+  - [<span>71</span><span>Marigold (VC)</span>](#p71)  
+  - [<span>71</span><span>Marisia (L)</span>](#p71)  
+  - [<span>71</span><span>Marjoram (VC)</span>](#p71)  
+  - [<span>73</span><span>Masterwort (C)</span>](#p73)  
+  - [<span>73</span><span>Meadow Giant (U)</span>](#p73)  
+  - [<span>73</span><span>Megillos (C)</span>](#p73)  
+  - [<span>73</span><span>Milkworte (VC)</span>](#p73)  
+  - [<span>74</span><span>Mokodo Bush (VR)</span>](#p74)  
+  - [<span>75</span><span>Mugwort (L)</span>](#p75)  
+  - [<span>75</span><span>Mule Pollen (R)</span>](#p75)  
+  - [<span>75</span><span>Myrthis (C)</span>](#p75)  
+
+- ### Plain (continued)
+  - [<span>76</span><span>Napweed (VC)</span>](#p76)  
+  - [<span>76</span><span>Nararoot (VC)</span>](#p76)  
+  - [<span>76</span><span>Navew (U)</span>](#p76)  
+  - [<span>76</span><span>Nettle (VC)</span>](#p76)  
+  - [<span>77</span><span>Nossa (VC)</span>](#p77)  
+  - [<span>77</span><span>Old Man's Friend (R)</span>](#p77)  
+  - [<span>78</span><span>Orach (VC)</span>](#p78)  
+  - [<span>78</span><span>Orevine (R)</span>](#p78)  
+  - [<span>79</span><span>Palma Eldath (C)</span>](#p79)  
+  - [<span>79</span><span>Pattran (C)</span>](#p79)  
+  - [<span>79</span><span>Peony (C)</span>](#p79)  
+  - [<span>79</span><span>Periwinkle (VC)</span>](#p79)  
+  - [<span>79</span><span>Petiveria (VC)</span>](#p79)  
+  - [<span>80</span><span>Pomow (C)</span>](#p80)  
+  - [<span>80</span><span>Prince's Feather (VC)</span>](#p80)  
+  - [<span>81</span><span>Psyllium (VC)</span>](#p81)  
+  - [<span>81</span><span>Purple Pipeweed (U)</span>](#p81)  
+  - [<span>81</span><span>Queen's Ambrosia (VC)</span>](#p81)  
+  - [<span>82</span><span>Rampalt (C)</span>](#p82)  
+  - [<span>82</span><span>Rasira (C)</span>](#p82)  
+  - [<span>82</span><span>Razorvine (U)</span>](#p82)  
+  - [<span>83</span><span>Redgold's Feather (R)</span>](#p83)  
+  - [<span>83</span><span>Redroot (U)</span>](#p83)  
+  - [<span>83</span><span>Rewk (C)</span>](#p83)  
+  - [<span>84</span><span>Rose of Forgetfulness (L)</span>](#p84)  
+  - [<span>84</span><span>Ruby Blushrose (U)</span>](#p84)  
+  - [<span>84</span><span>Rue (VC)</span>](#p84)  
+  - [<span>85</span><span>Sadaq's Bedwort (L)</span>](#p85)  
+  - [<span>85</span><span>Saffron (C)</span>](#p85)  
+  - [<span>86</span><span>Sanicle (C)</span>](#p86)  
+  - [<span>86</span><span>Saracen's Compound (VC)</span>](#p86)  
+  - [<span>86</span><span>Scholar's Dream (R)</span>](#p86)  
+  - [<span>87</span><span>Sezarad (U)</span>](#p87)  
+  - [<span>88</span><span>Silverleaf (R)</span>](#p88)  
+  - [<span>89</span><span>Sleeping Ivy (C)</span>](#p89)  
+  - [<span>89</span><span>Sleepweed (U)</span>](#p89)  
+  - [<span>89</span><span>Slimmerane (R)</span>](#p89)  
+  - [<span>89</span><span>Slumberweed (U)</span>](#p89)  
+  - [<span>89</span><span>Snakespike (VC)</span>](#p89)  
+  - [<span>90</span><span>Snapping Grass (U)</span>](#p90)  
+  - [<span>90</span><span>Sparkleberry (C)</span>](#p90)  
+  - [<span>91</span><span>Spiderwort (C)</span>](#p91)  
+  - [<span>91</span><span>Spotty Dragonfire (C)</span>](#p91)  
+  - [<span>92</span><span>Stirge Traps (VC)</span>](#p92)  
+  - [<span>92</span><span>Stonewort (VR)</span>](#p92)  
+  - [<span>92</span><span>Strawberry (VC)</span>](#p92)  
+  - [<span>93</span><span>Stygian Pumpkin (C)</span>](#p93)  
+  - [<span>93</span><span>Sunberry Bush (VC)</span>](#p93)  
+  - [<span>93</span><span>Sunflower of Pelor (C)</span>](#p93)  
+  - [<span>94</span><span>Suth (VR)</span>](#p94)  
+  - [<span>95</span><span>Tai-Gi (VR)</span>](#p95)  
+  - [<span>95</span><span>Tangled Waybread (VC)</span>](#p95)  
+  - [<span>95</span><span>Tansy (VC)</span>](#p95)  
+  - [<span>96</span><span>Terbas (VC)</span>](#p96)  
+  - [<span>97</span><span>Thimbleweed (VC)</span>](#p97)  
+  - [<span>97</span><span>Thistledown (VR)</span>](#p97)  
+  - [<span>97</span><span>Throw-Waxe (VC)</span>](#p97)  
+  - [<span>97</span><span>Thyme (VC)</span>](#p97)  
+  - [<span>98</span><span>Troll Poppy (C)</span>](#p98)  
+  - [<span>99</span><span>Tyrant's Sword (C)</span>](#p99)  
+  - [<span>99</span><span>Ur (VC)</span>](#p99)  
+  - [<span>100</span><span>Valerian (VC)</span>](#p100)  
+
+- ### Plain (continued)
+  - [<span>100</span><span>Verdant Goeleth (VR)</span>](#p100)  
+  - [<span>100</span><span>Vinuk (U)</span>](#p100)  
+  - [<span>100</span><span>Viper's Bugloss (C)</span>](#p100)  
+  - [<span>101</span><span>Vodare (R)</span>](#p101)  
+  - [<span>102</span><span>Werasa (C)</span>](#p102)  
+  - [<span>102</span><span>Whitecandle (VC)</span>](#p102)  
+  - [<span>103</span><span>Wild Fireclover (R)</span>](#p103)  
+  - [<span>103</span><span>Willow-Herb (VC)</span>](#p103)  
+  - [<span>103</span><span>Windwhip Tree (C)</span>](#p103)  
+  - [<span>104</span><span>Witchweed (C)</span>](#p104)  
+  - [<span>104</span><span>Wolfsbane (R)</span>](#p104)  
+  - [<span>104</span><span>Wood Sorrel (C)</span>](#p104)  
+  - [<span>104</span><span>Woodrose (R)</span>](#p104)  
+  - [<span>105</span><span>Yagdav Bush (VC)</span>](#p105)  
+  - [<span>105</span><span>Yaran (R)</span>](#p105)  
+  - [<span>105</span><span>Yarrow (VC)</span>](#p105)  
+  - [<span>105</span><span>Yavethalion (C)</span>](#p105)  
+  - [<span>106</span><span>Young Lad's Love (VC)</span>](#p106)  
+
+- ### Mountain
+  - [<span>24</span><span>Alligator Teeth (C)</span>](#p24)  
+  - [<span>25</span><span>Angelica (VC)</span>](#p25)  
+  - [<span>26</span><span>Arctic Creeper (C)</span>](#p26)  
+  - [<span>26</span><span>Ardulan (U)</span>](#p26)  
+  - [<span>27</span><span>Arnica (VC)</span>](#p27)  
+  - [<span>30</span><span>Barisc (U)</span>](#p30)  
+  - [<span>30</span><span>Base Mullein (VC)</span>](#p30)  
+  - [<span>30</span><span>Basil (VC)</span>](#p30)  
+  - [<span>30</span><span>Basilisk Breath (VR)</span>](#p30)  
+  - [<span>31</span><span>Bishop's Weed (U)</span>](#p31)  
+  - [<span>32</span><span>Black Rose (C)</span>](#p32)  
+  - [<span>32</span><span>Blackberry (VC)</span>](#p32)  
+  - [<span>33</span><span>Bloodkeep (C)</span>](#p33)  
+  - [<span>33</span><span>Bloodspine (C)</span>](#p33)  
+  - [<span>33</span><span>Bloodstaunch (C)</span>](#p33)  
+  - [<span>34</span><span>Bocraugh (L)</span>](#p34)  
+  - [<span>35</span><span>Brandac (U)</span>](#p35)  
+  - [<span>37</span><span>Calithil (C)</span>](#p37)  
+  - [<span>38</span><span>Ceran (VC)</span>](#p38)  
+  - [<span>42</span><span>Darkanda Bush (U)</span>](#p42)  
+  - [<span>43</span><span>Dathlil (VC)</span>](#p43)  
+  - [<span>44</span><span>Devarencia (VR)</span>](#p44)  
+  - [<span>45</span><span>Devil's Crown (R)</span>](#p45)  
+  - [<span>45</span><span>Dragon's Breath (C)</span>](#p45)  
+  - [<span>45</span><span>Dragonspine (U)</span>](#p45)  
+  - [<span>47</span><span>Dwarf Mallow (U)</span>](#p47)  
+  - [<span>47</span><span>Dwarven Oak (R)</span>](#p47)  
+  - [<span>48</span><span>Elandir (VR)</span>](#p48)  
+  - [<span>49</span><span>Ember Root (C)</span>](#p49)  
+  - [<span>49</span><span>Entriste (U)</span>](#p49)  
+  - [<span>49</span><span>Ephedra (R)</span>](#p49)  
+  - [<span>51</span><span>Fire Flower (L)</span>](#p51)  
+  - [<span>52</span><span>Flintmoss (R)</span>](#p52)  
+  - [<span>53</span><span>Footleaf (C)</span>](#p53)  
+  - [<span>53</span><span>Fumitore (U)</span>](#p53)  
+  - [<span>53</span><span>Furyax (L)</span>](#p53)  
+  - [<span>54</span><span>Gefnul (L)</span>](#p54)  
+  - [<span>55</span><span>Goblinberry Bush (C)</span>](#p55)  
+  - [<span>55</span><span>Golden Coin Cactus (VC)</span>](#p55)  
+  - [<span>56</span><span>Green-Air Bramble (R)</span>](#p56)  
+  - [<span>57</span><span>Guardseye (L)</span>](#p57)  
+  - [<span>57</span><span>Halfling Thistle (R)</span>](#p57)  
+
+</div>
+

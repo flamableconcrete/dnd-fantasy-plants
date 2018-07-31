@@ -1,0 +1,860 @@
+<style>
+  /*Remove footer*/
+  .phb:after {
+    content: "";
+  }
+
+  a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .spellList a,
+  .phb p em a,
+  .phb ul li a
+  {
+    text-decoration: none;
+  }
+
+  .phb table tbody tr td {
+      padding: .10em .1em;
+  }
+
+  .phb table tbody tr:nth-child(odd) {
+    background-color: #efacb8;
+  }
+
+  .toc {
+    column-count:4;
+  }
+
+  .toc a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .toc li span:nth-child(2){	/*Allow dot leaders to fill remaining space but not overlap*/
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .toc li span:nth-child(2):after{
+    font-family		: BookSanity;	/*Remove any header styles from dot leaders*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    content:
+      " ........................................"
+      "........................................."
+      ".........................................";
+  }
+
+  .toc li span:first-child{
+    float: right;
+    font-family		: BookSanity;	/*Remove any header styles from page numbers*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    margin-left		: 1px;	/*Leaves a small space between page numbers and dot leaders*/
+  }
+
+/*Special cases for headings*/
+  .toc li h3 span:nth-child(2):after{
+  	content: " ";						/*Remove dot leaders on h3*/
+  }
+
+  .toc li h3 {
+    margin-bottom: 4px !important;		/*Special spacing for h3*/
+    margin-top: 10px !important;
+    line-height: initial !important;	/*For some reason Multi-line h3 line spacing changed*/
+  }
+
+  .toc li h3 span:first-child{
+  	line-height: 1.8em !important;  	/*Line page numbers up with Multi-line h3 better*/
+  }
+
+  .toc ul ul {
+  	margin-left: 10px !important;		/*Original lists intented too much*/
+  }
+
+  .toc>ul>li {
+    margin-bottom: initial !important;	/*margin for list items needs to be removed or 0*/
+  }
+
+</style>
+
+
+
+
+### Fey Cherry
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Somewhat rare, but unbelievably massive cherry trees that can live forever. Area under its canopy is mystically protected, i.e. always temperate and windspeeds are dampened by 20 mph. It blossoms annually but only creates cherries every 10 years, and eating a cherry picked less than a day ago grants a Protection from Good and Evil effect for 1d10 hours. In addition, if the cherry is mashed and given via mouth to a corpse, the fruit grants the effects of Gentle Repose for 10 days.
+
+
+
+### Fieldcress
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A low, ground-cover leafy green that is commonly used for salads and sandwiches in the spring and summer all around the realm. Combining fieldcress with a day’s rations will grant advantage on the Constitution save vs. exhaustion after a Forced March on the next day.
+
+
+
+### Fiend's Ivy
+*[Jungle](#p108)*
+___
+- **Rarity:** [Common](#p113)
+
+A highly invasive and virulent strain of poison ivy that seems to have some sort of sentient quality about them, often shifting slightly to trip up and ensnare unaware passersby. The small thorns on the ivy inject a small amount of poison many times into any creature unlucky enough to fall into the ivy. DC 15 Cons. Save. On a failed save, the ivy inflicts 3d6 poison damage and the target is poisoned. On a successful save, the target takes half as much damage and is not poisoned.
+
+
+
+### Fire Flower
+*[Jungle](#p108), [Mountain](#p110)*
+___
+- **Rarity:** [Legendary](#p116)
+
+It is suggested that this herb be found in one location on an entire world, ideally in a Mountain range in a tropical or subtropical region. Fire Flower is a small bush which has one pale golden flower and small red berries with the appearance of a live coal. The flowers of the bush must be taken and crushed into a diamond or adamantine vial and left to cure for ten years. This is also the amount of time needed for a single flower to bloom. A single drop of this elixir will heal any illness or injury, but will not allow limbs or other appendages to grow back, and is said to return the dead to some state of undeath. This is an incredibly powerful herb, and is likely to only exist in the hands of powerful lords and kings.
+
+
+
+
+\columnbreak
+
+### Fire Lichen
+*[Underdark](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+Orange-white lichen that growths in warm underground areas, commonly found near volcanically active areas. Can be made into a spicy paste or fermented into a fiercely hot dwarven whiskey called Lichenball.
+
+
+
+### Firethorn
+*[Coastal](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+Often called the Sea Rose, this flower exists almost entirely on the Island of the Firethorns in the northern Sorlorn Sea. The flower grows in such numbers that it gives the lower areas of the island a reddish hue. At night the island faintly glows from a distance due to the natural glowing property of the flowers, and many that transverse the Great Sea know of the island’s distant glow. The island is generally uninhabited, with the exception of the fishing village of Safe Cove and the city of Hawa, because the Firethorns are so poisonous (DC 15 Cons. Save vs. poisoned while standing within 45 feet of the flowers and their pollen; on a failed save take 4d8 poison damage and be poisoned for 1d6 hours, on a successful save take half as much damage without being poisoned). Inhabitants of both settlements are well aware of the toxicity of the flowers, and often give them a wide berth.
+
+
+
+### Firmanon
+*[Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A small, red-brown grass that grows in singular sprigs in open fields. Throwing this into a fire, causes a short but very strong ignition of the fire. The flames double in size for 3 minutes and you can hear the air rushing towards the fire working as fuel for the ignition.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Fjor'da
+*[River](#p111), [Swamp](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Growing only in very wet soil, this small, ivy-like ground vine will produce white flowers in the springtime that produce a fine pollen that causes the inhabitants of nearby towns to cover their faces for a week after the Spring Equinox. When inhaled, the character will forget everything he has experienced during the last 24 hours. There is a 10% chance he will remember everything when confronted with facts about those 24 hours. After three days the amnesia becomes permanent and there is no hope of recovery, and this day will be forever lost in the person’s mind. Some sinister organizations have started propagating Fjor’da in order to harvest this pollen for use in an inhaled poison called Silt Fjor’da (DC 18 Cons. Save vs poison. On a failed save, the recipient automatically forgets the last 24 hours with no possibility of recovery. On a successful save, the recipient has a 50% chance to recover the memories of the day).
+
+
+
+### Flame Clove
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Garlic with the essence of the elemental plane of fire. If boiled in salt water, crushed, and added to food it keeps the food hot for 1d4 days without drying it out. Adding it to Alchemist’s Fire doubles the fire damage and the duration. It matures in 5 weeks and is viable for 3 weeks following its harvest.
+
+
+
+### Flame Petal
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This large flower blooms in the height of summer, unfurling large red petals, and yellow-tipped orange tendrils which sway in the faintest of winds to give the illusion that the flower is on fire. As they often grow in large clumps, at first glance one might even believe that the ground was on fire. Such flowers are sought as decoration during the Summer Solstice and Midsummer celebrations in the Dalelands. Young women will wear them in their hair (+3 to Nature Checks while wearing the flower in this manner), and they are said to bring a bountiful crop to any person that would plant them near their front doors.
+
+
+
+### Fleshshiver
+*[Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Tan-colored mushroom that grows in the soil between the roots of tropical fruit trees. It can be mixed with mud and then added to a compress that, when applied to the head of a diseased creature, grants a +2 bonus to Constitution saves against disease for 1 day.
+
+
+
+
+\columnbreak
+
+### Fleshwort
+*[Plain](#p109), [Underdark](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+A short plant with grey stalks and olive-colored hairy leaves, the Fleshwort thrives in areas where corpses lay. Often the plant will be seen on the site of battlefields, or where the dead were quickly buried. Some healers use the fibrous body of the Fleshwort to speed up the healing process (during a short rest, a character may add 1d6 to the total amount of hit points recovered).
+
+
+
+### Flintmoss
+*[Mountain](#p110), [River](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+A dark grey moss, dotted with small flecks of rust-brown, Flint Moss is commonly found in area of thermal activity or bright and constant sunlight. The moss requires fire to spread its seeds, and will ignite from even the smallest sparks. A 3" cube of Flint Moss will burn for 3 to 4 hours and put off flame comparable to a normal sized camp fire. The moss growing on piles of rubble or loose rock is the most dangerous as friction from shifting stones can create enough heat or sparks to ignite patches of the moss, turning what was once a moss-covered mound of debris into a raging inferno. Application of Flintmoss to a bludgeoning weapon and lighting the weapon ablaze will add +3 fire damage to any successful attacks made with the weapon for 1d4+1 hours after application.
+
+
+
+### Floure-du-luce
+*[Jungle](#p108)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Floure-du-luce has broad and flat leaves shaped rather like a sword. The flowers are purplish-blue and faintly glow, and the roots, which tend to stretch themselves along the surface of the ground, are reddish brown on the outside. The root must be mashed and boiled and then left to stand for at least twenty days before drinking. The resulting tincture removes bruises and other external blemishes from a body very quickly (within 1d4 hours).
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Footleaf
+*[Arctic](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Common](#p113)
+
+This 30-cm high plant has 3 thick, fleshy leaves, dark green and covered with soft hairs. The light green blades that account for its height are actually bunches sheathes from which flower stalks grow during the summer covered in a waxy, protective coating. From each of the sheathes (there can be as many as 30 to a plant), a single flower stalk grows with tiny purple flowers. The thick leaves, which can become as large as 20 cm across, can be torn loose and put inside your boots (one leaf to a boot), enabling you to walk all day without tiring or even getting footsore (negating the need for a Forced March), as well as adding 5 to your movement speed until the next long rest, at which point, the flower must be replaced.
+
+
+
+### Fordamna
+*[Underdark](#p111)*
+___
+- **Rarity:** [Legendary](#p116)
+
+Found in only one place, a small fungus/plant hybrid bush sprouted after a Lich poisoned the earth which necrotic magic. This abomination of nature is immune to most types of physical damage and grows back in the same place 17 years after its destruction. Whenever the fordammar grows back in this manner, it begins to fruit a medium-sized, hard, black berry with a spiky outer shell. When these berries are consumed, it will cause instantaneous, incredibly painful and irreversible death. Nothing can be done to resurrect a character that dies in this manner.
+
+
+
+### Foxglove
+*[City](#p107), [Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A waist-height wildflower that typically sprouts several vertical columns of bell-shaped purple flowers in the late spring and early summer. The flowers are occasionally used in the treatment of heart conditions, but are also just as commonly used in the creation of poisons that will lead to death in a manner of a few days. After ingestion as a poison, the only cure is a greater restoration spell, or the person who ingested the foxglove will gain a level of incurable exhaustion every day as the target’s bodily functions begin to shut down.
+
+
+
+
+\columnbreak
+
+### Fuiyáru
+*[Forest](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+A ground-cover purple and dark green leafy plant that is distantly related to the Deadly Nightshade. When mashed and combined with water and filtered and then applied as drops to a creature's eyes, at the beginning of their next turn, the creature gains darkvision for 15 (3d10) minutes, and the creature must make a DC 15 Constitution saving throw. On a failed save, the creature is poisoned for the same length of time. This herb has no effect when used again to gain darkvision on the same creature until the creature completes a short rest.
+
+
+
+### Fumellar
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A small, red wildflower that sprouts and blooms close to the ground. In late summer and early autumn, the flower turns to seeds, which are small, black, and shiny. These seeds can be ground and consumed as a paste or within an oil. After ingesting, the recipient regains 2d8 hit points and must make a DC 12 Cons. Save vs poison or fall unconscious for 1d4 hours. 
+
+
+
+### Fumitore
+*[Forest](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+The stems of Fumitore are angular and branching and grow to a height of about 1 foot. It has grey-green divided leaves, and small pinkish-white flowers with purple tips. This herb prevents hair growing on a character’s eyelids, as is the effect of Mountain Setwall.
+
+
+
+### Furyax
+*[Jungle](#p108), [Mountain](#p110)*
+___
+- **Rarity:** [Legendary](#p116)
+
+Furyax is a large, purple flower that grows from a round-fronded leafy plant in the middle of Jungles that used to house now-dead civilizations, possibly originating from sacrificial uses of this plant within those civilizations. The flowers can be dried and turned into powder which is then mixed with a strong alcohol made only from oranges. Drinking this potion causes massive hallucinations based on the character’s conscience. Good-aligned characters will see beautiful and wondrous things, while evil characters see the most foul and dark abominations. The hallucinations last 2d4 days. Good-aligned characters must make a DC 16 Wisdom save or become addicted after their first consumption while evil-aligned characters must make a DC 18 Wisdom save vs. fear or become slightly insane from these horrific visions (Long-Term Madness Table DMG pg.260).
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Galda
+*[Jungle](#p108)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A yellowish tree that produces a salty fruit tasting of salt-pork. The fruit can heal for 1d4-1 hit points, and up to 10 fruit can be harvested from a tree at one time. 
+
+
+
+### Gallowbrush
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+This briar is red in colour with bright crimson thorns. Any mammal pricked with these thorns must make a save vs poison. On a failed save, the target falls asleep for 1d6 x 10 minutes. On a successful save the victim still feels drowsy for the same period of time. The thorns can also be brewed into tea. Anyone drinking this concoction must make a Cons. Save vs. poison with a -4 penalty or fall asleep for 1d6 hours.
+
+
+
+### Garadar
+*[Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+A 5 to 8-foot shrub with waxy, hard leaves resembling those of a succulent. When this leaf is soaked in water, it will release a very pungent scent that will attract male ogres in a one-mile radius. The scent resembles that of a female ogre. The smell lingers for 1d4 hours.
+
+
+
+### Gardenflax
+*[City](#p107), [Forest](#p107), [Jungle](#p108), [Plain](#p109)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+The brown seeds of this herb (which has deep blue flowers), if chewed, remove all pain from a character’s wounds. It will also prevent a character from feeling any physical pain for 1d8 hours. The recipient could walk through a fire and feel no pain. There is a 50% chance per hour that a character moving normally will suffer 1d6 damage, while under the influence of this herb. This occurs because the character does not notice minor bruises or scratches. It was widely believed in medieval times that if the seeds of this plant were strewn across a vampire’s path the vampire would be unable to proceed further, until it had picked up and counted every seed. At the DM’s discretion this may be a use for this herb in campaigns. 
+
+
+
+### Gariig
+*[Coastal](#p107), [Desert](#p107)*
+___
+- **Rarity:** [Legendary](#p116)
+
+Gariig is a small cactus. If diced and boiled in whisky, the resulting, astringent smelling potion will restore all hit points to a wounded person if consumed within two days of being harvested and prepared.
+
+
+
+
+\columnbreak
+
+### Gefnul
+*[Arctic](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Legendary](#p116)
+
+Gefnul will totally cure and heal the recipient if eaten within one week of harvesting. However, a 1d100 penalty roll must be made. A roll of over the recipient’ hit points will automatically KO, putting the recipient into a death save scenario, and a roll of 100 will kill the recipient outright.
+
+
+
+### Giant Grass
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+This grass is 4-8 feet tall, and there's a 75% chance that surrounding wild beasts are giant sized. Adventurers will find chewed grass in piles and clumps near beast lairs. When ingested as a paste, treat user as if under the enlarging effects of an Enlarge/Reduce spell for 1d4 minutes. After this time, the recipient falls into a deep sleep for 2d6 hours.
+
+
+
+### Ginyak Weed
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+An invasive plague on many farmers is the weed that has been known to choke out large sections of crops if left unchecked. Many farmers curse the weed, as it has been one of the many factors that caused famine in recent years. Unfortunately, when burning Ginyak, the resulting smoke produces an acrid stench which lingers in the air for weeks afterward. Livestock dislike the smell and attempt to avoid it whenever possible (If burned, anyone in the presence of the smoke takes a -3 penalty to animal handling checks for 1 week).
+
+
+
+### Glaredak
+*[Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+A coin-sized yellow-orange flower that grows along a climbing jungle vine. These flowers can be boiled in oil to create a potion that will protect a character from blinding effects for 8 hours.
+
+
+
+### Glowvine
+*[Jungle](#p108), [Underdark](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+A morning glory derivative that gives off light as a torch at night. It grows 1 ft. every 2 weeks. Flowers can be harvested and provide to same light as a candle for 1d12 hours.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Goat's Rue
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This herb will cure poison if ingested within one hour of the poisoning. Any damage already taken, including death, remains, but the poisoned effect is removed. Goat's Rue grows to about 3 feet tall. It has hollow branches and pale whitish blue flowers that hang down in spikes. The flowers must be dried before use.
+
+
+
+### Goblin Rogue
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Medium-sized bush with yellow-orange berries in autumn found in temperate regions. It can be made into Goblin Ink, which is waterproof.
+
+
+
+### Goblin-Trap
+*[Swamp](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+Often found in clusters, these plants resemble brown leathery vases sitting on the ground with ragged leaves splayed out around the base where thick roots grasp the earth. The tops are open, and if one should peer inside the glint of their golden seeds can be seen in the interior. However, these plants are traps, and many explorer has come across the remains of smaller humanoids, their hands still clutching the golden seed pods. If someone is unwise enough to stick their hand within the pod, they must make a DC 15 Dexterity save or suffer 1d4 damage from the internal spines of the plant, and are then grappled. Their leathery surface has an Armor Class of 11, and to free a trapped arm 10 points of damage must be inflicted upon the plant. Ripping the plant out of the ground requires a Strength check, DC 20, and inflicts another 1d4 damage upon the trapped victim.
+
+
+
+### Goblinberry Bush
+*[Mountain](#p110)*
+___
+- **Rarity:** [Common](#p113)
+
+Growing in high, desolate areas, the small bushes have dark green leaves that are nearly black, with silver undersides. The bushes sporadically sprout reddish-purple berries that have a strong sharp smell that often causes people to gag. Mixing the juice of the berries with a significant quantity of water and honey makes an interesting drink that is served sporadically in Evereska and Baldur’s Gate. The juice can also be used as an astringent, if the patient can handle the smell.
+
+
+
+
+\columnbreak
+
+### Golden Coin Cactus
+*[Desert](#p107), [Mountain](#p110)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This hardy plant is a large yellow disk standing on end, slightly bulging in the center, and covered with small red spines. Several ragged leaves grow from the base of the plant, and the root system of the cactus reaches deep beneath the rocky soil. The red spines contain a mild toxin which kills smaller vermin, but provides a mild anesthetic to small creatures or larger. The nomads of the Shaarmid steep the spines in hot water to make a tea to sooth sore throats and pacify infants.
+
+
+
+### Golden Crown
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+The golden flowers of this small yellow-green plant may be made into a poultice that is used to stop bleeding. One successful application will normally stop bleed effects. This herb is often used by midwives to staunch the flow of bleeding after birth.
+
+
+
+### Golden Desert Tree
+*[Desert](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+A rare desert tree, whose sap is a vital ingredient in expensive perfumes and incense. When used by a spellcaster in casting a summoning spell with a 1 round casting time, it reduces the casting time to a standard action.
+
+
+
+### Golden Lungwort
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Golden lungwort has large oval leaves, covered with small hairs, and small pale blotches. It grows to a height of about 1 foot, and has small bell-shaped flowers with five petals which change color from pink to mauve to blue. Flowers of different colors are often found on the same plant. This herb heals the user of all aches and pains at the cost of -1 to all Intelligence checks for the next 1d10 hours.
+
+
+
+### Goldencup
+*[Arctic](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+Oily yellow moss found where water collects near the bottom of rocks in the tundra. Can be chewed to induce mild euphoria, granting a +2 bonus on Wisdom saves vs fear for 30 minutes. However, upon entering combat while under the effects of goldencup, a creature must make a DC 10 Constitution save or be affected by a Frightened effect against all enemies in combat for the remaining duration of the original 30 minutes.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Goldenweb
+*[Forest](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A quick growing fungus that is often found spread between tree branches, it appears as a strange lattice similar to spiderwebs. Light shining through the strands causes them to subtly glow the color of gold, and the fungus has also been called “Goblin’s Greed”. While the strands of the fungus are slightly stronger than spiderwebs, they lack the stickiness that would cause them to impede or entangle creatures. The fungus works surprisingly well as an anticoagulant, and is quite absorbent. Healers often seek the fungus out when attempting to remedy injury poisons, and use of the fungus grants a +1 bonus to Wisdom (Medicine) skill checks when used in such a manner.
+
+
+
+### Gotu Kola
+*[Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A parsley like herb that grows low to the ground in warm, jungle environments. The herb gets its name because injured big cats have often been observed rolling around in Gotu Kola to heal their wounds from inter-species fights or from hunters. (The herb can be used to heal beasts, and only beasts for 1d8+3 hit points.)
+
+
+
+### Grammax Creeper
+*[Underdark](#p111)*
+___
+- **Rarity:** [Common](#p113)
+
+A flesh colored slime mold, the Grammax Creeper slowly spreads through the Underdark, digesting any organic material in its path. The mold moves slowly enough that even people sleeping in its path have no fear of being overwhelmed, although corpses that lay in the same place for days will be overcome. The Grammax also floats on water, often spreading across the surface of underground puddles and stagnant lakes, hiding the actual depths. The Grammax reacts rapidly to the presence of flame or high heat, quickly shrinking away while expelling any trapped gas. This action of the escaping gas makes an odd shrieking sound that is akin to the sound a screaming child makes. While it is a barely palatable prospect, the mold can actually be consumed as a source of food for those lost and desperate enough (at the cost of a level of exhaustion when consumed by any race except for goblinoids). Oddly, goblins seem to enjoy the taste of the mold, and often scrape it up as a renewable food source. 
+
+
+
+
+\columnbreak
+
+### Gravefist
+*[Underdark](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A pale white mushroom with five knobby protrusions, the mushroom often resembles a skeletal hand reaching upward. When the mushroom grows in clusters, it appears as if numerous corpses are attempting to reach out of the soil. The fungus predominantly grows in the Underdark; however, it has also been seen in dark basements and unused root cellars. Several tales of superstition follow the fungus, many believing that if it appears in rooms below your house, someone will soon die in the residence. This may be partially due to the fact that the mushrooms release toxic spores that slowly inflict 4d8 poison damage over 2d8 days to people that sleep or live within 100 feet of this fungus for that period of time.
+
+
+
+### Green-Air Bramble
+*[Mountain](#p110)*
+___
+- **Rarity:** [Rare](#p115)
+
+Fast-growing creeping vine that sprouts green berries and a small number of thorns. Can grow in most inhospitable climates and only needs to be in moist soil for 6 hours per week. Exposure to poison quickly kills the plant, causing leaves and berries to wilt and die. Carrying 3 feet’s worth of vine grants +2 bonus to Constitution saves against inhaled poisons, airborne diseases and nauseating effects like stinking cloud.
+
+
+
+### Grendar
+*[Arctic](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A small, hardy, ground-creeping vine, spreading in several dozen tendrils of no more than 18” in the harsh conditions of the tundra. Cures skin irritations and rashes in one day, itching will be subdued.
+
+
+
+### Grim Flowers
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+These dark violet flowers are often found at the edges of graveyards and sites of massive battles. Those that tend gravesites often call them “Death Trumpets” for their shape, and they emit a smell similar to that of a corpse. Thus, when such flowers are noticed, they are often pulled up by the root, to remove such an unpleasant odor. However, despite their terrible odor, it is believed by followers of Kelemvor and Bane that should you die with the seeds of this plant in your possession, your spirit will find an easier path to the afterlife. Thus, many keep the seeds of such a flower in a cloth bag close to their chest. Unfortunately for others, this means that the flowers often sprout from the corpse several days after the death of such individuals.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Guardseye
+*[Mountain](#p110)*
+___
+- **Rarity:** [Legendary](#p116)
+
+This 40-cm high perennial has smooth, dark blue leaves and a woody stem. It has white, cuplike flowers, with purple flecks on the inside. In autumn, the plant dies except for a thick root than can be up to 50 cm long, but even dead, it does not shed its leaves. When cooked in water, the resulting tea will grant the drinker the ability to detect all life forms within 500 m. This includes hidden, invisible, phased, ethereal and similarly affected creatures. The effect last for a full 6 hours.
+
+
+
+### Guklulla
+*[Swamp](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Growing in the swamps, the plant appears to be little more than a pair of large, broad leaves floating on the surface of the stagnant water. During warmer months, a large yellow flower blossoms in the midst of the two leaves. Hidden beneath the surface, the plant has an extensive root system that reaches far down into the muck in a massive tangle that catches debris carried along by the slow current. Various species of fish and snakes lay their eggs in the tangle of roots. Various orc tribes harvest the Guklulla for the roots, pulling the plants out of the muck, cutting off sections of the roots and throwing them back into the swamp to be harvested again in the future. Grinding the root into a paste and applying it to wounds provides not only accelerated healing (+4 when using hit dice during a short rest. If the recipient of the healing is an orc or half-orc, they receive an additional 1d4 hit points.), but also numbs the affected area.
+
+
+
+### Gulthias Tree
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Legendary](#p116)
+
+A severely evil tree that came to be when a vampire was staked to the ground with a stake that was still green and took root. Undead typically flock to the singular tree located somewhere in a dark corner of the largest forest of Faerun, and seem to gain some form of power from it. (Can be used as a storypoint or worldbuilder for DM’s).
+
+
+
+### Gylvir
+*[Ocean](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+Gylvir is an algae that grows in sheets of blue or teal. When eaten it allows a person to breathe underwater (and only underwater) for a period of four hours.
+
+
+
+
+\columnbreak
+
+### Gyumin Beans
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A small plant that grows close to the ground, the stalks are a mottled green color, and the soft oval leaves grow in small clumps. During harvest time, the plants are laden with several long pods filled with up to a dozen light brown beans. Farmers often grow the beans alongside rows of corn, as the plants seem to complement one another. The beans are often either eaten cooked, or ground into a fine paste and eaten with bread. Several restaurants and taverns across Faerun are known for their particular methods of preparing Gyumin Paste.
+
+
+
+### Haella
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Growing in clumps, these tall purple flowers are often planted in tranquil gardens and are commonly seen on gently rolling fields. The stalks bear symmetrical pairs of long tapered leaves with purple veins. Farmers dislike the plants because they tend to choke out food crops, such as corn. The flowers emit a subtle and sweet fragrance which not only smells nice, but also is a repellant to certain predatory insects, such as mosquitoes and dragonflies. Those that can afford to pay for it often rub Haella Fragrance on their unprotected skin during warmer months to repel such vermin (-5 to rolls for initiative for Insectoids).
+
+
+
+### Halcyon Crocus
+*[Arctic](#p107)*
+___
+- **Rarity:** [Legendary](#p116)
+
+In the highland meadows of the Dalelands grows a pale white-silver crocus. By starlight, nectar can be harvested from its simple bloom and dried into snuff that engulfs the user in bittersweet recollections of yore. With each dose of the Halcyon Snuff the user remembers a spell forgotten, effectively allowing him or her to cast it again without expending a spell slot. However, other memories linger uninvited to forever haunt and burden the user of this drug. Each dose inflicts 2d6 psychic damage after the initial effect. 
+
+
+
+### Halfling Thistle
+*[Forest](#p107), [Mountain](#p110), [Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+Small hardy thistle with a violet flower that grows in all temperature areas, especially highlands. Soaking Halfling Thistle in water overnight under the full moon will create Shinewater, which removes all rust and corrosion from metal objects left to soak in it overnight. One dose de-rusts a medium-sized metal weapon.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Hands of Laretha
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+Stems of bright green hold jagged leaves that grow in clusters of three. The plant grows delicate yellow flowers that smell pleasant, with the smell often drifting in the breeze on warm summer nights. The golden flowers that blossom from the plant grow to resemble a pair of hands pressed together. A common belief is that the flower resembled the hands of Laretha, a young cleric of Tymora, while she prayed to the gods to save her from misfortune at the hands of a horde of bandits. Her prayers were answered by the arrival of a group of adventurers. Afterward the flowers appeared near her shrine, a sign that the goddess was looking over her. Commonly used by paladins and clerics, the flowers grant a +3 to any religion checks when worn as a crown or behind the ear.
+
+
+
+### Hangman Tree
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+A deciduous tree named for the noose-like ropy appendages that hang down from the branches, the trees are known to entrap the unwary. Their shallow roots and sparse leaves require the tree to seek nutrition through being carnivorous. 
+
+The main body of the trunk has a hollow tube containing a digestive acid. The ropy appendages drag trapped prey upward and drops them inside the opening. The opening is surrounded by a number of downward facing spines which make escape difficult. Due to the shallow roots, the trees may move at a glacial pace, allowing most prey to easily outrun them. However, the trees rely upon a perfume their leaves emit that causes hallucinations to lure potential victims closer. Upon an encounter, PC’s must make a DC 14 Wisdom Save or be lured in to the tree’s appendages. The character must then make a DC 15 Strength or Dexterity save to avoid taking 8d6 acid damage. Tree can be attacked as well:
+
+___
+> ## Hangman Tree
+>*Large tree, unaligned*
+> ___
+> - **Armor Class** 12
+> - **Hit Points** 172(15d12 + 80)
+> - **Speed** 1ft.
+>___
+>|STR|DEX|CON|INT|WIS|CHA|
+>|:---:|:---:|:---:|:---:|:---:|:---:|
+>|20 (+5)|6 (-2)|20 (+5)|3 (-4)|6 (-2)|4 (-3)|
+>___
+> - **Damage Resistances** bludgeoning, piercing
+> - **Damage Vulnerabilities** fire
+> - **Condition Immunities** blinded, deafened, frightened, exhaustion
+> - **Senses** blindsight 90 ft., passive Perception 8
+> - **Challenge** 8 (3,800 XP)
+> ___
+>
+> ### Actions
+> ***Multiattack.*** The hangman tree may make three *constrict* attacks per turn.
+>
+> ***Constrict.*** *Melee Weapon Attack:* +9 to hit, reach 10 ft., one target. *Hit* 10 (1d8 + 5) bludgeoning damage, and a Large or smaller target is grappled (escape DC 16).
+            
+
+### Hara'dan
+*[Desert](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A feathery, drought-resistant shrub that produces small yellow flowers after rainfall. Grinding or mashing the leaves into a paste releases a very pungent smell that repels insects for 2d4 hours. Insectoids must make a DC 12 Cons. Save to get any closer than 15 feet to the recipient of the green paste.
+
+
+
+### Hara'den
+*[Desert](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A feathery, drought-resistant shrub that produces small yellow flowers after rainfall. Grinding or mashing the leaves into a paste releases a very pungent smell that attracts insects for 2d4 hours. Insectoids gain advantage on rolls to hit against the target.
+
+
+
+### Hare's Ear
+*[Arctic](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A small, leafy plant growing to approximately 1 foot or shorter, with large lobed leaves resembling the erect ears of a hare. This herb cures skin diseases.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Harfy
+*[Coastal](#p107), [River](#p111)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A small, brown, woody reed with symmetrical pairs of small ivy shaped leaves along the bottom of the reed. The resin of this herb must be applied to a bleeding wound. It will immediately stop any bleeding.
+
+
+
+### Harlequin's Harp
+*[City](#p107), [Coastal](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A multi-colored flower ranging between yellow and purple and everywhere in between with several strands of fiber attached to the petals across the empty space in the center of the flower. A few decades ago, an herbalist found that strumming the fibers would hold a tune, and since then, the flowers have become a common gift for friends and loved ones. Some talented herbalists have learned to breed the Harlequin’s Harps in a way that the fibers can be tuned to specific notes for personalized gifts.
+
+
+
+### Harpy Nest
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Common](#p113)
+
+The mottled trunk of these trees is often seen growing in rocky soil. The upper limbs of the tree curve inward upon the trunk, and become a large tangled mass. Various flying creatures, predominantly harpies, often cultivate the top of the tree, tearing away enough limbs in the center to form a protective nest. From the ground it is difficult to notice any creatures dwelling among the tangles, allowing cunning creatures to dive down and ambush their prey. The massive roots of the tree, while edible, are tough and require several hours of soaking in boiling water. Once prepared properly, the taste is said to be similar to salted potatoes.
+
+
+
+### Harrada Leaf
+*[Jungle](#p108)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A green, leafy plant whose leaves are tinged with a deep purple. The leaves are commonly dried and smoked or cultivated and harvested for this purpose by criminal organizations. Although highly addictive, Harrada Leaf is used to grant a huge boon to a person’s physical strength at the cost of intelligence and common sense. After consumption, Harrada Leaf will grant a +4 bonus to the Strength skill at the cost of -3 to both Wisdom and Intelligence (not reducing either of these stats to less than zero) for a period of 1d4-1 hours. After this period is up (with the exception of rolling a 1-1) the user will have to make a DC 18 Cons. Save or be poisoned by the drug’s after-effects, which will instill a -3 penalty to strength and a -1 penalty to both Wisdom and Intelligence until the next dosage is consumed.
+
+
+
+
+\columnbreak
+
+### Hart's Crown
+*[Forest](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+This odd bush grows in deep forests, where men often fear to tread because of dark and wild fey creatures. The bush grows strong curved branches that resemble the antlers of a deer, and in their center, they grow a single purple flower. Legend has it that the plant was originally created to help combat the Unseelie fey, ages ago. However, through trickery and guile, the dark fey managed to destroy many of the plants not in their possession, or not hidden deep within their realms. The flower can be consumed for two main purposes: often sought out by those undertaking a vow of celibacy, consumption of the flower reduces libido for 2d6 days. In addition, the consumption of the flower hides the recipient from being tracked by fey for the same period of time.
+
+
+
+### Hate Gartlet
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A bright, crimson-red flower atop an impossibly thin green stalk. Typically blooming in late spring, or early summer, the flower then begins to change color with the day’s progress, going from red to midnight blue as it becomes night. Preparation of the flower as a tea will allow the recipient to stay awake for 3 days at a time, being able to function normally and accomplish minor tasks during a long rest. After these three days, the recipient will then fall into a magical sleep resembling the spell Feign Death. The target will wake up after 8 hours, but for all intents and purposes will appear dead.
+
+
+
+### Hathlil
+*[Swamp](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A dark green and red-veined leafy, floating plant native to the Shadow Marsh, which when used as a consumed by a spellcaster, has a 50% chance of increasing the DC of a cast spell by 1.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Hawkweed
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Hawkweed has oval leaves, covered with small hairs on the underside, and green on the top. These leaves surround the plant at the base of the stem, and small yellow flowers tinged with red at the tips. This herb increases a character eyesight for 1d4 hours. They can see twice as far, granting +3 on perception checks involving sight, and when in ballistic combat, all ranges are treated as if 30 feet less. 
+
+
+
+### Healing Apple Tree
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Common](#p113)
+
+A magically bred medium-sized apple tree that bears red fruits that heal like Goodberries (eating an apple restores 1 hit point and counts as a full meal). A tree produces 100 apples per season.
+
+
+
+### Healwell
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A common enough herb to make it into most gardens, healwell is a small flowering plant with bright yellow flowers. Its pale green leaves secrete an oil that can be rubbed on small injuries (can be used to heal for injuries that have caused small amounts of damage, less than 3 hit points at a time).
+
+
+
+### Heather
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A fairly common flowering shrub with purple flowers that produces small berries in warm spring months. Heather was once used by the singular village of Brookstead to create a spectacularly rare and wonderfully tasting heather mead. The village was pillaged and plundered by a rogue sect of dwarves and the few survivors were hounded for their recipe. For the most part, the villagers did not part with their recipe and the secret of heather mead is now lost to the ages. Whether or not any survivors went on to make more is still a mystery, but every now and then, a bottle of heather mead will pop up in a small, far-off market, fetching an exorbitant price.
+
+
+
+
+\columnbreak
+
+### Helmthorne
+*[Mountain](#p110)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A vine-like shrub, often growing in remote and desolate locations, the shrub has dark green leaves, and sprouts indigo colored berries. The shrub is named due to long black thorns that protect the plant from various foraging animals. The berries are often harvested to be eaten, or can be fermented to make Helmthorn Wine. On occasion a plant will produce red berries, which are seen as a symbol of good luck, and make a slightly sweeter vintage of wine. The wine is considered sacred to many practicing clerics (capable of restoring an expended spell slot for a cleric that consumes the wine) and the berries can be used with the spell Goodberry, and these berries will instead restore 2 hit points per berry and last for an additional day.
+
+
+
+### Henbane
+*[Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Henbane has large, thick, soft woolly leaves, and thick stalks about 2 to 3 feet tall. It has hollow pale-yellow flowers at the top of the stalk. Either the seed or the flowers must be dried and then eaten. 5This herb will reduce the effects of poison weapons and consumed poison, but only if taken before the weapon strikes or the poison is consumed. In the case of poisons created to be non-fatal, the effect is completely nullified, but in the case of fatal poisons, the only benefit is a +3 to Saving Throws. The effect last 1d8 hours.
+
+
+
+### Hidden Hibiscus
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A large, woody, flowering shrub, the hidden hibiscus grows from 6' to 8' high, and as much as 10' wide. The blooms of the hibiscus are large (easily the size of a human hand), plentiful, and many colored. Bloom colors are typically red with yellow ribs, or pink with dark red ribs, but some sages claim there are thousands of different color combinations and variations. If a Hidden Hibiscus is threatened, or detects rapid movement nearby, any blooms on the bush immediately change their color to drab greens and browns, and the entire plant appears to wilt and wither. Skilled alchemists use the roots of the Hidden Hibiscus to amplify their creations that aid in natural camouflage (adding wilted hidden hibiscus to armor will negate any stealth penalties that the armor normally has), but the blooms of the hibiscus are its true prize as they can be used to dramatically increase both physical and mental speed for short periods of time (+2 bonus to Dexterity and Intelligence stats for 1d4+1 hours). Only brightly colored blooms can be used in these speed-increasing concoctions, and once a Hidden Hibiscus changes the color of one of its blooms, they never change back.
+
+
+

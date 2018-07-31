@@ -45,7 +45,8 @@ def deduplicate_csv():
                           'Swamp',
                           'Underdark/Cave',
                           'Other',
-                          'Rarity']
+                          'Rarity',
+                          'Notes']
             writer = csv.DictWriter(new, fieldnames)
 
             for row in reader:
@@ -101,7 +102,8 @@ def deduplicate_csv():
                        'Swamp': 'X' if 'Swamp' in plant.regions else '',
                        'Underdark/Cave': 'X' if 'Underdark/Cave' in plant.regions else '',
                        'Other': 'X' if 'Other' in plant.regions else '',
-                       'Rarity': plant.rarity}
+                       'Rarity': plant.rarity,
+                       'Notes': plant.notes}
                 writer.writerow(foo)
 
 
@@ -116,7 +118,7 @@ def convert_csv_to_json():
             data = {}
 
             for row in reader:
-                print(row['Plant'])
+                # print(row['Plant'])
 
                 row_regions = {
                     'Arctic': row['Arctic'],
@@ -132,6 +134,7 @@ def convert_csv_to_json():
                     'Swamp': row['Swamp'],
                     'Underdark': row['Underdark/Cave'],
                     'Other': row['Other'],
+                    'Notes': row['Notes'],
                 }
 
                 regions = []
@@ -140,7 +143,8 @@ def convert_csv_to_json():
                         regions.append(region)
 
                 data[row['Plant']] = {'Regions': regions,
-                                      'Rarity': row['Rarity']}
+                                      'Rarity': row['Rarity'],
+                                      'Notes': row['Notes']}
 
             json.dump(data, outfile, indent=4)
 
@@ -321,18 +325,8 @@ def parse_description():
             json.dump(data, outfile, indent=4, sort_keys=True)
 
 
-def print_plant_info():
-    plant_info_v2_json = OUTPUT_DIR / 'plant_info_v2.json'
-
-    with open(plant_info_v2_json) as json_file:
-        data = json.load(json_file)
-        pprint(data['Allathorne'])
-
-
 def generate_gmbinder_markdown():
     plant_info_json = OUTPUT_DIR / 'plant_info_v2.json'
-    template_file = TEMPLATE_DIR / 'gmbinder.md.j2'
-    output_file = OUTPUT_DIR / "generated-gmbinder.txt"
 
     rarity_symbols = {
         'Very Common': 'VC',
@@ -395,6 +389,7 @@ def generate_gmbinder_markdown():
             # entry = {
             #   Regions: [x, y, z]
             #   Rarity: "xyz"
+            #   Notes: ['' | 'Exceedingly Rare']
             #   Description: "foo"
             #   Extra info: ["this", "is", "extra"]
             #   ### added below ###
@@ -632,14 +627,17 @@ In addition, the Midnight Cone Flower’s petals can be made into Midnight Tears
         with codecs.open(TEMPLATE_DIR / 'gmbinder-css.md.j2', "r", encoding="utf-8") as css_file:
             css_data = css_file.read()
 
-            for page in chunker(pages, pages_per_file):
+            for page_list in chunker(pages, pages_per_file):
                 end_page = page_counter + pages_per_file
-                page_file = OUTPUT_DIR / 'pages' / f'pages-{page_counter}-{end_page}.txt'
+                page_file = OUTPUT_DIR / 'pages' / f'pages-{page_counter}-{min([end_page, len(pages)])}-raw.txt'
+
                 with codecs.open(page_file, "w", encoding="utf-8") as _file:
-                    _file.write(css_data)
-                    for page_string in page:
-                        _file.writelines('\\pagebreakNum')
+                    if page_counter != 1:
+                        _file.write(css_data)
+                    for page_string in page_list:
                         _file.write(page_string)
+                        if page_string != page_list[-1]:
+                            _file.writelines('\n\\pagebreakNum\n')
                 page_counter += pages_per_file
 
         with codecs.open(generated_file, "w", encoding="utf-8") as _file:
@@ -713,7 +711,6 @@ def main():
     # deduplicate_csv()
     # convert_csv_to_json()
     # parse_description()
-    # print_plant_info()
     generate_gmbinder_markdown()
 
 

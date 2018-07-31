@@ -1,0 +1,773 @@
+<style>
+  /*Remove footer*/
+  .phb:after {
+    content: "";
+  }
+
+  a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .spellList a,
+  .phb p em a,
+  .phb ul li a
+  {
+    text-decoration: none;
+  }
+
+  .phb table tbody tr td {
+      padding: .10em .1em;
+  }
+
+  .phb table tbody tr:nth-child(odd) {
+    background-color: #efacb8;
+  }
+
+  .toc {
+    column-count:4;
+  }
+
+  .toc a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .toc li span:nth-child(2){	/*Allow dot leaders to fill remaining space but not overlap*/
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .toc li span:nth-child(2):after{
+    font-family		: BookSanity;	/*Remove any header styles from dot leaders*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    content:
+      " ........................................"
+      "........................................."
+      ".........................................";
+  }
+
+  .toc li span:first-child{
+    float: right;
+    font-family		: BookSanity;	/*Remove any header styles from page numbers*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    margin-left		: 1px;	/*Leaves a small space between page numbers and dot leaders*/
+  }
+
+/*Special cases for headings*/
+  .toc li h3 span:nth-child(2):after{
+  	content: " ";						/*Remove dot leaders on h3*/
+  }
+
+  .toc li h3 {
+    margin-bottom: 4px !important;		/*Special spacing for h3*/
+    margin-top: 10px !important;
+    line-height: initial !important;	/*For some reason Multi-line h3 line spacing changed*/
+  }
+
+  .toc li h3 span:first-child{
+  	line-height: 1.8em !important;  	/*Line page numbers up with Multi-line h3 better*/
+  }
+
+  .toc ul ul {
+  	margin-left: 10px !important;		/*Original lists intented too much*/
+  }
+
+  .toc>ul>li {
+    margin-bottom: initial !important;	/*margin for list items needs to be removed or 0*/
+  }
+
+</style>
+<img
+  src='https://img00.deviantart.net/9b00/i/2011/267/2/2/forest_by_superkusokao-d4asqef.png'
+  style='position:absolute;top:0px;left:0px;width:100%'/>
+
+<img
+  src='https://www.gmbinder.com/images/YRAeIcj.png'
+  style='position:absolute;left:320px;top:10px;width:20%'/>
+
+<img
+  src='https://raw.githubusercontent.com/flamableconcrete/dnd-fantasy-plants/master/img/cover-page-title-2.png'
+  style='position:absolute;top:60px;left:10px;width:816px'/>
+
+<img
+  src='https://www.gmbinder.com/images/SGYtcP2.png'
+  style='position:absolute;top:220px;left:85px;width:80%'/>
+
+<img
+  src='https://www.gmbinder.com/images/UNR8ilF.png'
+  style='position:absolute;bottom:180px;left:0px;width:50%'/>
+
+<img
+  src='https://www.gmbinder.com/images/qp4gdn0.png'
+  style='position:absolute;bottom:30px;left:80px;width:700px'/>
+
+
+\pagebreakNum
+
+
+<div class="wide" style="text-align: center">
+
+# Broderick's Compendium
+# Fantasy Plants Across the Realms
+
+</div>
+
+## Credits
+
+**Created by [/u/neurotoxicnihilist](https://www.reddit.com/user/neurotoxicnihilist)**
+**Edited by [/u/flamableconcrete](https://www.reddit.com/user/flamableconcrete)**
+**Current Version:** 2.0
+**Cover image:** Forest by [superkusokao](https://superkusokao.deviantart.com/)
+
+##### Artwork
+
+pg. 3: Forest Glade by [nele-diel](https://nele-diel.deviantart.com/)
+
+## Source Materials
+
+**[Narcosa](https://www.drivethrurpg.com/product/137248/Narcosa)** by Neoplastic Press  
+**[Plants & Fungi of the Realms](https://www.wargamevault.com/product/177331/Plants-and-Fungi-of-the-Realms)** by B. Simon Smith  
+**[Magical Plants and Where to Find Them](https://www.giantitp.com/forums/showthread.php?479663-Magical-Plants-and-Where-to-Find-them)** by Jowgen on the Giant in the Playground Forums  
+**[The Herbalist’s Guide](https://www.republicofnewhome.org/lair/games/herb5/herb5illo1.html#contents)** by Shawn Hately, 1997  
+**[Swordfish Islands: A System Neutral Hexcrawl for Table Top RPGs](https://www.swordfishislands.com/search/label/plants)** by Jacob Hurst  
+**[Mercator’s Guide to Herbs](https://www.adnddownloads.com/en/resource/mercators-guide-to-herbs)** by Mercator  
+**[Herbalism & Alchemy Fan-Made Supplement](https://www.reddit.com/r/dndnext/comments/3w1log/5e_herbalism_alchemy_v12_updates_fanmade)** by reddit user /u/dalagrath  
+**[A Collection of Poisons](https://www.drivethrurpg.com/product/138122/A-Collection-of-Poisons)** by Assassin Games  
+**[Poisons for 5th Edition](https://www.dmsguild.com/product/204711/Poisons-for-5th-Edition)** by Matthew Eckart  
+**[Herbalism in Middle-Earth for D&D 5](https://www.zerohitpoints.com/Middle-Earth-for-DnD-5/Herbalism)** by Zer0 Hit Points  
+**[Coins and Scrolls: OSR Plants, Forests, Gardens, and Dryads](https://coinsandscrolls.blogspot.ca/2017/05/osr-plants-forests-gardens-and-dryads.html)** by Skerples  
+**[Plant Folklore: Myths, Magic, and Superstition](https://gardenerspath.com/plants/plant-folklore)** by Sheila Muckle  
+**[Plant Myths and Legends](https://bhort.bh.cornell.edu/conservatory/cpage3.html)** by Rebecca Rose Leitten  
+**[Sacred Plants in Folklore, Religions, Myths and Magick](https://www.anniesremedy.com/folklore.php)** from Annie’s Remedy  
+**[Mythology & Folklore](https://treesforlife.org.uk/forest/mythology-folklore)** by Trees for Life  
+**[Plant Meanings, Symbolism, Folklore and History](https://www.powerflowers.com/blog/plant_meanings_symbolism_folklore_and_history_ii)** by Power Flowers  
+
+<div style='margin-top:30px'></div>
+
+With a lot of creative license and updating from me.  
+[ursablindness.tumblr.com](https://ursablindness.tumblr.com)  
+/u/NeurotoxicNihilist  
+[paypal.me/MasonBroderick](https://paypal.me/MasonBroderick)  
+
+**<div style='margin-top:35px'></div>**
+
+> If you can, please support B. Simon Smith, his guide is only $5.95 for the PDF version and has some stuff I didn’t include as well as more lore, backstory, and a kick-ass alchemy system for playing with legitimate preparation of the herbs in question. It’s pretty cheap and he put a lot of work in.
+
+\columnbreak
+
+## Acknowledgements
+
+**/u/tzimon** or B. Simon Smith for being so cool about my use of his plants for this guide  
+**/u/HaegrTheMountain** for his progress on the interactive website for online access to these plants that he’s been working on.  
+**/u/mrDorgat** for his [suggestion](https://www.reddit.com/r/DnD/comments/7rb6rj/i_have_put_countless_hours_into_a_roughly_175/dsw91bl/?context=3) about plants rooted more in folklore of our own world and for trying to incorporate regular plants that might just be folklore based.  
+**/u/Soren015**, **/u/Orbitalmechanix**, **/u/SamuraiHealer**, and **/u/ySomic** for creating several different quick-access Excel/Sheets Randomization tools for this guide. ([ySomic's](https://docs.google.com/spreadsheets/d/1hrH0caYIqPXFN4dwe-lsRifVCvyr71gVdY6ROTQQ2QA/edit#gid=267321854) and [Soren015's](https://docs.google.com/spreadsheets/d/1I5PsXSSyjfx8NKVYhPKZNXd_YmFpTb47de19m8uNBgc/edit#gid=430676484)).  
+**/u/vastowen** for his [contribution](https://www.reddit.com/r/DnD/comments/7rb6rj/i_have_put_countless_hours_into_a_roughly_175/dswnxmv/) to the randomization tools  
+**/u/Sevrenloreat** for [recommending](https://www.reddit.com/r/DnD/comments/7rb6rj/i_have_put_countless_hours_into_a_roughly_175/duidra2/?context=3) the [Coins and Scrolls blog](https://coinsandscrolls.blogspot.com/2017/05/osr-plants-forests-gardens-and-dryads.html)  
+**/u/flamableconcrete** for coding an easy access homebrew-style guide to make things look fancy  
+**/u/CapnBeard** for working on a homebrew-style cover and design that looks hella sweet.  
+**/u/SilverBriar** for creating the first [color-coordinated excel doc for rarities](https://docs.google.com/spreadsheets/d/17ejtNgg13HCNMxI6eYBaGYDXAaYPBrnnhEvf8-AT1YU/edit?usp=sharing) that I tweaked for my own guide  
+**/u/SouthpawSoldier** for his huge contribution/suggestion of some other source materials for me to look at including Herbalism & Alchemy Fan-Made Supplement, A Collection of Poisons, and Poisons for Fifth Edition  
+**/u/mgraunk** for his reorganization/rehash of the guide  
+**/u/D1G1T4LM0NK3Y** for his homebrew alchemy/discovery system he created specifically for this guide  
+**/u/NecroWabbit** for offering to illustrate the work. Not sure how far they’ve gotten, but super awesome idea either way  
+**/u/QuillianCreole** and **/u/MmmVomit** for [suggestions](https://www.reddit.com/r/DnD/comments/7rb6rj/i_have_put_countless_hours_into_a_roughly_175/dsvz5d5) about [how to balance things](https://www.reddit.com/r/DnD/comments/7rb6rj/i_have_put_countless_hours_into_a_roughly_175/dsvqlp7) and make sure they’re updated  
+The two mysterious redditors who gifted me gold? I was not expecting that at all, but I very much appreciate it.  
+And literally everyone that left positive comments and encouraging words on the previous posts. This has been such a fulfilling process because of everyone on here who has been so nice and welcoming to this idea! Thank you all!  
+
+**<div class='descriptive'>**
+##### Editor's Note
+Okay, editor might be a strong word, but I just wanted to pipe in and say that I took the Microsoft Word document provided by /u/neurotoxicnihlist, parsed it with Python, spit it out in JSON, and converted it to Markdown. You can see all this effort at the following links. Enjoy!  
+**Code:** [Github](https://github.com/flamableconcrete/dnd-fantasy-plants)  
+**Source:** [Homebrewery](https://homebrewery.naturalcrit.com/share/Hym27DBLM)  
+**Template Assets:** [Imgur](https://www.gmbinder.com/images/a/0qUvZ)  
+
+</div>
+
+
+\pagebreakNum
+
+
+<div style='margin-top:900px'></div>
+
+# Scavenging Rules
+Magical plants can be found in many different terrains, but that doesn't mean that adventurers automatically can identify what is around them. The DM would select a table below based on the abundance (or lack thereof) of plants in the adventurer's environment. A player who wishes to scavenge for plants may make a nature check. 10-14 is mildly successful, 15-19 is successful, 20+ is very successful. This would mean that for a mild success, roll on the table with disadvantage, for a success, roll on the table to see what kind of plant you get, and for very successful roll with advantage.
+
+In most cases, 100 will also count as Very Rare, since Legendary plants should only be in one or two places around the world, so make sure the setting is right to get a Legendary plant.
+
+\columnbreak
+
+##### Table 1-1: Scavenging Plants - Easy
+| d100 | Rarity of plant scavenged |
+|:----:|:-------------|
+| 1-29  | Very Common |
+| 30-57 | Common |
+| 58-79 | Uncommon |
+| 80-91 | Rare |
+| 92-99 | Very Rare |
+| 100   | Very Rare or Legendary |
+
+##### Table 1-2: Scavenging Plants - Medium
+| d100 | Rarity of plant scavenged |
+|:----:|:-------------|
+| 1-53  | Very Common |
+| 54-79 | Common |
+| 80-91 | Uncommon |
+| 92-96 | Rare |
+| 97-99 | Very Rare |
+| 100   | Very Rare or Legendary |
+
+##### Table 1-3: Scavenging Plants - Hard
+| d100 | Rarity of plant scavenged |
+|:----:|:-------------|
+| 1-55  | Very Common |
+| 56-81 | Common |
+| 82-93 | Uncommon |
+| 94-98 | Rare |
+| 99    | Very Rare |
+| 100   | Very Rare or Legendary |
+
+<img
+  src='https://orig00.deviantart.net/aa83/f/2014/010/4/2/forest_glade_by_nele_diel-d71mcxd.jpg'
+  style='position:absolute;top:0px;left:0px;width:816px' />
+
+<img
+  src='https://www.gmbinder.com/images/qGRSC1J.png'
+  style='position:absolute;top:0px;left:0px;width:916px' />
+
+
+\pagebreakNum
+
+
+    
+<div class="wide" style="text-align: center">
+
+# Arctic
+
+</div>
+
+##### Table 2-1: Arctic - Very Common
+| d12 | Plant |
+|:---:|:---:|
+| 1-2 | [Bee Balm](#p30) |
+| 3 | [Birthnot](#p31) |
+| 4 | [Blueleaf](#p34) |
+| 5 | [Ceran](#p38) |
+| 6 | [Eldaas](#p48) |
+| 7 | [Grendar](#p56) |
+| 8 | [Hare's Ear](#p58) |
+| 9 | [Hoggle Beans](#p61) |
+| 10 | [Mistletoe](#p74) |
+| 11 | [Thalsen Weed](#p96) |
+| 12 | [Thir](#p97) |
+    
+##### Table 2-2: Arctic - Common
+| d8 | Plant |
+|:---:|:---:|
+| 1-2 | [Allathorne](#p24) |
+| 3 | [Arctic Creeper](#p26) |
+| 4 | [Coldwood](#p39) |
+| 5 | [Dragon's Breath](#p45) |
+| 6 | [Fennel Silk](#p50) |
+| 7 | [Footleaf](#p53) |
+| 8 | [Scented Mayweed](#p86) |
+    
+##### Table 2-3: Arctic - Uncommon
+| d8 | Plant |
+|:---:|:---:|
+| 1 | [Ardulan](#p26) |
+| 2 | [Bishop's Weed](#p31) |
+| 3 | [Brelidar](#p35) |
+| 4 | [Iceflower](#p62) |
+| 5 | [Jojopojo](#p63) |
+| 6 | [Kanishta](#p64) |
+| 7 | [Snowflake Lichen](#p90) |
+| 8 | [Snowwood](#p90) |
+    
+\columnbreak
+
+##### Table 2-4: Arctic - Rare
+| d8 | Plant |
+|:---:|:---:|
+| 1-2 | [Bija Tree](#p31) |
+| 3 | [Goldencup](#p55) |
+| 4 | [Ice Lotus](#p62) |
+| 5 | [Obaddis Leaf](#p77) |
+| 6 | [Quivar](#p81) |
+| 7 | [Rouddan](#p84) |
+| 8 | [Salamander Orchids](#p85) |
+    
+##### Table 2-5: Arctic - Very Rare
+| d8 | Plant |
+|:---:|:---:|
+| 1 | [Avataer](#p29) |
+| 2 | [Basilisk Breath](#p30) |
+| 3 | [Covadish](#p40) |
+| 4 | [Darkwood](#p43) |
+| 5 | [Kathkusa](#p64) |
+| 6 | [Stonestream](#p92) |
+| 7 | [Thistledown](#p97) |
+| 8 | [Zulsendra](#p106) |
+    
+##### Table 2-6: Arctic - Legendary
+| d4 | Plant |
+|:---:|:---:|
+| 1 | [Bittermourn](#p32) |
+| 2 | [Gefnul](#p54) |
+| 3 | [Halcyon Crocus](#p57) |
+| 4 | [Klagul](#p65) |
+    
+
+
+\pagebreakNum
+
+
+    
+<div class="wide" style="text-align: center">
+
+# City
+
+</div>
+
+##### Table 3-1: City - Very Common
+| d20 | Plant |
+|:---:|:---:|
+| 1-2 | [Aloe](#p25) |
+| 3-4 | [Basil](#p30) |
+| 5-6 | [Crab-Apple](#p41) |
+| 7 | [Dwarf Hops](#p47) |
+| 8 | [Foxglove](#p53) |
+| 9 | [Harlequin's Harp](#p59) |
+| 10 | [Healwell](#p60) |
+| 11 | [Juniper](#p63) |
+| 12 | [Linden Tree](#p68) |
+| 13 | [Lizard Eaters](#p68) |
+| 14 | [Marjoram](#p71) |
+| 15 | [Northlinch](#p77) |
+| 16 | [Periwinkle](#p79) |
+| 17 | [Psyllium](#p81) |
+| 18 | [Strawberry](#p92) |
+| 19 | [Tansy](#p95) |
+| 20 | [Thyme](#p97) |
+    
+##### Table 3-2: City - Common
+| d8 | Plant |
+|:---:|:---:|
+| 1-2 | [Alchemilla](#p23) |
+| 3 | [Ginyak Weed](#p54) |
+| 4 | [Grim Flowers](#p56) |
+| 5 | [Longinal Leaf](#p69) |
+| 6 | [Megillos](#p73) |
+| 7 | [Peony](#p79) |
+| 8 | [Werasa](#p102) |
+    
+\columnbreak
+
+##### Table 3-3: City - Uncommon
+| d4 | Plant |
+|:---:|:---:|
+| 1 | [Haella](#p57) |
+| 2 | [Navew](#p76) |
+| 3 | [Purple Pipeweed](#p81) |
+| 4 | [Redroot](#p83) |
+    
+##### Table 3-4: City - Rare
+| d6 | Plant |
+|:---:|:---:|
+| 1-2 | [Bodhi Tree](#p34) |
+| 3 | [Lumina Cap](#p70) |
+| 4 | [Salamander Orchids](#p85) |
+| 5 | [Scholar's Dream](#p86) |
+| 6 | [Vodare](#p101) |
+    
+##### Table 3-5: City - Very Rare
+| d4 | Plant |
+|:---:|:---:|
+| 1 | [Gardenflax](#p54) |
+| 2 | [Mokodo Bush](#p74) |
+| 3 | [Sasami Tree](#p86) |
+| 4 | [Verdant Goeleth](#p100) |
+    
+
+
+\pagebreakNum
+
+
+    
+<div class="wide" style="text-align: center">
+
+# Coastal
+
+</div>
+
+##### Table 4-1: Coastal - Very Common
+| d10 | Plant |
+|:---:|:---:|
+| 1-2 | [Aloe](#p25) |
+| 3 | [Cat's Tail](#p37) |
+| 4 | [Culkas](#p41) |
+| 5 | [Draaf](#p45) |
+| 6 | [Harfy](#p59) |
+| 7 | [Harlequin's Harp](#p59) |
+| 8 | [Karat](#p64) |
+| 9 | [Locust Needle](#p69) |
+| 10 | [Umozokai Flower](#p99) |
+    
+##### Table 4-2: Coastal - Common
+| d10 | Plant |
+|:---:|:---:|
+| 1-2 | [Anserke](#p26) |
+| 3 | [Archangelica](#p26) |
+| 4 | [Atramen](#p29) |
+| 5 | [Calamus](#p36) |
+| 6 | [Ember Root](#p49) |
+| 7 | [Mountain Garlic](#p75) |
+| 8 | [Quickweed](#p81) |
+| 9 | [Sleeping Ivy](#p89) |
+| 10 | [Waterorb](#p101) |
+    
+\columnbreak
+
+##### Table 4-3: Coastal - Uncommon
+| d8 | Plant |
+|:---:|:---:|
+| 1-2 | [Crisp Chondrus](#p41) |
+| 3 | [Hydrathistle](#p61) |
+| 4 | [Lakeleaf](#p66) |
+| 5 | [Sabito](#p85) |
+| 6 | [Sand Vine](#p85) |
+| 7 | [Sessali](#p87) |
+| 8 | [Surane](#p93) |
+    
+##### Table 4-4: Coastal - Rare
+| d4 | Plant |
+|:---:|:---:|
+| 1 | [Ecru](#p47) |
+| 2 | [Felmather](#p50) |
+| 3 | [Firethorn](#p51) |
+| 4 | [Tereeka Root](#p96) |
+    
+##### Table 4-5: Coastal - Very Rare
+| d4 | Plant |
+|:---:|:---:|
+| 1-4 | [Chromus Slime](#p38) |
+    
+##### Table 4-6: Coastal - Legendary
+| d4 | Plant |
+|:---:|:---:|
+| 1-4 | [Gariig](#p54) (Exceedingly Rare)|
+    
+
+
+\pagebreakNum
+
+
+    
+<div class="wide" style="text-align: center">
+
+# Desert
+
+</div>
+
+##### Table 5-1: Desert - Very Common
+| d10 | Plant |
+|:---:|:---:|
+| 1-2 | [Aloe](#p25) |
+| 3 | [Belan](#p30) |
+| 4 | [Dathlil](#p43) |
+| 5 | [Golden Coin Cactus](#p55) |
+| 6 | [Inari](#p62) |
+| 7 | [Nordra](#p76) |
+| 8 | [Sandberry Bush](#p86) |
+| 9 | [Thurl](#p97) |
+| 10 | [Umozokai Flower](#p99) |
+    
+##### Table 5-2: Desert - Common
+| d6 | Plant |
+|:---:|:---:|
+| 1-2 | [Arkasu](#p26) |
+| 3 | [Bastit](#p30) |
+| 4 | [Bloodspine](#p33) |
+| 5 | [Bloodstaunch](#p33) |
+| 6 | [Taran'ka](#p95) |
+    
+##### Table 5-3: Desert - Uncommon
+| d20 | Plant |
+|:---:|:---:|
+| 1-2 | [Angel's Cactus](#p25) |
+| 3-4 | [Barrelstalk](#p30) |
+| 5-6 | [Calacaza Bush](#p36) |
+| 7-8 | [Cline Cactus](#p38) |
+| 9-10 | [Djin Blossom](#p45) |
+| 11-12 | [Dragonspine](#p45) |
+| 13 | [Entriste](#p49) |
+| 14 | [Hara'dan](#p58) |
+| 15 | [Hara'den](#p58) |
+| 16 | [Karcatta Brambles](#p64) |
+| 17 | [Novanor](#p77) |
+| 18 | [Oruighen](#p78) |
+| 19 | [Powdered Desert Milk](#p80) |
+| 20 | [Whistling Cactus](#p102) |
+    
+\columnbreak
+
+##### Table 5-4: Desert - Rare
+| d8 | Plant |
+|:---:|:---:|
+| 1-2 | [Arrowroot](#p27) |
+| 3 | [Balon's Plant](#p29) |
+| 4 | [Caravara](#p37) |
+| 5 | [Ephedra](#p49) |
+| 6 | [Golden Desert Tree](#p55) |
+| 7 | [Lissuin](#p68) |
+| 8 | [Tateesha](#p96) |
+    
+##### Table 5-5: Desert - Very Rare
+| d10 | Plant |
+|:---:|:---:|
+| 1 | [Alfirin](#p23) |
+| 2 | [Alil](#p24) |
+| 3 | [Dragontears](#p46) |
+| 4 | [Juzam](#p64) |
+| 5 | [Kelventari](#p64) |
+| 6 | [Maracan](#p71) |
+| 7 | [Rose Campion](#p83) |
+| 8 | [Sinquoi](#p89) |
+| 9 | [Swordstalks](#p94) |
+| 10 | [Ylam Tree](#p106) |
+    
+##### Table 5-6: Desert - Legendary
+| d4 | Plant |
+|:---:|:---:|
+| 1-4 | [Gariig](#p54) (Exceedingly Rare)|
+    
+
+
+\pagebreakNum
+
+
+    
+<div class="wide" style="text-align: center">
+
+# Forest
+
+</div>
+
+##### Table 6-1: Forest - Very Common
+| d100 | Plant |
+|:---:|:---:|
+| 1-3 | [All-Heale](#p24) |
+| 4-6 | [Alor](#p25) |
+| 7-9 | [Angel's Stammerwort](#p25) |
+| 10-12 | [Barberry](#p30) |
+| 13-15 | [Basil](#p30) |
+| 16-18 | [Blackberry](#p32) |
+| 19-21 | [Blueleaf](#p34) |
+| 22-24 | [Cassil](#p37) |
+| 25-27 | [Cow-Wheat](#p40) |
+| 28-30 | [Crab-Apple](#p41) |
+| 31-33 | [Dittany](#p45) |
+| 34-36 | [Dog Rose](#p45) |
+| 37-39 | [Dwarf Hops](#p47) |
+| 40-42 | [Elder Tree](#p48) |
+| 43-45 | [Elm](#p48) |
+| 46-48 | [Elven Willow](#p49) |
+| 49-50 | [Elvish Galingale](#p49) |
+| 51-52 | [Foxglove](#p53) |
+| 53-54 | [Goat's Rue](#p55) |
+| 55-56 | [Goblin Rogue](#p55) |
+| 57-58 | [Golden Crown](#p55) |
+| 59-60 | [Juniper](#p63) |
+| 61-62 | [Larnurma](#p66) |
+| 63-64 | [Laspar](#p67) |
+| 65-66 | [Leopard's Bane](#p67) |
+| 67-68 | [Linden Tree](#p68) |
+| 69-70 | [Locust Needle](#p69) |
+| 71-72 | [Maitake Mushroom](#p70) |
+| 73-74 | [Marigold](#p71) |
+| 75-76 | [Mistletoe](#p74) |
+| 77-78 | [Pallast](#p78) |
+| 79-80 | [Quare](#p81) |
+| 81-82 | [Shadbush](#p87) |
+| 83-84 | [Shadowtop](#p87) |
+| 85-86 | [Strawberry](#p92) |
+| 87-88 | [Takara Bulb](#p95) |
+| 89-90 | [Thimbleweed](#p97) |
+| 91-92 | [Waxworm](#p102) |
+| 93-94 | [Weeping Tree](#p102) |
+| 95-96 | [Wittlewort](#p104) |
+| 97-98 | [Yagdav Bush](#p105) |
+| 99-100 | [Young Lad's Love](#p106) |
+    
+\columnbreak
+
+##### Table 6-2: Forest - Common
+| d100 | Plant |
+|:---:|:---:|
+| 1-3 | [Alether](#p23) |
+| 4-6 | [Ash](#p27) |
+| 7-9 | [Ashvein](#p28) |
+| 10-12 | [Aspen Tree](#p28) |
+| 13-15 | [Astir](#p28) |
+| 16-18 | [Bison-Gourd](#p31) |
+| 19-21 | [Black Rose](#p32) |
+| 22-24 | [Bloodgrass](#p33) |
+| 25-27 | [Brethil](#p35) |
+| 28-30 | [Bronzewood](#p35) |
+| 31-32 | [Chervil](#p38) |
+| 33-34 | [Coldwood](#p39) |
+| 35-36 | [Cubeb](#p41) |
+| 37-38 | [Culumalda](#p41) |
+| 39-40 | [Dainaberry](#p42) |
+| 41-42 | [Darnell](#p43) |
+| 43-44 | [Delrean](#p44) |
+| 45-46 | [Deva's Tears](#p44) |
+| 47-48 | [Duskwood](#p47) |
+| 49-50 | [Ember Root](#p49) |
+| 51-52 | [Falsifal](#p50) |
+| 53-54 | [Harpy Nest](#p59) |
+| 55-56 | [Hate Gartlet](#p59) |
+| 57-58 | [Healing Apple Tree](#p60) |
+| 59-60 | [Hiexel](#p61) |
+| 61-62 | [Jaffray](#p63) |
+| 63-64 | [King's Pear](#p65) |
+| 65-66 | [Laishaberries](#p66) |
+| 67-68 | [Myrthis](#p75) |
+| 69-70 | [Osira](#p78) |
+| 71-72 | [Rampalt](#p82) |
+| 73-74 | [Ripplebark](#p83) |
+| 75-76 | [Rosecork](#p84) |
+| 77-78 | [Rowan Tree](#p84) |
+| 79-80 | [Sable Fir](#p85) |
+| 81-82 | [Sanicle](#p86) |
+| 83-84 | [Sparkleberry](#p90) |
+| 85-86 | [Spiderwort](#p91) |
+| 87-88 | [Spotty Dragonfire](#p91) |
+| 89-90 | [Spring Adonis](#p92) |
+| 91-92 | [Stygian Pumpkin](#p93) |
+| 93-94 | [Troll Poppy](#p98) |
+| 95-96 | [White Byrony](#p102) |
+| 97-98 | [Wood Sorrel](#p104) |
+| 99-100 | [Yarpick](#p105) |
+    
+
+\pagebreakNum
+
+
+##### Table 6-3: Forest - Uncommon
+| d100 | Plant |
+|:---:|:---:|
+| 1-4 | [Aeglos](#p23) |
+| 5-8 | [Aldaka](#p23) |
+| 9-12 | [Arcasa](#p26) |
+| 13-16 | [Ardulan](#p26) |
+| 17-19 | [Asarabacca](#p27) |
+| 20-22 | [Ashline](#p27) |
+| 23-25 | [Astragalus Root](#p28) |
+| 26-28 | [Barisc](#p30) |
+| 29-31 | [Butterspice Weed](#p36) |
+| 32-34 | [Callofex](#p37) |
+| 35-37 | [Cinquefort](#p38) |
+| 38-40 | [Constrictor Vine](#p39) |
+| 41-43 | [Darmanzar Stalk](#p43) |
+| 44-46 | [Dragons-Eye Oak](#p45) |
+| 47-49 | [Fumitore](#p53) |
+| 50-52 | [Gallowbrush](#p54) |
+| 53-55 | [Golden Lungwort](#p55) |
+| 56-58 | [Goldenweb](#p56) |
+| 59-61 | [Hawkweed](#p60) |
+| 62-64 | [Hiljirat Pepper](#p61) |
+| 65-67 | [Lish](#p68) |
+| 68-70 | [Luhix](#p69) |
+| 71-73 | [Ruby Blushrose](#p84) |
+| 74-76 | [Scarlet Heart Mushrooms](#p86) |
+| 77-79 | [Silverwood](#p88) |
+| 80-82 | [Tempin](#p96) |
+| 83-85 | [Tephrosia](#p96) |
+| 86-88 | [Torchstalk](#p98) |
+| 89-91 | [Vinuk](#p100) |
+| 92-94 | [Weirwood](#p102) |
+| 95-97 | [Xitluchi](#p105) |
+| 98-100 | [Yew Tree](#p105) |
+    
+\columnbreak
+
+##### Table 6-4: Forest - Rare
+| d100 | Plant |
+|:---:|:---:|
+| 1-4 | [Autumn Skullcap](#p29) |
+| 5-8 | [Azure Leaves](#p29) |
+| 9-12 | [Bija Tree](#p31) |
+| 13-16 | [Borneas](#p35) |
+| 17-20 | [Cotsbalm](#p40) |
+| 21-24 | [Crimson Ladies](#p41) |
+| 25-28 | [Darkberry](#p42) |
+| 29-32 | [Dwarven Oak](#p47) |
+| 33-36 | [Felsul](#p50) |
+| 37-40 | [Fuiyáru](#p53) |
+| 41-44 | [Halfling Thistle](#p57) |
+| 45-48 | [Hands of Laretha](#p58) |
+| 49-52 | [Hangman Tree](#p58) |
+| 53-55 | [Hart's Crown](#p59) |
+| 56-58 | [Ironhard](#p62) |
+| 59-61 | [Kae'la](#p64) |
+| 62-64 | [Kieros](#p64) |
+| 65-67 | [Kilmakur](#p65) |
+| 68-70 | [Mar'kerlan](#p71) |
+| 71-73 | [Maruera](#p72) |
+| 74-76 | [Mirenna](#p74) |
+| 77-79 | [Pennyroyal](#p79) |
+| 80-82 | [Pixie Table](#p80) |
+| 83-85 | [Spectreflower](#p90) |
+| 86-88 | [Spelleater Ivy](#p91) |
+| 89-91 | [Woodrose](#p104) |
+| 92-94 | [Wormwood](#p104) |
+| 95-97 | [Yaran](#p105) |
+| 98-100 | [Zalanthar](#p106) |
+    
+
+\pagebreakNum
+
+
+##### Table 6-5: Forest - Very Rare
+| d100 | Plant |
+|:---:|:---:|
+| 1-5 | [Angakara Tree](#p25) |
+| 6-10 | [Bilberry](#p31) |
+| 11-15 | [Bloodbracken](#p33) |
+| 16-20 | [Deadroot](#p43) |
+| 21-25 | [Edelwood](#p47) |
+| 26-30 | [Febfendu](#p50) |
+| 31-35 | [Fey Cherry](#p51) |
+| 36-40 | [Gardenflax](#p54) |
+| 41-44 | [Hidden Hibiscus](#p60) |
+| 45-48 | [Hyperia](#p61) |
+| 49-52 | [Iraster](#p62) |
+| 53-56 | [Kingsfruit](#p65) |
+| 57-60 | [Livewood](#p68) |
+| 61-64 | [Lordinberry](#p69) |
+| 65-68 | [Maiden's Hair](#p70) |
+| 69-72 | [Orticusp](#p78) |
+| 73-76 | [Phandar](#p79) |
+| 77-80 | [Ruby Apple](#p84) |
+| 81-84 | [Suth](#p94) |
+| 85-88 | [Twilight Birch](#p99) |
+| 89-92 | [Waredan](#p101) |
+| 93-96 | [Waxtree](#p101) |
+| 97-100 | [Wispstalks](#p103) |
+    
+##### Table 6-6: Forest - Legendary
+| d6 | Plant |
+|:---:|:---:|
+| 1 | [Gulthias Tree](#p57) (Exceedingly Rare)|
+| 2 | [Kylathar](#p66) |
+| 3 | [Rose of Forgetfulness](#p84) |
+| 4 | [Suaeysit](#p93) |
+| 5 | [Trueroot](#p98) |
+| 6 | [Varenia](#p100) (Exceedingly Rare)|
+    
+

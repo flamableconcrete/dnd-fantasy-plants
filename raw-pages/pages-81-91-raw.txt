@@ -1,0 +1,863 @@
+<style>
+  /*Remove footer*/
+  .phb:after {
+    content: "";
+  }
+
+  a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .spellList a,
+  .phb p em a,
+  .phb ul li a
+  {
+    text-decoration: none;
+  }
+
+  .phb table tbody tr td {
+      padding: .10em .1em;
+  }
+
+  .phb table tbody tr:nth-child(odd) {
+    background-color: #efacb8;
+  }
+
+  .toc {
+    column-count:4;
+  }
+
+  .toc a {
+    color: inherit !important;	/*toc specifically wants black text. This resets the headers*/
+  }
+
+  .toc li span:nth-child(2){	/*Allow dot leaders to fill remaining space but not overlap*/
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .toc li span:nth-child(2):after{
+    font-family		: BookSanity;	/*Remove any header styles from dot leaders*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    content:
+      " ........................................"
+      "........................................."
+      ".........................................";
+  }
+
+  .toc li span:first-child{
+    float: right;
+    font-family		: BookSanity;	/*Remove any header styles from page numbers*/
+    font-size   	: 0.317cm;
+    font-weight		: normal;
+    color			: black;
+    margin-left		: 1px;	/*Leaves a small space between page numbers and dot leaders*/
+  }
+
+/*Special cases for headings*/
+  .toc li h3 span:nth-child(2):after{
+  	content: " ";						/*Remove dot leaders on h3*/
+  }
+
+  .toc li h3 {
+    margin-bottom: 4px !important;		/*Special spacing for h3*/
+    margin-top: 10px !important;
+    line-height: initial !important;	/*For some reason Multi-line h3 line spacing changed*/
+  }
+
+  .toc li h3 span:first-child{
+  	line-height: 1.8em !important;  	/*Line page numbers up with Multi-line h3 better*/
+  }
+
+  .toc ul ul {
+  	margin-left: 10px !important;		/*Original lists intented too much*/
+  }
+
+  .toc>ul>li {
+    margin-bottom: initial !important;	/*margin for list items needs to be removed or 0*/
+  }
+
+</style>
+
+
+
+
+### Psyllium
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A very common weed in both cities and plains alike, Psyllium is a broad-leafed ground plant with a central stalk that buds small green seeds. Psyllium is a useful plant that is commonly used to treat constipation, scurvy, and to aid in weight-loss. Aside from its common uses, Plantain Weed is one of the weeds and herbs mentioned in the Nine Herbs Charm, which is supposedly capable of curing any poison or disease.
+
+
+
+### Purple Pipeweed
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A short, purple weed that was originally a farm-field pest before it started being farmed itself can be dried and smoked, and is in fact very commonly smoked by spellcasters that focus on illusory magic. For one hours after smoking a quantity of pipeweed, the consumer is elevated to a higher state of imagination. This unfortunately gives them an increased chance of being surprised (enemies in combat will always will a surprise round against the pipeweed smoker while he or she is under its effects) but also increases the spell save DC of any illusion magic cast by the pipeweed user by +2.
+
+
+
+### Pygmy King Flower
+*[Jungle](#p108), [Swamp](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+The Pygmy King Flower produces a conical, flower-like structure from a base of 8-10 fat, fluid filled leaves that resemble a broken rib cage. The flower is usually 1' in diameter, 2' tall, and always brightly colored. While the color can vary greatly, solid orange and blue with yellow spots are the most common colors in tropical locales. Nectar fills at least half of each basin shaped flower and when exposed to sunlight this liquid releases a sweet, sugary fragrance. Small creatures and large insects are attracted to this smell but upon entering the flower they are trapped by its slippery walls and slowly digested. When a Pygmy King Flower finishes digesting a meal, or becomes over filled (such as after a heavy rain) the flower will tilt and dump its contents onto the jungle floor before slowly righting itself once more. The succulent, rib shaped leaves at the base of this plant can be mashed into a salve that is an excellent treatment for major burns and minor lacerations (successful application of this salve can cure up to 2d8 fire damage if applied within 3 rounds of taking that damage).
+
+
+
+
+\columnbreak
+
+### Quare
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A small purple flower found alongside paths and roads that wind through temperate forests. The petals can be ground and combined with water or pure alcohol to yield a simple pesticide. Kills rodents and small animals when consumed by them, has no effect on larger animals and humanoids.
+
+
+
+### Queen's Ambrosia
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A low, waxy-leafed shrub plant with large yellow flowers pointed upward. These flowers collect water and the flowers’ natural nectar and pollen then sweeten the water and add some essence that makes the liquid inside slightly intoxicating. A common tradition in some parts of the realm is to have a picnic the day after a rainstorm next to a Queen’s Ambrosia bush so that the flowers may serve as refreshment for the old and for the young to sneak sips from.
+
+
+
+### Quicksilver Lichen
+*[Underdark](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A slimy, glittering silver lichen that can be ground into a soluble, flavorless powder that can be added to food or drink to grant damage weakness to poison for 2d6 hours.
+
+
+
+### Quickweed
+*[Coastal](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+Quickweed grows as a series of short, flat, silvery leaf blades along a single root runner, and is so named because it completes its entire life cycle in a single week. A living/growing end and a decaying/dying end is clearly visible on each root runner, and with patient observation it is possible to watch the root grow and die in real time. The grass always grows in a single direction along its root causing entire fields of Quickweed to appear to migrate around islands, like a wave, as time goes by. Alchemists prize Quickweed as it acts as an additive that amplifies the benefits of concoctions related to time, speed, and travel.
+
+
+
+### Quivar
+*[Arctic](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+A low-lying, ground-cover leafy plant that grows through a layer of snow, never seeing sunlight, but absorbing and using the cold as food. Nomadic tribes of the far north have been known to seek out the plant, dry it, and smoke the leaves to gain an additional +50% movement speed for 8 hours.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Rainbowpetal
+*[Jungle](#p108)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Rainbowpetal grows as a stout, relatively straight stem with triangular green leaves, and reaches a height of 4' to 8'. Many four-petaled flowers appear at the top of this stem forming a terminal spike of 12" to 16". The flowers of the Rainbowpetal can appear as any color and individual petals will even grow in distinct colors on the same flower. The petals of these flowers are thick, fleshy, and surprisingly nutritious. They are frequently boiled into a thick and flavorful porridge or dried and used in place of bread crumbs or cornmeal on fried food. If eaten raw, a single spike of Rainbowpetal flowers can sustain a normal sized human for a full day.
+
+
+
+### Rampalt
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+This dark-colored root grows on a plant distinguished by its waxy dark green leaves. When the root is boiled down, it turns into a thick, strong-smelling greyish liquid that cures congestion when boiled in water and inhaled. (Relieves stuffy nose, opens sinuses, for as long as the steam is breathed + 2d6x10 rounds. Grants resistance to diseases in the form of advantage when rolling for Constitution Saves against disease.)
+
+
+
+### Rare-Blue
+*[Underdark](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A rare, pale blue mushroom that grows only in westward facing cave mouths. Can be turned into an inhaled powder drug. Initial effect of +2 to Int and Cha for 1 hour, Seconary -1 penalty to Str and -2 penalty to Wis for 1d4 hours. Overdose 2d6 damage if 2 doses in 12 hours and 4d6 damage plus paralyzed for 2d4 hours if 3 or more doses in 24 hours.
+
+
+
+### Rasira
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+Rasira is a 3 to 4-foot tall flower commonly fed upon by butterflies in summer months. The pollen contained within the flower can be combined with or sprinkled onto soap in order to create a detergent capable of removing almost any stain. Works especially well on blood.
+
+
+
+
+\columnbreak
+
+### Ratavasa Flowers
+*[Jungle](#p108)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A short purple flower that grows close to the ground, the plant is generally little more than a few floppy leaves sitting above the soil. However, during the warmer months, the plant sprouts a cluster of small purple flowers that smell faintly of cinnamon. The petals of the flower are often steeped in hot water to create a tea that prevents conception. Any female drinking the tea is unable to become pregnant within the next two days.
+
+
+
+### Rattlestalks
+*[Jungle](#p108), [Swamp](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+These tall stalks that grow out of stagnant water end in a thick bulb with a hard shell. In the warmer months, the stalk withers, and the bulb falls off, to float around until the bulb softens and falls away to disperse the seeds within. The seeds sit freely in the shell, and when shaken make a slight rattling noise, which is unnerving when the wind rushes through a cluster of rattlestalks. Tribes that live in the swamps will often use the unnerving aspect of the rattlestalks to create fear inducing noisemakers that are then added to spears and other weapons. When rattled, those that have no knowledge of the rattlestalks must make a DC 8 Wisdom saving throw, or be Frightened for 1d4 minutes.
+
+
+
+### Razorvine
+*[Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A climbing, running vine native to the open plain-lands that is nigh impossible to get rid of as it grows at least 1 ft per day even if cut down to a stub. Dried Razorvine provides excellent fire kindle. Light contact without the use of protective gear deals 1d6 points of damage, while e.g. falling into it deals up to 3d6 points of damage; but this damage is reduced by a creature’s natural armor bonus.
+
+
+
+### Reath
+*[Jungle](#p108)*
+___
+- **Rarity:** [Rare](#p115)
+
+Parasitic vine that grows on many types of jungle tree, whose leaves when used as a component for a plant or plant-creature targeting spell has a 50% chance of increasing the DC by 2.
+
+
+
+### Redflower
+*[Swamp](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Tiny red-bog flower that can be made into a crushed leaf drug, no initial effect, secondary effect for 10 minutes that grants the ability to use an action to gain +4 on the roll to attack a single creature. Overdose if second dose taken during duration causes 1d4 x 10 minutes nauseated.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Redgold's Feather
+*[Mountain](#p110), [Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+Redgold's Feather grows as small, tight cluster of burnished, copper-colored, feather-shaped fronds near areas of thermal activity. The plant is impervious to heat, and some claim to have even seen it undergo instantaneous growth when exposed to direct flame. If the leaves of this plant are broken or crushed they give off an acerbic odor potent enough to wake a person from unconsciousness (even magical) or immediately recover from being dazed or disoriented. If the feathers are crushed and combined with sulfur and the essence of a naturally fiery creature, an alchemist can create a non-toxic liquid that will glow a bright orange for 36-48 hours (even after being consumed and digested).
+
+
+
+### Redroot
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Redroot is a tangled mass of leafy shoots that grows close to the ground. While it does grow wild in a large swath of the Realms, it is also sometimes intentionally planted on farms. Pulling a ripened root from the ground reveals a large crimson colored tuber. The tuber is often turned into a curative paste which can be applied to wounds to soothe the pain and speed healing (+5 to any hit dice expended during a short rest). While helpful for healing, ingesting the root often causes nausea and vomiting (DC 16 Constitution Save to avoid vomiting and nausea for the next 1d4 hours).
+
+
+
+### Redstar Flowers
+*[Mountain](#p110)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A strange plant with a translucent pink stem, numerous small branches fork off of the main stem, each of them ending in a small red flower with five petals. Each flower has a small opening which leads down the branch to a small pool of sap. The sap has a sickeningly sweet aroma which draws in small insects, which then become disoriented and perish in the sap and are dissolved. The plant is often harvested for the sweet sap, which is sifted to remove the remains of insects. Next the sap is heated, and used to coat confections and pastries, which then hardens to become a glaze. Bakers in small cities will pay a large price for the raw sap.
+
+
+
+### Rewk
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+The nodules of the stem of Rewk must be brewed in clear water for one whole day before drinking. It will then cure 1d8 points of damage.
+
+
+
+
+\columnbreak
+
+### Ribwort Plantain
+*[Jungle](#p108)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This plant has a cluster of dark green leaves, with marked parallel veins at its base, a single stem topped by a cluster of tiny, pale orange flowers. The chopped leaves are applied to the flesh to reduce bruising. A successful application will remove slight bruises altogether within an hour, more severe bruises will take up to 8 hours.
+
+
+
+### Ripplebark
+*[Forest](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+Shelf-like fungus that looks like rotting flesh but is perfectly edible, although it tastes better if cooked properly. Restores 1d4+1 hit points if eaten raw and 2d4+2 hit points if properly prepared.
+
+
+
+### Ripplewood
+*[Jungle](#p108), [Underdark](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Dark-green vine up to 400 ft long with no roots or leaves, native to the elemental planes of air but transplanted to the material plane. Ripplewood vines form massive twisted nests of at least 4 vines that grow upward from the top to hang from a cave ceiling or large tree. Often used by giant eagles and such to make nests. A cluster of vines can support 500 lb per 5 sq.ft.
+
+
+
+### Rose Campion
+*[Desert](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Consuming this green-brown herb will protect against scorpion and spider stings for a period of three days, granting advantage on Constitution Saving throws against poison from arachnids.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Rose of Forgetfulness
+*[Forest](#p107), [Jungle](#p108), [Plain](#p109)*
+___
+- **Rarity:** [Legendary](#p116)
+
+This unusual rose, often identified by the multicolored petals, are only found rarely in the wild, as their scent causes lingering problems. Their tangled vines are covered in sharp red thorns, and the smooth green leaves are tinged in orange. Those that smell the mesmerizing fragrance of the roses must make a DC 15 Wisdom saving throw or forget the past 2d4 minutes. Failing the saving throw by 5 or more causes the victim to forget the past 1d6 hours, and a spellcaster to forget 1d6 spells occupying the highest spell slots first. Those that fail the saving throw by 10 or more forget the past 1d6 days, and spellcasters forget 2d6 spells occupying the highest spell slots first. Rolling a 1 on the saving throw causes the inhaler to suffer from complete amnesia, and can only be cured by a Wish, Greater Restoration, or 8th level Heal spell to restore their forgotten identity.
+
+
+
+### Rosecork
+*[Forest](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+A short tree that sprouts many thick, diverging branches and a plentiful amount of small ovular leaves. The bark is a light shade of red, and darkens during winter months. Due to the considerable amount of moisture that the trees retain, it is seen as a poor choice for burning. Rosecork wood will often take several hours of exposure to flame for enough water to evaporate to the point where the wood burns. It is for this reason that it is occasionally used in construction in areas surrounding volcanoes or in the construction of war-boats and battleships. 
+
+
+
+### Rouddan
+*[Arctic](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+A root vegetable, the leaves of the Rouddan are broad and soft. Known as the “red turnip of Fallingard” it is a staple food of nearby peasants. Due to necessity, a large variety of different methods of preparation have arisen, including a thick stew of Rouddan, and as a base for slop mashes. The root keeps well when kept in a cool and dry climate, and resists decomposition well. While they can be eaten raw, they are best soaked in broth or spiced water (heals for 1d4 hit points if eaten raw or 1d8 hit points if eaten in soup; the creation of soup can also split a single Rouddan into 8 servings).
+
+
+
+
+\columnbreak
+
+### Rowan Tree
+*[Forest](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+A small, deciduous tree that sprouts small bunches of white berries that quickly turn to red-orange in summer months. The tree, according to common folklore, is supposed to protect from evil spirits and bad luck, and planting one on your property used to be a common tradition. The berries can be eaten, but taste relatively foul and cause a slight diuretic effect. Use of Rowan wood is well documented in wand and staff making, and is supposed to yield slightly better results when used to cast spells in the fields of Abjuration and Divination.
+
+
+
+### Ruby Apple
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+A legendary tree allegedly created by a by a female elf, most gifted in the cultivation of magically grown plants, in her final moments of life. It’s an apple tree that grows rubies instead of apples. Similar trees used to grow in the orchard at Lentari Farms prior to the area’s destruction. The trees are scattered around far-removed areas of forest and if one is stumbled across, the tree can be harvested for 2d4 fist sized rubies that each sell for 300 gp.
+
+
+
+### Ruby Blushrose
+*[Forest](#p107), [Jungle](#p108), [Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+The long stems of the rose are oddly free of thorns that grace other similar flowers, while the rose itself is abundant among the plant’s setms, large, and red. The rose tends to grow in clumps with others of the same species. Smelling the rose has a curious effect, as the pleasing aroma causes people to blush. Extended exposure to the aroma causes exhaustion and light-headedness. Those that spend more than a few moments within 10 feet of a blushrose must make a DC 15 Constitution saving throw or suffer Disadvantage on Constitution and Wisdom saving throws for as long as they remain within proximity and 2d6 minutes afterward. Some romantics declare that the blushrose brings the euphoric and lightheaded feelings of being in love to the forefront.
+
+
+
+### Rue
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Rue is a small rounded bush which grows to about three feet in height. It has yellow, scoop-like flowers. The leaves are shaped like spades, and are blue-grey in color. It has seedpods which resemble a small lime. The seedpods should be consumed as an antidote to ingested poisons. Provided it is taken within 10 minutes of the poison being ingested, it will neutralize the poison effect in 1d4 minutes, on a successful nature check.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Sabito
+*[Coastal](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+This shrub plant is found growing in the sands of coastal dunes and has leaves which are bluish in tinge. The root is dark blue in color and small, pill-like growths sprout from these roots. Consuming one of these growths will allow the recipient to breathe underwater for 10 minutes, by allowing them to absorb the oxygen in the water directly into their skin through osmosis. Their skin has a translucent appearance for these ten minutes. This process also works above water, but not as effectively, making it uncomfortable to do much of anything for the time spent above the surface.
+
+
+
+### Sable Fir
+*[Forest](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+A hardy tree that spreads runners from one original “mother” tree, sometimes creating entire forests from one tree. The Sable Fir allegedly makes for excellent arrow-shafts and turns a deep lustrous black if lumbered mid-winter and rubbed with hot oils, making for beautiful and valuable bows and staves.
+
+
+
+### Sadaq's Bedwort
+*[Plain](#p109), [River](#p111)*
+___
+- **Rarity:** [Legendary](#p116)
+
+Long regarded as a plant sacred to Druids and Rangers of Sadaq, Sadaq’s Bedwort is a low-growing ground cover plant found in beds near flooded plain areas and rivers. Preparation of the bedwort in sacramental wine under the light of the new moon will allow for the creation of a concoction called Sadaq’s Empathy. This concoction will allow the recipient to converse with plants and animals in the native tongue for a period of up to 12 hours after consumption. In addition, the recipient will also have lowered spell component costs for spells involving nature and plant growth, or that target plants and animals. Harvesting too much of a bed at the same time will cause the bed to begin to rot as the bed is actually a single organism that spreads deep into the earth.
+
+
+
+### Saddilia
+*[Jungle](#p108)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+This rare tree can grow up to 60 feet tall and can survive to quite old ages. It has dark red wood, and equally dark blue leaves. The flowers, which grow in small bunches, are startling white, almost radiant. Its nuts have a very special property; each nut raises the Intelligence or Wisdom (determine randomly) of the eater by 0.1 point (20 nuts or 2 full points max). 
+
+The effect lasts for a whole week, after which it fades again, although there is a 1% chance the effect is permanent. Around the tree there are often animals (squirrels, salmon) who eat the nuts on a regular basis, and are therefore quite intelligent, often possessing speech or even (DM’s discretion) spellcasting abilities. The number of nuts available varies greatly, depending on the age of the tree, the number of creatures aware of its existence, but mainly, of course, on the DM’s wishes. 
+
+
+
+### Saffron
+*[Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+The plant has a tuberous root, and large purplish flowers with yellow-red centers. The pistils of the flower must be pulped into a paste which is then left to dry for a week. The resulting powder is taken as snuff. This herb raises all attribute scores by one for one hour. After consumption the first time, the user must make a DC 18 Constitution Save or become addicted. After the initial hour of stat raises, stats will lower from the base value by 1 every day until the next consumption.
+
+
+
+### Salamander Orchids
+*[Arctic](#p107), [City](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+Orchid that's constantly on fire, propagated by a talented spellcaster from the City of Brass. Allows any non-trained craftsman to turn a weapon into a flaming weapon with the appropriate nature check. Handling the orchid without proper tools deals 1d6 points of fire damage per minute.
+
+
+
+### Sand Vine
+*[Coastal](#p107), [Ocean](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Relatively rare rope-like seaweed found along temperate or warmer coasts. Grows both above and below water, commonly rooted to a small rock. Can be dried and used as rope. With alchemy, its juices can be made into Vine Oil, which is a topical anaesthetic granting a creature +5 temporary hit points. Lasts for 1 hour or until hit points are drained, has the side-effect that within 24 hours of use, a creature cannot stabilize on its own (so even with successful death saves, the creature or person must be assisted). Regular use gives a signature salt and slight rotten fish smell.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Sandberry Bush
+*[Desert](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+Small bushes with waxy green leaves, Sandberry Bush grows in the remote reaches of the Shaar. The bush has small yellow berries that have a bitter taste, but can be brewed to make a soothing tea. The few nomadic tribes that pass through the Shaar pick the berries as a remedy for insomnia. Acts as a sleep aid, so if the consumer is willing, induces a 6-hour sleep cycle with no negative side-effects.
+
+
+
+### Sanicle
+*[Forest](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A small, mildly invasive plant with almost star-shaped leaves and small, white or pink bell-shaped flowers atop a slender, offshooting stalk. Sanicle leaves should be crushed and left in white wine, the strained through a cloth and drunk. The resulting concoction, when consumed, has the effect of binding wounds so that they are not reopened by action. (+2 to rolls made with hit dice expended during a short rest.)
+
+
+
+### Saracen's Compound
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+This herb cures fevers within 1d4-1 hours.
+
+
+
+### Sarasar
+*[Mountain](#p110)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A short, woody bush with very few leaves, commonly found near gullies and ravines, so the plants can collect as much water as possible. When the wood is burnt, it creates a long-lasting thick fog that will consistently stay in place for about as long as it is burning and then begins to fade, disappearing completely in one hour. The smoke fills a cubic volume of 10 ft. by 10 ft. by 10 ft.
+
+
+
+### Sasami Tree
+*[City](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+This dwarf tree is favored among nobility of the southern provinces, as it is easy to cultivate and grows quickly. The sparse leaves it produces are diamond shaped and light green with a tinge of pink on the edges. The exercise in restraint is one lesson that the Sasami Tree teaches children of the wealthy patience and restraint. Cutting off too many branches causes the tree to sicken and perish, while allowing the tree to grow wild often causes the tree to turn into an unruly mess. The leaves are often exchanged as a decorative gift between servants and their far-off relatives.
+
+
+
+
+\columnbreak
+
+### Scarlet Heart Mushrooms
+*[Forest](#p107), [Swamp](#p111)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Large black mushrooms covered in heart-shaped red spots, those trekking through swamps may encounter this dangerous and obnoxious fungus. When a living creature comes within 5 feet of the fungus, the red spots are capable of detecting heat and will release a noxious cloud of spores within the same radius. Anyone within the affected area must make a DC 14 Constitution saving throw or be blinded for 2d4 hours.
+
+
+
+### Scented Mayweed
+*[Arctic](#p107)*
+___
+- **Rarity:** [Common](#p113)
+
+Scented mayweed grows to a height of about 2 feet. It has upright and branching stems, small leaves, and white flowers with a yellow center. The flowers must be crushed, emitting a pungent odor if prepared correctly, and should then be applied to the eyes in order to heal damage to them caused by acid or poison. If used within a day of the injury, they can prevent blindness. Aside from its common uses, Scented Mayweed is one of the plants mentioned in the Nine Herbs Charm, which is supposedly capable of curing any poison or disease.
+
+
+
+### Scholar's Dream
+*[City](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+Ivy that grows on the graves of sages and wise-men. If used as a component for abjuration domain spells it doubles range and duration.
+
+
+
+### Serapia's Turbith
+*[Mountain](#p110)*
+___
+- **Rarity:** [Legendary](#p116)
+
+This herb will place the recipient into a deep sleep for 24 full hours. The recipient cannot be woken even by magical means. At the end of the day, all wounds will be healed and hit points regained. It does not, of course, resurrect a dead person, but the plant’s magically induced coma will in fact regenerate lost limbs.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Seregon
+*[Mountain](#p110)*
+___
+- **Rarity:** [Rare](#p115)
+
+Coin-sized blood-red flowers that bloom directly from their roots in rocky soil. Ingesting the flower’s nectar grants the creature 2d6 temporary hit points that last for 1 hour or until expended. This effect cannot be combined with any other effect that grants temporary hit points.
+
+
+
+### Serpent Sweat
+*[Underdark](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+The fungus appears to be a cluster of small yellow beads, often growing on decomposing matter. Small black stems hold them aloft, and their surface is shiny enough to reflect torchlight. While the fungus may appear like berries, they are quite poisonous. Underdark denizens will often collect the fungus wearing leather gloves to prevent touching it with their skin. When the fungi are touched with bare hands must make a DC 17 Constitution saving throw or be Paralyzed for 1d4 hours and begin to sweat profusely. Those that fail the saving throw by 5 or more suffer 24 (8d6) poison damage.
+
+
+
+### Serren Wood
+*[Jungle](#p108)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Tall, hardy trees transplanted from Arborea's top layer of Arvandor, and a vessel for nature spirits. Bows, Arrows, or Crossbow bolts made from this wood add 1d4+1 radiant damage to any successful attack. Exceptionally difficult to craft with.
+
+
+
+### Sessali
+*[Coastal](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A rugged, thorny plant found by the sea. The leaves must be boiled for two hours in salt water, and the resultant mix sweetened with honey. This mixture will act as a cure for certain types of long-term, typically incurable ingested poisons or wasting diseases (DM’s discretion, as to which ones). The recipient must be made to drink one dose immediately when the mixture is ready, and then further doses every twelve hours for three days (7 doses in all). If the number of successful applications is four or more, the patient will recover.
+
+
+
+### Sezarad
+*[Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Broad vivid flower with a short brittle root which, when chewed, functions as a stimulatory drug. The initial effect is 1d8 temporary hit points and an additional 1d8 hit points after two full minutes of chewing that stack with each other and last for 10 minutes after initial ingestion or until used up. -1 to Wisdom checks for 20 minutes after ingestion.
+
+
+
+### Shadbush
+*[Forest](#p107), [Jungle](#p108)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A red, waxy-leafed bush that produces small, burgundy colored berries that can be eaten in small amounts to ward off scurvy and nutrition-related illness.
+
+
+
+### Shadowrose
+*[Underdark](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+A perfectly black rose bush, with black roots, stems, leaves, and buds, that grows only in deep caves and wilts in the presence of any light, magic or non-magic, brighter than a candle. When the petals of this rose are consumed, it will grant a regeneration rate of 3 hit points per round for 2d10 rounds. After that, the recipient will be unable to perform any action, including movement, for 2 rounds.
+
+
+
+### Shadowtop
+*[Forest](#p107)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A rather tall and fast-growing tree that can be found throughout Faerun. The leaves only grow at the very top of the tree and appear dark green from above and have a copper hue from beneath. These leaves are also highly flammable, and are often gathered to be used as tinder. The wood of the tree is quite fibrous, but not dense enough to be worthwhile building material. Instead the strands are often broken down and woven into thick rope. The wood burns fairly hot and long and without an abundance of smoke, thus making it ideal for use in hearth fires and torches.
+
+
+
+### Shaggy Ink Mushrooms
+*[Swamp](#p111), [Underdark](#p111)*
+___
+- **Rarity:** [Rare](#p115)
+
+A small, button mushroom that can be milked to harvest a shiny black liquid. This liquid, if consumed or absorbed through the skin, will cause the recipient to mope about vocally, and loudly question their choices in life. Affected creatures just want to lean against the wall and cry. A save is allowed for every instance they are slapped by another person, DC 16 Wisdom Save, with a cumulative -1 to the DC per slap. 
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Shepherd's Purse
+*[Mountain](#p110)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+This herb rarely grows to a height of more than 18 inches. It has small greyish green leaves, growing smaller towards the summit of the plant. It has small four petalled cream-white flowers at its peak. If applied as a compress within 4 turns of taking poison damage, it will undo up to 3d4 of that damage.
+
+
+
+### Silver Hibiscus
+*[Jungle](#p108), [Underdark](#p111)*
+___
+- **Rarity:** [Legendary](#p116)
+
+This silver-grey plant looks as though it represents madness itself. It often has random patterns and unplanned shapes, but always has a black web-like pattern on it. If touched bare-handed, the target must make a DC 14 Wisdom Save or take 2d6 Psychic damage. When prepared correctly, the leaf can take on the special qualities of the elements and grant a talentaed herbalist 3 uses of an elemental breath weapon, randomly chosen from Lightning, Poison, Fire, or Acid.
+
+
+
+### Silver Tassel Toadstool
+*[Underdark](#p111)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Growing deep within damp caves, Silver Tassel Toadstool is a slightly fluorescent shelf toadstool that has small structures resembling tassels hanging from its edge. These tassels are actually the fungi’s reproductive organs, and the spores from these structures can be harvested and mixed with oil to create an ingested poison called Pale Tincture. This milky liquid is the primary choice of cruel manipulators that often use it to coerce favors out of unwilling acquaintances. 
+
+The poison is introduced unknowingly, and slowly chips away at the victim's vitality, always threatening a slow and painful death. The promise of a cure is enough to make most people do things that they would otherwise avoid. A creature subjected to this poison must succeed on a DC 16 Constitution saving throw vs poison or take 3 (1d6) poison damage and become poisoned. The poisoned creature must repeat the saving throw every 8 hours, taking 3 (1d6) poison damage on a failed save. Until this poison ends, the damage the poison deals can’t be healed by any means. After seven successful saving throws, the effect ends and the creature can heal normally, and only a greater restoration spell can end this poison outside of the cure or making the successful saving throws. The cure can be made by harvesting the toadstool’s spores and combining these with alcohol that is then exposed to at least 15 points of radiant damage, which is enough to mutate the poisonous compounds in the spores.
+
+
+
+
+\columnbreak
+
+### Silverleaf
+*[Mountain](#p110), [Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+Only blooming by the light of a full moon, the plant appears to be largely nondescript until seen at night in full bloom. The entire plant is basked in a silvery glow, and the flower is large and luminescent white. At the end of the night the flower falls off of the plant and quickly wilts in the morning sun. However, before the flower wilts, it can be ground into a fine powder, the mere smell of which repels lycanthropes, who take a -8 penalty to initiative when in the presence of the fresh flower.
+
+
+
+### Silverthorn
+*[Mountain](#p110)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+Silverthorn is a small thorny plant, white in color with red berries and silver thorns. This herb can function either as a poison or as an antidote to itself. It is found only by one specific lake located high in the mountains. For use as a poison the thorns must be crushed and boiled in oil over the course of a night, at which point, the resultant mixture may be smeared on the end of a weapon. When the weapon pierces its target, the poison will take effect killing the victim within 2d6 hours. There is no save and no cure, except for the antidote outlined below. Not even the most powerful magic can cure this poison. The only cure for this poison is also made from the Silverthorn plant. The berries must be boiled in absolutely pure water, prepared in a pure silver vessel, and the resultant mixture stored in an adamantine vial until use. The liquid must be placed on the dying victims lips, where within 1d20 minutes, they will recover from the poisoning.
+
+
+
+### Silverwood
+*[Forest](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A type of tree nurtured by sylvan elves to grow into unique forms, be free of disease and produce delicious sap that is made into the famous Elven Silvermead. The sap is clear and slightly sticky, and provides a +2 bonus on Constitution saves VS poison for 1 hour.
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Sinquoi
+*[Desert](#p107)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+The red leaves of this unusually twisted tree should be burned, and the smoke inhaled. This will have the effect of ‘dilating’ time (making it appear to pass slower.) For every minute experienced outside the influence of the herb, only thirty seconds will actually pass. A single dose is effective for 1d6 hours. Normally used by torturers to prolong agony, the leaves may also be used by people who must think quickly. It does not increase the speed at which a person moves but you may be able to see an opponent telegraph their movements more easily. (DC 20 Dexterity Save when a melee attack is targeted toward you, on a successful save, your AC increases by 2 for the period of that attack.) However, Sinquoi also causes side-effects in the form of halved movement speed for 1d6 hours after the initial dosage wears off.
+
+
+
+### Sky Lotus
+*[Mountain](#p110)*
+___
+- **Rarity:** [Very Rare](#p115)
+
+White, stemless flower native to high altitudes that can be found floating lazily through the air between 4 and 15 feet off the ground. Provides 1 day of nutrition if eaten but contains trace amounts of arsenic that can affect creatures that eat a lot of them (DC 5 Constitution save that increases by 1 on each consecutive flower eaten, 2d8 poison damage on a failed save). If oil is collected from 10 sky lotuses, it produces a natural potion of levitation that is also a full dose of poison (DC 15 Constitution save, 2d12 poison damage on a failed save, half as much on a successful save).
+
+
+
+### Sleeping Ivy
+*[Coastal](#p107), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+This woody, vine with golden, spade shaped leaves growing in fan shaped clusters of three or five is a true climber, often reaching 30' to 40'. The blooms of Sleeping Ivy are blue-violet colored tufts, or puffballs, which become covered in an extremely fine yellowish powder. A rash of tiny, fluid filled blisters will form on any skin that has come in contact 1-4 hours after initial contact. Despite its "angry" appearance, the inflamed area is not painful and does not itch, but instead will tingle numbly. After becoming exposed to Sleeping Ivy a victim will become more lethargic and harder to wake from sleep. At first the lethargy brought on by exposure may be so slight as to be unnoticeable, but it will increase in intensity each day it goes untreated. On the seventh day of untreated exposure the victim will fall asleep (quite peacefully) and never wake again. To treat Sleeping Ivy, the inflamed area must be bathed in alcohol. The higher the proof, the more rapid the recovery.
+
+
+
+
+\columnbreak
+
+### Sleepweed
+*[Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+This plant appears similar to milkweed, and its pods contain sleep-inducing spores. Pods can be thrown as a ranged attack (range 5-ft) and a struck target must make a DC 15 Constitution save or fall asleep for 1 minute.
+
+
+
+### Slimmerane
+*[Jungle](#p108), [Mountain](#p110), [Plain](#p109)*
+___
+- **Rarity:** [Rare](#p115)
+
+A tropical, creeping ground vine that has small serrated leaves resembling the leaves of blackberry bushes. Instead of producing blackberries, however, this vine produces small pink berries that can be mashed into a pulp and consumed. Although exceedingly sour, this mixture will grant advantage on the saving throw for the next spell that is cast upon you. Lasts until this spell is cast or 24 hours if no such spell is cast.
+
+
+
+### Slumberweed
+*[Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Dried and powdered leaves of this blue-green fuzzy plant, if consumed, can cause a sleeplike state that resembles death for 8 hours (Constitution Save DC 13 negates). Can also be turned into a poultice and delivered via blowgun (no Constitution save required to place the victim into sleep if delivered this way).
+
+
+
+### Snakespike
+*[Plain](#p109)*
+___
+- **Rarity:** [Very Common](#p113)
+
+A thin stalk covered with yellow-green flowers. The leaves can be steeped in water to make a tea that, when imbibed 3 times a day, reduces inflammation and restores strength; when made into an ointment, snakespike soothes and promotes rapid healing. (Tea gives 1d4 temporary hit points/day; ointment restores 1 hit point immediately per application but can only be administered to the same character once per short rest.)
+
+
+
+
+\pagebreakNum
+
+
+
+
+### Snapping Grass
+*[Plain](#p109)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Snapping Grass grows as a clump, or tuft of dark green, dagger shaped leaves, 4" to 6" tall. Six to twelve stalks, each 8" to 10" high grow from the center of this cluster. A pair of hinged, shovel shaped, bright fuchsia leaves, rimmed in spikes sit at the top of each stalk. These stalks sway constantly, as if moved by a gentle breeze. It is unclear how exactly Snapping Grass hunts, but the moving stalks are able to bend, lunge and snap up small creatures with exceptional accuracy. While this plant subsists almost entirely on a diet of small vermin and birds, some adventurers have reported that some clumps of Snapping Grass will lunge and attempt to eat small, shiny or sparkling objects like rings and gems.
+
+
+
+### Snowflake Lichen
+*[Arctic](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Magical plant that looks like snow and grows on rocks in cold climates; it leeches heat from any and and all sources. Within 10 feet of the lichen, the temperature grows noticeably colder. Within 5 feet, the creature must make a DC 12 Constitution save, taking 2d6 cold damage on a failed save. Touching, even with protective gloves or armor, causes 2d12 cold damage on a failed DC 15 Constitution save.
+
+
+
+### Snowwood
+*[Arctic](#p107)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+A pale tree with a slightly bluish cast to the mottled bark, growing predominantly in the far north. The trunks of the trees are often thin and dense, with spindly limbs and dark green leaves. The mottled coloration of the bark often forms into shapes that vaguely resemble faces, and a few tribes hold a belief that the trees hold the spirits of ancestors that watch over and protect them. The trees are quite remarkable as they can survive in some of the coldest climates, and have even been seen as far north as the High Ice and the Reghed Glacier. The roots of the tree often stretch deep, anchoring the tree in places where other vegetation would find difficult purchase.
+
+
+
+### Soarwood
+*[Jungle](#p108)*
+___
+- **Rarity:** [Uncommon](#p114)
+
+Rare wood native to Aerenal that possesses magical buoyancy. Water-vessels made from Soarwood cost quadruple price to construct, but move at double speed and are more reliable in rough conditions. Soarwood is 75% lighter than regular wood. It is a necessary component for the construction of Eberron-style airships, and when worked into an airship, it becomes naturally lighter than air.
+
+
+
+
+\columnbreak
+
+### Sparish Nut
+*[Jungle](#p108)*
+___
+- **Rarity:** [Common](#p113)
+
+This herb is a powerful aphrodisiac. If successfully administered the DM/PC should act accordingly, but if a method of using dice to simulate its effect is wanted, anyone who attempts to seduce the recipient should have a bonus of +5 to their Persuasion checks for a period of 2d10 minutes.
+
+
+
+### Sparkleberry
+*[Forest](#p107), [Jungle](#p108), [Plain](#p109)*
+___
+- **Rarity:** [Common](#p113)
+
+A single stalk bearing a number of curled leaves, the sweet berries of the plant are known throughout Faerun, and they sparkle radiantly in direct sunlight. Villagers often know of nearby patches of wild sparkle berries, and pick them in mid-summer. The berries have a variety of methods by which they are eaten. Fresh berries are often served with cheese, and many are processed into jams and jellies to be preserved for later. Consumption of the raw berries grants resistance to Radiant damage for 10 minutes while consumption of the jam or jelly grants the same resistance for 5 minutes.
+
+
+
+### Spectreflower
+*[Forest](#p107)*
+___
+- **Rarity:** [Rare](#p115)
+
+This highly unusual plant grows in the deepest parts of dark forests, far from the eyes of civilization. The stalk is a blue-green color, and several pale leaves grow along the length. During nights of the full moon the plant buds a flower, which appears wispy and translucent. Attemping to touch the flower reveals that it is incorporeal, and has the substance of smoke. Come morning the flower disperses on the wind, sending the seeds of the flower on their path. The roots of the flower can be used to make an oil that allows blades to strike incorporeal creatures, called Ghostbane Oil. Using the roots of the Specterflower, alchemists are capable of distilling an oil, that when applied correctly, allows non-magical weapons to inflict full damage upon incorporeal creatures as if they were physical creatures. The benefit lasts only for a few swings, up to the DM’s discretion.
+
+
+
