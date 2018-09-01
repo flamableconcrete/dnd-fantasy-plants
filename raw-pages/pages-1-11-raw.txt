@@ -119,14 +119,10 @@
 
 ## Credits
 
-**Created by [/u/neurotoxicnihilist](https://www.reddit.com/user/neurotoxicnihilist)**
-**Edited by [/u/flamableconcrete](https://www.reddit.com/user/flamableconcrete)**
-**Current Version:** 2.0
-**Cover image:** Forest by [superkusokao](https://superkusokao.deviantart.com/)
-
-##### Artwork
-
-pg. 3: Forest Glade by [nele-diel](https://nele-diel.deviantart.com/)
+**Created by [/u/neurotoxicnihilist](https://www.reddit.com/user/neurotoxicnihilist)**  
+**Edited by [/u/flamableconcrete](https://www.reddit.com/user/flamableconcrete)**  
+**Current Version:** 2.0  
+**Cover image:** Forest by [superkusokao](https://superkusokao.deviantart.com/)  
 
 ## Source Materials
 
@@ -184,17 +180,18 @@ And literally everyone that left positive comments and encouraging words on the 
 Okay, editor might be a strong word, but I just wanted to pipe in and say that I took the Microsoft Word document provided by /u/neurotoxicnihlist, parsed it with Python, spit it out in JSON, and converted it to Markdown. You can see all this effort at the following links. Enjoy!  
 **Code:** [Github](https://github.com/flamableconcrete/dnd-fantasy-plants)  
 **Source:** [Homebrewery](https://homebrewery.naturalcrit.com/share/Hym27DBLM)  
-**Template Assets:** [Imgur](https://www.gmbinder.com/images/a/0qUvZ)  
 
 </div>
 
 
 \pagebreakNum
 
+## Artwork
 
-<div style='margin-top:900px'></div>
+Artwork was borrowed from the following artists:  
+[nele-diel](https://nele-diel.deviantart.com), 
 
-# Scavenging Rules
+## Scavenging Rules
 Magical plants can be found in many different terrains, but that doesn't mean that adventurers automatically can identify what is around them. The DM would select a table below based on the abundance (or lack thereof) of plants in the adventurer's environment. A player who wishes to scavenge for plants may make a nature check. 10-14 is mildly successful, 15-19 is successful, 20+ is very successful. This would mean that for a mild success, roll on the table with disadvantage, for a success, roll on the table to see what kind of plant you get, and for very successful roll with advantage.
 
 In most cases, 100 will also count as Very Rare, since Legendary plants should only be in one or two places around the world, so make sure the setting is right to get a Legendary plant.
