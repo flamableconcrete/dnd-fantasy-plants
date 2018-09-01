@@ -124,6 +124,11 @@
 **Current Version:** 2.0  
 **Cover image:** Forest by [superkusokao](https://superkusokao.deviantart.com/)  
 
+##### Artwork
+
+All artwork used in this resource can be found in this [Pinterest board](https://www.pinterest.com/flamableconcret/dd-fantasy-plants)
+and credit is due to the respective content creators.
+
 ## Source Materials
 
 **[Narcosa](https://www.drivethrurpg.com/product/137248/Narcosa)** by Neoplastic Press  
@@ -318,6 +323,11 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 3 | [Halcyon Crocus](#p57) |
 | 4 | [Klagul](#p65) |
     
+<!-- Cool background image -->
+<img src='https://pre00.deviantart.net/9aec/th/pre/f/2014/233/c/4/through_the_mountains_by_88grzes-d7w3vpp.jpg' style='position:absolute; top:550px; left:0px;' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/76f2/th/pre/i/2018/221/8/5/4___skqmrea_by_flamableconcrete-dcjq3dq.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 
 \pagebreakNum
@@ -389,6 +399,11 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 3 | [Sasami Tree](#p86) |
 | 4 | [Verdant Goeleth](#p100) |
     
+<!-- Cool background image -->
+<img src='https://img00.deviantart.net/3e8d/i/2011/233/8/2/flying_town_by_miss_velance-d47bfvl.jpg' style='position:absolute; top:550px; left:-100px; width:1016px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/14b4/th/pre/i/2018/221/9/0/5___gezbrsw_by_flamableconcrete-dcjq3ec.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 
 \pagebreakNum
@@ -458,6 +473,11 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 |:---:|:---:|
 | 1-4 | [Gariig](#p54) (Exceedingly Rare)|
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/41/d8/46/41d84698ed501c392c559710020ec0f0.jpg' style='position:absolute; top:550px; left:0px; width:816px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/14b4/th/pre/i/2018/221/9/0/5___gezbrsw_by_flamableconcrete-dcjq3ec.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 
 \pagebreakNum
@@ -542,6 +562,11 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 |:---:|:---:|
 | 1-4 | [Gariig](#p54) (Exceedingly Rare)|
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/e7/26/04/e72604d7bcde127c610d99a4da0fcd04.jpg' style='position:absolute; top:450px; left:0px; width:816px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/76f2/th/pre/i/2018/221/8/5/4___skqmrea_by_flamableconcrete-dcjq3dq.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 
 \pagebreakNum
@@ -651,6 +676,11 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 97-98 | [Wood Sorrel](#p104) |
 | 99-100 | [Yarpick](#p105) |
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/de/3b/bf/de3bbfad5222e6393224db345770ac28.jpg' style='position:absolute; top:620px; left:0px; width:816px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/5098/th/pre/i/2018/221/2/d/6___iu6blc4_by_flamableconcrete-dcjq3f0.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
 
@@ -726,6 +756,11 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 95-97 | [Yaran](#p105) |
 | 98-100 | [Zalanthar](#p106) |
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/63/84/33/638433c5d0224ffc828b8b8c73aceae1.jpg' style='position:absolute; top:600px; left:0px; width:816px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/76f2/th/pre/i/2018/221/8/5/4___skqmrea_by_flamableconcrete-dcjq3dq.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
 
@@ -767,4 +802,8 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 5 | [Trueroot](#p98) |
 | 6 | [Varenia](#p100) (Exceedingly Rare)|
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/93/62/6c/93626cda12740406d9b249e18da7566c.jpg' style='position:absolute; top:600px; left:0px; width:816px' />
 
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/76f2/th/pre/i/2018/221/8/5/4___skqmrea_by_flamableconcrete-dcjq3dq.png' style='position:absolute; top:0px; left:0px; width:816px' />
