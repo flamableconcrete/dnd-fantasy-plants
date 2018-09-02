@@ -103,10 +103,12 @@
   style='position:absolute;bottom:180px;left:0px;width:50%'/>
 
 <img
-  src='https://www.gmbinder.com/images/qp4gdn0.png'
+  src='https://github.com/flamableconcrete/dnd-fantasy-plants/raw/master/img/cover-page-footer.png'
   style='position:absolute;bottom:30px;left:80px;width:700px'/>
 
+
 \pagebreakNum
+
 
 <div class="wide" style="text-align: center">
 
@@ -117,14 +119,15 @@
 
 ## Credits
 
-**Created by [/u/neurotoxicnihilist](https://www.reddit.com/user/neurotoxicnihilist)**
-**Edited by [/u/flamableconcrete](https://www.reddit.com/user/flamableconcrete)**
-**Current Version:** 2.0
-**Cover image:** Forest by [superkusokao](https://superkusokao.deviantart.com/)
+**Created by [/u/neurotoxicnihilist](https://www.reddit.com/user/neurotoxicnihilist)**  
+**Edited by [/u/flamableconcrete](https://www.reddit.com/user/flamableconcrete)**  
+**Current Version:** 2.0  
+**Cover image:** Forest by [superkusokao](https://superkusokao.deviantart.com/)  
 
 ##### Artwork
 
-pg. 3: Forest Glade by [nele-diel](https://nele-diel.deviantart.com/)
+All artwork used in this resource can be found in this [Pinterest board](https://www.pinterest.com/flamableconcret/dd-fantasy-plants)
+and credit is due to the respective content creators.
 
 ## Source Materials
 
@@ -182,9 +185,9 @@ And literally everyone that left positive comments and encouraging words on the 
 Okay, editor might be a strong word, but I just wanted to pipe in and say that I took the Microsoft Word document provided by /u/neurotoxicnihlist, parsed it with Python, spit it out in JSON, and converted it to Markdown. You can see all this effort at the following links. Enjoy!  
 **Code:** [Github](https://github.com/flamableconcrete/dnd-fantasy-plants)  
 **Source:** [Homebrewery](https://homebrewery.naturalcrit.com/share/Hym27DBLM)  
-**Template Assets:** [Imgur](https://www.gmbinder.com/images/a/0qUvZ)  
 
 </div>
+
 
 \pagebreakNum
 
@@ -235,7 +238,9 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
   src='https://www.gmbinder.com/images/qGRSC1J.png'
   style='position:absolute;top:0px;left:0px;width:916px' />
 
+
 \pagebreakNum
+
 
     
 <div class="wide" style="text-align: center">
@@ -315,8 +320,15 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 3 | [Halcyon Crocus](#p57) |
 | 4 | [Klagul](#p65) |
     
+<!-- Cool background image -->
+<img src='https://pre00.deviantart.net/9aec/th/pre/f/2014/233/c/4/through_the_mountains_by_88grzes-d7w3vpp.jpg' style='position:absolute; top:550px; left:0px;' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/76f2/th/pre/i/2018/221/8/5/4___skqmrea_by_flamableconcrete-dcjq3dq.png' style='position:absolute; top:0px; left:0px; width:816px' />
+
 
 \pagebreakNum
+
 
     
 <div class="wide" style="text-align: center">
@@ -384,8 +396,15 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 3 | [Sasami Tree](#p86) |
 | 4 | [Verdant Goeleth](#p100) |
     
+<!-- Cool background image -->
+<img src='https://img00.deviantart.net/3e8d/i/2011/233/8/2/flying_town_by_miss_velance-d47bfvl.jpg' style='position:absolute; top:550px; left:-100px; width:1016px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/14b4/th/pre/i/2018/221/9/0/5___gezbrsw_by_flamableconcrete-dcjq3ec.png' style='position:absolute; top:0px; left:0px; width:816px' />
+
 
 \pagebreakNum
+
 
     
 <div class="wide" style="text-align: center">
@@ -441,18 +460,21 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 3 | [Firethorn](#p51) |
 | 4 | [Tereeka Root](#p96) |
     
-##### Table 4-5: Coastal - Very Rare
+##### Table 4-5: Coastal - Very Rare & Legendary
 | d4 | Plant |
 |:---:|:---:|
-| 1-4 | [Chromus Slime](#p38) |
-    
-##### Table 4-6: Coastal - Legendary
-| d4 | Plant |
-|:---:|:---:|
-| 1-4 | [Gariig](#p54) (Exceedingly Rare)|
-    
+| 1-2 | [Chromus Slime](#p38) |
+| 3-4 | [Gariig](#p54) (Exceedingly Rare)|
+
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/41/d8/46/41d84698ed501c392c559710020ec0f0.jpg' style='position:absolute; top:550px; left:0px; width:816px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/14b4/th/pre/i/2018/221/9/0/5___gezbrsw_by_flamableconcrete-dcjq3ec.png' style='position:absolute; top:0px; left:0px; width:816px' />
+
 
 \pagebreakNum
+
 
     
 <div class="wide" style="text-align: center">
@@ -514,27 +536,31 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 7 | [Lissuin](#p68) |
 | 8 | [Tateesha](#p96) |
     
-##### Table 5-5: Desert - Very Rare
-| d10 | Plant |
+##### Table 5-5: Desert - Very Rare & Legendary
+| d12 | Plant |
 |:---:|:---:|
-| 1 | [Alfirin](#p23) |
-| 2 | [Alil](#p24) |
-| 3 | [Dragontears](#p46) |
-| 4 | [Juzam](#p64) |
-| 5 | [Kelventari](#p64) |
-| 6 | [Maracan](#p71) |
-| 7 | [Rose Campion](#p83) |
-| 8 | [Sinquoi](#p89) |
-| 9 | [Swordstalks](#p94) |
-| 10 | [Ylam Tree](#p106) |
-    
-##### Table 5-6: Desert - Legendary
-| d4 | Plant |
-|:---:|:---:|
-| 1-4 | [Gariig](#p54) (Exceedingly Rare)|
+| 1-2 | [Alfirin](#p23) |
+| 3 | [Alil](#p24) |
+| 4 | [Dragontears](#p46) |
+| 5 | [Juzam](#p64) |
+| 6 | [Kelventari](#p64) |
+| 7 | [Maracan](#p71) |
+| 8 | [Rose Campion](#p83) |
+| 9 | [Sinquoi](#p89) |
+| 10 | [Swordstalks](#p94) |
+| 11 | [Ylam Tree](#p106) |
+| 12 | [Gariig](#p54) (Exceedingly Rare)|
     
 
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/e7/26/04/e72604d7bcde127c610d99a4da0fcd04.jpg' style='position:absolute; top:450px; left:0px; width:816px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/76f2/th/pre/i/2018/221/8/5/4___skqmrea_by_flamableconcrete-dcjq3dq.png' style='position:absolute; top:0px; left:0px; width:816px' />
+
+
 \pagebreakNum
+
 
     
 <div class="wide" style="text-align: center">
@@ -640,7 +666,14 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 97-98 | [Wood Sorrel](#p104) |
 | 99-100 | [Yarpick](#p105) |
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/de/3b/bf/de3bbfad5222e6393224db345770ac28.jpg' style='position:absolute; top:620px; left:0px; width:816px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/5098/th/pre/i/2018/221/2/d/6___iu6blc4_by_flamableconcrete-dcjq3f0.png' style='position:absolute; top:0px; left:0px; width:816px' />
+
 \pagebreakNum
+
 
 ##### Table 6-3: Forest - Uncommon
 | d100 | Plant |
@@ -713,7 +746,14 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 95-97 | [Yaran](#p105) |
 | 98-100 | [Zalanthar](#p106) |
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/63/84/33/638433c5d0224ffc828b8b8c73aceae1.jpg' style='position:absolute; top:600px; left:0px; width:816px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/76f2/th/pre/i/2018/221/8/5/4___skqmrea_by_flamableconcrete-dcjq3dq.png' style='position:absolute; top:0px; left:0px; width:816px' />
+
 \pagebreakNum
+
 
 ##### Table 6-5: Forest - Very Rare
 | d100 | Plant |
@@ -752,10 +792,14 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 5 | [Trueroot](#p98) |
 | 6 | [Varenia](#p100) (Exceedingly Rare)|
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/93/62/6c/93626cda12740406d9b249e18da7566c.jpg' style='position:absolute; top:600px; left:0px; width:816px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/76f2/th/pre/i/2018/221/8/5/4___skqmrea_by_flamableconcrete-dcjq3dq.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
 
-    
 <div class="wide" style="text-align: center">
 
 # Jungle
@@ -850,7 +894,14 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 95-97 | [Witchweave Palm](#p103) |
 | 98-100 | [Xitluchi](#p105) |
     
+<!-- Cool background image -->
+<img src='https://img00.deviantart.net/f588/i/2015/230/8/8/forest__tarkir__by_adampaquette-d966lu8.jpg' style='position:absolute; top:500px; left:100px; width:1016px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/e59a/th/pre/i/2018/221/0/8/42___duf6g9s_by_flamableconcrete-dcjq5ai.png' style='position:absolute; top:0px; left:0px; width:816px' />
+
 \pagebreakNum
+
 
 ##### Table 7-4: Jungle - Rare
 | d100 | Plant |
@@ -923,10 +974,15 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 9 | [Winclamit](#p103) |
 | 10 | [Yazur](#p105) |
     
+<!-- Cool background image -->
+<img src='https://pre00.deviantart.net/8ec8/th/pre/i/2013/161/9/6/hidden_falls_by_ninjatic-d68hwvt.jpg' style='position:absolute; top:150px; left:250px; width:816px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/b2d0/th/pre/i/2018/221/f/1/43___nawdgqf_by_flamableconcrete-dcjq5b0.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
 
-    
+
 <div class="wide" style="text-align: center">
 
 # Plain
@@ -1021,7 +1077,14 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 99 | [Yarrow](#p105) |
 | 100 | [Young Lad's Love](#p106) |
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/a2/5a/18/a25a18d01326fb2d38f18109173e8e60.jpg' style='position:absolute; top:800px; left:0px; width:816px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/5098/th/pre/i/2018/221/2/d/6___iu6blc4_by_flamableconcrete-dcjq3f0.png' style='position:absolute; top:0px; left:0px; width:816px' />
+
 \pagebreakNum
+
 
 ##### Table 8-2: Plain - Common
 | d100 | Plant |
@@ -1143,7 +1206,9 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 93-96 | [Woodrose](#p104) |
 | 97-100 | [Yaran](#p105) |
     
+
 \pagebreakNum
+
 
 ##### Table 8-5: Plain - Very Rare
 | d12 | Plant |
@@ -1169,10 +1234,15 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 3 | [Rose of Forgetfulness](#p84) |
 | 4 | [Sadaq's Bedwort](#p85) |
     
+<!-- Cool background image -->
+<img src='https://pre00.deviantart.net/6f50/th/pre/i/2013/188/8/c/otherworld___dark_plains_by_firedudewraith-d6chcp3.jpg' style='position:absolute; top:450px; left:-200px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/dd2a/th/pre/i/2018/221/5/a/3___zdcyltp_by_flamableconcrete-dcjq3dc.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
 
-    
+
 <div class="wide" style="text-align: center">
 
 # Mountain
@@ -1283,42 +1353,44 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 11 | [Spellbane](#p91) (Exceedingly Rare)|
 | 12 | [Tahtoalethi](#p94) (Exceedingly Rare)|
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/7c/75/1f/7c751f04f93267bf45003d84e27f1ff3.jpg' style='position:absolute; top:700px; left:350px; width:1416px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/f222/th/pre/i/2018/221/5/8/40___9bht1xa_by_flamableconcrete-dcjq59b.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
 
-    
 <div class="wide" style="text-align: center">
 
 # Ocean
 
 </div>
 
-##### Table 10-2: Ocean - Common
+##### Table 10-2: Ocean - Common & Uncommon
 | d4 | Plant |
 |:---:|:---:|
-| 1-4 | [Tangara Kelp](#p95) |
-    
-##### Table 10-3: Ocean - Uncommon
-| d4 | Plant |
-|:---:|:---:|
-| 1-4 | [Sand Vine](#p85) |
+| 1-2 | [Tangara Kelp](#p95) |
+| 3-4 | [Sand Vine](#p85) |
     
 \columnbreak
 
-##### Table 10-4: Ocean - Rare
+##### Table 10-4: Ocean - Rare & Legendary
 | d4 | Plant |
 |:---:|:---:|
-| 1-2 | [Adamant Algae](#p22) |
-| 3 | [Entangle Weed](#p49) |
-| 4 | [Gylvir](#p57) |
+| 1 | [Adamant Algae](#p22) |
+| 2 | [Entangle Weed](#p49) |
+| 3 | [Gylvir](#p57) |
+| 4 | [Dratiddel](#p46) |
     
-##### Table 10-6: Ocean - Legendary
-| d4 | Plant |
-|:---:|:---:|
-| 1-4 | [Dratiddel](#p46) |
-    
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/2d/89/26/2d8926c86102ec546574ce417b448230.jpg' style='position:absolute; top:-100px; left:0px; width:816px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/dd2a/th/pre/i/2018/221/5/a/3___zdcyltp_by_flamableconcrete-dcjq3dc.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
+
 
     
 <div class="wide" style="text-align: center">
@@ -1392,8 +1464,14 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 1-2 | [Lizuara](#p69) |
 | 3-4 | [Sadaq's Bedwort](#p85) |
     
+<!-- Cool background image -->
+<img src='https://orig00.deviantart.net/c8e8/f/2010/199/9/4/river_water_by_molybdenumgp03.jpg' style='position:absolute; top:600px; left:-100px; width:1016px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/76f2/th/pre/i/2018/221/8/5/4___skqmrea_by_flamableconcrete-dcjq3dq.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
+
 
     
 <div class="wide" style="text-align: center">
@@ -1474,8 +1552,14 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 1-2 | [Athelas](#p28) |
 | 3-4 | [Devil's Bloodflower](#p44) |
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/44/aa/80/44aa802a8be573694c075fba24ae8808.jpg' style='position:absolute; top:500px; left:200px; width:816px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/e59a/th/pre/i/2018/221/0/8/42___duf6g9s_by_flamableconcrete-dcjq5ai.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
+
 
     
 <div class="wide" style="text-align: center">
@@ -1574,9 +1658,13 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 3 | [Fordamna](#p53) (Exceedingly Rare)|
 | 4 | [Silver Hibiscus](#p88) |
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/12/1e/98/121e98e9ee5fb25cf2ce4d1ec92e3396.jpg' style='position:absolute; top:700px; left:0px; width:816px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/5098/th/pre/i/2018/221/2/d/6___iu6blc4_by_flamableconcrete-dcjq3f0.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
-
     
 <div class="wide" style="text-align: center">
 
@@ -1589,6 +1677,13 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 |:---:|:---:|
 | 1-2 | [Betrayer's Inception](#p31) |
 | 3-4 | [Vortax](#p101) |
+    
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/37/2e/99/372e99850c5fea58426c875c9c0fb74e.jpg' style='position:absolute; top:50px; left:-150px; width:1200px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/2353/th/pre/i/2018/221/3/2/2___al7n0ds_by_flamableconcrete-dcjq3cz.png' style='position:absolute; top:0px; left:0px; width:816px' />
+
     
 
 \pagebreakNum
