@@ -460,16 +460,12 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 3 | [Firethorn](#p51) |
 | 4 | [Tereeka Root](#p96) |
     
-##### Table 4-5: Coastal - Very Rare
+##### Table 4-5: Coastal - Very Rare & Legendary
 | d4 | Plant |
 |:---:|:---:|
-| 1-4 | [Chromus Slime](#p38) |
-    
-##### Table 4-6: Coastal - Legendary
-| d4 | Plant |
-|:---:|:---:|
-| 1-4 | [Gariig](#p54) (Exceedingly Rare)|
-    
+| 1-2 | [Chromus Slime](#p38) |
+| 3-4 | [Gariig](#p54) (Exceedingly Rare)|
+
 <!-- Cool background image -->
 <img src='https://i.pinimg.com/564x/41/d8/46/41d84698ed501c392c559710020ec0f0.jpg' style='position:absolute; top:550px; left:0px; width:816px' />
 
@@ -540,25 +536,22 @@ In most cases, 100 will also count as Very Rare, since Legendary plants should o
 | 7 | [Lissuin](#p68) |
 | 8 | [Tateesha](#p96) |
     
-##### Table 5-5: Desert - Very Rare
-| d10 | Plant |
+##### Table 5-5: Desert - Very Rare & Legendary
+| d12 | Plant |
 |:---:|:---:|
-| 1 | [Alfirin](#p23) |
-| 2 | [Alil](#p24) |
-| 3 | [Dragontears](#p46) |
-| 4 | [Juzam](#p64) |
-| 5 | [Kelventari](#p64) |
-| 6 | [Maracan](#p71) |
-| 7 | [Rose Campion](#p83) |
-| 8 | [Sinquoi](#p89) |
-| 9 | [Swordstalks](#p94) |
-| 10 | [Ylam Tree](#p106) |
+| 1-2 | [Alfirin](#p23) |
+| 3 | [Alil](#p24) |
+| 4 | [Dragontears](#p46) |
+| 5 | [Juzam](#p64) |
+| 6 | [Kelventari](#p64) |
+| 7 | [Maracan](#p71) |
+| 8 | [Rose Campion](#p83) |
+| 9 | [Sinquoi](#p89) |
+| 10 | [Swordstalks](#p94) |
+| 11 | [Ylam Tree](#p106) |
+| 12 | [Gariig](#p54) (Exceedingly Rare)|
     
-##### Table 5-6: Desert - Legendary
-| d4 | Plant |
-|:---:|:---:|
-| 1-4 | [Gariig](#p54) (Exceedingly Rare)|
-    
+
 <!-- Cool background image -->
 <img src='https://i.pinimg.com/564x/e7/26/04/e72604d7bcde127c610d99a4da0fcd04.jpg' style='position:absolute; top:450px; left:0px; width:816px' />
 
