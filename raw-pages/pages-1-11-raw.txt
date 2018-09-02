@@ -191,12 +191,9 @@ Okay, editor might be a strong word, but I just wanted to pipe in and say that I
 
 \pagebreakNum
 
-## Artwork
+<div style='margin-top:900px'></div>
 
-Artwork was borrowed from the following artists:  
-[nele-diel](https://nele-diel.deviantart.com), 
-
-## Scavenging Rules
+# Scavenging Rules
 Magical plants can be found in many different terrains, but that doesn't mean that adventurers automatically can identify what is around them. The DM would select a table below based on the abundance (or lack thereof) of plants in the adventurer's environment. A player who wishes to scavenge for plants may make a nature check. 10-14 is mildly successful, 15-19 is successful, 20+ is very successful. This would mean that for a mild success, roll on the table with disadvantage, for a success, roll on the table to see what kind of plant you get, and for very successful roll with advantage.
 
 In most cases, 100 will also count as Very Rare, since Legendary plants should only be in one or two places around the world, so make sure the setting is right to get a Legendary plant.
