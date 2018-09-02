@@ -179,6 +179,11 @@
 | 95-97 | [Witchweave Palm](#p103) |
 | 98-100 | [Xitluchi](#p105) |
     
+<!-- Cool background image -->
+<img src='https://img00.deviantart.net/f588/i/2015/230/8/8/forest__tarkir__by_adampaquette-d966lu8.jpg' style='position:absolute; top:500px; left:100px; width:1016px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/e59a/th/pre/i/2018/221/0/8/42___duf6g9s_by_flamableconcrete-dcjq5ai.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
 
@@ -254,12 +259,15 @@
 | 9 | [Winclamit](#p103) |
 | 10 | [Yazur](#p105) |
     
+<!-- Cool background image -->
+<img src='https://pre00.deviantart.net/8ec8/th/pre/i/2013/161/9/6/hidden_falls_by_ninjatic-d68hwvt.jpg' style='position:absolute; top:150px; left:250px; width:816px' />
 
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/b2d0/th/pre/i/2018/221/f/1/43___nawdgqf_by_flamableconcrete-dcjq5b0.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
 
 
-    
 <div class="wide" style="text-align: center">
 
 # Plain
@@ -354,6 +362,11 @@
 | 99 | [Yarrow](#p105) |
 | 100 | [Young Lad's Love](#p106) |
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/a2/5a/18/a25a18d01326fb2d38f18109173e8e60.jpg' style='position:absolute; top:800px; left:0px; width:816px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/5098/th/pre/i/2018/221/2/d/6___iu6blc4_by_flamableconcrete-dcjq3f0.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
 
@@ -506,12 +519,15 @@
 | 3 | [Rose of Forgetfulness](#p84) |
 | 4 | [Sadaq's Bedwort](#p85) |
     
+<!-- Cool background image -->
+<img src='https://pre00.deviantart.net/6f50/th/pre/i/2013/188/8/c/otherworld___dark_plains_by_firedudewraith-d6chcp3.jpg' style='position:absolute; top:450px; left:-200px' />
 
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/dd2a/th/pre/i/2018/221/5/a/3___zdcyltp_by_flamableconcrete-dcjq3dc.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
 
 
-    
 <div class="wide" style="text-align: center">
 
 # Mountain
@@ -622,12 +638,14 @@
 | 11 | [Spellbane](#p91) (Exceedingly Rare)|
 | 12 | [Tahtoalethi](#p94) (Exceedingly Rare)|
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/7c/75/1f/7c751f04f93267bf45003d84e27f1ff3.jpg' style='position:absolute; top:700px; left:350px; width:1416px' />
 
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/f222/th/pre/i/2018/221/5/8/40___9bht1xa_by_flamableconcrete-dcjq59b.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
 
-
-    
 <div class="wide" style="text-align: center">
 
 # Ocean
@@ -658,7 +676,11 @@
 |:---:|:---:|
 | 1-4 | [Dratiddel](#p46) |
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/2d/89/26/2d8926c86102ec546574ce417b448230.jpg' style='position:absolute; top:-100px; left:0px; width:816px' />
 
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/dd2a/th/pre/i/2018/221/5/a/3___zdcyltp_by_flamableconcrete-dcjq3dc.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
 
@@ -735,7 +757,11 @@
 | 1-2 | [Lizuara](#p69) |
 | 3-4 | [Sadaq's Bedwort](#p85) |
     
+<!-- Cool background image -->
+<img src='https://orig00.deviantart.net/c8e8/f/2010/199/9/4/river_water_by_molybdenumgp03.jpg' style='position:absolute; top:600px; left:-100px; width:1016px' />
 
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/76f2/th/pre/i/2018/221/8/5/4___skqmrea_by_flamableconcrete-dcjq3dq.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
 
@@ -819,7 +845,11 @@
 | 1-2 | [Athelas](#p28) |
 | 3-4 | [Devil's Bloodflower](#p44) |
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/44/aa/80/44aa802a8be573694c075fba24ae8808.jpg' style='position:absolute; top:500px; left:200px; width:816px' />
 
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/e59a/th/pre/i/2018/221/0/8/42___duf6g9s_by_flamableconcrete-dcjq5ai.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 \pagebreakNum
 
@@ -921,4 +951,8 @@
 | 3 | [Fordamna](#p53) (Exceedingly Rare)|
 | 4 | [Silver Hibiscus](#p88) |
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/12/1e/98/121e98e9ee5fb25cf2ce4d1ec92e3396.jpg' style='position:absolute; top:700px; left:0px; width:816px' />
 
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/5098/th/pre/i/2018/221/2/d/6___iu6blc4_by_flamableconcrete-dcjq3f0.png' style='position:absolute; top:0px; left:0px; width:816px' />
