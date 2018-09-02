@@ -97,12 +97,14 @@
 | 1-2 | [Betrayer's Inception](#p31) |
 | 3-4 | [Vortax](#p101) |
     
+<!-- Cool background image -->
+<img src='https://i.pinimg.com/564x/37/2e/99/372e99850c5fea58426c875c9c0fb74e.jpg' style='position:absolute; top:50px; left:-150px; width:1200px' />
+
+<!-- Full page stain -->
+<img src='https://pre00.deviantart.net/2353/th/pre/i/2018/221/3/2/2___al7n0ds_by_flamableconcrete-dcjq3cz.png' style='position:absolute; top:0px; left:0px; width:816px' />
 
 
 \pagebreakNum
-
-
-
 
 
 ### Aadarna
@@ -820,6 +822,4 @@ ___
 - **Rarity:** [Very Common](#p113)
 
 The small brown nuts, produced from a desert scrub bush can be eaten to stop bleeding (including internal bleeding). Within two hours it will have stopped the bleeding. The recipient must not move for one additional hour or risk the bleeding restarting.
-
-
 
