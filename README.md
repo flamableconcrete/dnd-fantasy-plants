@@ -1,3 +1,5 @@
+![Travis (.org) branch](https://img.shields.io/travis/flamableconcrete/dnd-fantasy-plants/master.svg)
+
 # D&D Fantasy Plants
 
 From this post on reddit: https://www.reddit.com/r/DnD/comments/7rb6rj/i_have_put_countless_hours_into_a_roughly_175
