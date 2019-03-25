@@ -1,4 +1,4 @@
-![Travis (.org) branch](https://img.shields.io/travis/flamableconcrete/dnd-fantasy-plants/master.svg)
+[![Build Status](https://travis-ci.org/flamableconcrete/dnd-fantasy-plants.svg?branch=master)](https://travis-ci.org/flamableconcrete/dnd-fantasy-plants)
 
 # D&D Fantasy Plants
 
