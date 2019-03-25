@@ -708,9 +708,9 @@ def render(template, context):
 
 def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    # deduplicate_csv()
-    # convert_csv_to_json()
-    # parse_description()
+    deduplicate_csv()
+    convert_csv_to_json()
+    parse_description()
     generate_gmbinder_markdown()
 
 
