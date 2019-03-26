@@ -19,7 +19,9 @@ deploy:
   provider: releases
   api_key:
     secure: XTQQKivr/XLr5UD6WzdXBv0DeeZWbMBeaArSsrMHxMJZhHP+JFPb7603LE19O7oL+ELWGhXyZEZc5EVGYKMlnrHhj/4DJrSvSeI70gnXL8yUKUojoxzDGRC5lLknamknX+Gnxv6+W8pwurkdMK9lsSIA01Ukbsj9NVpy6oiT6ADH2Eoh5zs3ZXAVAWS1aOUhSNHcAerY9ms2iorLu3EWswQMnYy28D62V2UjTnkchRKCRPqw3MD46fdm2uJ44uIcRZ5b+AxadI2TQhnl7xXy6FFpGbeT+OMV8wx/MRoBRA55hglhDH9tHb2A8w4WMz4dZvybgJU5MqjuTeYO+g1capHj6GSj5gOI3pbAgPTHhEnCyXFFX5W8EJBm62l/gv2pNRywm/S28VT9TO+HDW/aVfsCZB8OeRBjvAKCFF//KBLnoRk9BaAF+06jRX2obsJc67bXQuBRp8HWRvMUfCmVQMIE4C0RNnrKKHKUroH19RaAiZFpiZk3c7bw8FnU643li9JS9IZFvah+kxKvAZ3DQz5InR/z5q82lOZ+Gvt4Z9dLOgKQv4iLH30C80a8Or1FYX1gIjQjsIkA2ESjjdak88fVJyyPVNQnGW4bqBbCTgO/Aq5giru0Hi6DhAffDdMmiXb0/Uf+IJ2tfthS2gShNvEHZzYkilW83y5FHWyVpiQ=
-  file: fantasy-plants-$VERSION.tar.gz
+  file:
+    - fantasy-plants-$VERSION.tar.gz
+    - generated/2.0/generated-gmbinder.txt
   skip_cleanup: true
   on:
     tags: true
