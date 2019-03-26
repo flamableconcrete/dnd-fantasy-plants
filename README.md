@@ -16,3 +16,4 @@ I wanted to be able to programmatically work with the plant entries to create a 
 * Manually create pdf?
 * Create a Homebrewery file?
   * Work in progress: http://homebrewery.naturalcrit.com/share/Hym27DBLM
+
