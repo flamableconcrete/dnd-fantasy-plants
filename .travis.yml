@@ -6,11 +6,12 @@ env:
     - VERSION=$TRAVIS_TAG
 
 install:
-- pip install -r requirements.txt
+  - pip install -r requirements.txt
 
 script:
-- python generate_gmbinder.py
-- tar -zcvf fantasy-plants.tar.gz generated
+  - pytest
+  - python generate_gmbinder.py
+  - tar -zcvf fantasy-plants.tar.gz generated
 
 before_deploy:
   - mv fantasy-plants.tar.gz fantasy-plants-$VERSION.tar.gz
