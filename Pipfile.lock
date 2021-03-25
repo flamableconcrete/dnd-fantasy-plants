@@ -46,11 +46,11 @@
         },
         "icecream": {
             "hashes": [
-                "sha256:434e14a50da01f9dc1e5757efec7613db5df048ebdcecd460236db41688f779a",
-                "sha256:9000acd16dc9d3c78a95ac9abc54c172e4f47fbd54541ab10d280fae5bfb8efa"
+                "sha256:4c441862751e9a8b52c1a5b551056a3430361230b8c845a7953f8b6e400a4f27",
+                "sha256:c2e7b74c1c12caa2cfde050f2e636493ee77a9fb4a494b5593418ab359924a24"
             ],
             "index": "pypi",
-            "version": "==2.0.0"
+            "version": "==2.1.0"
         },
         "importlib-metadata": {
             "hashes": [
